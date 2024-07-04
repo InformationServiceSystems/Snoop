@@ -32,7 +32,7 @@ File structure
 
 ### Read our paper
 
-(Paper)(https://www.iss.uni-saarland.de/wp-content/uploads/2023/07/Snoop_AAAI_SS23_MedicalAI_submission.pdf)
+[Paper](https://www.iss.uni-saarland.de/wp-content/uploads/2023/07/Snoop_AAAI_SS23_MedicalAI_submission.pdf)
 
 ### Citation
 ```
