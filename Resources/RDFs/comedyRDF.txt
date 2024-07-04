@@ -1,0 +1,2791 @@
+1.BridesMaids
+
+@prefix ex: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:AnnieWalker rdf:type ex:Woman ;
+    ex:hasAge "mid-thirties" ;
+    ex:livesIn ex:Milwaukee ;
+    ex:hasOccupation "underpaid job at a jewelry store" ;
+    ex:hasApartment ex:Apartment1 ;
+    ex:hasFriend ex:Lillian ;
+    ex:hasRelationshipStatus "single" ;
+    ex:hasSexualRelationship ex:Ted ;
+    ex:hasPositivePresence ex:Lillian .
+
+ex:Ted rdf:type ex:Man ;
+    ex:hasWealth "wealthy" ;
+    ex:treats ex:AnnieWalker ex:likeAnObject .
+
+ex:Lillian rdf:type ex:Woman ;
+    ex:hasBoyfriend ex:Doug ;
+    ex:hasEngagementParty ex:EngagementParty1 .
+
+ex:Doug rdf:type ex:Man .
+
+ex:EngagementParty1 rdf:type ex:Party ;
+    ex:hasGuest ex:AnnieWalker ;
+    ex:hasGuest ex:Rita ;
+    ex:hasGuest ex:Becca ;
+    ex:hasGuest ex:Megan ;
+    ex:hasGuest ex:Helen .
+
+ex:Rita rdf:type ex:Woman ;
+    ex:hasCousinRelationship ex:Lillian ;
+    ex:hasMaritalStatus "married" ;
+    ex:hasCynicalNature true .
+
+ex:Becca rdf:type ex:Woman ;
+    ex:hasCoworkerRelationship ex:Lillian ;
+    ex:hasMaritalStatus "newlywed" ;
+    ex:hasNaiveNature true .
+
+ex:Megan rdf:type ex:Woman ;
+    ex:hasSisterRelationship ex:Doug ;
+    ex:hasRaunchyNature true ;
+    ex:hasFriendlyNature true ;
+    ex:hasFoulMouth true .
+
+ex:Helen rdf:type ex:Woman ;
+    ex:hasSpouse ex:Doug ;
+    ex:hasWealth "wealthy" ;
+    ex:hasSnobbyNature true ;
+    ex:hasTrophyWifeRole true .
+
+ex:Restaurant1 rdf:type ex:Restaurant ;
+    ex:isLocatedIn ex:Milwaukee ;
+    ex:hasCuisine "Brazilian steak" .
+
+ex:BridalShop1 rdf:type ex:Shop ;
+    ex:isLocatedIn ex:Milwaukee ;
+    ex:sells ex:WeddingGown .
+
+ex:WeddingGown rdf:type ex:Clothing ;
+    ex:isWornBy ex:Lillian .
+
+ex:Helen rdf:type ex:Woman ;
+    ex:hasInfluence true ;
+    ex:failedToMakeReservation ex:WeddingGown ;
+    ex:hasFoodPoisoning true .
+
+ex:PartyBus1 rdf:type ex:Vehicle ;
+    ex:isUsedBy ex:EngagementParty1 ;
+    ex:hasDestination ex:Milwaukee .
+
+ex:NathanRhodes rdf:type ex:Man ;
+    ex:hasNationality "Irish-American" ;
+    ex:hasProfession ex:StatePatrolOfficer ;
+    ex:hasVisited ex:AnnieWalker ;
+    ex:encourages ex:AnnieWalker ex:toOpenBakery .
+
+ex:StatePatrolOfficer rdf:type ex:Profession .
+
+ex:Bakery1 rdf:type ex:Business ;
+    ex:isOwnedBy ex:AnnieWalker .
+
+ex:AnnieWalker rdf:type ex:Woman ;
+    ex:hasPassionateInterest ex:Baking ;
+    ex:hasLostInterestIn ex:Baking .
+
+ex:RomanticNight rdf:type ex:Event ;
+    ex:isExperiencedBy ex:AnnieWalker ;
+    ex:isExperiencedBy ex:NathanRhodes .
+
+ex:CarAccident rdf:type ex:Event ;
+    ex:involves ex:AnnieWalker ;
+    ex:involves ex:OtherDriver .
+
+ex:OtherDriver rdf:type ex:Person ;
+    ex:fleesFrom ex:CarAccident .
+
+ex:Apartment1 rdf:type ex:Residence ;
+    ex:isSharedWith ex:Gil ;
+    ex:isSharedWith ex:Brynn .
+
+ex:Gil rdf:type ex:Person ;
+    ex:isBritishImmigrant true .
+
+ex:Brynn rdf:type ex:Person ;
+    ex:isBritishImmigrant true .
+
+ex:HelenHouse rdf:type ex:Residence ;
+    ex:isLocatedIn ex:Chicago .
+
+ex:BridalShower rdf:type ex:Event ;
+    ex:isPlannedBy ex:Helen ;
+    ex:isPlannedBy ex:AnnieWalker .
+
+ex:Wedding1 rdf:type ex:Event ;
+    ex:isPlannedBy ex:Helen ;
+    ex:isAttendedBy ex:AnnieWalker ;
+    ex:isAttendedBy ex:Lillian .
+
+ex:HelenHouse rdf:type ex:Residence ;
+    ex:isLocatedIn ex:Chicago .
+
+ex:Helen rdf:type ex:Woman ;
+    ex:hasMarriageStatus true ;
+    ex:feelsLonely true .
+
+ex:LillianHouse rdf:type ex:Residence ;
+    ex:isLocatedIn ex:Milwaukee ;
+    ex:isHiddenBy ex:Lillian .
+
+ex:NathanRhodes rdf:type ex:Man ;
+    ex:arrivesToPickUp ex:AnnieWalker ;
+    ex:arrangedBy ex:Helen .
+
+ex:NathanRhodes rdf:type ex:Man ;
+    ex:kisses ex:AnnieWalker ;
+    ex:ridesWith ex:AnnieWalker ;
+    ex:ridesIn ex:NathanPoliceCar .
+
+ex:NathanPoliceCar rdf:type ex:Vehicle ;
+    ex:isUsedBy ex:NathanRhodes .
+
+ex:AnnieWalker ex:hasEmotion ex:DownOnLuck ;
+    ex:hasEmotion ex:Jealousy ;
+    ex:hasEmotion ex:Competitiveness ;
+    ex:hasEmotion ex:Fear ;
+    ex:hasEmotion ex:Paranoia ;
+    ex:hasEmotion ex:Anger ;
+    ex:hasEmotion ex:Loneliness ;
+    ex:hasEmotion ex:Motivation .
+
+ex:Ted ex:hasEmotion ex:SelfAbsorption .
+
+ex:Lillian ex:hasEmotion ex:Joy ;
+    ex:hasEmotion ex:Frustration ;
+    ex:hasEmotion ex:Disappointment ;
+    ex:hasEmotion ex:Reconciliation .
+
+ex:Helen ex:hasEmotion ex:Jealousy ;
+    ex:hasEmotion ex:Snobbery ;
+    ex:hasEmotion ex:Loneliness ;
+    ex:hasEmotion ex:Apology ;
+    ex:hasEmotion ex:Sadness ;
+    ex:hasEmotion ex:Reconciliation .
+
+ex:AnnieWalker ex:performsAction ex:FailedBakery ;
+    ex:performsAction ex:LostSavings ;
+    ex:performsAction ex:FailedRelationship ;
+    ex:performsAction ex:WorksStressfulJob ;
+    ex:performsAction ex:SharesApartment ;
+    ex:performsAction ex:CasualSexualRelationship ;
+    ex:performsAction ex:AttendsEngagementParty ;
+    ex:performsAction ex:MeetsBridesmaids ;
+    ex:performsAction ex:VisitsBridalShop ;
+    ex:performsAction ex:StrickenWithFoodPoisoning ;
+    ex:performsAction ex:Vomiting ;
+    ex:performsAction ex:Diarrhea ;
+    ex:performsAction ex:SuffersHallucination ;
+    ex:performsAction ex:ParanoidBreakdown ;
+    ex:performsAction ex:ApprehendedByAirMarshal ;
+    ex:performsAction ex:MakesEmergencyLanding ;
+    ex:performsAction ex:Apologizes ;
+    ex:performsAction ex:GrowsCloserTo ;
+    ex:performsAction ex:ReceivesGift ;
+    ex:performsAction ex:Panics ;
+    ex:performsAction ex:GetsFired ;
+    ex:performsAction ex:KickedOut ;
+    ex:performsAction ex:TravelsTo ;
+    ex:performsAction ex:AttendsBridalShower ;
+    ex:performsAction ex:ThrowsTantrum ;
+    ex:performsAction ex:DestroysDecor ;
+    ex:performsAction ex:RuinsEvent ;
+    ex:performsAction ex:ReturnsHome ;
+    ex:performsAction ex:GetsInvolvedInCarAccident ;
+    ex:performsAction ex:ReceivesRide ;
+    ex:performsAction ex:LeavesCar ;
+    ex:performsAction ex:BecomesReclusive ;
+    ex:performsAction ex:Visits ;
+    ex:performsAction ex:ResumesBaking ;
+    ex:performsAction ex:GetsCarFixed ;
+    ex:performsAction ex:MakesAmends ;
+    ex:performsAction ex:SearchesForLillian ;
+    ex:performsAction ex:FindsLillian ;
+    ex:performsAction ex:Reconciles ;
+    ex:performsAction ex:BecomesFriends ;
+    ex:performsAction ex:ReconcilesWithNathan ;
+    ex:performsAction ex:KissesNathan ;
+    ex:performsAction ex:RidesWithNathan .
+
+ex:NathanRhodes ex:performsAction ex:EncouragesAnnie ;
+    ex:performsAction ex:AdmonishesAnnie .
+
+ex:OtherDriver ex:performsAction ex:FleesFromAccident .
+
+ex:Helen ex:performsAction ex:BegsForHelp .
+
+ex:AnnieWalker ex:hasEmotion ex:CussingOut ;
+    ex:performsAction ex:GetFired .
+
+ex:Ted ex:performsAction ex:ArrivesToGiveRide ;
+    ex:performsAction ex:DemandToBeLetOut ;
+    ex:performsAction ex:LeavesAnnie .
+
+ex:AnnieWalker ex:hasEmotion ex:Loneliness ;
+    ex:performsAction ex:BecomeReclusive .
+
+ex:Megan ex:performsAction ex:VisitsAnnie .
+
+ex:AnnieWalker ex:hasEmotion ex:TakeControl ;
+    ex:performsAction ex:ResumeBaking ;
+    ex:performsAction ex:GetCarFixed ;
+    ex:performsAction ex:MakeAmends .
+
+ex:NathanRhodes ex:hasEmotion ex:Ignore ;
+    ex:performsAction ex:ReconcileWithAnnie .
+
+ex:Helen ex:hasEmotion ex:Jealousy ;
+    ex:performsAction ex:RuinsEvent ;
+    ex:performsAction ex:ReturnHome ;
+    ex:performsAction ex:SearchForLillian ;
+    ex:performsAction ex:FindLillian ;
+    ex:performsAction ex:ReconcileWithLillian .
+
+ex:Lillian ex:hasEmotion ex:Reconciliation ;
+    ex:performsAction ex:Apologize ;
+    ex:performsAction ex:InviteAnnieToWedding .
+
+ex:AnnieWalker ex:hasEmotion ex:Sadness ;
+    ex:performsAction ex:AttendsWedding ;
+    ex:performsAction ex:GrowsCloserToLillian ;
+    ex:performsAction ex:ReceivesGift ;
+    ex:performsAction ex:Panics ;
+    ex:performsAction ex:GetsKickedOut ;
+    ex:performsAction ex:TravelsToChicago ;
+    ex:performsAction ex:VisitsHelen ;
+    ex:performsAction ex:DestroysDecor ;
+    ex:performsAction ex:RuinsBridalShower ;
+    ex:performsAction ex:ReturnsHome ;
+    ex:performsAction ex:GetsInvolvedInCarAccident ;
+    ex:performsAction ex:ReceivesRide ;
+    ex:performsAction ex:LeavesCar ;
+    ex:performsAction ex:BecomesReclusive ;
+    ex:performsAction ex:VisitsLillian ;
+    ex:performsAction ex:ResumesBaking ;
+    ex:performsAction ex:GetsCarFixed ;
+    ex:performsAction ex:MakesAmends ;
+    ex:performsAction ex:SearchesForLillian ;
+    ex:performsAction ex:FindsLillian ;
+    ex:performsAction ex:Reconciles ;
+    ex:performsAction ex:BecomesFriends ;
+    ex:performsAction ex:ReconcilesWithNathan ;
+    ex:performsAction ex:KissesNathan ;
+    ex:performsAction ex:RidesWithNathan .
+
+ex:NathanRhodes ex:performsAction ex:EncouragesAnnie ;
+    ex:performsAction ex:AdmonishesAnnie .
+
+ex:Helen ex:performsAction ex:BegsForHelp .
+
+ex:AnnieWalker ex:hasEmotion ex:CussingOut ;
+    ex:performsAction ex:GetFired .
+
+ex:Ted ex:performsAction ex:ArrivesToGiveRide ;
+    ex:performsAction ex:DemandToBeLetOut ;
+    ex:performsAction ex:LeavesAnnie .
+
+ex:AnnieWalker ex:hasEmotion ex:Loneliness ;
+    ex:performsAction ex:BecomeReclusive .
+
+ex:Megan ex:performsAction ex:VisitsAnnie .
+
+ex:AnnieWalker ex:hasEmotion ex:TakeControl ;
+    ex:performsAction ex:ResumeBaking ;
+    ex:performsAction ex:GetCarFixed ;
+    ex:performsAction ex:MakeAmends .
+
+ex:NathanRhodes ex:hasEmotion ex:Ignore ;
+    ex:performsAction ex:ReconcileWithAnnie .
+
+ex:Helen ex:hasEmotion ex:Jealousy ;
+    ex:performsAction ex:RuinsEvent ;
+    ex:performsAction ex:ReturnHome ;
+    ex:performsAction ex:SearchForLillian ;
+    ex:performsAction ex:FindLillian ;
+    ex:performsAction ex:ReconcileWithLillian .
+
+ex:Lillian ex:hasEmotion ex:Reconciliation ;
+    ex:performsAction ex:Apologize ;
+    ex:performsAction ex:InviteAnnieToWedding .
+
+ex:AnnieWalker ex:hasEmotion ex:Sadness ;
+    ex:performsAction ex:AttendsWedding ;
+    ex:performsAction ex:GrowsCloserToLillian ;
+    ex:performsAction ex:ReceivesGift ;
+    ex:performsAction ex:Panics ;
+    ex:performsAction ex:GetsKickedOut ;
+    ex:performsAction ex:TravelsToChicago ;
+    ex:performsAction ex:VisitsHelen ;
+    ex:performsAction ex:DestroysDecor ;
+    ex:performsAction ex:RuinsBridalShower ;
+    ex:performsAction ex:ReturnsHome ;
+    ex:performsAction ex:GetsInvolvedInCarAccident ;
+    ex:performsAction ex:ReceivesRide ;
+    ex:performsAction ex:LeavesCar ;
+    ex:performsAction ex:BecomesReclusive ;
+    ex:performsAction ex:VisitsLillian ;
+    ex:performsAction ex:ResumesBaking ;
+    ex:performsAction ex:GetsCarFixed ;
+    ex:performsAction ex:MakesAmends ;
+    ex:performsAction ex:SearchesForLillian ;
+    ex:performsAction ex:FindsLillian ;
+    ex:performsAction ex:Reconciles ;
+    ex:performsAction ex:BecomesFriends ;
+    ex:performsAction ex:ReconcilesWithNathan ;
+    ex:performsAction ex:KissesNathan ;
+    ex:performsAction ex:RidesWithNathan .
+
+ex:NathanRhodes ex:performsAction ex:EncouragesAnnie ;
+    ex:performsAction ex:AdmonishesAnnie .
+
+ex:Helen ex:performsAction ex:BegsForHelp .
+
+ex:AnnieWalker ex:hasEmotion ex:CussingOut ;
+    ex:performsAction ex:GetFired .
+
+ex:Ted ex:performsAction ex:ArrivesToGiveRide ;
+    ex:performsAction ex:DemandToBeLetOut ;
+    ex:performsAction ex:LeavesAnnie .
+
+ex:AnnieWalker ex:hasEmotion ex:Loneliness ;
+    ex:performsAction ex:BecomeReclusive .
+
+ex:Megan ex:performsAction ex:VisitsAnnie .
+
+ex:AnnieWalker ex:hasEmotion ex:TakeControl ;
+    ex:performsAction ex:ResumeBaking ;
+    ex:performsAction ex:GetCarFixed ;
+    ex:performsAction ex:MakeAmends .
+
+ex:NathanRhodes ex:hasEmotion ex:Ignore ;
+    ex:performsAction ex:ReconcileWithAnnie .
+
+2. Hangover
+
+@prefix ex: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:DougBillings rdf:type ex:Bachelor ;
+    ex:hasFriend ex:PhilWenneck,
+                ex:StuPrice,
+                ex:AlanGarner ;
+    ex:hasEvent ex:Wedding ;
+    ex:drives ex:MercedesBenz ;
+    ex:travelsTo ex:LasVegas .
+
+ex:PhilWenneck rdf:type ex:ElementarySchoolTeacher ;
+    ex:isFriendOf ex:DougBillings .
+
+ex:StuPrice rdf:type ex:Dentist ;
+    ex:isFriendOf ex:DougBillings .
+
+ex:AlanGarner rdf:type ex:FutureBrotherInLaw ;
+    ex:isFriendOf ex:DougBillings .
+
+ex:Sid rdf:type ex:Father ;
+    ex:isParentOf ex:TracyBillings ;
+    ex:allows ex:VintageMercedesBenz .
+
+ex:TracyBillings rdf:type ex:Fiancee ;
+    ex:isChildOf ex:Sid ;
+    ex:hasEvent ex:Wedding .
+
+ex:CaesarsPalace rdf:type ex:Hotel .
+
+ex:Jagermeister rdf:type ex:AlcoholicBeverage .
+
+ex:PhilWenneck ex:sneaksOnto ex:CaesarsPalaceRooftop ;
+    ex:takes ex:JagermeisterShots .
+
+ex:StuPrice ex:sneaksOnto ex:CaesarsPalaceRooftop ;
+    ex:takes ex:JagermeisterShots .
+
+ex:AlanGarner ex:sneaksOnto ex:CaesarsPalaceRooftop ;
+    ex:takes ex:JagermeisterShots .
+
+ex:PhilWenneck rdf:type ex:Character ;
+    ex:hasMemoryLoss true .
+
+ex:StuPrice rdf:type ex:Character ;
+    ex:hasMemoryLoss true ;
+    ex:hasMissingTooth true .
+
+ex:AlanGarner rdf:type ex:Character ;
+    ex:hasMemoryLoss true ;
+    ex:hasBaby true .
+
+ex:BengalTiger rdf:type ex:Animal ;
+    ex:isIn ex:Bathroom .
+
+ex:Baby rdf:type ex:Human ;
+    ex:isIn ex:Closet .
+
+ex:PhilWenneck ex:sees ex:DougMattress ;
+    ex:impaledOn ex:Statue .
+
+ex:MercedesBenz rdf:type ex:Car .
+
+ex:LasVegasPoliceCruiser rdf:type ex:Car ;
+    ex:belongsTo ex:LasVegasPolice .
+
+ex:LasVegasPolice rdf:type ex:Organization .
+
+ex:Hospital rdf:type ex:Building .
+
+ex:Rohypnol rdf:type ex:Drug .
+
+ex:PhilWenneck ex:hasMemoryLossCause ex:Rohypnol ;
+    ex:awakensIn ex:Hospital .
+
+ex:StuPrice ex:hasMemoryLossCause ex:Rohypnol ;
+    ex:awakensIn ex:Hospital .
+
+ex:AlanGarner ex:hasMemoryLossCause ex:Rohypnol ;
+    ex:awakensIn ex:Hospital .
+
+ex:Chapel rdf:type ex:Building .
+
+ex:StuPrice ex:hasMaritalStatus ex:Married ;
+    ex:hasSpouse ex:Jade ;
+    ex:isInRelationshipWith ex:Melissa .
+
+ex:Jade rdf:type ex:CallGirl .
+
+ex:Melissa rdf:type ex:Girlfriend ;
+    ex:isDomineering true ;
+    ex:isPhilandering true .
+
+ex:Gangster rdf:type ex:Person ;
+    ex:attacks ex:Trio ;
+    ex:demandToKnow ex:LocationOfHe .
+
+ex:Trio rdf:type ex:Group ;
+    ex:flees ex:Chapel .
+
+ex:Jade rdf:type ex:Mother ;
+    ex:isMotherOf ex:Baby .
+
+ex:Police rdf:type ex:Organization .
+
+ex:StolenCruiser rdf:type ex:Car ;
+    ex:isStolenBy ex:Trio .
+
+ex:LasVegasPolice ex:arrests ex:Trio ;
+    ex:charges ex:CarTheft .
+
+ex:Trio rdf:type ex:Group ;
+    ex:isReleasedBy ex:Police .
+
+ex:Taser rdf:type ex:Weapon ;
+    ex:isUsedIn ex:TaserDemonstration .
+
+ex:AlanGarner ex:volunteersFor ex:TaserDemonstration .
+
+ex:ChineseMan rdf:type ex:Person ;
+    ex:isNamed ex:LeslieChow ;
+    ex:isNaked true .
+
+ex:LeslieChow rdf:type ex:Person ;
+    ex:attacks ex:Trio ;
+    ex:isIn ex:Trunk ;
+    ex:isEquippedWith ex:Crowbar .
+
+ex:AlanGarner ex:confesses true ;
+    ex:drugs ex:Drinks .
+
+ex:Ecstasy rdf:type ex:Drug .
+
+ex:AlanGarner ex:believesDrugToBe ex:Ecstasy .
+
+ex:MikeTyson rdf:type ex:Person ;
+    ex:knocksOut ex:AlanGarner ;
+    ex:orders ex:Trio ;
+    ex:returnTigerTo ex:TysonMansion .
+
+ex:Tiger rdf:type ex:Animal ;
+    ex:isIn ex:TigerCage .
+
+ex:TysonMansion rdf:type ex:Building .
+
+ex:PhilWenneck ex:drugs ex:Tiger ;
+    ex:loadsInto ex:MercedesBenz ;
+    ex:isAttackedBy ex:Tiger .
+
+ex:PhilWenneck ex:getsScratchedOn ex:Neck .
+
+ex:AlanGarner ex:getsScratchedOn ex:Neck .
+
+ex:MercedesBenz rdf:type ex:Car ;
+    ex:isDamaged true .
+
+ex:MercedesBenz ex:isPushed ex:Mansion ;
+    ex:isDeliveredTo ex:TysonMansion .
+
+ex:Trio ex:sees ex:SecurityCameraFootage ;
+    ex:indicates ex:DougLocationLoss .
+
+ex:AlanGarner ex:finds ex:ChowChips ;
+    ex:usesKnowledgeOf ex:CardCounting ;
+    ex:wins ex:Blackjack ;
+
+ex:ChowChips rdf:type ex:PokerChips ;
+    ex:isStolenBy ex:Trio .
+
+ex:Blackjack rdf:type ex:GamblingGame ;
+    ex:winsAmount ex:WinningAmount .
+
+ex:WinningAmount rdf:type ex:Money ;
+    ex:hasAmount 82400 .
+
+ex:Chow rdf:type ex:Person ;
+    ex:isAccusedBy ex:Trio ;
+    ex:isBossOf ex:Gangsters ;
+    ex:isIn ex:CadillacEscalade .
+
+ex:Kidnapping rdf:type ex:Crime ;
+    ex:isAccusedBy ex:Chow ;
+    ex:isClaimedBy ex:Trio .
+
+ex:ChowChips ex:isNotFound true .
+
+ex:AlanGarner ex:hasMoneyInPocket ex:ChowMoney .
+
+ex:ChowMoney rdf:type ex:Money ;
+    ex:hasAmount 80000 .
+
+ex:AlanGarner ex:hasDrugDealer ex:RoofiesDealer .
+
+ex:RoofiesDealer rdf:type ex:Person ;
+    ex:isAccidentallySoldTo ex:AlanGarner .
+
+ex:RealDoug rdf:type ex:Person ;
+    ex:isAccidentallySoldTo ex:AlanGarner .
+
+ex:DougBillings ex:hasMemoryLossCause ex:Roofies ;
+    ex:isOnRoof true .
+
+ex:PracticalJoke rdf:type ex:Action ;
+    ex:isPerformedBy ex:Trio ;
+    ex:isPerformedOn ex:RealDoug .
+
+ex:DougMattress rdf:type ex:Mattress ;
+    ex:isThrownOnto ex:Statue .
+
+ex:Statue rdf:type ex:Artwork .
+
+ex:Jade rdf:type ex:Date ;
+    ex:isPlannedWith ex:StuPrice ;
+    ex:isScheduledFor ex:NextWeek .
+
+ex:CaesarsPalace rdf:type ex:Hotel .
+
+ex:Car rdf:type ex:Vehicle .
+
+ex:LasVegas rdf:type ex:City .
+
+ex:DougBillings ex:hasMoneyInPocket ex:ChowMoney .
+
+ex:DougBillings rdf:type ex:MarriedPerson ;
+    ex:hasSpouse ex:TracyBillings .
+
+ex:Wedding rdf:type ex:Event ;
+    ex:isPlannedBy ex:TracyBillings ;
+    ex:isScheduledIn 5Hours .
+
+ex:StuPrice rdf:type ex:Character ;
+    ex:hasExGirlfriend ex:Melissa .
+
+ex:PhilWenneck rdf:type ex:Character ;
+    ex:hasExGirlfriend ex:Melissa .
+
+ex:AlanGarner rdf:type ex:Character ;
+    ex:hasExGirlfriend ex:Melissa .
+
+ex:DigitalCamera rdf:type ex:Device ;
+    ex:isOwnedBy ex:StuPrice .
+
+ex:DebaucheryPhotos rdf:type ex:Photos ;
+    ex:isTakenBy ex:DigitalCamera ;
+    ex:isOf ex:LasVegasNight .
+
+ex:Trio rdf:type ex:Group ;
+    ex:agreesTo ex:LookAtPhotos ;
+    ex:agreesToDelete true .
+
+3. Tommy Boy
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.com/>.
+@prefix schema: <http://schema.org/>.
+
+ex:TommyCallahanIII rdf:type schema:Person.
+ex:BigTomCallahanJr rdf:type schema:Person.
+ex:BeverlyBarrishBurns rdf:type schema:Person.
+ex:Paul rdf:type schema:Person.
+ex:RichardHayden rdf:type schema:Person.
+ex:MichelleBrock rdf:type schema:Person.
+ex:RayZalinsky rdf:type schema:Person.
+
+ex:TommyCallahanIII schema:hasEducation ex:College.
+ex:College rdf:type schema:CollegeOrUniversity.
+
+ex:TommyCallahanIII schema:hasJob ex:ExecutiveJob.
+ex:ExecutiveJob rdf:type schema:JobRole.
+ex:ExecutiveJob schema:isHeldBy ex:TommyCallahanIII.
+ex:ExecutiveJob schema:isLocatedIn ex:SanduskyOhio.
+
+ex:BigTomCallahanJr schema:hasJob ex:Industrialist.
+ex:Industrialist rdf:type schema:JobRole.
+ex:Industrialist schema:isHeldBy ex:BigTomCallahanJr.
+
+ex:BigTomCallahanJr schema:hasFamily ex:TommyCallahanIII.
+ex:BigTomCallahanJr schema:hasFamily ex:BeverlyBarrishBurns.
+ex:BeverlyBarrishBurns schema:hasMaritalStatus ex:Married.
+ex:BeverlyBarrishBurns schema:hasCriminalRecord true.
+ex:Paul schema:hasCriminalRecord true.
+
+ex:BigTomCallahanJr schema:hasPlan ex:MarriagePlan.
+ex:MarriagePlan rdf:type schema:Plan.
+ex:MarriagePlan schema:hasParticipant ex:BigTomCallahanJr.
+ex:MarriagePlan schema:hasParticipant ex:BeverlyBarrishBurns.
+
+ex:BigTomCallahanJr schema:hasHeartAttack ex:HeartAttackEvent.
+ex:HeartAttackEvent rdf:type schema:Event.
+ex:HeartAttackEvent schema:isHeldBy ex:BigTomCallahanJr.
+
+ex:Funeral rdf:type schema:Event.
+ex:Funeral schema:hasParticipant ex:BigTomCallahanJr.
+
+ex:TommyCallahanIII schema:hasDeal ex:BankDeal.
+ex:BankDeal rdf:type schema:Deal.
+ex:BankDeal schema:hasParticipant ex:TommyCallahanIII.
+ex:BankDeal schema:hasParticipant ex:Bank.
+
+ex:TommyCallahanIII schema:hasSalesTrip ex:CrossCountrySalesTrip.
+ex:CrossCountrySalesTrip rdf:type schema:SalesTrip.
+ex:CrossCountrySalesTrip schema:hasParticipant ex:TommyCallahanIII.
+ex:CrossCountrySalesTrip schema:hasParticipant ex:RichardHayden.
+
+ex:MichelleBrock schema:hasObservation ex:KissingObservation.
+ex:KissingObservation rdf:type schema:Observation.
+ex:KissingObservation schema:isHeldBy ex:MichelleBrock.
+
+ex:BeverlyBarrishBurns schema:hasIdentity ex:ConArtistIdentity.
+ex:ConArtistIdentity rdf:type schema:Identity.
+ex:ConArtistIdentity schema:isHeldBy ex:BeverlyBarrishBurns.
+ex:Paul schema:hasIdentity ex:ConArtistIdentity.
+
+ex:TommyCallahanIII schema:hasAnxiety ex:SocialAnxiety.
+ex:SocialAnxiety rdf:type schema:Anxiety.
+ex:SocialAnxiety schema:isHeldBy ex:TommyCallahanIII.
+
+ex:TommyCallahanIII schema:hasHyperactivity ex:HyperactivityTrait.
+ex:HyperactivityTrait rdf:type schema:Trait.
+ex:HyperactivityTrait schema:isHeldBy ex:TommyCallahanIII.
+
+ex:TommyCallahanIII schema:hasFistfight ex:FistfightEvent.
+ex:FistfightEvent rdf:type schema:Event.
+ex:FistfightEvent schema:isHeldBy ex:TommyCallahanIII.
+ex:FistfightEvent schema:isHeldBy ex:RichardHayden.
+
+ex:Waitress rdf:type schema:Person.
+ex:Waitress schema:hasInteraction ex:InteractionWithTommy.
+ex:InteractionWithTommy rdf:type schema:Interaction.
+ex:InteractionWithTommy schema:hasParticipant ex:TommyCallahanIII.
+ex:InteractionWithTommy schema:hasParticipant ex:Waitress.
+
+ex:MichelleBrock schema:hasSkill ex:ReadingPeopleSkill.
+ex:ReadingPeopleSkill rdf:type schema:Skill.
+ex:ReadingPeopleSkill schema:isHeldBy ex:MichelleBrock.
+
+ex:TommyCallahanIII schema:hasGoal ex:SalesGoal.
+ex:SalesGoal rdf:type schema:Goal.
+ex:SalesGoal schema:isHeldBy ex:TommyCallahanIII.
+
+ex:Paul schema:hasSabotage ex:ComputerSabotage.
+ex:ComputerSabotage rdf:type schema:Sabotage.
+ex:ComputerSabotage schema:isHeldBy ex:Paul.
+
+ex:Bank rdf:type schema:Organization.
+ex:Bank schema:hasAction ex:SellingAction.
+ex:SellingAction rdf:type schema:Action.
+ex:SellingAction schema:isHeldBy ex:Bank.
+
+ex:RayZalinsky schema:hasPlan ex:CompanyPurchasePlan.
+ex:CompanyPurchasePlan rdf:type schema:Plan.
+ex:CompanyPurchasePlan schema:hasParticipant ex:RayZalinsky.
+
+ex:TommyCallahanIII schema:hasDisguise ex:SuicideBomberDisguise.
+ex:SuicideBomberDisguise rdf:type schema:Disguise.
+ex:SuicideBomberDisguise schema:isHeldBy ex:TommyCallahanIII.
+
+ex:Television rdf:type schema:Device.
+ex:Television schema:hasContent ex:LiveNewsCoverage.
+ex:LiveNewsCoverage rdf:type schema:Content.
+ex:LiveNewsCoverage schema:isHeldBy ex:Television.
+
+ex:TommyCallahanIII schema:hasForcefulEntry ex:ForcefulEntryToBoardroom.
+ex:ForcefulEntryToBoardroom rdf:type schema:ForcefulEntry.
+ex:ForcefulEntryToBoardroom schema:isHeldBy ex:TommyCallahanIII.
+ex:ForcefulEntryToBoardroom schema:isHeldBy ex:MichelleBrock.
+ex:ForcefulEntryToBoardroom schema:isHeldBy ex:RichardHayden.
+
+ex:TommyCallahanIII schema:hasSpeech ex:SpeechAtPlant.
+ex:SpeechAtPlant rdf:type schema:Speech.
+ex:SpeechAtPlant schema:isHeldBy ex:TommyCallahanIII.
+
+ex:TommyCallahanIII schema:hasRelationship ex:RomanticRelationship.
+ex:RomanticRelationship rdf:type schema:Relationship.
+ex:RomanticRelationship schema:hasParticipant ex:TommyCallahanIII.
+ex:RomanticRelationship schema:hasParticipant ex:MichelleBrock.
+
+ex:TommyCallahanIII schema:hasFinalMeeting ex:MeetingWithBigTom.
+ex:MeetingWithBigTom rdf:type schema:Meeting.
+ex:MeetingWithBigTom schema:isHeldBy ex:TommyCallahanIII.
+ex:MeetingWithBigTom schema:isHeldBy ex:BigTomCallahanJr.
+
+ex:TommyCallahanIII schema:hasDinner ex:DinnerWithMichelle.
+ex:DinnerWithMichelle rdf:type schema:Dinner.
+ex:DinnerWithMichelle schema:isHeldBy ex:TommyCallahanIII.
+ex:DinnerWithMichelle schema:isHeldBy ex:MichelleBrock.
+
+ex:TommyCallahanIII schema:hasSailingTrip ex:SailingOnLake.
+ex:SailingOnLake rdf:type schema:SailingTrip.
+ex:SailingOnLake schema:isHeldBy ex:TommyCallahanIII.
+ex:SailingOnLake schema:isHeldBy ex:BigTomCallahanJr.
+
+ex:BigTomCallahanJr schema:hasConversation ex:ConversationWithTommy.
+ex:ConversationWithTommy rdf:type schema:Conversation.
+ex:ConversationWithTommy schema:isHeldBy ex:BigTomCallahanJr.
+ex:ConversationWithTommy schema:isHeldBy ex:TommyCallahanIII.
+
+ex:Wind rdf:type schema:Phenomenon.
+ex:Wind schema:hasCause ex:TommyCallahanIII.
+ex:Boom rdf:type schema:Object.
+ex:Boom schema:hasMovement ex:SwingingMovement.
+ex:SwingingMovement rdf:type schema:Movement.
+ex:SwingingMovement schema:isHeldBy ex:Boom.
+ex:Boom schema:isHeldBy ex:TommyCallahanIII.
+
+ex:Chicago rdf:type schema:Place.
+ex:Chicago schema:hasMeeting ex:MeetingWithZalinsky.
+ex:MeetingWithZalinsky rdf:type schema:Meeting.
+ex:MeetingWithZalinsky schema:isHeldBy ex:Chicago.
+ex:MeetingWithZalinsky schema:isHeldBy ex:TommyCallahanIII.
+ex:MeetingWithZalinsky schema:isHeldBy ex:RayZalinsky.
+
+ex:ZalinskyBoardroom rdf:type schema:Location.
+ex:ZalinskyBoardroom schema:hasRestriction ex:DenialOfEntrance.
+ex:DenialOfEntrance rdf:type schema:Restriction.
+ex:DenialOfEntrance schema:isHeldBy ex:ZalinskyBoardroom.
+ex:DenialOfEntrance schema:isHeldBy ex:TommyCallahanIII.
+ex:DenialOfEntrance schema:isHeldBy ex:RichardHayden.
+
+ex:MichelleBrock schema:hasEvidence ex:PoliceRecords.
+ex:PoliceRecords rdf:type schema:Evidence.
+ex:PoliceRecords schema:isHeldBy ex:MichelleBrock.
+
+ex:TommyCallahanIII schema:hasOwnership ex:ControllingShares.
+ex:ControllingShares rdf:type schema:Ownership.
+ex:ControllingShares schema:isHeldBy ex:TommyCallahanIII.
+ex:ControllingShares schema:isHeldBy ex:BigTomCallahanJr.
+
+ex:TommyCallahanIII schema:hasDecision ex:DecisionToKeepShares.
+ex:DecisionToKeepShares rdf:type schema:Decision.
+ex:DecisionToKeepShares schema:isHeldBy ex:TommyCallahanIII.
+
+ex:Company rdf:type schema:Organization.
+ex:Company schema:hasActivity ex:BusinessActivity.
+ex:BusinessActivity rdf:type schema:Activity.
+ex:BusinessActivity schema:isHeldBy ex:Company.
+
+ex:RayZalinsky schema:hasAward ex:SalesmanOfTheYearAward.
+ex:SalesmanOfTheYearAward rdf:type schema:Award.
+ex:SalesmanOfTheYearAward schema:isHeldBy ex:RayZalinsky.
+
+ex:TommyCallahanIII schema:hasPromotion ex:ExecutivePromotion.
+ex:ExecutivePromotion rdf:type schema:Promotion.
+ex:ExecutivePromotion schema:isHeldBy ex:TommyCallahanIII.
+
+ex:TommyCallahanIII schema:hasSuccess ex:BusinessSuccess.
+ex:BusinessSuccess rdf:type schema:Success.
+ex:BusinessSuccess schema:isHeldBy ex:TommyCallahanIII.
+
+4. Hangover 2
+
+PREFIX ex: http://example.org/
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema#
+PREFIX yago: http://yago-knowledge.org/resource/
+
+ex:TwoYearsAfter rdf:type ex:Event .
+ex:TwoYearsAfter ex:followedBy ex:PreparingToTravel .
+
+ex:LasVegas rdf:type ex:Event .
+ex:LasVegas ex:followedBy ex:TwoYearsAfter .
+
+ex:StuPrice rdf:type ex:Person .
+ex:StuPrice ex:isPreparingFor ex:Wedding .
+
+ex:Thailand rdf:type ex:Location .
+
+ex:Wedding rdf:type ex:Event .
+ex:Wedding ex:isUpcomingFor ex:StuPrice .
+
+ex:LasVegasEvent rdf:type ex:Event .
+ex:LasVegasEvent ex:followedBy ex:StuDoesNotAllow .
+
+ex:Stu rdf:type ex:Person .
+ex:Stu ex:allows ex:FriendsToGo .
+
+ex:PhilWenneck rdf:type ex:Person .
+ex:PhilWenneck ex:isFriendOf ex:Stu .
+
+ex:DougBillings rdf:type ex:Person .
+ex:DougBillings ex:isFriendOf ex:Stu .
+
+ex:AlanGarner rdf:type ex:Person .
+ex:AlanGarner ex:isFriendOf ex:Stu .
+
+ex:AlanGarner ex:isNotInvitedTo ex:BreakfastParty .
+
+ex:BachelorParty rdf:type ex:Event .
+ex:BachelorParty ex:isHostedBy ex:Stu .
+ex:BachelorParty ex:includes ex:PhilWenneck .
+ex:BachelorParty ex:includes ex:DougBillings .
+ex:BachelorParty ex:doesNotInclude ex:AlanGarner .
+
+ex:Tracy rdf:type ex:Person .
+ex:Tracy ex:asks ex:DougBillings .
+
+ex:Brother rdf:type ex:FamilyMember .
+ex:Brother ex:isSiblingOf ex:Tracy .
+
+ex:Tracy ex:asks ex:DougBillings .
+ex:DougBillings ex:isHusbandOf ex:Tracy .
+
+ex:Stu ex:allows ex:AlanGarner .
+
+ex:AlanGarner ex:isInvitedTo ex:ThailandTrip .
+
+ex:Airport rdf:type ex:Location .
+
+ex:Lauren rdf:type ex:Person .
+ex:Lauren ex:isFiancéeOf ex:StuPrice .
+
+ex:YoungerBrother rdf:type ex:FamilyMember .
+ex:YoungerBrother ex:isSiblingOf ex:Lauren .
+
+ex:Scholar rdf:type ex:Person .
+ex:Scholar ex:isNamed ex:Teddy .
+ex:Scholar ex:isFrom ex:StanfordUniversity .
+
+ex:RehearsalDinner rdf:type ex:Event .
+ex:RehearsalDinner ex:isHostedBy ex:StuPrice .
+ex:RehearsalDinner ex:includes ex:Lauren .
+
+ex:Father rdf:type ex:FamilyMember .
+ex:Father ex:isParentOf ex:Lauren .
+
+ex:Father ex:revealsDisapprovalOf ex:StuPrice .
+
+ex:Toast rdf:type ex:Event .
+ex:Toast ex:isGivenBy ex:Father .
+
+ex:Stu rdf:type ex:Person .
+ex:Stu ex:hesitantlyJoins ex:PhilWenneck .
+ex:Stu ex:hesitantlyJoins ex:DougBillings .
+ex:Stu ex:hesitantlyJoins ex:AlanGarner .
+ex:Stu ex:hesitantlyJoins ex:Teddy .
+
+ex:Campfire rdf:type ex:Event .
+ex:Campfire ex:isAt ex:Location .
+ex:Campfire ex:includes ex:Stu .
+ex:Campfire ex:includes ex:PhilWenneck .
+ex:Campfire ex:includes ex:DougBillings .
+ex:Campfire ex:includes ex:AlanGarner .
+ex:Campfire ex:includes ex:Teddy .
+
+ex:Marshmallows rdf:type ex:Food .
+
+ex:Group rdf:type ex:Collection .
+ex:Group ex:includes ex:Stu .
+ex:Group ex:includes ex:PhilWenneck .
+ex:Group ex:includes ex:DougBillings .
+ex:Group ex:includes ex:AlanGarner .
+
+ex:Toast rdf:type ex:Event .
+ex:Toast ex:isGivenBy ex:Group .
+
+ex:Happiness rdf:type ex:State .
+ex:Happiness ex:isFutureOf ex:StuPrice .
+ex:Happiness ex:isFutureOf ex:Lauren .
+
+ex:Phil rdf:type ex:Person .
+ex:Phil rdf:type ex:Person .
+ex:Phil rdf:type ex:Person .
+ex:Phil rdf:type ex:Person .
+
+ex:Bangkok rdf:type ex:Location .
+
+ex:HotelRoom rdf:type ex:Location .
+ex:HotelRoom ex:isIn ex:Bangkok .
+
+ex:MemoryLoss rdf:type ex:State .
+
+ex:Stu rdf:type ex:Person .
+ex:Stu ex:hasFaceTattoo ex:MikeTysonTattoo .
+ex:Stu ex:isIn ex:HotelRoom .
+
+ex:Alan rdf:type ex:Person .
+ex:Alan ex:hasShavedHead .
+
+ex:CapuchinMonkey rdf:type ex:Animal .
+ex:CapuchinMonkey ex:isWith ex:Group .
+
+ex:Friend rdf:type ex:Collection .
+ex:Friend ex:includes ex:Stu .
+ex:Friend ex:includes ex:Phil .
+ex:Friend ex:includes ex:Doug .
+ex:Friend ex:includes ex:Alan .
+
+ex:Chow rdf:type ex:Person .
+ex:Chow ex:follows ex:Group .
+ex:Chow ex:isWith ex:Group .
+ex:Chow ex:isInvitedBy ex:Alan .
+
+ex:AlanGarner ex:invites ex:Chow .
+
+ex:ThailandTrip rdf:type ex:Event .
+ex:ThailandTrip ex:includes ex:Group .
+ex:ThailandTrip ex:includes ex:Teddy .
+
+ex:SeveredFinger rdf:type ex:Object .
+
+ex:Chow rdf:type ex:Person .
+ex:Chow ex:relaysEvents .
+
+ex:Cocaine rdf:type ex:Substance .
+
+ex:Panicked rdf:type ex:State .
+
+ex:Trio rdf:type ex:Collection .
+ex:Trio ex:includes ex:Phil .
+ex:Trio ex:includes ex:Stu .
+ex:Trio ex:includes ex:Alan .
+
+ex:Chow rdf:type ex:Person .
+ex:Chow ex:hasBody .
+ex:Chow ex:isIn ex:Hotel .
+
+ex:IceBox rdf:type ex:Container .
+ex:IceBox ex:isIn ex:Hotel .
+
+ex:Doug rdf:type ex:Person .
+ex:Doug ex:leaves ex:Campfire .
+ex:Doug ex:staysAt ex:Resort .
+
+ex:Tip rdf:type ex:Event .
+ex:Tip ex:isFrom ex:Doug .
+
+ex:PoliceStation rdf:type ex:Location .
+
+ex:Teddy rdf:type ex:Person .
+ex:Teddy ex:isAt ex:PoliceStation .
+
+ex:Wheelchair rdf:type ex:Equipment .
+ex:Wheelchair ex:contains ex:BuddhistMonk .
+
+ex:BuddhistMonk rdf:type ex:Person .
+ex:BuddhistMonk ex:isIn ex:Wheelchair .
+
+ex:Silence rdf:type ex:State .
+
+ex:BusinessCard rdf:type ex:Object .
+
+ex:Business rdf:type ex:Location .
+ex:Business ex:isIn ex:Ruins .
+
+ex:TattooParlor rdf:type ex:Location .
+ex:TattooParlor ex:isNear ex:Business .
+ex:TattooParlor ex:isIn ex:Bangkok .
+
+ex:Tattoo rdf:type ex:Object .
+ex:Tattoo ex:isOn ex:Stu .
+
+ex:Fight rdf:type ex:Event .
+ex:Fight ex:isStartedBy ex:Trio .
+ex:Fight ex:escalatesInto ex:Riot .
+
+ex:Trio ex:startsFight .
+
+ex:Monk rdf:type ex:Person .
+ex:Monk ex:isEncouragedBy ex:HeadMonk .
+
+ex:Meditation rdf:type ex:Activity .
+ex:Meditation ex:isSuggestedBy ex:HeadMonk .
+
+ex:SexualIntercourse rdf:type ex:Activity .
+ex:SexualIntercourse ex:isEngagedBy ex:Stu .
+ex:SexualIntercourse ex:isWith ex:TranssexualWoman .
+
+ex:Exit rdf:type ex:Event .
+ex:Exit ex:isDoneBy ex:Trio .
+
+ex:RussianMobsters rdf:type ex:Group .
+ex:RussianMobsters ex:attacks ex:Trio .
+
+ex:Gunshot rdf:type ex:Event .
+ex:Gunshot ex:isDoneBy ex:RussianMobsters .
+ex:Gunshot ex:hits ex:Phil .
+
+ex:Clinic rdf:type ex:Location .
+
+ex:Medication rdf:type ex:Substance .
+ex:MuscleRelaxers rdf:type ex:Medication .
+ex:ADHD rdf:type ex:Medication .
+
+ex:Sedation rdf:type ex:State .
+
+ex:Alan rdf:type ex:Person .
+ex:Alan ex:drugs ex:Marshmallows .
+
+ex:Anger rdf:type ex:State .
+ex:Fury rdf:type ex:State .
+
+ex:Blame rdf:type ex:Event .
+ex:Blame ex:isDoneBy ex:Stu .
+ex:Blame ex:isTargetedBy ex:Alan .
+
+ex:Life rdf:type ex:State .
+ex:Life ex:isRuinedBy ex:Alan .
+
+ex:Attack rdf:type ex:Event .
+ex:Attack ex:isDoneBy ex:Stu .
+ex:Attack ex:isDoneBy ex:Alan .
+ex:Attack ex:isDoneBy ex:Phil .
+
+ex:Breakup rdf:type ex:State .
+
+ex:StickTogether rdf:type ex:State .
+
+ex:Stomach rdf:type ex:BodyPart .
+ex:Stomach ex:hasAddress .
+ex:Stomach ex:hasTime .
+
+ex:Meeting rdf:type ex:Event .
+ex:Meeting ex:isAt ex:Address .
+
+ex:Gangster rdf:type ex:Person .
+ex:Gangster ex:isNamed ex:Kingsley .
+
+ex:BankAccountPassword rdf:type ex:Code .
+
+ex:Chow rdf:type ex:Person .
+ex:Chow ex:hasBankAccount ex:Kingsley .
+
+ex:Hotel rdf:type ex:Location .
+ex:Hotel ex:isIn ex:Bangkok .
+
+ex:Monkey rdf:type ex:Animal .
+ex:Monkey ex:hasCode ex:BankAccountPassword .
+ex:Monkey ex:hasCodeInside ex:Vest .
+
+ex:Car rdf:type ex:Vehicle .
+
+ex:CarChase rdf:type ex:Event .
+ex:CarChase ex:isDoneBy ex:Trio .
+ex:CarChase ex:isDoneBy ex:RussianMobsters .
+ex:CarChase ex:isDoneBy ex:Monkey .
+
+ex:Shot rdf:type ex:Event .
+ex:Shot ex:isDoneBy ex:RussianMobsters .
+ex:Shot ex:hits ex:Monkey .
+
+ex:Code rdf:type ex:Information .
+
+ex:Deal rdf:type ex:Event .
+ex:Deal ex:isCompletedBy ex:Trio .
+
+ex:Agent rdf:type ex:Person .
+ex:Agent ex:isNamed ex:Kingsley .
+ex:Agent ex:isUndercover .
+
+ex:InterpolAgents rdf:type ex:Group .
+ex:InterpolAgents ex:arrests ex:Chow .
+
+ex:Desperation rdf:type ex:State .
+
+ex:Wedding rdf:type ex:Event .
+ex:Wedding ex:isCancelledBy ex:LaurensFather .
+
+ex:Speech rdf:type ex:Event .
+ex:Speech ex:isGivenBy ex:Stu .
+ex:Speech ex:defies ex:BoringDentist .
+
+ex:Blessing rdf:type ex:State .
+ex:Blessing ex:isGivenBy ex:LaurensFather .
+
+ex:Gift rdf:type ex:Object .
+
+ex:Performance rdf:type ex:Event .
+ex:Performance ex:isGivenBy ex:MikeTyson .
+
+ex:Battery rdf:type ex:Object .
+
+ex:Pictures rdf:type ex:Object .
+ex:Pictures ex:areTakenBy ex:Teddy .
+ex:Pictures ex:areOn ex:CellPhone .
+
+ex:Group ex:looksAt ex:Pictures .
+
+ex:Deletion rdf:type ex:Activity .
+ex:Deletion ex:isDoneBy ex:Group .
+
+5. Hot Rod
+
+PREFIX ex: http://example.org/
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema#
+PREFIX yago: http://yago-knowledge.org/resource/
+
+ex:RodKimble rdf:type ex:Person .
+ex:RodKimble ex:believes ex:FatherSuccessfulStuntman .
+ex:FatherSuccessfulStuntman rdf:type ex:Profession .
+ex:FatherSuccessfulStuntman rdf:type yago:Occupation100582388 .
+ex:FatherSuccessfulStuntman ex:workedFor ex:EvelKnievel .
+ex:EvelKnievel rdf:type ex:Person .
+ex:EvelKnievel ex:hasName "Evel Knievel" .
+
+ex:RodKimble ex:aspiresTo ex:BecomeFamousStuntman .
+ex:BecomeFamousStuntman rdf:type ex:Desire .
+ex:BecomeFamousStuntman rdf:type yago:Ambition107921849 .
+ex:BecomeFamousStuntman ex:follows ex:FatherFootsteps .
+
+ex:RodKimble ex:hasStepfather ex:Frank .
+ex:Frank rdf:type ex:Person .
+ex:Frank ex:doesNotRespect ex:RodKimble .
+ex:Frank ex:mocks ex:StuntmanDreams .
+
+ex:RodKimble ex:makesAttempt ex:LandJumps .
+ex:LandJumps rdf:type ex:Action .
+ex:LandJumps rdf:type yago:Achievement101941700 .
+ex:LandJumps ex:uses ex:TomosMoped .
+
+ex:RodKimble ex:returnHome ex:PublicPool .
+ex:PublicPool rdf:type ex:Location .
+ex:Frank ex:isInUrgentNeedOf ex:HeartTransplant .
+
+ex:RodKimble ex:runsInto ex:Woods .
+ex:Woods rdf:type ex:Location .
+ex:RodKimble ex:tumblesDown ex:SteepHill .
+ex:SteepHill rdf:type ex:Location .
+ex:RodKimble ex:sees ex:InspirationalBillboard .
+ex:InspirationalBillboard rdf:type ex:Billboard .
+
+ex:RodKimble ex:meetsWith ex:ChildhoodFriends .
+ex:ChildhoodFriends rdf:type ex:Group .
+ex:RodKimble ex:tells ex:PlanJumpOverSchoolBuses .
+
+ex:RodKimble ex:works ex:Parties .
+ex:Parties rdf:type ex:Event .
+ex:RodKimble ex:works ex:CorporateGetTogethers .
+ex:CorporateGetTogethers rdf:type ex:Event .
+ex:RodKimble ex:performs ex:Activities .
+
+ex:RodKimble ex:getsCuriousAbout ex:KevinWork .
+ex:KevinWork rdf:type ex:Project .
+ex:Kevin ex:edits ex:Footage .
+ex:RodKimble ex:impressedBy ex:KevinWork .
+ex:RodKimble ex:getsIdeaTo ex:ReleaseStuntmanFilm .
+ex:ReleaseStuntmanFilm rdf:type ex:Film .
+ex:RodKimble ex:raises ex:Funds .
+
+ex:RodKimble ex:getsAngry .
+ex:RodKimble ex:throws ex:Projector .
+ex:Projector rdf:type ex:Device .
+ex:RodKimble ex:smashes ex:ProjectionistCar .
+ex:ProjectionistCar rdf:type ex:Vehicle .
+
+ex:RodKimble ex:gives ex:Money .
+ex:RodKimble ex:returnsHome .
+ex:RodKimble ex:reveals ex:BiologicalFather .
+
+ex:RodKimble ex:quits ex:Team .
+ex:RodKimble ex:quits ex:DreamToBeatFrank .
+
+ex:RodKimble ex:apologizesTo ex:Kevin .
+ex:Kevin ex:accepts ex:Apology .
+ex:RodKimble ex:isReinvigorated .
+
+ex:RodKimble ex:promotes ex:Stunt .
+ex:RodKimble ex:raises ex:Money .
+
+ex:RodKimble ex:setsUp ex:Jump .
+ex:Jump rdf:type ex:Event .
+ex:RodKimble ex:receives ex:Suit .
+ex:RodKimble ex:receives ex:Rock .
+ex:RodKimble ex:receives ex:Motorbike .
+ex:RodKimble ex:receives ex:Kiss .
+ex:RodKimble ex:receives ex:Applause .
+ex:RodKimble ex:sees ex:Donations .
+
+ex:RodKimble ex:sparsWith ex:Frank .
+
+ex:RodKimble ex:isSeenBowingDown .
+ex:RodKimble ex:isSeenWith ex:Sunset .
+
+6.  Airplane 
+PREFIX ex: http://example.org/
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema#
+PREFIX yago: http://yago-knowledge.org/resource/
+
+ex:Ted_Striker rdf:type ex:Ex-Fighter_Pilot ;
+ex:hasEmotion ex:Traumatized ;
+ex:hasAction ex:Abandons_Taxi ;
+ex:hasAction ex:Buys_Ticket ;
+ex:hasAction ex:Takes_Controls ;
+ex:hasAction ex:Bolsters_Confidence ;
+ex:hasAction ex:Breaks_Down .
+
+ex:Traumatized rdf:type ex:Emotion .
+
+ex:Abandons_Taxi rdf:type ex:Action .
+
+ex:Buys_Ticket rdf:type ex:Action .
+
+ex:Takes_Controls rdf:type ex:Action .
+
+ex:Bolsters_Confidence rdf:type ex:Action .
+
+ex:Breaks_Down rdf:type ex:Action .
+
+ex:Elaine_Dickinson rdf:type ex:Flight_Attendant ;
+ex:hasEmotion ex:Breaks_Off_Relationship .
+
+ex:Breaks_Off_Relationship rdf:type ex:Emotion .
+
+ex:Flight_Attendant rdf:type ex:Occupation .
+
+ex:Steve_McCroskey rdf:type ex:Tower_Supervisor .
+
+ex:Chicago rdf:type ex:City .
+
+ex:Autopilot rdf:type ex:Equipment ;
+ex:hasFeature ex:Inflatable ;
+ex:hasFeature ex:Dummy_Pilot .
+
+ex:Inflatable rdf:type ex:Feature .
+
+ex:Dummy_Pilot rdf:type ex:Feature .
+
+ex:Rex_Kramer rdf:type ex:Commercial_Pilot ;
+ex:hasEmotion ex:Gives_Orders .
+
+ex:Gives_Orders rdf:type ex:Emotion .
+
+ex:Commercial_Pilot rdf:type ex:Occupation .
+
+ex:Plane rdf:type ex:Aircraft ;
+ex:hasEquipment ex:Autopilot ;
+ex:hasEquipment ex:Landing_Gear .
+
+ex:Aircraft rdf:type ex:Vehicle .
+
+ex:Landing_Gear rdf:type ex:Equipment .
+
+ex:Chicago_Tower rdf:type ex:Tower ;
+ex:hasSupervisor ex:Steve_McCroskey .
+
+ex:Tower rdf:type ex:Infrastructure .
+
+ex:Dr_Rumack rdf:type ex:Passenger ;
+ex:hasAction ex:Discovers_Food_Poisoning .
+
+ex:Discovers_Food_Poisoning rdf:type ex:Action .
+
+ex:Passenger rdf:type ex:Role .
+
+ex:Elaine_Dickinson rdf:type ex:Passenger .
+
+ex:Meal_Service rdf:type ex:Event ;
+ex:hasResult ex:Food_Poisoning .
+
+ex:Event rdf:type ex:Occurrence .
+
+ex:Food_Poisoning rdf:type ex:Condition .
+
+ex:Help rdf:type ex:Assistance .
+
+ex:Minor_Injuries rdf:type ex:Condition .
+
+ex:Rescue_Vehicles rdf:type ex:Vehicle .
+
+ex:Embrace rdf:type ex:Action .
+
+ex:Kiss rdf:type ex:Action .
+
+ex:Inflate rdf:type ex:Action .
+
+ex:Otto rdf:type ex:Equipment ;
+ex:hasFeature ex:Inflatable .
+
+ex:Female_Companion rdf:type ex:Companion .
+
+ex:Companion rdf:type ex:Role .
+
+ex:Takes_Off rdf:type ex:Action .
+
+ex:Chicago rdf:type yago:City .
+
+yago:City rdf:type rdf:Class .
+yago:Occupation rdf:type rdf:Class .
+yago:Emotion rdf:type rdf:Class .
+yago:Equipment rdf:type rdf:Class .
+yago:Feature rdf:type rdf:Class .
+yago:Aircraft rdf:type rdf:Class .
+yago:Vehicle rdf:type rdf:Class .
+yago:Infrastructure rdf:type rdf:Class .
+yago:Role rdf:type rdf:Class .
+yago:Event rdf:type rdf:Class .
+yago:Condition rdf:type rdf:Class .
+yago:Assistance rdf:type rdf:Class .
+
+yago:Commercial_Pilot rdfs:subClassOf yago:Occupation .
+yago:Flight_Attendant rdfs:subClassOf yago:Occupation .
+yago:Ex-Fighter_Pilot rdfs:subClassOf yago:Occupation .
+yago:Tower_Supervisor rdfs:subClassOf yago:Occupation .
+yago:Passenger rdfs:subClassOf yago:Role .
+yago:Companion rdfs:subClassOf yago:Role .
+yago:Tower rdfs:subClassOf yago:Infrastructure .
+yago:Occurrence rdfs:subClassOf yago:Event .
+yago:War_Veteran rdfs:subClassOf yago:Occupation .
+
+7. Zoolander
+
+@prefix ex: http://example.com/ .
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Derek_Zoolander rdf:type yago:MaleModel .
+ex:Hansel rdf:type yago:MaleFashionModel .
+ex:New_York_City rdf:type yago:City .
+ex:Matilda_Jeffries rdf:type yago:Person .
+ex:Jacobim_Mugatu rdf:type yago:FashionMogul .
+ex:Maury_Ballstein rdf:type yago:Agent .
+ex:Malaysia rdf:type yago:Country .
+ex:Prime_Minister_of_Malaysia rdf:type yago:PoliticalLeader .
+ex:Time rdf:type yago:Magazine .
+ex:Abraham_Lincoln rdf:type yago:PoliticalLeader .
+ex:John_F_Kennedy rdf:type yago:PoliticalLeader .
+ex:Derek_Zoolander_Center rdf:type yago:Organization .
+
+ex:Derek_Zoolander ex:isIn ex:New_York_City .
+ex:Hansel ex:isIn ex:New_York_City .
+ex:Derek_Zoolander ex:isOustedBy ex:Hansel .
+ex:RoommatesAndColleagues ex:areKilledBy "freak gasoline-fight accident" .
+ex:Derek_Zoolander ex:isRejectedBy ex:Family .
+ex:Jacobim_Mugatu ex:isChargedBy ex:FashionIndustry .
+ex:Maury_Ballstein ex:isChargedBy ex:FashionIndustry .
+ex:Jacobim_Mugatu ex:hires ex:Derek_Zoolander .
+ex:Derek_Zoolander ex:starsIn ex:RunwayShow .
+ex:Derek_Zoolander ex:isConditionedToAttemptAssassination .
+ex:"Relax" ex:isPlayedAt ex:RunwayShow .
+ex:Matilda_Jeffries ex:feelsResponsibleFor ex:Derek_Zoolander .
+ex:Matilda_Jeffries ex:wrote ex:Time .
+ex:Derek_Zoolander ex:ignores ex:Matilda_Jeffries .
+ex:J_P_Prewett ex:calls ex:Matilda_Jeffries .
+ex:J_P_Prewett ex:calls ex:Derek_Zoolander .
+ex:Matilda_Jeffries ex:tells ex:concerns .
+ex:Matilda_Jeffries ex:meets ex:J_P_Prewett .
+ex:Derek_Zoolander ex:meets ex:J_P_Prewett .
+ex:FashionIndustry ex:isBehind ex:PoliticalAssassinations .
+ex:Abraham_Lincoln ex:isBehind ex:FashionIndustry .
+ex:John_F_Kennedy ex:isBehind ex:FashionIndustry .
+ex:BrainwashedModels ex:areKilledAfterTask .
+ex:Matilda_Jeffries ex:goesTo ex:Hansel'sHome .
+ex:Derek_Zoolander ex:goesTo ex:Hansel'sHome .
+ex:Hansel ex:isAt ex:Hansel'sHome .
+ex:Matilda_Jeffries ex:hasConcerns .
+ex:Derek_Zoolander ex:partakesIn ex:Hansel'sCollectionOfNarcotics .
+ex:Hansel ex:partakesIn ex:Hansel'sCollectionOfNarcotics .
+ex:Matilda_Jeffries ex:partakesIn ex:Hansel'sCollectionOfNarcotics .
+ex:Derek_Zoolander ex:partakesIn ex:GroupSex .
+ex:Hansel ex:partakesIn ex:GroupSex .
+ex:Matilda_Jeffries ex:partakesIn ex:GroupSex .
+ex:Derek_Zoolander ex:breaksInto ex:Maury'sOffice .
+ex:Hansel ex:breaksInto ex:Maury'sOffice .
+ex:DJBooth ex:isIn ex:Runway .
+ex:Hansel ex:breaksInto ex:DJBooth .
+ex:Hansel ex:shutsOff ex:Turntable .
+ex:Maury_Ballstein ex:admitsTo ex:Conspiracy .
+ex:Mugatu ex:attemptsToKill ex:Prime_Minister_of_Malaysia .
+ex:Magnum ex:isUnleashedBy ex:Derek_Zoolander .
+ex:Larry ex:watches ex:EventOnTelevision .
+ex:Derek_Zoolander_Jr ex:isNamedAfter ex:Derek_Zoolander .
+ex:Derek_Zoolander_Jr ex:develops ex:ModelingLook .
+ex:Derek_Zoolander_Center ex:isStartedBy ex:Derek_Zoolander .
+ex:Derek_Zoolander_Center ex:isStartedBy ex:Hansel .
+ex:Derek_Zoolander_Center ex:isStartedBy ex:Maury_Ballstein .
+ex:Derek_Zoolander_Center ex:isFor ex:Kids .
+ex:Derek_Zoolander_Center ex:isFor ex:LearningToOtherStuff .
+ex:Derek_Zoolander_Center ex:isFor ex:KidsWhoCantReadGood .
+
+8. Office Space
+
+PREFIX ex: http://example.org/
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema#
+PREFIX yago: http://yago-knowledge.org/resource/
+
+ex:PeterGibbons rdf:type yago:Person .
+ex:PeterGibbons rdf:type ex:Programmer .
+ex:PeterGibbons ex:worksAt ex:Initech .
+ex:Initech rdf:type ex:SoftwareCompany .
+ex:Initech ex:basedIn "Texas" .
+
+ex:Anne rdf:type yago:Person .
+ex:Anne ex:isGirlfriendOf ex:PeterGibbons .
+
+ex:Joanna rdf:type yago:Person .
+ex:Joanna ex:isInLoveWith ex:PeterGibbons .
+ex:Joanna ex:worksAt ex:Restaurant .
+ex:Restaurant rdf:type ex:ChainRestaurant .
+ex:Restaurant ex:requiresUniform ex:Flair .
+ex:Restaurant ex:hasBoss ex:Boss .
+
+ex:SamirNagheenanajar rdf:type yago:Person .
+ex:MichaelBolton rdf:type yago:Person .
+ex:MichaelBolton ex:hates ex:FamousSinger .
+
+ex:MiltonWaddams rdf:type yago:Person .
+ex:MiltonWaddams rdf:type ex:Collator .
+ex:MiltonWaddams ex:ignoredBy ex:Office .
+ex:TomSmykowski rdf:type yago:Person .
+ex:TomSmykowski rdf:type ex:ProductManager .
+ex:TomSmykowski ex:isScaredOf ex:Firing .
+
+ex:BillLumbergh rdf:type yago:Person .
+ex:PeterGibbons ex:hates ex:BillLumbergh .
+
+ex:BillLumbergh ex:micromanages ex:Office .
+ex:MiltonWaddams ex:movesDesk ex:MiltonDesk .
+ex:BillLumbergh ex:assignsTask ex:HumiliatingTask .
+ex:PeterGibbons ex:worksWeekends "almost every" .
+
+ex:PeterGibbons ex:attends ex:HypnotherapySession .
+ex:HypnotherapySession rdf:type ex:OccupationalHypnotherapySession .
+ex:HypnotherapySession ex:ledBy ex:DrSwanson .
+ex:DrSwanson rdf:type yago:Person .
+
+ex:DrSwanson ex:diesOf ex:HeartAttack .
+
+ex:PeterGibbons ex:ignoresCallsFrom ex:BillLumbergh .
+ex:PeterGibbons ex:ignoresCallsFrom ex:Anne .
+ex:Anne ex:breaksUpWith ex:PeterGibbons .
+ex:Anne ex:cheatsOn ex:PeterGibbons .
+
+ex:BusinessConsultants rdf:type ex:BusinessConsultant .
+ex:PeterGibbons ex:dates ex:Joanna .
+ex:Joanna ex:worksAt ex:Restaurant .
+ex:Joanna ex:requiredToWear ex:Flair .
+ex:Boss ex:hassles ex:Joanna .
+
+ex:PeterGibbons ex:disregards ex:OfficeProtocol .
+ex:PeterGibbons ex:steals ex:LumberghParkingSpace .
+ex:PeterGibbons ex:violates ex:DressCode .
+ex:PeterGibbons ex:removes ex:CubicleWall .
+
+ex:PeterGibbons ex:providesInsightsTo ex:Consultants .
+ex:Consultants ex:promote ex:PeterGibbons .
+ex:BillLumbergh ex:opposesPromotionOf ex:PeterGibbons .
+ex:MichaelBolton rdf:type yago:Person .
+ex:SamirNagheenanajar rdf:type yago:Person .
+ex:MichaelBolton ex:isFired .
+ex:SamirNagheenanajar ex:isFired .
+ex:MiltonWaddams ex:expectedToBeTerminated .
+ex:MiltonWaddams ex:wasLaidOff "five years ago" .
+ex:Accounting rdf:type ex:Department .
+ex:MiltonWaddams ex:isMistreated .
+
+ex:MiltonWaddams ex:confiscates ex:RedStapler .
+ex:MiltonWaddams ex:relocatesDesk ex:MiltonDesk .
+ex:MiltonWaddams ex:relocatesDesk ex:Basement .
+
+ex:PeterGibbons ex:decidesToTakeRevenge .
+ex:PeterGibbons ex:installs ex:ComputerVirus .
+ex:PeterGibbons ex:steals ex:MalfunctioningPrinter .
+ex:PeterGibbons ex:destroys ex:Printer .
+
+ex:Weekend rdf:type ex:TimePeriod .
+
+ex:PeterGibbons ex:hearsRumorsAbout ex:JoannaAndLumbergh .
+ex:Joanna rdf:type yago:Person .
+ex:Joanna ex:sleepsWith ex:RonLumbergh .
+ex:Joanna ex:breaksUpWith ex:PeterGibbons .
+ex:Joanna ex:quits ex:Job .
+ex:Boss ex:lectures ex:Joanna .
+ex:Joanna ex:givesFingerTo ex:Boss .
+
+ex:Monday rdf:type ex:TimePeriod .
+ex:PeterGibbons ex:discoversBugInCode .
+ex:PeterGibbons ex:acceptsResponsibilityFor ex:Crime .
+ex:PeterGibbons ex:writes ex:Confession .
+ex:LumberghOffice ex:hasDoor ex:LumberghDoor .
+ex:PeterGibbons ex:slipsUnder ex:LumberghDoor .
+
+ex:PeterGibbons ex:learnsAbout ex:JoannaAndLumbergh .
+ex:Joanna ex:startsNewJob .
+ex:PeterGibbons ex:apologizesTo ex:Joanna .
+ex:PeterGibbons ex:reconcilesWith ex:Joanna .
+
+ex:PeterGibbons ex:drivesTo ex:Initech .
+ex:Building rdf:type ex:Building .
+ex:Initech ex:isLocatedIn ex:Building .
+ex:Building ex:isOnFire .
+ex:PeterGibbons ex:expectsToBeArrested .
+ex:MiltonWaddams rdf:type yago:Person .
+ex:MiltonWaddams ex:burnsDown ex:Building .
+ex:PeterGibbons ex:enjoys ex:Job .
+ex:Job rdf:type ex:ConstructionJob .
+ex:SamirNagheenanajar rdf:type yago:Person .
+ex:MichaelBolton rdf:type yago:Person .
+ex:SamirNagheenanajar ex:startsNewJob .
+ex:MichaelBolton ex:startsNewJob .
+ex:MiltonWaddams ex:finds ex:TravelersChecks .
+ex:MiltonWaddams ex:goesOnVacationIn ex:Mexico .
+
+9. Talk, This is spinal tap
+
+PREFIX ex: http://example.org/
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema#
+PREFIX yago: http://yago-knowledge.org/resource/
+
+ex:MartinDiBergi rdf:type ex:Filmmaker ;
+ex:creates ex:documentary .
+
+ex:documentary rdf:type ex:Documentary ;
+ex:follows ex:concertTour ;
+ex:promotes ex:SmellTheGloveAlbum .
+
+ex:concertTour rdf:type ex:ConcertTour ;
+ex:takesPlaceIn ex:UnitedStates ;
+ex:hasBand ex:SpinalTap .
+
+ex:SpinalTap rdf:type ex:RockGroup ;
+ex:consistsOf ex:DavidStHubbins,
+ex:NigelTufnel,
+ex:DerekSmalls,
+ex:VivSavage,
+ex:MickShrimpton ;
+ex:knownAs ex:Originals ;
+ex:changesNameTo ex:NewOriginals,
+ex:SpinalTap ;
+ex:hadHit ex:ThamesmenSingle,
+ex:FlowerPowerAnthem ;
+ex:transitionTo ex:HeavyMetalGenre ;
+ex:hasPreviousDrummer ex:PeterJamesBond,
+ex:JohnStumpyPepys,
+ex:EricStumpyJoeChilds ;
+ex:diesIn ex:SpontaneousHumanCombustion,
+ex:BizarreGardeningAccident,
+ex:ChokingOnVomit .
+
+ex:DavidStHubbins rdf:type ex:Musician ;
+ex:plays ex:Vocals,
+ex:Guitar .
+
+ex:NigelTufnel rdf:type ex:Musician ;
+ex:plays ex:Vocals,
+ex:Guitar ;
+ex:shows ex:CustomMadeAmplifier .
+
+ex:CustomMadeAmplifier rdf:type ex:Amplifier ;
+ex:hasVolumeKnobs ex:VolumeKnobs .
+
+ex:VolumeKnobs rdf:type ex:Knobs ;
+ex:goesUpTo rdf:literal "eleven" .
+
+ex:ThamesmenSingle rdf:type ex:Single ;
+ex:releasedBy ex:Thamesmen ;
+ex:isTitled rdf:literal "Gimme Some Money" .
+
+ex:FlowerPowerAnthem rdf:type ex:Anthem ;
+ex:isTitled rdf:literal "Listen to the Flower People" .
+
+ex:NewOriginals rdf:type ex:BandName ;
+ex:isNameOf ex:SpinalTap .
+
+ex:UnitedStates rdf:type ex:Country ;
+ex:locatedIn ex:NorthAmerica .
+
+ex:SmellTheGloveAlbum rdf:type ex:Album ;
+ex:hasCoverArt ex:SexistCoverArt .
+
+ex:SexistCoverArt rdf:type ex:CoverArt ;
+ex:isCoverArtOf ex:SmellTheGloveAlbum ;
+ex:refusedBy ex:MajorRetailers .
+
+ex:MajorRetailers rdf:type ex:Retailer ;
+ex:refuseToSell ex:SmellTheGloveAlbum .
+
+ex:IanFaith rdf:type ex:Manager ;
+ex:manages ex:SpinalTap .
+
+ex:Jeanine rdf:type ex:Person ;
+ex:isGirlfriendOf ex:DavidStHubbins ;
+ex:joins ex:SpinalTap ;
+ex:influences ex:Costumes,
+ex:StagePresentation .
+
+ex:Costumes rdf:type ex:BandAspect ;
+ex:isAspectOf ex:SpinalTap .
+
+ex:StagePresentation rdf:type ex:BandAspect ;
+ex:isAspectOf ex:SpinalTap .
+
+ex:BandAspect rdf:type ex:Aspect .
+
+ex:SpinalTap rdf:type ex:Band ;
+ex:hasDistributor ex:Distributor .
+
+ex:Distributor rdf:type ex:Company ;
+ex:release ex:SmellTheGloveAlbum ;
+ex:consultsWith ex:SpinalTap .
+
+ex:DavidStHubbins rdf:type ex:Person ;
+ex:hasGirlfriend ex:Jeanine .
+
+ex:Jeanine rdf:type ex:Person ;
+ex:manipulates ex:Yoga,
+ex:Astrology .
+
+ex:Yoga rdf:type ex:Practice .
+
+ex:Astrology rdf:type ex:Practice .
+
+ex:DavidStHubbins rdf:type ex:Person ;
+ex:thinks ex:WhiteAlbumIsAppealing .
+
+ex:WhiteAlbumIsAppealing rdf:type ex:Opinion ;
+ex:isOpinionOf ex:DavidStHubbins .
+
+ex:NigelTufnel rdf:type ex:Musician ;
+ex:suggests ex:LavishShow .
+
+ex:LavishShow rdf:type ex:Show ;
+ex:isStagedBy ex:SpinalTap ;
+ex:orders ex:StonehengeMegalith .
+
+ex:StonehengeMegalith rdf:type ex:Megalith ;
+ex:isOrderedBy ex:NigelTufnel ;
+ex:hasIncorrectDimensions ex:NapkinSketch .
+
+ex:NapkinSketch rdf:type ex:Sketch ;
+ex:isSketchBy ex:NigelTufnel .
+
+ex:NigelTufnel rdf:type ex:Musician ;
+ex:sketches ex:NapkinSketch .
+
+ex:SpinalTap rdf:type ex:Band ;
+ex:blames ex:IanFaith .
+
+ex:IanFaith rdf:type ex:Person ;
+ex:isBlamedBy ex:SpinalTap ;
+ex:quits ex:SpinalTap .
+
+ex:SpinalTap rdf:type ex:Band ;
+ex:continuesTour ;
+ex:rescheduledInto ex:SmallerVenues .
+
+ex:SmallerVenues rdf:type ex:Venue ;
+ex:isVenueFor ex:SpinalTap .
+
+ex:NigelTufnel rdf:type ex:Musician ;
+ex:isMarginalizedBy ex:Jeanine,
+ex:DavidStHubbins .
+
+ex:Jeanine rdf:type ex:Person ;
+ex:manipulates ex:DavidStHubbins .
+
+ex:DavidStHubbins rdf:type ex:Person ;
+ex:isUpsetBy ex:EquipmentMalfunction .
+
+ex:EquipmentMalfunction rdf:type ex:Malfunction ;
+ex:causesUpsetTo ex:DavidStHubbins .
+
+ex:DavidStHubbins rdf:type ex:Person ;
+ex:quits ex:SpinalTap .
+
+ex:SpinalTap rdf:type ex:Band ;
+ex:finds ex:RepertoireIsSeverelyLimited ;
+ex:improvises ex:JazzOdyssey ;
+ex:poorlyReceivedBy ex:Audience .
+
+ex:RepertoireIsSeverelyLimited rdf:type ex:Issue ;
+ex:isIssueFor ex:SpinalTap .
+
+ex:JazzOdyssey rdf:type ex:Improvisation ;
+ex:isPerformedBy ex:SpinalTap .
+
+ex:SpinalTap rdf:type ex:Band ;
+ex:hasLastShow ;
+ex:considers ex:ExploringSideProjects .
+
+ex:ExploringSideProjects rdf:type ex:Project ;
+ex:isConsideredBy ex:SpinalTap .
+
+ex:JackTheRipperTheatreProduction rdf:type ex:TheatreProduction ;
+ex:isTheatreProductionBy ex:SpinalTap .
+
+ex:SpinalTap rdf:type ex:Band ;
+ex:performs ex:LastShow .
+
+ex:LastShow rdf:type ex:Show ;
+ex:isShowOf ex:SpinalTap .
+
+ex:DavidStHubbins rdf:type ex:Person ;
+ex:considers ex:OldSideProjects .
+
+ex:OldSideProjects rdf:type ex:Project ;
+ex:isConsideredBy ex:DavidStHubbins .
+
+ex:DavidStHubbins rdf:type ex:Person ;
+ex:isOnStage ;
+ex:isWelcoming ex:NigelTufnel ;
+ex:isDelighting ex:Everyone ;
+ex:isAngering ex:Jeanine .
+
+ex:NigelTufnel rdf:type ex:Musician ;
+ex:joins ex:SpinalTap .
+
+ex:IanFaith rdf:type ex:Manager ;
+ex:isReinstalledAs ex:ManagerOf ex:SpinalTap .
+
+ex:SpinalTap rdf:type ex:Band ;
+ex:performs ex:SoldOutShows .
+
+ex:SoldOutShows rdf:type ex:Shows ;
+ex:isShowsOf ex:SpinalTap .
+
+ex:Japan rdf:type ex:Country ;
+ex:isLocationOf ex:SoldOutShows .
+
+ex:SpinalTap rdf:type ex:Band ;
+ex:loses ex:MickShrimpton .
+
+ex:MickShrimpton rdf:type ex:Drummer ;
+ex:explodesOnStage .
+
+ex:Drummer rdf:type ex:MusicianRole .
+
+10. Grand Budapest Hotel
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:CemeteryInZubrowka rdf:type yago:Cemetery ;
+    rdfs:label "Cemetery in Zubrowka" .
+
+ex:ShrineOfWriter rdf:type yago:Shrine ;
+    rdfs:label "Shrine of Writer" .
+
+ex:YoungWoman rdf:type yago:Person ;
+    rdfs:label "Young Woman" .
+
+ex:Author rdf:type yago:Writer ;
+    rdfs:label "Author" .
+
+ex:Book rdf:type yago:Book ;
+    rdfs:label "The Grand Budapest Hotel" ;
+    yago:wasWrittenBy ex:Author ;
+    yago:publicationYear "1985" .
+
+ex:Zubrowka rdf:type yago:Nation ;
+    rdfs:label "Zubrowka" .
+
+ex:Vacation rdf:type yago:Vacation ;
+    rdfs:label "Vacation at the Grand Budapest Hotel" ;
+    yago:takesPlaceIn ex:Hotel .
+
+ex:ZeroMoustafa rdf:type yago:Person ;
+    rdfs:label "Zero Moustafa" .
+
+ex:Dinner rdf:type yago:Dinner ;
+    rdfs:label "Dinner at the Grand Budapest Hotel" ;
+    yago:attendedBy ex:ZeroMoustafa, ex:GustaveH .
+
+ex:RagsToRiches rdf:type yago:Story ;
+    rdfs:label "Rags to Riches story" ;
+    yago:involvesCharacter ex:ZeroMoustafa .
+
+ex:LobbyBoy rdf:type yago:JobTitle ;
+    rdfs:label "Lobby Boy" ;
+    yago:heldBy ex:ZeroMoustafa .
+
+ex:GrandBudapestHotel rdf:type yago:Hotel ;
+    rdfs:label "Grand Budapest Hotel" ;
+    yago:locatedIn ex:Zubrowka .
+
+ex:MonsieurGustaveH rdf:type yago:Person ;
+    rdfs:label "Monsieur Gustave H." ;
+    yago:worksAt ex:GrandBudapestHotel ;
+    yago:seduces ex:OldWealthyClients .
+
+ex:OldWealthyClients rdf:type yago:Client ;
+    rdfs:label "Old, wealthy clients" .
+
+ex:MadameD rdf:type yago:Person ;
+    rdfs:label "Madame D." ;
+    yago:hasAffairWith ex:MonsieurGustaveH ;
+    yago:diesIn ex:GrandBudapestHotel .
+
+ex:Month rdf:type yago:Time ;
+    rdfs:label "One month" .
+
+ex:SchlossLutzEstate rdf:type yago:Estate ;
+    rdfs:label "Schloss Lutz estate" .
+
+ex:Relatives rdf:type yago:Family ;
+    rdfs:label "Surviving relatives" .
+
+ex:WillReading rdf:type yago:Reading ;
+    rdfs:label "Reading of Madame D.'s will" ;
+    yago:takesPlaceAt ex:SchlossLutzEstate ;
+    yago:attendedBy ex:ZeroMoustafa, ex:GustaveH, ex:Relatives, ex:DeputyVilmosKovacs .
+
+ex:Codicil rdf:type yago:Document ;
+    rdfs:label "Codicil to the will" ;
+    yago:attachedTo ex:WillReading .
+
+ex:BoyWithApple rdf:type yago:Artwork ;
+    rdfs:label "Boy with Apple" ;
+    yago:isBequeathedTo ex:MonsieurGustaveH ;
+    yago:paintingByArtist yago:Renaissance .
+
+ex:Dmitri rdf:type yago:Person ;
+    rdfs:label "Dmitri" ;
+    yago:outragedBy ex:WillReading ;
+    yago:demandsArrestOf ex:MonsieurGustaveH .
+
+ex:Arrest rdf:type yago:Arrest ;
+    rdfs:label "Arrest of Monsieur Gustave H." ;
+    yago:carriedOutBy ex:InspectorHenckels ;
+    yago:suspicionOf ex:Murder .
+
+ex:InspectorHenckels rdf:type yago:Person ;
+    rdfs:label "Inspector Henckels" ;
+    yago:arrests ex:MonsieurGustaveH .
+
+ex:Prison rdf:type yago:Prison ;
+    rdfs:label "Prison" .
+
+ex:Gang rdf:type yago:Gang ;
+    rdfs:label "Gang" .
+
+ex:Pastry rdf:type yago:Food ;
+    rdfs:label "Pastry" .
+
+ex:MendlsBakery rdf:type yago:Bakery ;
+    rdfs:label "Mendl's bakery" .
+
+ex:PrisonBreak rdf:type yago:Escape ;
+    rdfs:label "Prison break" ;
+    yago:carriedOutBy ex:MonsieurGustaveH, ex:Gang ;
+    yago:involvesCharacter ex:Ludwig, ex:ZeroMoustafa .
+
+ex:StormDrainSewageSystem rdf:type yago:Infrastructure ;
+    rdfs:label "Storm-drain sewage system" ;
+    yago:exploitedBy ex:Ludwig .
+
+ex:PastriesWithTools rdf:type yago:Food ;
+    rdfs:label "Pastries with tools" ;
+    yago:madeBy ex:Agatha ;
+    yago:contain ex:Hammers, ex:Chisels, ex:Sawblades .
+
+ex:Agatha rdf:type yago:Person ;
+    rdfs:label "Agatha" ;
+    yago:worksAt ex:MendlsBakery ;
+    yago:isEngagedTo ex:ZeroMoustafa .
+
+ex:Guard rdf:type yago:Person ;
+    rdfs:label "Guard" .
+
+ex:SecurityCheck rdf:type yago:SecurityCheck ;
+    rdfs:label "Security check" ;
+    yago:checks ex:PastriesWithTools .
+
+ex:Escape rdf:type yago:Escape ;
+    rdfs:label "Escape from prison" ;
+    yago:carriedOutBy ex:MonsieurGustaveH, ex:Gang ;
+    yago:involvesCharacter ex:Guard .
+
+ex:NightGambling rdf:type yago:Gambling ;
+    rdfs:label "Secret night gambling" ;
+    yago:involvesCharacter ex:Guards .
+
+ex:Shiv rdf:type yago:Weapon ;
+    rdfs:label "Shiv" ;
+    yago:usedBy ex:Günther .
+
+ex:Chase rdf:type yago:Chase ;
+    rdfs:label "Chase" ;
+    yago:involvesCharacter ex:ZeroMoustafa, ex:GustaveH ;
+    yago:chasedBy ex:JGJopling .
+
+ex:JGJopling rdf:type yago:Person ;
+    rdfs:label "J. G. Jopling" ;
+    yago:assassinates ex:Kovacs, ex:SergeX, ex:SergeXsSister ;
+    yago:pursues ex:MonsieurGustaveH .
+
+ex:ZubrowkanTroops rdf:type yago:Troops ;
+    rdfs:label "Zubrowkan troops" .
+
+ex:Henckels rdf:type yago:Person ;
+    rdfs:label "Henckels" ;
+    yago:leads ex:ZubrowkanTroops .
+
+ex:AgathasEscape rdf:type yago:Escape ;
+    rdfs:label "Agatha's escape" ;
+    yago:carriedOutBy ex:Agatha, ex:ZeroMoustafa .
+
+ex:GrandBudapestMilitary rdf:type yago:Military ;
+    rdfs:label "Grand Budapest military headquarters" ;
+    yago:convertedFrom ex:GrandBudapestHotel ;
+    yago:arisesFrom ex:OutbreakOfWar .
+
+ex:Soldiers rdf:type yago:Soldiers ;
+    rdfs:label "Hostile soldiers" ;
+    yago:destroys ex:ZeroMoustafasDocuments .
+
+ex:Death rdf:type yago:Death ;
+    rdfs:label "Death of Monsieur Gustave H." ;
+    yago:causedBy ex:Soldiers .
+
+ex:Inheritance rdf:type yago:Inheritance ;
+    rdfs:label "Inheritance of Grand Budapest Hotel" ;
+    yago:beneficiary ex:MonsieurGustaveH ;
+    yago:inherits ex:MadameDsFortune .
+
+ex:TrainJourney rdf:type yago:Journey ;
+    rdfs:label "Train journey" ;
+    yago:takenBy ex:MonsieurGustaveH, ex:ZeroMoustafa, ex:Agatha .
+
+ex:HostileEncounter rdf:type yago:Encounter ;
+    rdfs:label "Encounter with hostile soldiers" ;
+    yago:involvesCharacter ex:MonsieurGustaveH .
+
+ex:Flu rdf:type yago:Illness ;
+    rdfs:label "Flu" ;
+    yago:causesDeathOf ex:Agatha .
+
+ex:InfantSon rdf:type yago:Person ;
+    rdfs:label "Infant son" ;
+    yago:isChildOf ex:MonsieurGustaveH, ex:Agatha .
+
+ex:Fictionalization rdf:type yago:Fictionalization ;
+    rdfs:label "Fictionalization in the Author's novel" ;
+    yago:incorporates ex:Experiences .
+
+ex:Author rdf:type yago:Writer ;
+    rdfs:label "Author" ;
+    yago:wroteNovel ex:TheGrandBudapestHotel .
+
+ex:TheGrandBudapestHotel rdf:type yago:Novel ;
+    rdfs:label "The Grand Budapest Hotel" ;
+    yago:incorporates ex:Fictionalization .
+
+11. Step brothers
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.org/movie#>.
+
+ex:StepBrothers rdf:type ex:Film;
+  rdfs:label "Step Brothers";
+  ex:hasEvent ex:Event1, ex:Event2, ex:Event3, ex:Event4, ex:Event5, ex:Event6, ex:Event7, ex:Event8, ex:Event9, ex:Event10, ex:Event11, ex:Event12, ex:Event13, ex:Event14, ex:Event15, ex:Event16, ex:Event17, ex:Event18, ex:Event19, ex:Event20, ex:Event21, ex:Event22, ex:Event23, ex:Event24, ex:Event25, ex:Event26, ex:Event27.
+
+ex:Event1 rdf:type ex:Event;
+  rdfs:label "Brennan and Dale still live with their parents";
+  ex:leadsTo ex:Event2.
+
+ex:Event2 rdf:type ex:Event;
+  rdfs:label "Robert and Nancy meet, fall in love, and marry";
+  ex:leadsTo ex:Event3.
+
+ex:Event3 rdf:type ex:Event;
+  rdfs:label "Brennan and Dale become step brothers";
+  ex:leadsTo ex:Event4.
+
+ex:Event4 rdf:type ex:Event;
+  rdfs:label "Brennan and Dale have a violent brawl";
+  ex:leadsTo ex:Event5.
+
+ex:Event5 rdf:type ex:Event;
+  rdfs:label "Brennan and Dale are grounded and given a job ultimatum";
+  ex:leadsTo ex:Event6.
+
+ex:Event6 rdf:type ex:Event;
+  rdfs:label "Derek ridicules Brennan and Dale";
+  ex:leadsTo ex:Event7.
+
+ex:Event7 rdf:type ex:Event;
+  rdfs:label "Dale punches Derek in the face";
+  ex:leadsTo ex:Event8.
+
+ex:Event8 rdf:type ex:Event;
+  rdfs:label "Alice starts a sexual affair with Dale";
+  ex:leadsTo ex:Event9.
+
+ex:Event9 rdf:type ex:Event;
+  rdfs:label "Brennan and Dale bond over shared interests";
+  ex:leadsTo ex:Event10.
+
+ex:Event10 rdf:type ex:Event;
+  rdfs:label "Robert schedules job interviews for Brennan and Dale";
+  ex:leadsTo ex:Event11.
+
+ex:Event11 rdf:type ex:Event;
+  rdfs:label "Brennan and Dale perform poorly in job interviews";
+  ex:leadsTo ex:Event12.
+
+ex:Event12 rdf:type ex:Event;
+  rdfs:label "Brennan and Dale are bullied by school children";
+  ex:leadsTo ex:Event13.
+
+ex:Event13 rdf:type ex:Event;
+  rdfs:label "Robert and Nancy plan to sell the house and retire";
+  ex:leadsTo ex:Event14.
+
+ex:Event14 rdf:type ex:Event;
+  rdfs:label "Brennan and Dale are signed up for therapy";
+  ex:leadsTo ex:Event15.
+
+ex:Event15 rdf:type ex:Event;
+  rdfs:label "Brennan is attracted to his therapist";
+  ex:leadsTo ex:Event16.
+
+ex:Event16 rdf:type ex:Event;
+  rdfs:label "Dale and Brennan present 'Prestige Worldwide' pitch video";
+  ex:leadsTo ex:Event17.
+
+ex:Event17 rdf:type ex:Event;
+  rdfs:label "The pitch video backfires and strains Robert and Nancy's marriage";
+  ex:leadsTo ex:Event18.
+
+ex:Event18 rdf:type ex:Event;
+  rdfs:label "Robert and Nancy announce their divorce";
+  ex:leadsTo ex:Event19.
+
+ex:Event19 rdf:type ex:Event;
+  rdfs:label "Brennan and Dale live independently and become functioning adults";
+  ex:leadsTo ex:Event20.
+
+ex:Event20 rdf:type ex:Event;
+  rdfs:label "Brennan gets a job and volunteers to oversee the Catalina Wine Mixer";
+  ex:leadsTo ex:Event21.
+
+ex:Event21 rdf:type ex:Event;
+  rdfs:label "Dale and Brennan perform at the party to save it";
+  ex:leadsTo ex:Event22.
+
+ex:Event22 rdf:type ex:Event;
+  rdfs:label "Brennan gets fired from his job";
+  ex:leadsTo ex:Event23.
+
+ex:Event23 rdf:type ex:Event;
+  rdfs:label "Robert encourages Brennan and Dale to be themselves again";
+  ex:leadsTo ex:Event24.
+
+ex:Event24 rdf:type ex:Event;
+  rdfs:label "Derek and Brennan make amends";
+  ex:leadsTo ex:Event25.
+
+ex:Event25 rdf:type ex:Event;
+  rdfs:label "Dale ends his relationship with Alice";
+  ex:leadsTo ex:Event26.
+
+ex:Event26 rdf:type ex:Event;
+  rdfs:label "Robert and Nancy reconcile";
+  ex:leadsTo ex:Event27.
+
+ex:Event27 rdf:type ex:Event;
+  rdfs:label "Dale and Brennan exact revenge on the school children".
+
+12. Anchorman: The Legend of Ron Burgundy
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:LivingWithParents rdf:type ex:Event;
+  rdfs:label "Ron Burgundy lives with his parents".
+
+ex:Marriage rdf:type ex:Event;
+  rdfs:label "Ron Burgundy gets married".
+
+ex:BecomingNewsAnchorman rdf:type ex:Event;
+  rdfs:label "Ron Burgundy becomes the anchorman for KVWN channel 4".
+
+ex:ThrowParty rdf:type ex:Event;
+  rdfs:label "Ron Burgundy and the news team throw a wild party".
+
+ex:UnsuccessfulPickup rdf:type ex:Event;
+  rdfs:label "Ron Burgundy unsuccessfully attempts to pick up a beautiful blonde woman".
+
+ex:HiringCorningstone rdf:type ex:Event;
+  rdfs:label "The news team is forced to hire Veronica Corningstone".
+
+ex:SeductionAttempts rdf:type ex:Event;
+  rdfs:label "The news team makes unsuccessful attempts to seduce Veronica Corningstone".
+
+ex:ProfessionalTour rdf:type ex:Event;
+  rdfs:label "Ron Burgundy takes Veronica Corningstone on a professional tour of the city".
+
+ex:SexualRelationship rdf:type ex:Event;
+  rdfs:label "Ron Burgundy and Veronica Corningstone engage in a sexual relationship".
+
+ex:OnAirAnnouncement rdf:type ex:Event;
+  rdfs:label "Ron Burgundy announces his relationship with Veronica Corningstone on air".
+
+ex:DisputeWithMotorcyclist rdf:type ex:Event;
+  rdfs:label "Ron Burgundy has a dispute with a motorcyclist".
+
+ex:DogPuntedOffBridge rdf:type ex:Event;
+  rdfs:label "Ron Burgundy's dog Baxter is punted off the San Diego–Coronado Bridge".
+
+ex:LateToWork rdf:type ex:Event;
+  rdfs:label "Ron Burgundy is late to work".
+
+ex:CorningstoneFillsIn rdf:type ex:Event;
+  rdfs:label "Veronica Corningstone fills in for Ron Burgundy on-air".
+
+ex:CoupleBreaksUp rdf:type ex:Event;
+  rdfs:label "Ron Burgundy and Veronica Corningstone break up".
+
+ex:CorningstonePromoted rdf:type ex:Event;
+  rdfs:label "Veronica Corningstone is promoted to co-anchor".
+
+ex:FierceRivalry rdf:type ex:Event;
+  rdfs:label "Ron Burgundy and Veronica Corningstone become fierce rivals".
+
+ex:BuyingNewSuits rdf:type ex:Event;
+  rdfs:label "The news team decides to buy new suits".
+
+ex:LostInShadyPart rdf:type ex:Event;
+  rdfs:label "The news team gets lost in a shady part of town".
+
+ex:ConfrontationWithMantooth rdf:type ex:Event;
+  rdfs:label "Ron Burgundy and Wes Mantooth have a confrontation".
+
+ex:MeleeBattle rdf:type ex:Event;
+  rdfs:label "A melee battle ensues between news teams".
+
+ex:PoliceSirens rdf:type ex:Event;
+  rdfs:label "Police sirens break up the melee battle".
+
+ex:DisgustedByCoAnchor rdf:type ex:Event;
+  rdfs:label "The news team is disgusted by Veronica Corningstone as co-anchor".
+
+ex:ArgumentWithCorningstone rdf:type ex:Event;
+  rdfs:label "Ron Burgundy gets into a heated argument with Veronica Corningstone".
+
+ex:TextChangeInTeleprompter rdf:type ex:Event;
+  rdfs:label "Veronica Corningstone changes the text in the teleprompter as revenge".
+
+ex:InappropriateBroadcast rdf:type ex:Event;
+  rdfs:label "Ron Burgundy concludes the broadcast with an inappropriate line".
+
+ex:AngryMob rdf:type ex:Event;
+  rdfs:label "An angry mob forms outside the studio".
+
+ex:FiredFromJob rdf:type ex:Event;
+  rdfs:label "Ron Burgundy is fired from his job".
+
+ex:ApologyAttempt rdf:type ex:Event;
+  rdfs:label "Veronica Corningstone attempts to apologize to Ron Burgundy".
+
+ex:UnemploymentAndAntagonization rdf:type ex:Event;
+  rdfs:label "Ron Burgundy becomes unemployed and is antagonized by the public".
+
+ex:Depression rdf:type ex:Event;
+  rdfs:label "Ron Burgundy becomes depressed".
+
+ex:BuyNewSuits rdf:type ex:Event;
+  rdfs:label "The news team decides to buy new suits".
+
+ex:RecruitmentAndRehiring rdf:type ex:Event;
+  rdfs:label "Ed Harken recruits and rehires Ron Burgundy".
+
+ex:SabotageAttempt rdf:type ex:Event;
+  rdfs:label "A rival news anchor attempts to sabotage Veronica Corningstone".
+
+ex:RescueAttempt rdf:type ex:Event;
+  rdfs:label "Ron Burgundy jumps in to save Veronica Corningstone".
+
+ex:NewsTeamRescue rdf:type ex:Event;
+  rdfs:label "The news team jumps in to save Ron Burgundy and Veronica Corningstone".
+
+ex:InterventionByBaxter rdf:type ex:Event;
+  rdfs:label "Baxter intervenes and saves Ron Burgundy and Veronica Corningstone".
+
+ex:Reconciliation rdf:type ex:Event;
+  rdfs:label "Ron Burgundy and Veronica Corningstone reconcile".
+
+ex:FutureCareers rdf:type ex:Event;
+  rdfs:label "The news team members pursue different career paths in the future".
+
+ex:ClosingLine rdf:type ex:Event;
+  rdfs:label "Ron Burgundy ends the film with his closing line".
+
+13. Neighbours
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:MacRadner ex:isMarriedTo ex:KellyRadner .
+ex:MacRadner ex:hasChild ex:StellaRadner .
+ex:KellyRadner ex:hasChild ex:StellaRadner .
+ex:MacRadner ex:isFriendWith ex:JimmyBlevins .
+ex:KellyRadner ex:isFriendWith ex:JimmyBlevins .
+ex:JimmyBlevins ex:isExSpouseOf ex:Paula .
+ex:DeltaPsiBeta rdf:type ex:Fraternity .
+ex:TeddySanders rdf:type ex:FraternityLeader .
+ex:PeteRegazolli rdf:type ex:FraternityLeader .
+ex:TeddySanders ex:isDating ex:BrookeShy .
+ex:MacRadner ex:isInvitedToParty ex:TeddySanders .
+ex:KellyRadner ex:isInvitedToParty ex:TeddySanders .
+ex:TeddySanders ex:showsRoomTo ex:MacRadner .
+ex:MacRadner ex:seesFireworks ex:TeddySanders .
+ex:MacRadner ex:seesBreakerBox ex:TeddySanders .
+ex:TeddySanders ex:managesNoiseFor ex:MacRadner .
+ex:MacRadner ex:agreesToCallTeddy ex:TeddySanders .
+ex:KellyRadner ex:convincesToCallPolice ex:MacRadner .
+ex:OfficerWatkins rdf:type ex:PoliceOfficer .
+ex:TeddySanders ex:isIdentifiedBy ex:OfficerWatkins .
+ex:TeddySanders ex:isBetrayedBy ex:MacRadner .
+ex:TeddySanders ex:leadsHazingOf ex:MacRadner .
+ex:TeddySanders ex:leadsHazingOf ex:KellyRadner .
+ex:StellaRadner ex:isAffectedByHazing ex:DeltaPsiBeta .
+ex:MacRadner ex:isAffectedByHazing ex:DeltaPsiBeta .
+ex:KellyRadner ex:isAffectedByHazing ex:DeltaPsiBeta .
+ex:DeltaPsiBeta ex:dumpsGarbageOn ex:RadnersLawn .
+ex:MacRadner ex:goesTo ex:CarolGladstone .
+ex:KellyRadner ex:goesTo ex:CarolGladstone .
+ex:CarolGladstone rdf:type ex:CollegeDean .
+ex:DeltaPsiBeta ex:commitsFirstStrike ex:DeltaPsiBetaHouse .
+ex:KellyRadner ex:manipulates ex:PeteRegazolli .
+ex:KellyRadner ex:manipulates ex:BrookeShy .
+ex:MacRadner ex:leadsTeddyToCatch ex:PeteRegazolli .
+ex:MacRadner ex:leadsTeddyToCatch ex:BrookeShy .
+ex:PeteRegazolli ex:fightsWith ex:TeddySanders .
+ex:BarbecueGrill rdf:type ex:InjuringObject .
+ex:BarbecueGrill ex:injures ex:PassingProfessor .
+ex:DeltaPsiBeta ex:commitsSecondStrike ex:BarbecueGrillInjury .
+ex:MacRadner ex:enlistsHelpOf ex:JimmyBlevins .
+ex:KellyRadner ex:enlistsHelpOf ex:JimmyBlevins .
+ex:Paula ex:isSleepingWith ex:Scoonie .
+ex:Assjuice rdf:type ex:Pledge .
+ex:Assjuice ex:isHiredBy ex:MacRadner .
+ex:Assjuice ex:records ex:TeddySanders .
+ex:TeddySanders ex:threatensRetaliationTo ex:Assjuice .
+ex:Assjuice ex:revealsHiringTo ex:TeddySanders .
+ex:TeddySanders ex:pranks ex:Radners .
+ex:TeddySanders ex:pranks ex:JimmyBlevins .
+ex:TeddySanders ex:receivesCounterfeitLetter ex:CarolGladstone .
+ex:DeltaPsiBeta ex:preparesForParty ex:EndOfYearParty .
+ex:MacRadner ex:publicizes ex:EndOfYearParty .
+ex:KellyRadner ex:publicizes ex:EndOfYearParty .
+ex:JimmyBlevins ex:publicizes ex:EndOfYearParty .
+ex:TeddySanders ex:realizesSneakyPlan ex:Radners .
+ex:TeddySanders ex:stopsParty .
+ex:Watkins rdf:type ex:PoliceOfficer .
+ex:JimmyBlevins ex:jumpsFromBalcony .
+ex:KellyRadner ex:sneaksInto ex:TeddySandersRoom .
+ex:MacRadner ex:fightsWith ex:TeddySanders .
+ex:KellyRadner ex:shootsFireworkAt ex:PatrolCar .
+ex:Paula ex:convinces ex:Scoonie .
+ex:Paula ex:reunitesWith ex:JimmyBlevins .
+ex:TeddySanders ex:takesBlame .
+ex:PeteRegazolli ex:fleesWith ex:DeltaPsiBeta .
+ex:TeddySanders rdf:type ex:ArrestedPerson .
+ex:DeltaPsiBeta rdf:type ex:ShutDownFraternity .
+ex:MacRadner rdf:type ex:Person .
+ex:TeddySanders rdf:type ex:Person .
+ex:StellaRadner rdf:type ex:Infant .
+ex:JimmyBlevins rdf:type ex:Person .
+ex:Paula rdf:type ex:Person .
+ex:PeteRegazolli rdf:type ex:Person .
+ex:BrookeShy rdf:type ex:Person .
+ex:CarolGladstone rdf:type ex:Person .
+ex:Scoonie rdf:type ex:Person .
+ex:Assjuice rdf:type ex:Person .
+ex:RadnersLawn rdf:type ex:Location .
+ex:DeltaPsiBetaHouse rdf:type ex:Location .
+ex:BarbecueGrillInjury rdf:type ex:Event .
+ex:EndOfYearParty rdf:type ex:Event .
+ex:PatrolCar rdf:type ex:Vehicle .
+
+14. 21 jump street
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:ScholarlyStudent ex:name "Morton Schmidt" .
+ex:Athlete ex:name "Greg Jenko" .
+
+ex:Prom rdf:type ex:Event ;
+    ex:year "2005" .
+
+ex:Schmidt rdf:type ex:Student ;
+    ex:promDate ex:Prom ;
+    ex:rejection ex:Girl .
+
+ex:Jenko rdf:type ex:Student ;
+    ex:promDate ex:Prom ;
+    ex:barredReason ex:FailingGrades .
+
+ex:DuoMeeting rdf:type ex:Event ;
+    ex:year "2012" .
+
+ex:PoliceAcademy rdf:type ex:Institution ;
+    ex:offers ex:BicyclePatrolTraining .
+
+ex:DuoFriendship rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Jenko .
+
+ex:Arrest rdf:type ex:Event ;
+    ex:criminal ex:Domingo ;
+    ex:reason ex:MotorcycleGangLeader .
+
+ex:Release rdf:type ex:Event ;
+    ex:failedRightsReading true .
+
+ex:Scheme rdf:type ex:RevivedScheme ;
+    ex:year "1980s" .
+
+ex:HighSchoolInfiltration rdf:type ex:Scheme ;
+    ex:specializesIn ex:InfiltratingHighSchools .
+
+ex:Drug rdf:type ex:SyntheticDrug ;
+    ex:name "HFS" ;
+    ex:fullName "Holy Fucking Shit" .
+
+ex:ContainmentAssignment rdf:type ex:Assignment ;
+    ex:assignedTo ex:Schmidt, ex:Jenko ;
+    ex:targetSchool ex:SaganHighSchool .
+
+ex:CaptainDickson rdf:type ex:PoliceCaptain ;
+    ex:assigns ex:ContainmentAssignment .
+
+ex:IdentityChange rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Jenko ;
+    ex:newIdentities ex:SchmidtIdentity, ex:JenkoIdentity .
+
+ex:SchmidtIdentity rdf:type ex:Identity ;
+    ex:student ex:Schmidt ;
+    ex:classSchedule ex:SchmidtSchedule .
+
+ex:JenkoIdentity rdf:type ex:Identity ;
+    ex:student ex:Jenko ;
+    ex:classSchedule ex:JenkoSchedule .
+
+ex:Molly rdf:type ex:Classmate ;
+    ex:providesLeadOn ex:HFS ;
+    ex:romanticInterestOf ex:Schmidt .
+
+ex:Eric rdf:type ex:MainDealer ;
+    ex:student ex:SaganHighSchool ;
+    ex:knownBy ex:Schmidt, ex:Jenko .
+
+ex:HFSConsumption rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Jenko ;
+    ex:consumedBy ex:Eric .
+
+ex:DrugEffects rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Jenko ;
+    ex:discoveredPopularityChange true .
+
+ex:SchmidtPopularity rdf:type ex:Popularity ;
+    ex:student ex:Schmidt ;
+    ex:popularityChange ex:Increase .
+
+ex:JenkoPopularity rdf:type ex:Popularity ;
+    ex:student ex:Jenko ;
+    ex:popularityChange ex:Decrease .
+
+ex:Party rdf:type ex:Event ;
+    ex:location ex:SchmidtParentsHouse ;
+    ex:participants ex:Schmidt, ex:Jenko, ex:Eric .
+
+ex:Fight rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Jenko, ex:PartyCrashers ;
+    ex:winner ex:Schmidt ;
+    ex:socialStatusChange ex:Increase .
+
+ex:PhoneHack rdf:type ex:Event ;
+    ex:participants ex:Jenko, ex:JenkoFriends ;
+    ex:targetPhone ex:EricPhone .
+
+ex:PhoneConversation rdf:type ex:Event ;
+    ex:participants ex:Eric, ex:UnknownParticipants ;
+    ex:overheardInformation true .
+
+ex:SchoolExpulsion rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Jenko ;
+    ex:reason ex:DisruptionOfSchoolPlay .
+
+ex:DealSecurity rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Jenko ;
+    ex:dealAt ex:Prom .
+
+ex:PromPreparation rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Jenko ;
+    ex:friendshipRekindled true .
+
+ex:SupplierIdentity rdf:type ex:Identity ;
+    ex:supplier ex:MrWalters ;
+    ex:drugCreatedAccidentally true ;
+    ex:sellingToStudents true .
+
+ex:DEAAgents rdf:type ex:LawEnforcementAgents ;
+    ex:agent ex:TomHanson, ex:DougPenhall ;
+    ex:formerMembersOf ex:JumpStreetProgram .
+
+ex:GunfireExchange rdf:type ex:Event ;
+    ex:participants ex:GangMembers, ex:Hanson, ex:Penhall ;
+    ex:wounded ex:Hanson, ex:Penhall .
+
+ex:MrWalters rdf:type ex:Teacher ;
+    ex:job ex:PETeacher ;
+    ex:drugCreator true ;
+    ex:escapeWith ex:Money, ex:MollyHostage .
+
+ex:SchmidtSaving rdf:type ex:Event ;
+    ex:saver ex:Jenko ;
+    ex:saved ex:Schmidt ;
+    ex:lifeThreat true .
+
+ex:Arrest rdf:type ex:Event ;
+    ex:criminal ex:MrWalters ;
+    ex:successfulRightsReading true .
+
+ex:Kiss rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Molly .
+
+ex:Reinstatement rdf:type ex:Event ;
+    ex:participants ex:Schmidt, ex:Jenko ;
+    ex:JumpStreetProgramAssignment ex:CollegeInfiltration .
+
+ex:College rdf:type ex:Institution .
+
+
+15 old school
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Mitch ex:hasEncounter ex:Nicole .
+ex:Mitch ex:breaksUpWith ex:Heidi .
+ex:Mitch ex:movesInto ex:House .
+ex:Heidi ex:watches ex:Porn .
+ex:Heidi ex:participatesIn ex:Orgy .
+ex:Bernard ex:throwsParty ex:Mitch-A-Palooza .
+ex:Frank ex:getsDrunk .
+ex:Frank ex:streaks .
+ex:Marissa ex:sees ex:Frank .
+ex:GordonPritchard ex:informs ex:Mitch .
+ex:Bernard ex:proposes ex:startingFraternity .
+ex:Mitch ex:recountsIncident ex:Mark .
+ex:Nicole ex:brings ex:Mark .
+ex:Mark ex:hooksUpWith ex:YoungWoman .
+ex:Blue ex:dies .
+ex:Marissa ex:asksForDivorce ex:Frank .
+ex:Pritchard ex:plotsRevenge .
+ex:Megan ex:revokesCharter .
+ex:Megan ex:sabotages ex:Fraternity .
+ex:Megan ex:notAcceptedInto ex:ColumbiaLawSchool .
+ex:Mitch ex:discovers ex:groupRight .
+ex:Frank ex:defeats ex:JamesCarville .
+ex:Fraternity ex:cheats .
+ex:Frank ex:catchesFire .
+ex:Firefighters ex:summoned .
+ex:Megan ex:confronts ex:Pritchard .
+ex:Megan ex:hasTapeEvidence .
+ex:Frank ex:obtains ex:tape .
+ex:Pritchard ex:fired .
+ex:Fraternity ex:reinstated .
+ex:Fraternity ex:movesInto ex:PritchardResidence .
+ex:Nicole ex:visits ex:Mitch .
+ex:Nicole ex:dumps ex:Mark .
+ex:Mitch ex:reconcilesWith ex:Nicole .
+ex:Mitch ex:withdrawsFrom ex:Fraternity .
+ex:Bernard ex:withdrawsFrom ex:Fraternity .
+ex:Frank ex:takesOverRole .
+ex:Mark ex:hasAccident .
+ex:Mark ex:strikes ex:Pritchard .
+ex:Pritchard ex:dies .
+ex:Frank ex:meets ex:Heidi .
+ 
+16 superbad
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Seth a ex:Person ;
+  ex:isFriendOf ex:Evan ;
+  ex:hasStatus "high school senior" .
+
+ex:Evan a ex:Person ;
+  ex:isFriendOf ex:Seth ;
+  ex:hasStatus "high school senior" .
+
+ex:Jules a ex:Person .
+
+ex:Fogell a ex:Person ;
+  ex:hasFakeID ex:McLovin .
+
+ex:Becca a ex:Person ;
+  ex:isLoveInterestOf ex:Evan .
+
+ex:Francis a ex:Person .
+
+ex:Slater a ex:Person ;
+  ex:isPoliceOfficer true .
+
+ex:Michaels a ex:Person ;
+  ex:isPoliceOfficer true .
+
+ex:Jacinda a ex:Person ;
+  ex:isDrunk true .
+
+ex:Host a ex:Person ;
+  ex:isFianceeOf ex:Jacinda .
+
+ex:Nicola a ex:Person ;
+  ex:isAttractedTo ex:Fogell .
+
+ex:Motorist a ex:Person .
+
+ex:Driver a ex:Person ;
+  ex:promisesTo ex:TakeToParty .
+
+ex:McLovin a ex:FakeID ;
+  ex:hasName "McLovin" .
+
+ex:Robber a ex:Person .
+
+ex:PoliceCruiser a ex:Vehicle ;
+  ex:isDrivenBy ex:Slater ;
+  ex:isDrivenBy ex:Michaels .
+
+ex:Mall a ex:Location .
+
+ex:Concealer a ex:Product ;
+  ex:isBoughtBy ex:Seth .
+
+ex:Comforter a ex:Product ;
+  ex:isBoughtBy ex:Evan ;
+  ex:isBoughtBy ex:Becca .
+
+ex:Vodka a ex:Product ;
+  ex:isSpecificBottleFor ex:Becca .
+
+ex:Alcohol a ex:Product ;
+  ex:isBoughtBy ex:Seth ;
+  ex:isBoughtBy ex:Francis .
+
+ex:LaundryDetergent a ex:Product ;
+  ex:isFilledWith ex:Alcohol .
+
+ex:Blood a ex:Substance ;
+  ex:isOn ex:Leg ;
+  ex:isCausedBy ex:Jacinda .
+
+ex:Cocaine a ex:Substance ;
+  ex:isUsedBy ex:Men .
+
+ex:Song a ex:Action ;
+  ex:isSungBy ex:Evan ;
+  ex:isHeardBy ex:Men .
+
+ex:Brawl a ex:Action ;
+  ex:involves ex:Seth ;
+  ex:involves ex:Host ;
+  ex:involves ex:Jacinda .
+
+ex:Party a ex:Event ;
+  ex:isHostedBy ex:Jules ;
+  ex:isHostedBy ex:Host ;
+  ex:involves ex:Seth ;
+  ex:involves ex:Evan ;
+  ex:involves ex:Becca ;
+  ex:involves ex:Fogell ;
+  ex:involves ex:Jacinda ;
+  ex:involves ex:Slater ;
+  ex:involves ex:Michaels .
+
+ex:Motorist a ex:Person .
+
+ex:Crash a ex:Action ;
+  ex:isCausedBy ex:Seth ;
+  ex:isCausedBy ex:Motorist .
+
+ex:Blame a ex:Action ;
+  ex:isPinnedOn ex:Seth .
+
+ex:Escape a ex:Action ;
+  ex:isPerformedBy ex:Seth ;
+  ex:isPerformedBy ex:Fogell .
+
+ex:College a ex:Location .
+
+ex:Roommate a ex:Relationship ;
+  ex:involves ex:Evan ;
+  ex:involves ex:Fogell .
+
+ex:Discontent a ex:State ;
+  ex:isFeltBy ex:Seth .
+
+ex:HousingForm a ex:Document ;
+  ex:isSeenBy ex:Seth .
+
+ex:Apology a ex:Action ;
+  ex:isGivenBy ex:Becca ;
+  ex:isGivenBy ex:Seth .
+
+ex:BlackEye a ex:Injury ;
+  ex:isGivenTo ex:Jules ;
+  ex:isCausedBy ex:Seth .
+
+ex:Arrest a ex:Action ;
+  ex:isPretendedBy ex:Slater ;
+  ex:isPerformedOn ex:Fogell .
+
+ex:Bonding a ex:Action ;
+  ex:involves ex:Fogell ;
+  ex:involves ex:Slater ;
+  ex:involves ex:Michaels .
+
+ex:Car a ex:Vehicle ;
+  ex:isDestroyedBy ex:Slater ;
+  ex:isDestroyedBy ex:Michaels .
+
+ex:MolotovCocktail a ex:Weapon ;
+  ex:isUsedBy ex:Slater ;
+  ex:isUsedBy ex:Michaels .
+
+ex:Apology a ex:Action ;
+  ex:isGivenBy ex:Seth ;
+  ex:isGivenBy ex:Evan .
+
+ex:ConcealerPurchase a ex:Action ;
+  ex:isPerformedBy ex:Seth ;
+  ex:isPerformedOn ex:Jules .
+
+ex:ComforterPurchase a ex:Action ;
+  ex:isPerformedBy ex:Evan ;
+  ex:isPerformedBy ex:Becca .
+
+ex:Encounter a ex:Action ;
+  ex:involves ex:Jules ;
+  ex:involves ex:Becca ;
+  ex:involves ex:Seth ;
+  ex:involves ex:Evan .
+
+ 17 Dumband dumber
+
+@prefix ex: <http://example.org/movie#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:LloydChristmasAndHarryDunne rdf:type ex:Movie ;
+    ex:title "Dumb and Dumber" ;
+    ex:plot "Lloyd Christmas and Harry Dunne, two kind but dimwitted young men, are best friends and roommates living in Providence, Rhode Island. Lloyd, a chip-toothed limousine driver, immediately falls in love when he meets Mary Swanson, a woman he is driving to the airport. Upon arriving and saying goodbye to Lloyd, she leaves a briefcase in the terminal. Lloyd sees this and attempts to return it to her, unaware that it contains ransom money for her kidnapped husband, Bobby, and that she intentionally left it for her husband's captors, Joe 'Mental' Mentalino and J. P. Shay. Her Aspen-bound plane has already departed, leading to Lloyd running through and falling out of the jetway." ;
+    ex:character [
+        ex:name "Lloyd Christmas" ;
+        ex:description "A kind but dimwitted limousine driver with a chip-tooth." ;
+    ] ;
+    ex:character [
+        ex:name "Harry Dunne" ;
+        ex:description "A kind but dimwitted man who works as a dog groomer." ;
+    ] .
+
+ex:LloydChristmasAndHarryDunne ex:hasFriend ex:LloydChristmas, ex:HarryDunne ;
+    ex:hasSetting "Providence, Rhode Island" .
+
+ex:LloydChristmas rdf:type ex:Character ;
+    ex:name "Lloyd Christmas" ;
+    ex:description "A kind but dimwitted limousine driver with a chip-tooth." .
+
+ex:HarryDunne rdf:type ex:Character ;
+    ex:name "Harry Dunne" ;
+    ex:description "A kind but dimwitted man who works as a dog groomer." .
+
+ex:MarySwanson rdf:type ex:Character ;
+    ex:name "Mary Swanson" ;
+    ex:description "A woman who accidentally leaves a briefcase containing ransom money." .
+
+ex:BobbySwanson rdf:type ex:Character ;
+    ex:name "Bobby Swanson" ;
+    ex:description "Mary Swanson's kidnapped husband." .
+
+ex:Mental rdf:type ex:Character ;
+    ex:name "Joe 'Mental' Mentalino" ;
+    ex:description "One of the captors of Bobby Swanson." .
+
+ex:Shay rdf:type ex:Character ;
+    ex:name "J. P. Shay" ;
+    ex:description "One of the captors of Bobby Swanson." .
+
+ex:Aspen rdf:type ex:Location ;
+    ex:name "Aspen" .
+
+ex:Nebraska rdf:type ex:Location ;
+    ex:name "Nebraska" .
+
+ex:Providence rdf:type ex:Location ;
+    ex:name "Providence, Rhode Island" .
+
+ex:hasFriend rdfs:domain ex:Character ;
+    rdfs:range ex:Character .
+
+ex:title rdf:type rdf:Property ;
+    rdfs:label "title" ;
+    rdfs:range rdfs:Literal .
+
+ex:plot rdf:type rdf:Property ;
+    rdfs:label "plot" ;
+    rdfs:range rdfs:Literal .
+
+ex:description rdf:type rdf:Property ;
+    rdfs:label "description" ;
+    rdfs:range rdfs:Literal .
+
+ex:hasSetting rdf:type rdf:Property ;
+    rdfs:label "hasSetting" ;
+    rdfs:domain ex:Movie ;
+    rdfs:range ex:Location .
+
+ex:hasFriend rdf:type rdf:Property ;
+    rdfs:label "hasFriend" ;
+    rdfs:domain ex:Character ;
+    rdfs:range ex:Character .
+
+
+

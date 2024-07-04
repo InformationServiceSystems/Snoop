@@ -1,0 +1,307 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Charlie O'Brien, a circus owner, encounters an elderly man named Jacob Jankowski, who is separated from his nursing home group. Jacob reveals he once had a career in the circus business and was present during one of the most infamous circus disasters of all time.
+
+In 1931, when Jacob is a 23-year-old veterinary medicine student taking his final exam at Cornell University, he learns that his parents were killed in a car accident. After the bank forecloses on the family home and in the midst of the Great Depression, he jumps onto a passing circus train. Jacob meets Camel, an employee with the Benzini Bros., who agrees to help Jacob obtain a job. Jacob meets ringmaster August, who after learning of Jacob's veterinary background, hires him to care for the animals. Jacob meets August's wife, performer Marlena Rosenbluth, and informs her that their star show horse has laminitis.
+
+August instructs Jacob to keep the horse performing as long as possible, but Jacob takes it upon himself to euthanize it. A furious August threatens to throw Jacob off the moving train to scare him into submission, but later expresses gratitude to Jacob for potentially saving Marlena from being injured by the sick horse. August soon procures Rosie, an Asian elephant, and assigns Jacob to train her. He invites Jacob to dinner with him and Marlena, where Jacob observes August's possessive treatment of his wife. After August passes out from drunkenness, Jacob and Marlena share a dance and nearly kiss.
+
+Jacob attempts but fails to train Rosie, and August beats her with a bullhook when she fails to follow orders. After Rosie runs off and nearly injures Marlena during a show, August savagely beats her. Jacob, with help from Marlena, Camel and his roommate Walter, clean her wounds and give her buckets of whisky to numb her pain. They unexpectedly learn that Rosie understands Polish commands. Rosie begins to perform beautifully and the circus enjoys a short period of success.
+
+Jacob and Marlena grow closer, and after escaping a prohibition raid at a restaurant, they kiss. Marlena expresses regret, while Jacob considers quitting but can't bear to leave Rosie with August. When August later observes their chemistry, he abuses Marlena and cruelly taunts them. Marlena discovers that August plans to throw Jacob from the train, and they run away together, hiding in a local hotel. They have sex but are ambushed by August's henchmen who drag Marlena away and beat up Jacob.
+
+Jacob covertly returns to the circus train, finds Marlena, and nearly kills August with a knife while he sleeps. Marlena tells Jacob that Camel and Walter were thrown from the train and killed and that several circus employees have become fed up with August's murderous cruelty and betrayal. The following day, they unlock all of the animal cages while an audience watches Marlena and Rosie's performance. Jacob attempts to find Marlena in the chaos, but August attacks him. Marlena tries to save Jacob from being beaten by August, but this causes the latter to turn his fury on her. August strangles Marlena while Jacob fights with August's lead henchman. Two circus employees save Jacob, and Rosie hits August on the back of the head with an iron stake, killing him and rescuing Marlena. The Benzini Bros. circus is officially shut down, and no one is charged with releasing the animals.
+
+Back in the present, Jacob explains to O'Brien that he and Marlena took Rosie and got jobs with the Ringling Bros. and Barnum & Bailey Circus. Jacob finished his degree and worked as a circus veterinarian while Marlena continued to perform with Rosie. They purchased a farm, married, had 5 children, and kept Rosie until her death. He took on a job as a vet at the Albany zoo, and after many happy years together, Marlena died peacefully. Not wanting to return to the lonely nursing home, Jacob asks for a job with the circus as a ticket taker, and O'Brien agrees. 
+ChatGPT
+
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema#
+PREFIX ex: http://example.org/
+PREFIX yago: http://yago-knowledge.org/resource/
+
+ex:Charlie_OBrien rdf:type yago:Person ;
+rdfs:label "Charlie O'Brien" .
+
+ex:Jacob_Jankowski rdf:type yago:Person ;
+rdfs:label "Jacob Jankowski" .
+
+ex:Circus rdf:type yago:Organization ;
+rdfs:label "Circus" .
+
+ex:Elderly_Man rdf:type yago:Person ;
+rdfs:label "Elderly Man" .
+
+ex:Encounter rdf:type yago:Event ;
+rdfs:label "Encounter" .
+
+ex:Circus_Disaster rdf:type yago:Event ;
+rdfs:label "Circus Disaster" .
+
+ex:Career rdf:type yago:Event ;
+rdfs:label "Career" .
+
+ex:Car_Accident rdf:type yago:Event ;
+rdfs:label "Car Accident" .
+
+ex:Final_Exam rdf:type yago:Event ;
+rdfs:label "Final Exam" .
+
+ex:Bank_Foreclosure rdf:type yago:Event ;
+rdfs:label "Bank Foreclosure" .
+
+ex:Jump_On_Train rdf:type yago:Event ;
+rdfs:label "Jump On Train" .
+
+ex:Job_Obtainment rdf:type yago:Event ;
+rdfs:label "Job Obtainment" .
+
+ex:Animal_Care rdf:type yago:Event ;
+rdfs:label "Animal Care" .
+
+ex:Sickness rdf:type yago:Event ;
+rdfs:label "Sickness" .
+
+ex:Euthanization rdf:type yago:Event ;
+rdfs:label "Euthanization" .
+
+ex:Train_Threat rdf:type yago:Event ;
+rdfs:label "Train Threat" .
+
+ex:Dinner rdf:type yago:Event ;
+rdfs:label "Dinner" .
+
+ex:Possessive_Treatment rdf:type yago:Event ;
+rdfs:label "Possessive Treatment" .
+
+ex:Dance rdf:type yago:Event ;
+rdfs:label "Dance" .
+
+ex:Training rdf:type yago:Event ;
+rdfs:label "Training" .
+
+ex:Beating rdf:type yago:Event ;
+rdfs:label "Beating" .
+
+ex:Escape rdf:type yago:Event ;
+rdfs:label "Escape" .
+
+ex:Hide_Out rdf:type yago:Event ;
+rdfs:label "Hide Out" .
+
+ex:Chemistry_Observation rdf:type yago:Event ;
+rdfs:label "Chemistry Observation" .
+
+ex:Abuse rdf:type yago:Event ;
+rdfs:label "Abuse" .
+
+ex:Ambush rdf:type yago:Event ;
+rdfs:label "Ambush" .
+
+ex:Knife_Attack rdf:type yago:Event ;
+rdfs:label "Knife Attack" .
+
+ex:Fight rdf:type yago:Event ;
+rdfs:label "Fight" .
+
+ex:Rescue rdf:type yago:Event ;
+rdfs:label "Rescue" .
+
+ex:Circus_Closure rdf:type yago:Event ;
+rdfs:label "Circus Closure" .
+
+ex:Animal_Release rdf:type yago:Event ;
+rdfs:label "Animal Release" .
+
+ex:Job_Application rdf:type yago:Event ;
+rdfs:label "Job Application" .
+
+ex:Degree rdf:type yago:Event ;
+rdfs:label "Degree" .
+
+ex:Work rdf:type yago:Event ;
+rdfs:label "Work" .
+
+ex:Marriage rdf:type yago:Event ;
+rdfs:label "Marriage" .
+
+ex:Children_Birth rdf:type yago:Event ;
+rdfs:label "Children Birth" .
+
+ex:Death rdf:type yago:Event ;
+rdfs:label "Death" .
+
+ex:Lonely rdf:type yago:Event ;
+rdfs:label "Lonely" .
+
+ex:Job_Offer rdf:type yago:Event ;
+rdfs:label "Job Offer" .
+
+ex:Ticket_Taker rdf:type yago:Event ;
+rdfs:label "Ticket Taker" .
+
+ex:Circus_Organization rdf:type yago:Organization ;
+rdfs:label "Circus Organization" .
+
+ex:Ringling_Bros_Barnum_Bailey rdf:type yago:Organization ;
+rdfs:label "Ringling Bros. and Barnum & Bailey Circus" .
+
+ex:Farm rdf:type yago:Place ;
+rdfs:label "Farm" .
+
+ex:Hotel rdf:type yago:Place ;
+rdfs:label "Hotel" .
+
+ex:Restaurant rdf:type yago:Place ;
+rdfs:label "Restaurant" .
+
+ex:Degree rdf:type yago:Education ;
+rdfs:label "Degree" .
+
+ex:Veterinary_Medicine rdf:type yago:Education ;
+rdfs:label "Veterinary Medicine" .
+
+ex:Great_Depression rdf:type yago:HistoricalEvent ;
+rdfs:label "Great Depression" .
+
+ex:Cornell_University rdf:type yago:Organization ;
+rdfs:label "Cornell University" .
+
+ex:Benzini_Bros rdf:type yago:Organization ;
+rdfs:label "Benzini Bros." .
+
+ex:August rdf:type yago:Person ;
+rdfs:label "August" .
+
+ex:Marlena_Rosenbluth rdf:type yago:Person ;
+rdfs:label "Marlena Rosenbluth" .
+
+ex:Camel rdf:type yago:Person ;
+rdfs:label "Camel" .
+
+ex:Walter rdf:type yago:Person ;
+rdfs:label "Walter" .
+
+ex:Rosie rdf:type yago:Animal ;
+rdfs:label "Rosie" .
+
+ex:Animal_Training rdf:type yago:Event ;
+rdfs:label "Animal Training" .
+
+ex:Prohibition_Raid rdf:type yago:Event ;
+rdfs:label "Prohibition Raid" .
+
+ex:Chemistry rdf:type yago:Science ;
+rdfs:label "Chemistry" .
+
+ex:Ambush rdf:type yago:Event ;
+rdfs:label "Ambush" .
+
+ex:Henchmen_Attack rdf:type yago:Event ;
+rdfs:label "Henchmen Attack" .
+
+ex:Chaos rdf:type yago:Event ;
+rdfs:label "Chaos" .
+
+ex:Strangling rdf:type yago:Event ;
+rdfs:label "Strangling" .
+
+ex:Iron_Stake rdf:type yago:Object ;
+rdfs:label "Iron Stake" .
+
+ex:Death rdf:type yago:Event ;
+rdfs:label "Death" .
+
+ex:Circus_Shutdown rdf:type yago:Event ;
+rdfs:label "Circus Shutdown" .
+
+ex:Animal_Release rdf:type yago:Event ;
+rdfs:label "Animal Release" .
+
+ex:Present rdf:type yago:Time ;
+rdfs:label "Present" .
+
+ex:Job rdf:type yago:Occupation ;
+rdfs:label "Job" .
+
+ex:Ticket_Taker rdf:type yago:Occupation ;
+rdfs:label "Ticket Taker" .
+
+ex:Albany_Zoo rdf:type yago:Organization ;
+rdfs:label "Albany Zoo" .
+
+ex:Lonely_Nursing_Home rdf:type yago:Place ;
+rdfs:label "Lonely Nursing Home" .
+
+ex:Job_Offer rdf:type yago:Event ;
+rdfs:label "Job Offer" .
+
+ex:Ticket_Taker rdf:type yago:Event ;
+rdfs:label "Ticket Taker" .
+
+ex:Charlie_OBrien ex:encounters ex:Elderly_Man .
+ex:Elderly_Man ex:isSeparatedFrom ex:Circus_Organization .
+ex:Elderly_Man ex:hasCareer ex:Circus_Organization .
+ex:Elderly_Man ex:wasPresentDuring ex:Circus_Disaster .
+
+ex:Jacob_Jankowski ex:hasCareer ex:Circus_Organization .
+ex:Jacob_Jankowski ex:isSeparatedFrom ex:Circus_Organization .
+
+ex:Jacob_Jankowski ex:attends ex:Final_Exam .
+ex:Jacob_Jankowski ex:learnsAbout ex:Car_Accident .
+ex:Jacob_Jankowski ex:jumpsOn ex:Train_Threat .
+ex:Jacob_Jankowski ex:meets ex:Camel .
+ex:Jacob_Jankowski ex:obtainsJob ex:Job_Obtainment .
+ex:Jacob_Jankowski ex:meets ex:August .
+ex:Jacob_Jankowski ex:meets ex:Marlena_Rosenbluth .
+ex:Jacob_Jankowski ex:informs ex:Sickness .
+ex:Jacob_Jankowski ex:caresFor ex:Animal_Care .
+ex:Jacob_Jankowski ex:euthanizes ex:Sickness .
+ex:Jacob_Jankowski ex:saves ex:Sickness .
+ex:Jacob_Jankowski ex:cleansWoundsOf ex:Animal_Care .
+ex:Jacob_Jankowski ex:trains ex:Training .
+ex:Jacob_Jankowski ex:invitedTo ex:Dinner .
+ex:Jacob_Jankowski ex:observes ex:Possessive_Treatment .
+ex:Jacob_Jankowski ex:dancesWith ex:Dance .
+ex:Jacob_Jankowski ex:attemptsTraining ex:Training .
+ex:Jacob_Jankowski ex:beats ex:Beating .
+ex:Jacob_Jankowski ex:escapes ex:Escape .
+ex:Jacob_Jankowski ex:hidesIn ex:Hide_Out .
+ex:Jacob_Jankowski ex:observes ex:Chemistry_Observation .
+ex:Jacob_Jankowski ex:abusedBy ex:Abuse .
+ex:Jacob_Jankowski ex:ambushedBy ex:Ambush .
+ex:Jacob_Jankowski ex:attackedBy ex:Henchmen_Attack .
+ex:Jacob_Jankowski ex:rescues ex:Rescue .
+ex:Jacob_Jankowski ex:unlocksCages ex:Animal_Release .
+ex:Jacob_Jankowski ex:finds ex:Chaos .
+ex:Jacob_Jankowski ex:attacks ex:Strangling .
+ex:Jacob_Jankowski ex:kills ex:Strangling .
+ex:Jacob_Jankowski ex:rescues ex:Rescue .
+ex:Jacob_Jankowski ex:shutsDown ex:Circus_Shutdown .
+ex:Jacob_Jankowski ex:appliesFor ex:Job_Offer .
+ex:Jacob_Jankowski ex:asksFor ex:Job_Offer .
+
+ex:Charlie_OBrien ex:explainsTo ex:Jacob_Jankowski .
+ex:Jacob_Jankowski ex:takes ex:Rosie .
+ex:Jacob_Jankowski ex:getsJob ex:Job_Offer .
+ex:Jacob_Jankowski ex:worksAs ex:Ticket_Taker .
+ex:Jacob_Jankowski ex:finishesDegree ex:Degree .
+ex:Jacob_Jankowski ex:worksAs ex:Veterinary_Medicine .
+ex:Jacob_Jankowski ex:performsWith ex:Rosie .
+ex:Jacob_Jankowski ex:purchases ex:Farm .
+ex:Jacob_Jankowski ex:marries ex:Marlena_Rosenbluth .
+ex:Jacob_Jankowski ex:hasChildren ex:Children_Birth .
+ex:Jacob_Jankowski ex:keeps ex:Rosie .
+ex:Marlena_Rosenbluth ex:dies ex:Death .
+ex:Jacob_Jankowski ex:returnsTo ex:Job_Offer .
+ex:Jacob_Jankowski ex:worksAs ex:Ticket_Taker .
+ex:Lonely_Nursing_Home ex:isAvoided ex:Lonely .
+ex:Jacob_Jankowski ex:appliesFor ex:Job_Offer .
+ex:Charlie_OBrien ex:offersJob ex:Job_Offer .
+User
+Extract events and genres in form of comma-separated lists, and make sure the events' labels are more general and do not contain character names
+ChatGPT
+
+Events: Circus encounter, Separation, Career in circus, Circus disaster, Final exam, Car accident, Foreclosure, Jumping on a train, Obtaining a job, Animal care, Euthanizing, Saving, Cleaning wounds, Training, Dinner invitation, Observing possessive treatment, Dancing, Training attempt, Beating, Escape, Hiding, Chemistry observation, Abuse, Ambush, Attack, Rescue, Animal release, Chaos, Strangling, Killing, Circus shutdown, Job application, Job request, Explanation, Job offer, Job acceptance, Degree completion, Veterinary work, Performing, Farm purchase, Marriage, Having children, Animal keeping, Death, Return to job, Ticket taking, Nursing home avoidance.
+
+Genres: Drama, Romance, Thriller

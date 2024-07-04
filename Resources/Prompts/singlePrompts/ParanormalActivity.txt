@@ -1,0 +1,126 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Katie and Micah move to a new house in San Diego. Katie claims an evil presence has been haunting her since she was a child, so Micah sets up a camera in their bedroom to record any paranormal activity that occurs while they sleep. Katie visits psychic Dr. Fredrichs, who suggests Katie is being haunted by a demon that feeds off of negative energy and is intent on tormenting her. He advises not to communicate with the demon without a demonologist, but Micah continues to film and seek it out.
+
+The camera captures many strange occurrences during the night; they start off as minor noises, flickering lights, and bedroom door movements, but over time escalate into violent door slamming loud thuds, and demonic grunts and screeches. One night, Katie appears to be in a trance; she gets up, stands beside the bed staring at Micah for two hours, and goes outside, none of which she recalls the next day.
+
+Micah brings home a Ouija board. When the couple leaves the house, the camera records an unseen force moving the board's pointer on its surface, which then spontaneously catches fire. Katie is increasingly aggravated by Micah's flippant behavior and pleads to contact the demonologist, but he refuses. The couple finds non-human footsteps on baby powder Micah sprinkled in the hallway; its path leads to a burnt photograph of a young Katie in the attic, thought to have been destroyed in a house fire. Outside intervention is unavailable, as the demonologist is out of the country and Dr. Fredrichs is afraid of making the demon angrier. That night, Katie is pulled out of the bedroom by an unseen force. Micah discovers a bite mark on Katie's back the morning after, motivating him to get out of the house, but Katie abruptly insists on staying.
+
+On night twenty-one, Katie gets out of bed again and stares at Micah for two hours before going downstairs. Katie screams profusely for Micah and he quickly rushes to help her. Afterward, Micah screams in pain with loud thuds. After a moment of silence, Micah's body is violently hurled at the camera which is knocked off the tripod, revealing Katie standing in the doorway with blood on her shirt. She crawls to Micah's body, then looks up at the camera with a grin. As she lunges toward the camera, her face takes on a demonic snarl, and the scene cuts to black. The epilogue text states Micah's body is discovered by the police, and Katie is missing. 
+
+Katie returns to the bedroom alone, covered in blood and holding a large kitchen knife. She sits on the floor against the bed and rocks back and forth. The next day, Katie's friend Amber leaves a concerned message at 2 PM, visits the house at 9 PM, discovers Micah's body downstairs, and runs away in panic. Thirty minutes later, two policemen enter the house and reach the bedroom where they find the possessed Katie with the knife. Seeing them, Katie suddenly returns to her normal state and asks about Micah. After the attic door slams by itself, one of the officers panics and shoots and kills her. The camera fades to black as the police officers continue searching the house for the source of the sound. An epilogue text appears dedicating the film to the memory of Micah and Katie. 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.org/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:hauntedHouse rdf:type yago:Event ;
+rdfs:label "Haunted house occurrence" .
+
+ex:paranormalActivity rdf:type yago:Event ;
+rdfs:label "Paranormal activity recording" .
+
+ex:visitPsychic rdf:type yago:Event ;
+rdfs:label "Visiting a psychic" .
+
+ex:demonicManifestation rdf:type yago:Event ;
+rdfs:label "Demonic manifestation" .
+
+ex:ouijaBoard rdf:type yago:Event ;
+rdfs:label "Ouija board encounter" .
+
+ex:investigation rdf:type yago:Event ;
+rdfs:label "Investigation of paranormal occurrences" .
+
+ex:possession rdf:type yago:Event ;
+rdfs:label "Possession by evil entity" .
+
+ex:escalatingActivity rdf:type yago:Event ;
+rdfs:label "Escalation of paranormal activity" .
+
+ex:violentIncident rdf:type yago:Event ;
+rdfs:label "Violent incident" .
+
+ex:demonicTransformation rdf:type yago:Event ;
+rdfs:label "Demonic transformation" .
+
+ex:policeInvestigation rdf:type yago:Event ;
+rdfs:label "Police investigation of paranormal case" .
+
+ex:possessionCapture rdf:type yago:Event ;
+rdfs:label "Capture of possessed individual" .
+
+ex:deathOfMicah rdf:type yago:Event ;
+rdfs:label "Death of Micah" .
+
+ex:katieCapture rdf:type yago:Event ;
+rdfs:label "Capture of Katie" .
+
+ex:hauntedHouseGenre rdf:type yago:Genre ;
+rdfs:label "Haunted house" .
+
+ex:paranormalGenre rdf:type yago:Genre ;
+rdfs:label "Paranormal" .
+
+ex:horrorGenre rdf:type yago:Genre ;
+rdfs:label "Horror" .
+
+ex:thrillerGenre rdf:type yago:Genre ;
+rdfs:label "Thriller" .
+
+ex:mysteryGenre rdf:type yago:Genre ;
+rdfs:label "Mystery" .
+
+ex:hauntedHouse rdf:type ex:horrorGenre ;
+ex:paranormalGenre ;
+ex:mysteryGenre .
+
+ex:paranormalActivity rdf:type ex:horrorGenre ;
+ex:paranormalGenre ;
+ex:mysteryGenre .
+
+ex:visitPsychic rdf:type ex:mysteryGenre .
+
+ex:demonicManifestation rdf:type ex:horrorGenre ;
+ex:paranormalGenre .
+
+ex:ouijaBoard rdf:type ex:horrorGenre ;
+ex:paranormalGenre .
+
+ex:investigation rdf:type ex:horrorGenre ;
+ex:thrillerGenre ;
+ex:mysteryGenre .
+
+ex:possession rdf:type ex:horrorGenre ;
+ex:paranormalGenre .
+
+ex:escalatingActivity rdf:type ex:horrorGenre ;
+ex:paranormalGenre .
+
+ex:violentIncident rdf:type ex:horrorGenre ;
+ex:thrillerGenre .
+
+ex:demonicTransformation rdf:type ex:horrorGenre ;
+ex:paranormalGenre .
+
+ex:policeInvestigation rdf:type ex:horrorGenre ;
+ex:thrillerGenre ;
+ex:mysteryGenre .
+
+ex:possessionCapture rdf:type ex:horrorGenre ;
+ex:thrillerGenre .
+
+ex:deathOfMicah rdf:type ex:horrorGenre ;
+ex:thrillerGenre .
+
+ex:katieCapture rdf:type ex:horrorGenre ;
+ex:thrillerGenre .
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: Haunted house occurrence, Paranormal activity recording, Visiting a psychic, Demonic manifestation, Ouija board encounter, Investigation of paranormal occurrences, Possession by evil entity, Escalation of paranormal activity, Violent incident, Demonic transformation, Police investigation of paranormal case, Capture of possessed individual, Death event, Capture event
+
+Genres: Haunted house, Paranormal, Horror, Thriller, Mystery

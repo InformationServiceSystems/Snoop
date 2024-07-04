@@ -1,0 +1,142 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Amelia Vanek is a troubled and exhausted widow living in Adelaide, who has brought up her six-year-old son Samuel alone. Her late husband, Oskar, was killed in a car accident when he drove Amelia to the hospital during labour. Sam begins displaying erratic behaviour: He becomes an insomniac and is preoccupied with an imaginary monster, which he has built weapons to fight. Amelia is forced to pick him up from school when he takes one of the weapons there. One night, he asks his mother to read a pop-up storybook called Mister Babadook. It describes the titular monster, the Babadook, a tall pale-faced humanoid in a top hat with taloned fingers which torments its victims after they become aware of its existence. Amelia is disturbed by the book and its mysterious appearance, while Sam becomes convinced that the Babadook is real. Sam's persistence about the Babadook leads Amelia to have sleepless nights as she tries to comfort him.
+
+Soon after, strange events occur: Doors mysteriously open and close, there are strange sounds, and Amelia finds glass shards in her food. She attributes the events to Sam's behaviour, but he blames the Babadook. Amelia rips up the book and disposes of it. At her birthday party, Sam's cousin Ruby bullies Sam for not having a father, and he pushes her out of her treehouse, breaking her nose. Amelia's sister Claire admits she cannot bear Sam, to which Amelia takes great offence. On the drive home, Sam has another vision of the Babadook and suffers a seizure. Amelia gets some sedatives from paediatrician who treats him.
+
+The next morning, Amelia finds the Mister Babadook book reassembled on the front door step. New words in it taunt her, saying the Babadook will become stronger if she continues to deny its existence, and it now contains pop-ups of her killing their dog Bugsy, Sam, and then herself. Terrified, she burns the book and runs to the police station after a disturbing phone call. However, she has no proof of the stalking, and when she then sees the Babadook's suit hung up behind the front desk, she leaves.
+
+That night, as she tries to fall asleep, she sees the Babadook open her bedroom door, crawl up the ceiling and attack her. She then turns on all the lights in the house and falls asleep with Sam downstairs. After the attack, Amelia becomes more isolated and impatient, shouts at Samuel for 'disobeying' her constantly, and has more visions of the Babadook. She exhibits erratic and violent behaviour, including cutting the phone line with a knife, then waving the same knife aggressively at Sam. She has disturbing hallucinations in which she sees herself murdering Sam.
+
+Amelia sees an apparition of Oskar, who offers to return to her if she "brings the boy" to him. Realizing he is a creation of the Babadook, she flees and the Babadook stalks her through the house until it finally possesses her. Under its influence she breaks Bugsy's neck and attempts to kill Sam. Eventually luring her into the basement, Sam knocks her out. Tied up, Amelia awakens with Sam, terrified, nearby. When she tries to strangle him, he lovingly caresses her face, causing her to regurgitate an inky black substance, which seemingly expels the Babadook. However, Sam reminds Amelia that "you can't get rid of the Babadook," and an unseen force drags him backwards into Amelia's bedroom. She saves Sam, but is forced to see a vision of her husband's death. Furious, she confronts the Babadook, making it retreat into the basement, and she locks the door behind it.
+
+Eventually, Amelia and Sam manage to recover. She is attentive and caring toward him, encouraging him with building his weapons and being impressed at his magic tricks. In the garden, they gather worms in a bowl. Amelia takes it to the basement and places it on the floor. The Babadook tries to attack her, but she soothes it and it retreats to the corner, taking the bowl of worms with it. She returns to the yard to celebrate Sam's birthday. 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.com/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Amelia rdf:type yago:Person .
+ex:Samuel rdf:type yago:Person .
+ex:Oskar rdf:type yago:Person .
+ex:MisterBabadook rdf:type yago:FictionalCharacter .
+
+ex:Amelia ex:isWidowOf ex:Oskar .
+ex:Amelia ex:livesIn "Adelaide" .
+ex:Samuel ex:isChildOf ex:Amelia .
+ex:Oskar ex:diesIn "car accident" .
+
+ex:Amelia ex:bringsUp ex:Samuel .
+ex:Amelia ex:experiencesEvents ex:ErraticBehaviour .
+ex:Samuel ex:displaysBehaviour ex:ErraticBehaviour .
+ex:Amelia ex:picksUp ex:Samuel .
+ex:Samuel ex:bringsWeapon ex:ImaginaryMonster .
+
+ex:Amelia ex:reads ex:MisterBabadook .
+ex:MisterBabadook ex:describes ex:Babadook .
+ex:Babadook rdf:type yago:SupernaturalBeing .
+ex:Babadook ex:torments ex:Victims .
+
+ex:Amelia ex:hasDisturbedReaction .
+ex:Samuel ex:believesIn ex:Babadook .
+ex:Amelia ex:comforts ex:Samuel .
+
+ex:Amelia ex:experiencesEvents ex:StrangeEvents .
+ex:Amelia ex:attributesEvents ex:SamuelBehaviour .
+ex:Samuel ex:blames ex:Babadook .
+ex:Amelia ex:ripsUp ex:MisterBabadook .
+
+ex:Amelia ex:hasBirthdayParty .
+ex:Samuel ex:pushes ex:Ruby .
+ex:Amelia ex:hasSister ex:Claire .
+ex:Claire ex:admits ex:DislikeSamuel .
+
+ex:Amelia ex:hasSleeplessNights .
+ex:Amelia ex:hasBirthdayParty .
+ex:Samuel ex:hasVision ex:Babadook .
+ex:Amelia ex:getsSedatives .
+ex:Amelia ex:findsBook ex:MisterBabadook .
+
+ex:Amelia ex:hasDisturbingPhoneCall .
+ex:Amelia ex:burns ex:MisterBabadook .
+ex:Amelia ex:goesToPoliceStation .
+
+ex:Amelia ex:seesBabadookAttack .
+ex:Amelia ex:turnsOnLights .
+ex:Amelia ex:hasHallucinations .
+ex:Amelia ex:exhibitsBehaviour ex:ViolentBehaviour .
+ex:Amelia ex:cutsPhoneLine .
+ex:Amelia ex:wavesKnife .
+
+ex:Amelia ex:hasApparition ex:Oskar .
+ex:Amelia ex:flees .
+ex:Babadook ex:stalks ex:Amelia .
+
+ex:Amelia ex:becomesPossessed .
+ex:Amelia ex:breaksNeck ex:Bugsy .
+ex:Amelia ex:attemptsToKill ex:Samuel .
+ex:Amelia ex:luresToBasement .
+ex:Amelia ex:isTiedUp .
+ex:Amelia ex:awakens .
+ex:Amelia ex:regurgitates ex:InkySubstance .
+ex:Samuel ex:caresses ex:Amelia .
+ex:Babadook ex:drags ex:Samuel .
+
+ex:Amelia ex:saves ex:Samuel .
+ex:Amelia ex:seesVision .
+ex:Amelia ex:confronts ex:Babadook .
+ex:Amelia ex:locksDoor .
+
+ex:Amelia ex:recovers .
+ex:Amelia ex:caresFor ex:Samuel .
+ex:Amelia ex:encourages ex:Samuel .
+ex:Amelia ex:impressedBy ex:MagicTricks .
+
+ex:Amelia ex:gathersWorms .
+ex:Babadook ex:attacks ex:Amelia .
+ex:Amelia ex:soothes ex:Babadook .
+
+ex:Amelia ex:celebratesBirthday ex:Samuel .
+
+ex:ErraticBehaviour rdf:type yago:Event .
+ex:StrangeEvents rdf:type yago:Event .
+ex:SamuelBehaviour rdf:type yago:Event .
+ex:ViolentBehaviour rdf:type yago:Event .
+ex:DislikeSamuel rdf:type yago:Event .
+ex:BabadookAttack rdf:type yago:Event .
+ex:DisturbingPhoneCall rdf:type yago:Event .
+ex:Hallucinations rdf:type yago:Event .
+ex:Vision rdf:type yago:Event .
+ex:Apparition rdf:type yago:Event .
+ex:Possession rdf:type yago:Event .
+ex:AttemptedMurder rdf:type yago:Event .
+ex:Regurgitation rdf:type yago:Event .
+ex:Vision rdf:type yago:Event .
+ex:Confrontation rdf:type yago:Event .
+ex:AmeliaRecovers rdf:type yago:Event .
+ex:Caring rdf:type yago:Event .
+ex:Encouragement rdf:type yago:Event .
+ex:MagicTricks rdf:type yago:Event .
+ex:GatherWorms rdf:type yago:Event .
+ex:BabadookAttack rdf:type yago:Event .
+ex:Soothing rdf:type yago:Event .
+ex:BirthdayCelebration rdf:type yago:Event .
+
+ex:PsychologicalHorror rdf:type yago:FilmGenre .
+ex:SupernaturalThriller rdf:type yago:FilmGenre .
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: Amelia's husband dies in a car accident, Sam displays erratic behavior, Sam becomes obsessed with an imaginary monster, Amelia reads a disturbing book, Strange events occur in the house, Amelia rips up the book, Sam pushes his cousin from a treehouse, Amelia's sister admits dislike for Sam, Amelia has sleepless nights, Amelia finds the book reassembled, Amelia burns the book, Amelia sees the Babadook attack her, Amelia exhibits violent behavior, Amelia has hallucinations, Amelia becomes possessed by the Babadook, Amelia attempts to kill Sam, Amelia regurgitates an inky substance, Amelia confronts the Babadook, Amelia locks the Babadook in the basement, Amelia and Sam recover, Amelia cares for Sam, Amelia encourages Sam, Amelia gathers worms, Amelia soothes the Babadook, Amelia celebrates Sam's birthday.
+
+Genres: Psychological horror, Supernatural thriller
+User
+Redo this such that the events do not contain character names, they should be named more general
+ChatGPT
+
+Events: Loss of a loved one in a car accident, Display of erratic behavior, Obsession with an imaginary monster, Encounter with a disturbing book, Manifestation of strange events, Destruction of the book, Act of aggression towards a cousin, Confession of dislike towards a family member, Sleepless nights due to fear, Reappearance of the book, Burning of the book, Terrifying encounter with the Babadook, Manifestation of violent behavior, Disturbing hallucinations, Possession by the Babadook, Attempted harm towards a loved one, Purging of the Babadook's influence, Confrontation with the Babadook, Confinement of the Babadook, Recovery and healing, Nurturing and support, Gathering of worms, Calming the Babadook, Celebration of a birthday.
+
+Genres: Psychological horror, Supernatural thriller

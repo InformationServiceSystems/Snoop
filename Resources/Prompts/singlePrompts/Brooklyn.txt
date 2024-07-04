@@ -1,0 +1,84 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+In 1951, in Enniscorthy, a small town in southeast Ireland, Eilis Lacey lives with her mother and older sister, Rose. Although she is an intelligent young woman, Eilis is unable to find full-time employment, so she works weekends at a shop run by the spiteful Miss Kelly. Eilis often accompanies her friend Nancy to local dances, but she is uninterested in the local young men.
+
+Rose arranges with Father Flood, an Irish priest in Brooklyn, for Eilis to move to New York City, where, it is hoped, there will be more opportunities for her. On the trip over, Eilis suffers from seasickness, but is locked out of the shared toilet by the women in the adjoining cabin. Her bunkmate, Georgina, an experienced traveler returning to the United States after a visit home, comes to her aid and offers advice and support.
+
+In New York, Eilis moves into a Brooklyn boarding house run by Mrs Kehoe that caters to young Irish women, and Father Flood gets her a job as a salesclerk at a fancy department store, but she has difficulty adjusting to her new life. She feels homesick, particularly after reading the letters she receives from Rose. Upon learning this, Father Flood takes a more active interest in Eilis and gets her enrolled in night school bookkeeping classes at Brooklyn College, as she wants to become an accountant.
+
+At an Irish dance, Eilis meets Tony Fiorello, an amiable Italian-American plumber. They begin dating, and, as their romance becomes more serious and she progresses in her studies, she gradually begins to feel more at home in Brooklyn.
+
+When Rose unexpectedly dies, Eilis tells Tony she must return home to help her mother. He shows her a plot of land on Long Island and tells her he and his brothers intend to build five houses on it, selling three and keeping one for their parents and one for him and Eilis, if she wants it. She says she does, but she still feels the need to visit her mother, so Tony asks her to marry him before she goes. Eilis is hesitant, but agrees, and they secretly marry at City Hall. While there, they bump into an Irish couple with relatives in Enniscorthy.
+
+Once back in Ireland, Eilis falls, not back into her old life, but into a new one. She temporarily takes Rose's bookkeeping job which shows a promise of turning permanent. Meanwhile Nancy, unaware of Eilis' marriage, sets her up with the thoughtful, well-off bachelor Jim Farrell. Eilis extends her trip to attend Nancy's wedding, and avoids reading Tony's letters. Jim asks her to stay and indicates he would like to propose marriage, but Eilis remains noncommittal, as she is not sure which future she wants for herself, and seemingly distances herself from the life she left behind.
+
+One day, Miss Kelly sends for Eilis, who issues as a veiled threat: that she knows through gossip from the couple at City Hall that Eilis is married. When Miss Kelly begins to mock her, Eilis remembers the stifling and restrictive nature of life in Enniscorthy, and having had enough of the old woman's bullying she states her full married name, establishing that she remembers who she is. This effectively renders Miss Kelly powerless over her. Returning home, Eilis tearfully informs her mother that she is married to Tony and states her plan to return to Brooklyn, leaving a farewell letter for Jim. On the ocean crossing, Eilis offers guidance to a young woman making her own first trip to America. Once home in Brooklyn, Eilis reunites with Tony and they embrace. 
+ChatGPT
+
+Here are the events and genres from the plot description in RDF format, annotated with YAGO using the prefixes rdf, rdfs, ex, yago. The event labels are more general and do not contain character names:
+
+Events:
+
+    ex:LivingInTown rdf:type yago:Event ;
+    rdfs:label "Living in a small town" .
+
+    ex:SeekingEmployment rdf:type yago:Event ;
+    rdfs:label "Searching for employment" .
+
+    ex:MovingToNewYork rdf:type yago:Event ;
+    rdfs:label "Relocating to New York City" .
+
+    ex:ExperiencingSeasickness rdf:type yago:Event ;
+    rdfs:label "Dealing with seasickness" .
+
+    ex:AdjustingToNewLife rdf:type yago:Event ;
+    rdfs:label "Adapting to a new life" .
+
+    ex:MeetingSomeone rdf:type yago:Event ;
+    rdfs:label "Meeting someone" .
+
+    ex:BuildingARelationship rdf:type yago:Event ;
+    rdfs:label "Developing a romantic relationship" .
+
+    ex:ReturningHome rdf:type yago:Event ;
+    rdfs:label "Going back home" .
+
+    ex:TakingUpJob rdf:type yago:Event ;
+    rdfs:label "Starting a new job" .
+
+    ex:ExperiencingLoss rdf:type yago:Event ;
+    rdfs:label "Facing a personal loss" .
+
+    ex:MarriageProposal rdf:type yago:Event ;
+    rdfs:label "Receiving a marriage proposal" .
+
+    ex:MakingADecision rdf:type yago:Event ;
+    rdfs:label "Making a life-changing decision" .
+
+    ex:DefendingOneself rdf:type yago:Event ;
+    rdfs:label "Standing up against bullying" .
+
+    ex:ReturningToOriginalPlace rdf:type yago:Event ;
+    rdfs:label "Coming back to the place of origin" .
+
+    ex:Reunion rdf:type yago:Event ;
+    rdfs:label "Reuniting with someone" .
+
+Genres:
+
+    ex:Drama rdf:type yago:Genre ;
+    rdfs:label "Drama" .
+
+    ex:Romance rdf:type yago:Genre ;
+    rdfs:label "Romance" .
+
+    ex:HistoricalFiction rdf:type yago:Genre ;
+    rdfs:label "Historical Fiction" .
+
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: Living in a small town, Seeking employment, Moving to a new city, Experiencing seasickness, Adjusting to a new life, Meeting someone, Building a relationship, Returning home, Taking up a job, Experiencing loss, Receiving a marriage proposal, Making a decision, Defending oneself, Returning to the original place, Reunion
+
+Genres: Drama, Romance, Historical Fiction

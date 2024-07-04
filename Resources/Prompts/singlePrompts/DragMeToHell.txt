@@ -1,0 +1,84 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+In 1969 Pasadena, a Hispanic couple seek help from young medium Shaun San Dena, saying their son is ill and hears evil voices after stealing a silver necklace from a Romani people's wagon, despite trying to return it. San Dena prepares a séance, but an unseen force attacks them and drags the boy to Hell. San Dena vows to fight the demon again one day.
+
+In present-day Los Angeles, bank loan officer Christine Brown vies for a promotion to assistant branch manager with her co-worker Stu Rubin. Her boss, Jim Jacks, advises her to demonstrate tough decision-making. Sylvia Ganush, an elderly and disheveled European Roma woman, asks for a third extension on her mortgage. After Christine denies her request, Ganush cries and begs not to have her house repossessed. Security guards arrive and she leaves, angrily accusing Christine of shaming her. In the parking lot, Ganush ambushes and violently attacks Christine. After a long struggle, Ganush rips a button from Christine's coat and curses it. Later, Christine and her boyfriend Clay Dalton visit fortune teller Rham Jas, who tells Christine a dark spirit is haunting her. At home, the entity begins to violently attack Christine. At work, she hallucinates about Ganush and bleeds profusely from her nose while spewing blood on Jacks. As Christine leaves, Stu steals a file from her desk.
+
+Christine goes to beg Ganush for forgiveness but discovers she has recently died. After causing a scene at the funeral, a family member of Ganush warns her that she deserves everything she is about to get. Christine returns to Jas, who explains that as long as she owns the cursed button, a powerful demon known as the Lamia will torment her for three days before dragging her to Hell. He suggests a sacrifice may appease it. Christine reluctantly sacrifices her pet kitten before meeting Clay's parents at their house for dinner, during which grotesque hallucinations torment her again.
+
+Christine returns to Jas, who requests a fee of $10,000. He introduces her to San Dena, who prepares a séance to trap Lamia in a goat and kill it. However, the Lamia possesses her and then her assistant, who vomits up the corpse of Christine's cat, saying it wants her soul. San Dena manages to successfully banish the Lamia from the séance, but dies afterwards. Jas seals the button in an envelope and tells Christine that she can only remove the curse by giving the button to someone else. She attempts to give the envelope at a diner: to a tearful Stu (whom she tries to blackmail into accepting it) and to an ailing, married elderly woman; bothered by her conscience, she does neither. Rather, she digs up Ganush's grave and shoves the envelope into her mouth at dawn. Christine returns home and prepares to meet Clay at Los Angeles Union Station for a weekend trip. Jacks notifies her of the promotion after Stu confessed to stealing her file and was fired.
+
+At the station, Clay, hoping to propose to Christine, hands her the envelope with her missing button he found in his car, unaware of its significance. She realizes that she accidentally gave the wrong envelope to Ganush, which means the curse was never lifted. Horrified, Christine backs away and falls onto the tracks, just as fiery, demonic hands emerge. Clay tries to rescue Christine, but a train speeds through and he can only watch as the hands drag her to Hell. 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.org/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Event1 rdf:type yago:Event ;
+rdfs:label "Seeking help for possessed child" .
+
+ex:Event2 rdf:type yago:Event ;
+rdfs:label "Unseen force drags child to Hell" .
+
+ex:Event3 rdf:type yago:Event ;
+rdfs:label "Preparing a séance to fight a demon" .
+
+ex:Event4 rdf:type yago:Event ;
+rdfs:label "Competition for promotion at work" .
+
+ex:Event5 rdf:type yago:Event ;
+rdfs:label "Denying request for mortgage extension" .
+
+ex:Event6 rdf:type yago:Event ;
+rdfs:label "Violent attack and curse by elderly woman" .
+
+ex:Event7 rdf:type yago:Event ;
+rdfs:label "Haunted by dark spirit and violent attacks" .
+
+ex:Event8 rdf:type yago:Event ;
+rdfs:label "Seeking forgiveness from deceased woman" .
+
+ex:Event9 rdf:type yago:Event ;
+rdfs:label "Discovering the curse and its consequences" .
+
+ex:Event10 rdf:type yago:Event ;
+rdfs:label "Sacrificing pet kitten to appease the demon" .
+
+ex:Event11 rdf:type yago:Event ;
+rdfs:label "Grotesque hallucinations and torment" .
+
+ex:Event12 rdf:type yago:Event ;
+rdfs:label "Séance to trap and kill the demonic entity" .
+
+ex:Event13 rdf:type yago:Event ;
+rdfs:label "Possession and vomiting of cat's corpse" .
+
+ex:Event14 rdf:type yago:Event ;
+rdfs:label "Banishing the demon and the medium's death" .
+
+ex:Event15 rdf:type yago:Event ;
+rdfs:label "Attempts to remove curse by giving the cursed object" .
+
+ex:Event16 rdf:type yago:Event ;
+rdfs:label "Digging up grave and placing envelope inside" .
+
+ex:Event17 rdf:type yago:Event ;
+rdfs:label "Realizing the curse was never lifted" .
+
+ex:Event18 rdf:type yago:Event ;
+rdfs:label "Dragged to Hell at train station" .
+
+ex:Event19 rdf:type yago:Event ;
+rdfs:label "Failed attempt to rescue from Hell" .
+
+Genres: Supernatural Horror, Psychological Thriller.
+User
+
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Seeking help for possessed child, Unseen force drags child to Hell, Preparing a séance to fight a demon, Competition for promotion at work, Denying request for mortgage extension, Violent attack and curse by elderly woman, Haunted by dark spirit and violent attacks, Seeking forgiveness from deceased woman, Discovering the curse and its consequences, Sacrificing pet kitten to appease the demon, Grotesque hallucinations and torment, Séance to trap and kill the demonic entity, Possession and vomiting of cat's corpse, Banishing the demon and the medium's death, Attempts to remove curse by giving the cursed object, Digging up grave and placing envelope inside, Realizing the curse was never lifted, Dragged to Hell at train station, Failed attempt to rescue from Hell
+
+Genres: Supernatural Horror, Psychological Thriller

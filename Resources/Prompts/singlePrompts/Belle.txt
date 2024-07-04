@@ -1,0 +1,141 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Dido Elizabeth Belle Lindsay was born in 1761, the natural daughter of Captain Sir John Lindsay, a British Royal Navy officer, with Maria Belle, an enslaved African woman in the West Indies. After Dido's mother's death in 1769, Captain Lindsay takes Dido from the West Indies slums and entrusts her to his uncle William Murray, First Earl of Mansfield, the Lord Chief Justice, and his wife Elizabeth, who live at Kenwood House, an estate in Hampstead (then outside London).
+
+Lord and Lady Mansfield raise Dido as a free gentlewoman with their other great-niece Lady Elizabeth Murray, whose widowed father had remarried to a woman who pressured him to disown Elizabeth. When the cousins reach adulthood, the Mansfields commission an oil portrait of their two great-nieces, but Dido fears she will be portrayed as a subordinate, similar to other portraits she has seen depicting aristocrats with black servants.
+
+Dido's father dies, leaving her a vast sum of £2,000 a year, making her an heiress. Lady Elizabeth, by contrast, will have no income from her father, as his son from his new wife has been named sole heir. Arrangements are made for Elizabeth to have her coming-out to society, but Lord and Lady Mansfield believe no gentleman will agree to marry Dido because of her mixed race. Fearing lower-ranking men will only marry her for her wealth, and that a marriage to a lower-status man will reduce her rank and shame the family, Lord Mansfield decides she will travel to London with her cousin but will not be "out" to society, and he asks her to take her spinster great-aunt Mary's place as the keeper of the house, with the implication that she will not marry.
+
+Lord Mansfield agrees to take the vicar's son, John Davinier, into a law pupillage. In 1783, Mansfield hears the case of Gregson v. Gilbert, regarding the payment of an insurance claim, for slaves killed when thrown overboard by the captain of a slave-ship – an event now known as the Zong massacre. Dido helps her uncle with his correspondence. After John tells her about the Zong case, she begins sneaking correspondence to him which he believes will advance the cause of the abolitionists. Lord Mansfield and John have a disagreement on the main issue of the case. John is told leave and not to see Dido again, and his pupillage is at an end.
+
+Dido's aunts, Lady Mansfield and Lady Mary Murray, seek to steer Dido into an engagement with Oliver Ashford, son of a scheming grand dame and younger brother to bigoted James Ashford. At first, James is interested in Elizabeth but stops courting her once he discovers she will have no inheritance. Oliver, who is without fortune, proposes to Dido and she accepts, although she continues to see John in secret. James takes Dido aside, tells her she will disgrace his family's name, then insults and gropes her.
+
+Dido later tells Elizabeth of James' true character, offering to give her part of her inheritance as a dowry so she can find a different match. Lord Mansfield finds out about Dido's visits to John and confronts them, and John professes his love for her. Sometime later, she meets Oliver and breaks off their engagement.
+
+Dido is relieved when the painting is unveiled, she is shown as Elizabeth's equal. She tells Lord Mansfield that the portrait commission proves that he can defy convention.
+
+Dido sneaks into the balcony of the Inn of Court, to hear Lord Mansfield narrowly rule that the Gregson slave-trading syndicate is not due insurance payments for the slaves the crew threw overboard during the voyage. The ship's officers claimed they ordered this action because they were out of potable water, but Lord Mansfield had discovered that the Zong passed by many ports without stopping for more water, before murdering the slaves. The slaves' quarters were overcrowded, making them sick and not likely to fetch a high price at auction, so the officers had decided they would be worth more in insurance payments after their "loss", and so threw them overboard. When Lord Mansfield sees John and Dido outside the Court after his ruling, he says that Dido can only marry a gentleman. Therefore, he agrees to resume John's pupillage, so that he can become a lawyer. Dido and John embrace, both in full acknowledgement of their romantic feelings.
+
+In the credits we see Dido and John married, having two sons. Elizabeth also married and had three children, and their painting hung at Kenwood House until 1922, when it was moved to Scone Palace near Perth, the birthplace of Lord Mansfield. 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.com/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:DidoElizabethBelleLindsay rdf:type yago:Event ;
+rdfs:label "Birth of Dido Elizabeth Belle Lindsay" .
+
+ex:PortraitCommission rdf:type yago:Event ;
+rdfs:label "Commission of an oil portrait of two great-nieces" .
+
+ex:Inheritance rdf:type yago:Event ;
+rdfs:label "Inheritance of a vast sum of money" .
+
+ex:Arrangement rdf:type yago:Event ;
+rdfs:label "Arrangement for Elizabeth's coming-out and Dido's travel to London" .
+
+ex:LawPupillage rdf:type yago:Event ;
+rdfs:label "Acceptance of John Davinier into law pupillage" .
+
+ex:ZongCase rdf:type yago:Event ;
+rdfs:label "Hearing of the Gregson v. Gilbert case (Zong massacre)" .
+
+ex:Correspondence rdf:type yago:Event ;
+rdfs:label "Assistance in legal correspondence" .
+
+ex:Engagement rdf:type yago:Event ;
+rdfs:label "Dido's engagement to Oliver Ashford" .
+
+ex:Insult rdf:type yago:Event ;
+rdfs:label "Insult and harassment by James Ashford" .
+
+ex:Revelation rdf:type yago:Event ;
+rdfs:label "Revelation of James' true character and offer to Elizabeth" .
+
+ex:Confrontation rdf:type yago:Event ;
+rdfs:label "Confrontation between Lord Mansfield, Dido, and John" .
+
+ex:Breakup rdf:type yago:Event ;
+rdfs:label "Breakup of Dido's engagement with Oliver" .
+
+ex:PortraitUnveiling rdf:type yago:Event ;
+rdfs:label "Unveiling of the portrait depicting Dido and Elizabeth" .
+
+ex:CourtRuling rdf:type yago:Event ;
+rdfs:label "Court ruling on the Gregson slave-trading syndicate case" .
+
+ex:Resumption rdf:type yago:Event ;
+rdfs:label "Resumption of John's pupillage" .
+
+ex:Marriage rdf:type yago:Event ;
+rdfs:label "Marriage of Dido and John" .
+
+ex:Credits rdf:type yago:Event ;
+rdfs:label "Credits scene showing the marriages and relocation of the painting" .
+
+ex:DidoElizabethBelleLindsay rdf:type yago:Genre ;
+rdfs:label "Biographical Drama" .
+
+ex:PortraitCommission rdf:type yago:Genre ;
+rdfs:label "Historical Drama" .
+
+ex:Inheritance rdf:type yago:Genre ;
+rdfs:label "Historical Drama" .
+
+ex:Arrangement rdf:type yago:Genre ;
+rdfs:label "Historical Drama" .
+
+ex:LawPupillage rdf:type yago:Genre ;
+rdfs:label "Legal Drama" .
+
+ex:ZongCase rdf:type yago:Genre ;
+rdfs:label "Legal Drama" .
+
+ex:Correspondence rdf:type yago:Genre ;
+rdfs:label "Historical Drama" .
+
+ex:Engagement rdf:type yago:Genre ;
+rdfs:label "Romantic Drama" .
+
+ex:Insult rdf:type yago:Genre ;
+rdfs:label "Drama" .
+
+ex:Revelation rdf:type yago:Genre ;
+rdfs:label "Drama" .
+
+ex:Confrontation rdf:type yago:Genre ;
+rdfs:label "Drama" .
+
+ex:Breakup rdf:type yago:Genre ;
+rdfs:label "Romantic Drama" .
+
+ex:PortraitUnveiling rdf:type yago:Genre ;
+rdfs:label "Historical Drama" .
+
+ex:CourtRuling rdf:type yago:Genre ;
+rdfs:label "Legal Drama" .
+
+ex:Resumption rdf:type yago:Genre ;
+rdfs:label "Drama" .
+
+ex:Marriage rdf:type yago:Genre ;
+rdfs:label "Romantic Drama" .
+
+ex:Credits rdf:type yago:Genre ;
+rdfs:label "Drama" .
+User
+Extract events and genres in form of comma-separated lists
+ChatGPT
+
+Events: Birth of Dido Elizabeth Belle Lindsay, Commission of an oil portrait of two great-nieces, Inheritance of a vast sum of money, Arrangement for Elizabeth's coming-out and Dido's travel to London, Acceptance of John Davinier into law pupillage, Hearing of the Gregson v. Gilbert case (Zong massacre), Assistance in legal correspondence, Dido's engagement to Oliver Ashford, Insult and harassment by James Ashford, Revelation of James' true character and offer to Elizabeth, Confrontation between Lord Mansfield, Dido, and John, Breakup of Dido's engagement with Oliver, Unveiling of the portrait depicting Dido and Elizabeth, Court ruling on the Gregson slave-trading syndicate case, Resumption of John's pupillage, Marriage of Dido and John, Credits scene showing the marriages and relocation of the painting
+
+Genres: Biographical Drama, Historical Drama, Legal Drama, Romantic Drama, Drama
+User
+Extract events and genres in form of comma-separated lists, and make sure the events' labels are more general and do not contain character names
+ChatGPT
+
+Events: Birth, Portrait Commission, Inheritance, Coming-out Arrangements, Travel to London, Acceptance into Law Pupillage, Legal Case Hearing, Correspondence Assistance, Engagement, Harassment, Revelation and Offer, Confrontation, Breakup, Portrait Unveiling, Court Ruling, Pupillage Resumption, Marriage, Credits Scene
+
+Genres: Biographical Drama, Historical Drama, Legal Drama, Romantic Drama, Drama

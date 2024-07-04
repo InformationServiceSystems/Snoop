@@ -1,0 +1,253 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago (event labels should not contain any character names):
+
+Set against a backdrop of World War I, the Russian Revolution of 1917, and the Russian Civil War, the film uses a narrative framing device set in the late 1940s or early 1950s, involving NKVD Lieutenant General Yevgraf Zhivago, who is searching for the daughter of his half-brother, Dr Yuri Zhivago, and Larissa ("Lara") Antipova. Yevgraf believes a young woman, Tanya Komarova, may be his niece and tells her about Yuri's life.
+
+After his mother's burial in rural Russia, the orphaned child Yuri was taken by family friends Alexander and Anna Gromeko to Moscow. In 1913, Zhivago, now a doctor and a poet, is reunited with the Gromekos' daughter, Tonya, when she returns after her schooling in Paris. They become engaged.
+
+Lara, then only 17 years old, is seduced by her mother's much older friend/lover, the well-connected Victor Komarovsky. Lara's friend, the idealistic reformer Pasha Antipov, is wounded by sabre-wielding mounted police when they attack a peaceful demonstration. Pasha's wound is treated by Lara, whom he wishes to marry. She hides a gun he picked up at the demonstration. 
+
+After learning of her daughter's relationship with Komarovsky, Lara's mother attempts suicide. Komarovsky summons a doctor friend, who brings along Zhivago as his asssitant. Komarovsky attempts to dissuade Lara from marrying Pasha. When she refuses, he pressures her into sex. Lara later takes Pasha's gun and follows Komarovsky to a party. She shoots him, only wounding his arm. Komarovsky insists no action be taken against Lara, and she is escorted out by Pasha, who followed her. Meanwhile, Zhivago, who is another guest, treats Komarovsky's wound. Although devastated by Lara's admission about Komarovsky, Pasha marries her, and they move away, eventually having a daughter, Katya.
+
+During World War I, Yevgraf Zhivago is sent by the Bolsheviks to subvert the army. Yuri, now married to Tonya, becomes a battlefield doctor. Pasha, dissatisfied in his marriage to Lara, joins up, but is reported missing in action. Lara enlists as a nurse to search for him. Yuri encounters Lara. For the next six months, they serve at a field hospital, during which time radical changes ensue in Russia as Vladimir Lenin returns from exile. Before their departure from the hospital, Zhivago and Lara fall in love, though Zhivago remains faithful to Tonya.
+
+After the war, Yuri returns to Tonya, their son Alexander (Sasha), and the now-widowed Alexander Gromeko. Their Moscow house has been confiscated by the new Soviet government and they share it with many others. Yevgraf, now in the Cheka, informs Yuri that his poems have been condemned as antagonistic to communism. Fearing Zhivago will incriminate himself through his poetry, Yevgraf provides documents for the family to travel to the Gromekos' country home, "Varykino", located in the Ural Mountains. The family boards a heavily guarded train, travelling through contested territory where the Bolshevik commander, Strelnikov, formerly Pasha Antipov, is fighting. 
+
+While the train makes a mid-journey stop, Yuri gets out, wandering too close to Strelnikov's armoured train on a nearby track. He is captured and taken to Strelnikov. During the interrogation, Yuri recognizes Strelnikov as Pasha. Strelnikov mentions that Lara is living in Yuriatin, where Yuri is headed and which is occupied by the anti-Communist White forces. Strelnikov deems Yuri a non-threat and allows him to return to his train. Finding the main house on the Varykino estate seized and sealed up by the Bolsheviks, the family settle into a cottage next door. While in Yuriatin, Yuri sees Lara, and they begin an affair. Tonya is pregnant again and when she is about to give birth, Yuri travels to Yuriatin to break off with Lara. On his return, he is abducted by Communist partisans and forced to join their medical service.
+
+After two years, Yuri deserts. Amid great hardship, he returns to Yuriatin and Lara, arriving ill and suffering from frostbite. Lara says that Tonya contacted her while searching for Yuri. Leaving his belongings with Lara, she returned to Moscow. She later sent Lara a sealed letter to give Yuri if he returned. The letter is six months old. Tonya had given birth to a daughter named Anna, and she, her father, and her two children were deported and are living in Paris.
+
+Yuri and Lara become lovers again. One night Komarovsky arrives and warns that Cheka agents have been watching them due to Lara's marriage to Strelnikov. Komarovsky offers them help to leave Russia, but they refuse. Yuri and Lara return to the abandoned Varykino estate, and hide in the main house. Yuri begins the "Lara" poems, which will later bring him popular fame but government disapproval. Komarovsky arrives with a small party of troops. Recently appointed as a regional official in the Far Eastern Republic, he informs Yuri that the Cheka only allowed Lara to remain in the area to lure Strelnikov; he had been captured five miles away, and committed suicide en route to his execution. They now intend to arrest Lara. Yuri accepts Komarovsky's offer of safe passage for himself, Lara, and her daughter. Once Lara is on her way, Yuri stays behind, instead of following. On the train, Lara tells Komarovsky that she is pregnant with Yuri's child.
+
+Years later in Moscow, Yevgraf procures a medical job for his frail half-brother. While looking out of a tram window, Yuri sees Lara in the street. He runs after her but suffers a fatal heart attack before reaching her. Yuri's funeral is well-attended, despite his poetry being banned. Lara approaches Yevgraf and asks for his help to find her daughter by Yuri, who was lost during the civil war. Yevgraf helps her search the orphanages, but they are unable to locate her. Lara disappears and Yevgraf believes she must have died in one of the labour camps.
+
+While Yevgraf believes that Tanya Komarova is Yuri and Lara's daughter, she remains unconvinced. After persistently being asked how she came to be lost, Tanya finally answers that her "father" had let go of her hand when they were running from the war's chaos. Yevgraf responds that a real father would not have let go. Tanya promises to consider what Yevgraf has told her. 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.com/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Event1 rdf:type yago:Event ;
+rdfs:label "Searching for a lost daughter" .
+
+ex:Event2 rdf:type yago:Event ;
+rdfs:label "Orphaned child taken to Moscow" .
+
+ex:Event3 rdf:type yago:Event ;
+rdfs:label "Reunion with Tonya" .
+
+ex:Event4 rdf:type yago:Event ;
+rdfs:label "Lara's seduction by Komarovsky" .
+
+ex:Event5 rdf:type yago:Event ;
+rdfs:label "Pasha wounded during a demonstration" .
+
+ex:Event6 rdf:type yago:Event ;
+rdfs:label "Lara hiding Pasha's gun" .
+
+ex:Event7 rdf:type yago:Event ;
+rdfs:label "Lara's mother's suicide attempt" .
+
+ex:Event8 rdf:type yago:Event ;
+rdfs:label "Komarovsky's wound treatment" .
+
+ex:Event9 rdf:type yago:Event ;
+rdfs:label "Lara shooting Komarovsky" .
+
+ex:Event10 rdf:type yago:Event ;
+rdfs:label "Yuri as a battlefield doctor" .
+
+ex:Event11 rdf:type yago:Event ;
+rdfs:label "Lara enlisting as a nurse" .
+
+ex:Event12 rdf:type yago:Event ;
+rdfs:label "Zhivago and Lara falling in love" .
+
+ex:Event13 rdf:type yago:Event ;
+rdfs:label "Return to Moscow and confiscation of house" .
+
+ex:Event14 rdf:type yago:Event ;
+rdfs:label "Providing documents for travel" .
+
+ex:Event15 rdf:type yago:Event ;
+rdfs:label "Captured by Strelnikov" .
+
+ex:Event16 rdf:type yago:Event ;
+rdfs:label "Reunion with Lara in Yuriatin" .
+
+ex:Event17 rdf:type yago:Event ;
+rdfs:label "Yuri's abduction by Communist partisans" .
+
+ex:Event18 rdf:type yago:Event ;
+rdfs:label "Desertion and return to Yuriatin" .
+
+ex:Event19 rdf:type yago:Event ;
+rdfs:label "Yuri and Lara becoming lovers again" .
+
+ex:Event20 rdf:type yago:Event ;
+rdfs:label "Lara's arrest planned" .
+
+ex:Event21 rdf:type yago:Event ;
+rdfs:label "Yuri's fatal heart attack" .
+
+ex:Event22 rdf:type yago:Event ;
+rdfs:label "Yuri's funeral" .
+
+ex:Event23 rdf:type yago:Event ;
+rdfs:label "Searching for Yuri and Lara's lost daughter" .
+
+ex:Genre1 rdf:type yago:Genre ;
+rdfs:label "Drama" .
+
+ex:Genre2 rdf:type yago:Genre ;
+rdfs:label "Romance" .
+
+ex:Genre3 rdf:type yago:Genre ;
+rdfs:label "War" .
+
+ex:Event1 rdf:type ex:Genre1 .
+ex:Event2 rdf:type ex:Genre1 .
+ex:Event3 rdf:type ex:Genre1 .
+ex:Event4 rdf:type ex:Genre1 .
+ex:Event5 rdf:type ex:Genre1 .
+ex:Event6 rdf:type ex:Genre1 .
+ex:Event7 rdf:type ex:Genre1 .
+ex:Event8 rdf:type ex:Genre1 .
+ex:Event9 rdf:type ex:Genre1 .
+ex:Event10 rdf:type ex:Genre3 .
+ex:Event11 rdf:type ex:Genre3 .
+ex:Event12 rdf:type ex:Genre1 .
+ex:Event13 rdf:type ex:Genre1 .
+ex:Event14 rdf:type ex:Genre1 .
+ex:Event15 rdf:type ex:Genre3 .
+ex:Event16 rdf:type ex:Genre1 .
+ex:Event17 rdf:type ex:Genre3 .
+ex:Event18 rdf:type ex:Genre1 .
+ex:Event19 rdf:type ex:Genre1 .
+ex:Event20 rdf:type ex:Genre1 .
+ex:Event21 rdf:type ex:Genre1 .
+ex:Event22 rdf:type ex:Genre1 .
+ex:Event23 rdf:type ex:Genre1 .
+
+Note: This RDF representation provides the events and genres from the plot description, but it does not include YAGO annotations as the specific YAGO ontology was not mentioned in the plot description. However, you can use this RDF format as a starting point to further annotate the events and genres with appropriate YAGO ontology properties and classes if needed.
+User
+Redo this but make sure the events' labels do not contain any character names, they should have more general labels
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.com/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Event1 rdf:type yago:Event ;
+rdfs:label "Search for a lost family member" .
+
+ex:Event2 rdf:type yago:Event ;
+rdfs:label "Relocation to a new city" .
+
+ex:Event3 rdf:type yago:Event ;
+rdfs:label "Reunion with a childhood friend" .
+
+ex:Event4 rdf:type yago:Event ;
+rdfs:label "Unexpected romantic involvement" .
+
+ex:Event5 rdf:type yago:Event ;
+rdfs:label "Involvement in a violent incident" .
+
+ex:Event6 rdf:type yago:Event ;
+rdfs:label "Concealment of a weapon" .
+
+ex:Event7 rdf:type yago:Event ;
+rdfs:label "Suicide attempt" .
+
+ex:Event8 rdf:type yago:Event ;
+rdfs:label "Treatment of a wounded person" .
+
+ex:Event9 rdf:type yago:Event ;
+rdfs:label "Shooting incident" .
+
+ex:Event10 rdf:type yago:Event ;
+rdfs:label "Involvement in a war as a medical professional" .
+
+ex:Event11 rdf:type yago:Event ;
+rdfs:label "Enlistment as a nurse during a war" .
+
+ex:Event12 rdf:type yago:Event ;
+rdfs:label "Forbidden love affair" .
+
+ex:Event13 rdf:type yago:Event ;
+rdfs:label "Loss of property and forced relocation" .
+
+ex:Event14 rdf:type yago:Event ;
+rdfs:label "Providing false documents for escape" .
+
+ex:Event15 rdf:type yago:Event ;
+rdfs:label "Capture and interrogation" .
+
+ex:Event16 rdf:type yago:Event ;
+rdfs:label "Reunion in a new location" .
+
+ex:Event17 rdf:type yago:Event ;
+rdfs:label "Abduction and forced service" .
+
+ex:Event18 rdf:type yago:Event ;
+rdfs:label "Desertion and return to a familiar place" .
+
+ex:Event19 rdf:type yago:Event ;
+rdfs:label "Rekindling of a past romance" .
+
+ex:Event20 rdf:type yago:Event ;
+rdfs:label "Planned arrest and escape" .
+
+ex:Event21 rdf:type yago:Event ;
+rdfs:label "Tragic demise" .
+
+ex:Event22 rdf:type yago:Event ;
+rdfs:label "Funeral ceremony" .
+
+ex:Event23 rdf:type yago:Event ;
+rdfs:label "Search for a lost child" .
+
+ex:Genre1 rdf:type yago:Genre ;
+rdfs:label "Drama" .
+
+ex:Genre2 rdf:type yago:Genre ;
+rdfs:label "Romance" .
+
+ex:Genre3 rdf:type yago:Genre ;
+rdfs:label "War" .
+
+ex:Event1 rdf:type ex:Genre1 .
+ex:Event2 rdf:type ex:Genre1 .
+ex:Event3 rdf:type ex:Genre1 .
+ex:Event4 rdf:type ex:Genre1 .
+ex:Event5 rdf:type ex:Genre1 .
+ex:Event6 rdf:type ex:Genre1 .
+ex:Event7 rdf:type ex:Genre1 .
+ex:Event8 rdf:type ex:Genre1 .
+ex:Event9 rdf:type ex:Genre1 .
+ex:Event10 rdf:type ex:Genre3 .
+ex:Event11 rdf:type ex:Genre3 .
+ex:Event12 rdf:type ex:Genre1 .
+ex:Event13 rdf:type ex:Genre1 .
+ex:Event14 rdf:type ex:Genre1 .
+ex:Event15 rdf:type ex:Genre1 .
+ex:Event16 rdf:type ex:Genre1 .
+ex:Event17 rdf:type ex:Genre1 .
+ex:Event18 rdf:type ex:Genre1 .
+ex:Event19 rdf:type ex:Genre1 .
+ex:Event20 rdf:type ex:Genre1 .
+ex:Event21 rdf:type ex:Genre1 .
+ex:Event22 rdf:type ex:Genre1 .
+ex:Event23 rdf:type ex:Genre1 .
+
+This RDF representation provides the events and genres from the plot description without character names in the event labels. The events are labeled with more general descriptions, and the genres are categorized as Drama, Romance, and War.
+User
+
+Extract events and genres in form of comma-separated lists
+ChatGPT
+
+Events: Search for a lost family member, Relocation to a new city, Reunion with a childhood friend, Unexpected romantic involvement, Involvement in a violent incident, Concealment of a weapon, Suicide attempt, Treatment of a wounded person, Shooting incident, Involvement in a war as a medical professional, Enlistment as a nurse during a war, Forbidden love affair, Loss of property and forced relocation, Providing false documents for escape, Capture and interrogation, Reunion in a new location, Abduction and forced service, Desertion and return to a familiar place, Rekindling of a past romance, Planned arrest and escape, Tragic demise, Funeral ceremony, Search for a lost child.
+
+Genres: Drama, Romance, War.

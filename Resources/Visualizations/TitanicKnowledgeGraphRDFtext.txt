@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.org/>.
+@prefix yago: <http://yago-knowledge.org/resource/>.
+
+ex:Event1 rdf:type yago:Event;  
+         rdfs:label "Lovett and his team search the wreck of RMS Titanic".
+
+ex:Event2 rdf:type yago:Event;  
+         rdfs:label "Drawing of a young nude woman wearing the necklace is found".
+
+ex:Event3 rdf:type yago:Event;  
+         rdfs:label "Rose contacts Lovett and identifies herself as the woman in the drawing".
+
+ex:Event4 rdf:type yago:Event;  
+         rdfs:label "Rose recounts her experiences as a Titanic passenger".
+
+ex:Event5 rdf:type yago:Event;  
+         rdfs:label "Rose and her family board the Titanic".
+
+ex:Event6 rdf:type yago:Event;  
+         rdfs:label "Jack Dawson wins a third-class ticket to the Titanic".
+
+ex:Event7 rdf:type yago:Event;  
+         rdfs:label "Rose develops a friendship with Jack and falls in love with him".
+
+ex:Event8 rdf:type yago:Event;  
+         rdfs:label "Rose asks Jack to draw her nude wearing the Heart of the Ocean".
+
+ex:Event9 rdf:type yago:Event;  
+         rdfs:label "Ship collides with an iceberg".
+
+ex:Event10 rdf:type yago:Event;  
+          rdfs:label "Cal frames Jack for theft of the necklace".
+
+ex:Event11 rdf:type yago:Event;  
+          rdfs:label "Rose and Jack try to warn others about the collision".
+
+ex:Event12 rdf:type yago:Event;  
+          rdfs:label "Rose refuses to leave Jack and jumps back onto the ship".
+
+ex:Event13 rdf:type yago:Event;  
+          rdfs:label "Jack helps Rose onto a wood panel for survival".
+
+ex:Event14 rdf:type yago:Event;  
+          rdfs:label "Jack dies of hypothermia".
+
+ex:Event15 rdf:type yago:Event;  
+          rdfs:label "Rose is rescued by a lifeboat".
+
+ex:Event16 rdf:type yago:Event;  
+          rdfs:label "Carpathia rescues the survivors".
+
+ex:Event17 rdf:type yago:Event;  
+          rdfs:label "Rose hides among steerage passengers and discovers the necklace".
+
+ex:Event18 rdf:type yago:Event;  
+          rdfs:label "Rose drops the Heart of the Ocean into the sea over the wreck site".
+
+ex:Event19 rdf:type yago:Event;  
+          rdfs:label "Rose's photos depict a life of freedom and adventure".
+
+ex:Event20 rdf:type yago:Event;  
+          rdfs:label "Young Rose reunites with Jack at the Titanic's Grand Staircase".
+
+ex:Genre1 rdf:type yago:Genre;
+         rdfs:label "Drama".
+
+ex:Genre2 rdf:type yago:Genre;
+         rdfs:label "Romance".
+
+ex:Genre3 rdf:type yago:Genre;
+         rdfs:label "Historical".
+
+ex:Genre4 rdf:type yago:Genre;
+         rdfs:label "Tragedy".
+
+ex:Event1 rdf:type ex:Genre1, ex:Genre3, ex:Genre4.
+ex:Event2 rdf:type ex:Genre1, ex:Genre3.
+ex:Event3 rdf:type ex:Genre1, ex:Genre2.
+ex:Event4 rdf:type ex:Genre1, ex:Genre3.
+ex:Event5 rdf:type ex:Genre1, ex:Genre3.
+ex:Event6 rdf:type ex:Genre1, ex:Genre3.
+ex:Event7 rdf:type ex:Genre1, ex:Genre2.
+ex:Event8 rdf:type ex:Genre1, ex:Genre2.
+ex:Event9 rdf:type ex:Genre1, ex:Genre3, ex:Genre4.
+ex:Event10 rdf:type ex:Genre1, ex:Genre3.
+ex:Event11 rdf:type ex:Genre1, ex:Genre3.
+ex:Event12 rdf:type ex:Genre1, ex:Genre3.
+ex:Event13 rdf:type ex:Genre1, ex:Genre3.
+ex:Event14 rdf:type ex:Genre1, ex:Genre4.
+ex:Event15 rdf:type ex:Genre1, ex:Genre3.
+ex:Event16 rdf:type ex:Genre1, ex:Genre3.
+ex:Event17 rdf:type ex:Genre1, ex:Genre3.
+ex:Event18 rdf:type ex:Genre1, ex:Genre3.
+ex:Event19 rdf:type ex:Genre1, ex:Genre3.
+ex:Event20 rdf:type ex:Genre1, ex:Genre3.

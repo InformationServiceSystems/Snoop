@@ -1,0 +1,84 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+American diplomat Robert Thorn and his wife Kathy are living in Rome, where she gives birth to a boy who dies. Hospital chaplain Father Spiletto persuades Robert to secretly adopt a baby whose mother just died in childbirth. Robert does not tell Kathy the child is not their own. They name him Damien.
+
+Five years later, Robert is Ambassador to the United Kingdom when mysterious events plague the Thorns: a menacing Rottweiler appears at their home, Damien's nanny publicly hangs herself during his fifth birthday party, new nanny Mrs. Baylock arrives unannounced, Damien violently resists entering a church, and Damien's presence terrifies animals at a wildlife park. Father Brennan warns Robert about Damien's origins, hinting that he is not human and insisting Robert take Communion. He tells Robert that Damien is the son of Satan, that Kathy is pregnant, and that he will kill his unborn sibling and parents unless he dies. Later, Brennan is killed by a falling lightning rod. Kathy tells Robert she wants an abortion, which he opposes. Damien knocks Kathy over a railing to the floor below, injuring her and causing a miscarriage.
+
+Photographer Keith Jennings notices shadows in photographs of the nanny and of Father Brennan that presage their deaths. Keith shows Robert the photos along with news clippings and Biblical passages that suggest the coming of the Antichrist. He accompanies Robert to Rome to investigate Damien's birth. They learn that a fire destroyed the hospital, including Kathy's maternity records, and killed the staff on duty. They find Father Spiletto in a monastery, severely burned, mute, blind in one eye, and partly paralyzed. He directs them to the cemetery where Damien's biological mother is buried. In Damien's mother's grave, Robert and Keith find a jackal carcass and, in the next plot, a child's skeleton with a shattered skull. Robert realizes that the jackal is Damien's mother and the child is his own son, murdered so Damien can take his place. A pack of Rottweilers drives Robert and Keith from the cemetery.
+
+Robert calls Kathy in hospital to tell her she must leave London. Before she can do so, Mrs. Baylock throws her to her death from a window. Robert and Keith meet Antichrist expert Carl Bugenhagen who says if Damien is the true Antichrist, he will bear a birthmark in the shape of three sixes. Carl gives Robert seven daggers with which to kill Damien on hallowed ground. Thorn refuses to do so, but Keith remains convicted in their task. Afterwards, Keith is decapitated by a sheet of glass. Robert then reluctantly accepts his task.
+
+Robert finds the birthmark on the sleeping Damien's scalp and is attacked by Mrs. Baylock, whom he stabs to death. Armed with the daggers, Robert drives Damien to a cathedral. His erratic driving draws the attention of the police. Robert drags a screaming Damien onto the altar to kill him, but is shot to death by police before he can do so.
+
+The double funeral of Kathy and Robert is attended by the U.S. President and the First Lady, who have Damien with them. Damien turns and smiles at the camera. 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.org/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Plot rdf:type yago:Plot ;
+rdfs:label "The Omen (1976) - Plot Summary" ;
+yago:consistsOf ex:MoveIn, ex:AdoptChild, ex:ExperienceMysteriousEvents, ex:ReceiveWarning, ex:InvestigateBirth, ex:DiscoverTruth, ex:EscapeCemetery, ex:ArrangeCall, ex:KillSpouse, ex:MeetExpert, ex:SearchForBirthmark, ex:AttackByBaylock, ex:KillBaylock, ex:AttemptToKillDamien, ex:FuneralOfKathy, ex:FuneralOfRobert .
+
+ex:MoveIn rdf:type yago:Event ;
+rdfs:label "Move In" .
+
+ex:AdoptChild rdf:type yago:Event ;
+rdfs:label "Adopt Child" .
+
+ex:ExperienceMysteriousEvents rdf:type yago:Event ;
+rdfs:label "Experience Mysterious Events" .
+
+ex:ReceiveWarning rdf:type yago:Event ;
+rdfs:label "Receive Warning" .
+
+ex:InvestigateBirth rdf:type yago:Event ;
+rdfs:label "Investigate Birth" .
+
+ex:DiscoverTruth rdf:type yago:Event ;
+rdfs:label "Discover Truth" .
+
+ex:EscapeCemetery rdf:type yago:Event ;
+rdfs:label "Escape Cemetery" .
+
+ex:ArrangeCall rdf:type yago:Event ;
+rdfs:label "Arrange Call" .
+
+ex:KillSpouse rdf:type yago:Event ;
+rdfs:label "Kill Spouse" .
+
+ex:MeetExpert rdf:type yago:Event ;
+rdfs:label "Meet Expert" .
+
+ex:SearchForBirthmark rdf:type yago:Event ;
+rdfs:label "Search For Birthmark" .
+
+ex:AttackByBaylock rdf:type yago:Event ;
+rdfs:label "Attack by Baylock" .
+
+ex:KillBaylock rdf:type yago:Event ;
+rdfs:label "Kill Baylock" .
+
+ex:AttemptToKillDamien rdf:type yago:Event ;
+rdfs:label "Attempt to Kill Damien" .
+
+ex:FuneralOfKathy rdf:type yago:Event ;
+rdfs:label "Funeral of Kathy" .
+
+ex:FuneralOfRobert rdf:type yago:Event ;
+rdfs:label "Funeral of Robert" .
+
+ex:PsychologicalHorror rdf:type yago:Genre ;
+rdfs:label "Psychological Horror" .
+
+ex:SupernaturalThriller rdf:type yago:Genre ;
+rdfs:label "Supernatural Thriller" .
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: Move In, Adopt Child, Experience Mysterious Events, Receive Warning, Investigate Birth, Discover Truth, Escape Cemetery, Arrange Call, Kill Spouse, Meet Expert, Search For Birthmark, Attack by Baylock, Kill Baylock, Attempt to Kill Damien, Funeral of Kathy, Funeral of Robert
+
+Genres: Psychological Horror, Supernatural Thriller

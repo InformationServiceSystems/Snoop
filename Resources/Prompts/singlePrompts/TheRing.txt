@@ -1,0 +1,372 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Teenage girls Katie and Becca discuss an urban legend about a cursed videotape that causes whoever watches it to perish in seven days. Katie confesses to Becca that she watched such a tape with her friends the previous weekend. That night, Katie is killed by an unseen force.
+
+At Katie's funeral, Katie's mother Ruth asks her sister Rachel, a Seattle-based journalist, to investigate her daughter's death. Rachel discovers that Katie's friends were killed in bizarre accidents on the night of her death. She also learns that Becca has been institutionalized after witnessing Katie's death. Rachel goes to the Shelter Mountain Inn, the mountain retreat where Katie and her friends watched the tape. She rents the same room, cabin 12, and watches the tape; it contains strange and frightening imagery. After the tape ends, she receives a phone call from an unknown caller who whispers, "seven days".
+
+Rachel recruits the help of her video analyst ex-boyfriend Noah. He watches the tape and Rachel makes him a copy so they can both investigate where it came from. Rachel begins to see images from the tape appear in the real world. She discovers hidden imagery of a lighthouse and identifies a woman on the tape: a horse breeder, Anna Morgan, who killed herself after some of her horses drowned themselves off Moesko Island. Rachel finds her son Aidan, who is also Noah's son, watching the tape.
+
+Leaving Aidan in Ruth's care, Rachel heads for Moesko Island to speak to Anna's widower Richard, while Noah travels to Eola Psychiatric Hospital to view Anna's medical files. On the ferry to the island, a horse is spooked by Rachel and leaps to its death. On the island, she discovers Anna had an adopted girl, Samara, but Richard claims it is not true. Rachel speaks to the island physician, who explains that Anna adopted Samara due to her infertility. Samara possessed the ability to psychically etch images onto objects and into people's minds, tormenting her parents and their horses. Noah finds a psychiatric file on Samara which mentions a missing video record last seen by Richard.
+
+Returning to the Morgan home, Rachel finds the missing video, watching it to discover Samara explaining her powers during a therapy session. Discovering Rachel, Richard strikes her insisting that Samara is evil, and that Rachel's actions have put them all in danger before electrocuting himself in the bath. Noah arrives and he and Rachel enter the barn. In a loft converted to a bedroom to isolate Samara from the outside world, they find an image of a tree behind the wallpaper; Rachel recognizes it as a tree at the Shelter Mountain Inn.
+
+Rachel returns with Noah to cabin 12 at Shelter Mountain Inn, where they are led to a well beneath the floorboards. They remove the lid and Rachel is pushed inside. A hand grabs her, and Rachel experiences a vision of Anna choking and dumping Samara into the well, where she survived for seven days. Samara's body surfaces from the water. After Rachel is rescued from the well, they arrange a proper burial for Samara. Noah tells Rachel that they are now safe as more than seven days have passed since she watched the tape.
+
+Aidan then warns Rachel that it was a mistake to try to help Samara. Rachel realizes that Noah's seven days are up and rushes to save him, but the vengeful ghost of Samara materializes on his television screen, crawls out of it and kills him. Rachel finds his disfigured face and returns home to destroy the tape. Unable to deduce why she was spared, she realizes that the tape seen by Noah and Aidan was a copy she had created. Rachel has Aidan make a copy of the copy to show to someone else, saving him from Samara. Aidan asks Rachel what will happen to the person who watches the copy they are creating, to which Rachel does not answer. 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.com/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:TeenageGirlsDiscussUrbanLegend rdf:type yago:Activity ;
+rdfs:label "Teenage girls discuss an urban legend" .
+
+ex:CursedVideotape rdf:type yago:Object ;
+rdfs:label "Cursed videotape" .
+
+ex:PerishInSevenDays rdf:type yago:Event ;
+rdfs:label "Perish in seven days" .
+
+ex:KatieConfessesWatchingTape rdf:type yago:Communication ;
+rdfs:label "Katie confesses to watching the tape" .
+
+ex:KatieKilled rdf:type yago:Event ;
+rdfs:label "Katie is killed" .
+
+ex:InvestigateDeath rdf:type yago:Action ;
+rdfs:label "Investigate death" .
+
+ex:FriendsKilledInAccidents rdf:type yago:Event ;
+rdfs:label "Friends are killed in accidents" .
+
+ex:WitnessDeath rdf:type yago:Perception ;
+rdfs:label "Witness death" .
+
+ex:GoToMountainInn rdf:type yago:Movement ;
+rdfs:label "Go to Shelter Mountain Inn" .
+
+ex:RentRoom rdf:type yago:Transaction ;
+rdfs:label "Rent a room" .
+
+ex:WatchTape rdf:type yago:Action ;
+rdfs:label "Watch the tape" .
+
+ex:ReceivePhoneCall rdf:type yago:Communication ;
+rdfs:label "Receive a phone call" .
+
+ex:RecruitHelp rdf:type yago:Action ;
+rdfs:label "Recruit help" .
+
+ex:InvestigateOrigin rdf:type yago:Action ;
+rdfs:label "Investigate origin" .
+
+ex:SeeImagesAppear rdf:type yago:Perception ;
+rdfs:label "See images appear" .
+
+ex:DiscoverLighthouse rdf:type yago:Discovery ;
+rdfs:label "Discover a lighthouse" .
+
+ex:IdentifyWomanOnTape rdf:type yago:Recognition ;
+rdfs:label "Identify a woman on the tape" .
+
+ex:HorseBreederKillsHerself rdf:type yago:Event ;
+rdfs:label "Horse breeder kills herself" .
+
+ex:HorsesDrown rdf:type yago:Event ;
+rdfs:label "Horses drown" .
+
+ex:FindSonWatchingTape rdf:type yago:Discovery ;
+rdfs:label "Find son watching the tape" .
+
+ex:LeaveInCare rdf:type yago:Transfer ;
+rdfs:label "Leave in someone's care" .
+
+ex:SpeakToWidower rdf:type yago:Communication ;
+rdfs:label "Speak to widower" .
+
+ex:TravelToHospital rdf:type yago:Movement ;
+rdfs:label "Travel to hospital" .
+
+ex:HorseSpooked rdf:type yago:Event ;
+rdfs:label "Horse spooked" .
+
+ex:LeapToDeath rdf:type yago:Event ;
+rdfs:label "Leap to death" .
+
+ex:DiscoverAdoption rdf:type yago:Discovery ;
+rdfs:label "Discover adoption" .
+
+ex:PsychicAbilities rdf:type yago:Trait ;
+rdfs:label "Psychic abilities" .
+
+ex:TormentParents rdf:type yago:Event ;
+rdfs:label "Torment parents" .
+
+ex:FindPsychiatricFile rdf:type yago:Discovery ;
+rdfs:label "Find psychiatric file" .
+
+ex:ExplainPowers rdf:type yago:Communication ;
+rdfs:label "Explain powers" .
+
+ex:Strike rdf:type yago:Attack ;
+rdfs:label "Strike" .
+
+ex:PutInDanger rdf:type yago:Action ;
+rdfs:label "Put in danger" .
+
+ex:Electrocute rdf:type yago:Attack ;
+rdfs:label "Electrocute" .
+
+ex:Arrive rdf:type yago:Movement ;
+rdfs:label "Arrive" .
+
+ex:FindMissingVideo rdf:type yago:Discovery ;
+rdfs:label "Find missing video" .
+
+ex:DiscoverExplanation rdf:type yago:Discovery ;
+rdfs:label "Discover explanation" .
+
+ex:EnterBarn rdf:type yago:Movement ;
+rdfs:label "Enter barn" .
+
+ex:FindImage rdf:type yago:Discovery ;
+rdfs:label "Find image" .
+
+ex:RecognizeTree rdf:type yago:Recognition ;
+rdfs:label "Recognize a tree" .
+
+ex:ReturnToCabin rdf:type yago:Movement ;
+rdfs:label "Return to cabin" .
+
+ex:LeadToWell rdf:type yago:Movement ;
+rdfs:label "Lead to well" .
+
+ex:RemoveLid rdf:type yago:Action ;
+rdfs:label "Remove lid" .
+
+ex:PushInside rdf:type yago:Action ;
+rdfs:label "Push inside" .
+
+ex:ExperienceVision rdf:type yago:Perception ;
+rdfs:label "Experience vision" .
+
+ex:Choke rdf:type yago:Attack ;
+rdfs:label "Choke" .
+
+ex:DumpIntoWell rdf:type yago:Action ;
+rdfs:label "Dump into well" .
+
+ex:Surface rdf:type yago:Movement ;
+rdfs:label "Surface" .
+
+ex:RescueFromWell rdf:type yago:Action ;
+rdfs:label "Rescue from well" .
+
+ex:ArrangeBurial rdf:type yago:Action ;
+rdfs:label "Arrange burial" .
+
+ex:DeclareSafe rdf:type yago:Assertion ;
+rdfs:label "Declare safe" .
+
+ex:Warn rdf:type yago:Communication ;
+rdfs:label "Warn" .
+
+ex:Materialize rdf:type yago:Transformation ;
+rdfs:label "Materialize" .
+
+ex:CrawlOut rdf:type yago:Movement ;
+rdfs:label "Crawl out" .
+
+ex:Kill rdf:type yago:Attack ;
+rdfs:label "Kill" .
+
+ex:ReturnHome rdf:type yago:Movement ;
+rdfs:label "Return home" .
+
+ex:DestroyTape rdf:type yago:Action ;
+rdfs:label "Destroy tape" .
+
+ex:MakeCopy rdf:type yago:Action ;
+rdfs:label "Make a copy" .
+
+ex:SaveFromGhost rdf:type yago:Action ;
+rdfs:label "Save from ghost" .
+
+ex:AskQuestion rdf:type yago:Communication ;
+rdfs:label "Ask a question" .
+
+ex:EventGenre rdf:type rdf:Property ;
+rdfs:label "Event genre" .
+
+ex:HorrorGenre rdf:type rdf:Property ;
+rdfs:label "Horror genre" .
+
+ex:PsychologicalThrillerGenre rdf:type rdf:Property ;
+rdfs:label "Psychological thriller genre" .
+
+ex:SupernaturalGenre rdf:type rdf:Property ;
+rdfs:label "Supernatural genre" .
+
+ex:plot rdf:type rdf:Property ;
+rdfs:label "Plot" .
+
+ex:Plot1 rdf:type rdf:Statement ;
+rdfs:label "Plot 1" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:HorrorGenre .
+
+ex:Plot2 rdf:type rdf:Statement ;
+rdfs:label "Plot 2" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:PsychologicalThrillerGenre .
+
+ex:Plot3 rdf:type rdf:Statement ;
+rdfs:label "Plot 3" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:SupernaturalGenre .
+
+ex:Plot4 rdf:type rdf:Statement ;
+rdfs:label "Plot 4" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot5 rdf:type rdf:Statement ;
+rdfs:label "Plot 5" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot6 rdf:type rdf:Statement ;
+rdfs:label "Plot 6" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot7 rdf:type rdf:Statement ;
+rdfs:label "Plot 7" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot8 rdf:type rdf:Statement ;
+rdfs:label "Plot 8" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot9 rdf:type rdf:Statement ;
+rdfs:label "Plot 9" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot10 rdf:type rdf:Statement ;
+rdfs:label "Plot 10" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot11 rdf:type rdf:Statement ;
+rdfs:label "Plot 11" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot12 rdf:type rdf:Statement ;
+rdfs:label "Plot 12" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot13 rdf:type rdf:Statement ;
+rdfs:label "Plot 13" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot14 rdf:type rdf:Statement ;
+rdfs:label "Plot 14" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot15 rdf:type rdf:Statement ;
+rdfs:label "Plot 15" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot16 rdf:type rdf:Statement ;
+rdfs:label "Plot 16" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot17 rdf:type rdf:Statement ;
+rdfs:label "Plot 17" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot18 rdf:type rdf:Statement ;
+rdfs:label "Plot 18" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot19 rdf:type rdf:Statement ;
+rdfs:label "Plot 19" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+
+ex:Plot20 rdf:type rdf:Statement ;
+rdfs:label "Plot 20" ;
+rdf:subject ex:plot ;
+rdf:predicate rdf:type ;
+rdf:object ex:EventGenre .
+User
+
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events:
+Discussing an urban legend,
+Confessing to watching a cursed videotape,
+Being killed by an unseen force,
+Asking for an investigation into a death,
+Discovering bizarre accidents,
+Being institutionalized after witnessing a death,
+Going to a mountain retreat,
+Renting a room and watching a strange tape,
+Receiving a mysterious phone call,
+Recruiting help from a video analyst,
+Making a copy of the tape,
+Seeing images from the tape appear in the real world,
+Discovering hidden imagery,
+Finding a missing video,
+Being struck and electrocuted,
+Entering a barn and finding an image,
+Finding a well beneath the floorboards,
+Being pushed into the well,
+Experiencing a vision,
+Rescuing someone from a well,
+Arranging a proper burial,
+Realizing the time limit has passed,
+Warning someone about the consequences,
+Materializing on a television screen,
+Killing someone,
+Returning home to destroy the tape,
+Making a copy of a copy,
+Saving someone from the vengeful ghost.
+
+Genres:
+Horror,
+Psychological thriller,
+Supernatural.

@@ -1,0 +1,532 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Guy Woodhouse, a stage actor, and his wife, Rosemary, move into the Bramford, a large Renaissance Revival apartment building in New York City. They disregard their friend Hutch's warning about the Bramford's dark past with witchcraft and murder.
+
+In the laundry room, Rosemary meets a young woman, Terry Gionoffrio, a recovering drug addict whom Minnie and Roman Castevet, the Woodhouses' elderly neighbors, have taken in. One night, Terry apparently jumps to her death from the Castevets' 7th-floor apartment, distressing the Castevets. While Guy grows close to the couple, Rosemary finds them annoying and meddlesome. Minnie gives Terry's pendant to Rosemary as a good luck charm, saying it contains "tannis root".
+
+Guy is cast in a prominent play after the lead actor inexplicably goes blind. With his acting career flourishing, Guy wants to have a baby with Rosemary. On the night that they plan to conceive, Minnie brings over individual cups of chocolate mousse for their dessert. When Rosemary complains that it has a chalky "under-taste" and does not finish it, Guy criticizes her as being ungrateful. Rosemary consumes a bit more to mollify him, then discreetly discards the rest. Soon after, she grows dizzy and passes out. In a dreamlike state, Rosemary hallucinates being raped by a demonic presence (Satan) as Guy, the Castevets, and other Bramford tenants, all nude, watch. The next morning, Guy explains the scratches covering Rosemary's body by claiming that he did not want to miss "baby night" and had sex with her while she was unconscious. He says he has since cut his nails.
+
+Rosemary becomes pregnant, with the baby due the last week of June. The elated Castevets insist that Rosemary goes to their close friend, Dr. Abraham Sapirstein, a prominent obstetrician, rather than her own physician, Dr. Hill. During her first trimester, Rosemary suffers severe abdominal pains and loses weight. By Christmastime, her gaunt appearance alarms her friends and also Hutch, who has been researching the Bramford's history. Before sharing his findings with Rosemary, he falls into a mysterious coma. Rosemary, unable to withstand the pain, insists on seeing Dr. Hill, while Guy argues against it, saying Dr. Sapirstein will be offended. As they argue, the pains suddenly stop and Rosemary feels the baby move.
+
+Three months later, Hutch's friend, Grace Cardiff, informs Rosemary that Hutch is dead. Before dying, he briefly regained consciousness and said to give Rosemary a book on witchcraft, All of Them Witches, along with the cryptic message: "The name is an anagram". Rosemary eventually deduces that Roman Castevet is an anagram for Steven Marcato, the son of a former Bramford resident and a reputed Satanist. She suspects that the Castevets and Dr. Sapirstein belong to a Satanic coven and have sinister intentions for her baby. Guy discounts this and later throws the book away, upsetting Rosemary and making her suspicious of him.
+
+Terrified, she goes to Dr. Hill for help. Assuming that she is delusional, he calls Dr. Sapirstein, who arrives with Guy to take her home, threatening if she resists, to have her sent to a mental hospital. Rosemary locks herself into the apartment, but coven members somehow infiltrate and restrain her. Dr. Sapirstein sedates an hysterical Rosemary, who goes into labor and gives birth. When she awakens, she is told the baby was stillborn. As Rosemary recovers, she notices her pumped breast milk appears to be saved instead of disposed of. She stops taking her prescribed pills, becoming less groggy. When Rosemary hears an infant crying, Guy claims new tenants with a baby have moved into an apartment one floor up.
+
+Believing her baby is alive, Rosemary discovers a hidden door in the bedroom closet leading directly into Minnie and Roman's apartment. Guy, the Castevets, Dr. Sapirstein, and other coven members are there, gathered around a bassinet draped in black with an upside down cross hanging over it. Peering inside, Rosemary is horrified and demands to know what is wrong with her baby's eyes. Roman proclaims that the child, Adrian, Satan's son and the supposed Antichrist, "has his father's eyes". He urges Rosemary to mother her child, promising her she will not have to join the coven. When Guy attempts to calm her, saying they will be rewarded and will conceive their own children, she spits in his face. After hearing the infant's cries, however, Rosemary gives in to her maternal instincts and gently rocks the cradle. 
+ChatGPT
+
+Here is the plot description annotated in RDF format with YAGO annotations using the provided prefixes rdf, rdfs, ex, yago. The event labels have been made more general and do not contain character names:
+
+turtle
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:Guy_Woodhouse rdf:type yago:Character ;
+                rdfs:label "Guy Woodhouse" .
+
+ex:Rosemary_Woodhouse rdf:type yago:Character ;
+                     rdfs:label "Rosemary Woodhouse" .
+
+ex:Hutch rdf:type yago:Character ;
+         rdfs:label "Hutch" .
+
+ex:Terry_Gionoffrio rdf:type yago:Character ;
+                    rdfs:label "Terry Gionoffrio" .
+
+ex:Minnie_Castevet rdf:type yago:Character ;
+                   rdfs:label "Minnie Castevet" .
+
+ex:Roman_Castevet rdf:type yago:Character ;
+                  rdfs:label "Roman Castevet" .
+
+ex:Dr_Abraham_Sapirstein rdf:type yago:Character ;
+                         rdfs:label "Dr. Abraham Sapirstein" .
+
+ex:Dr_Hill rdf:type yago:Character ;
+           rdfs:label "Dr. Hill" .
+
+ex:All_of_Them_Witches rdf:type yago:Book ;
+                      rdfs:label "All of Them Witches" .
+
+ex:New_York_City rdf:type yago:Location ;
+                rdfs:label "New York City" .
+
+ex:Bramford rdf:type yago:Building ;
+           rdfs:label "Bramford" .
+
+ex:Laundry_Room rdf:type yago:Room ;
+                rdfs:label "Laundry Room" .
+
+ex:Play rdf:type yago:CreativeWork ;
+        rdfs:label "Play" .
+
+ex:Chocolate_Mousse rdf:type yago:Food ;
+                   rdfs:label "Chocolate Mousse" .
+
+ex:Rape rdf:type yago:Event ;
+         rdfs:label "Assault" .
+
+ex:Pregnancy rdf:type yago:Event ;
+             rdfs:label "Pregnancy" .
+
+ex:Investigate rdf:type yago:Event ;
+               rdfs:label "Investigation" .
+
+ex:Discover rdf:type yago:Event ;
+             rdfs:label "Discovery" .
+
+ex:Confront rdf:type yago:Event ;
+            rdfs:label "Confrontation" .
+
+ex:Escape rdf:type yago:Event ;
+           rdfs:label "Escape" .
+
+ex:Help rdf:type yago:Event ;
+         rdfs:label "Assistance" .
+
+ex:Lock rdf:type yago:Event ;
+          rdfs:label "Locking" .
+
+ex:Restrain rdf:type yago:Event ;
+              rdfs:label "Restraining" .
+
+ex:Sedate rdf:type yago:Event ;
+           rdfs:label "Sedation" .
+
+ex:Give_Birth rdf:type yago:Event ;
+              rdfs:label "Giving Birth" .
+
+ex:Recover rdf:type yago:Event ;
+             rdfs:label "Recovery" .
+
+ex:Analyze rdf:type yago:Event ;
+             rdfs:label "Analysis" .
+
+ex:Rock rdf:type yago:Event ;
+          rdfs:label "Rocking" .
+
+ex:Guy_Woodhouse rdf:type yago:Person ;
+                rdfs:label "Guy Woodhouse" .
+
+ex:Rosemary_Woodhouse rdf:type yago:Person ;
+                     rdfs:label "Rosemary Woodhouse" .
+
+ex:Hutch rdf:type yago:Person ;
+         rdfs:label "Hutch" .
+
+ex:Terry_Gionoffrio rdf:type yago:Person ;
+                    rdfs:label "Terry Gionoffrio" .
+
+ex:Minnie_Castevet rdf:type yago:Person ;
+                   rdfs:label "Minnie Castevet" .
+
+ex:Roman_Castevet rdf:type yago:Person ;
+                  rdfs:label "Roman Castevet" .
+
+ex:Dr_Abraham_Sapirstein rdf:type yago:Person ;
+                         rdfs:label "Dr. Abraham Sapirstein" .
+
+ex:Dr_Hill rdf:type yago:Person ;
+           rdfs:label "Dr. Hill" .
+
+ex:All_of_Them_Witches rdf:type yago:CreativeWork ;
+                      rdfs:label "All of Them Witches" .
+
+ex:New_York_City rdf:type yago:City ;
+                rdfs:label "New York City" .
+
+ex:Bramford rdf:type yago:Building ;
+           rdfs:label "Bramford" .
+
+ex:Laundry_Room rdf:type yago:Room ;
+                rdfs:label "Laundry Room" .
+
+ex:Play rdf:type yago:CreativeWork ;
+        rdfs:label "Play" .
+
+ex:Chocolate_Mousse rdf:type yago:Food ;
+                   rdfs:label "Chocolate Mousse" .
+
+ex:Rape rdf:type yago:Crime ;
+         rdfs:label "Assault" .
+
+ex:Pregnancy rdf:type yago:MedicalCondition ;
+             rdfs:label "Pregnancy" .
+
+ex:Investigate rdf:type yago:Investigation ;
+               rdfs:label "Investigation" .
+
+ex:Discover rdf:type yago:Discovery ;
+             rdfs:label "Discovery" .
+
+ex:Confront rdf:type yago:Conflict ;
+            rdfs:label "Confrontation" .
+
+ex:Escape rdf:type yago:Action ;
+           rdfs:label "Escape" .
+
+ex:Help rdf:type yago:Action ;
+         rdfs:label "Assistance" .
+
+ex:Lock rdf:type yago:Action ;
+          rdfs:label "Locking" .
+
+ex:Restrain rdf:type yago:Action ;
+              rdfs:label "Restraining" .
+
+ex:Sedate rdf:type yago:MedicalTreatment ;
+           rdfs:label "Sedation" .
+
+ex:Give_Birth rdf:type yago:BiologicalProcess ;
+              rdfs:label "Giving Birth" .
+
+ex:Recover rdf:type yago:MedicalProcess ;
+             rdfs:label "Recovery" .
+
+ex:Analyze rdf:type yago:Action ;
+             rdfs:label "Analysis" .
+
+ex:Rock rdf:type yago:Action ;
+          rdfs:label "Rocking" .
+
+ex:Move rdf:type yago:Event ;
+          rdfs:label "Moving" .
+
+ex:Disregard rdf:type yago:Event ;
+             rdfs:label "Ignoring" .
+
+ex:Meet rdf:type yago:Event ;
+          rdfs:label "Meeting" .
+
+ex:Jump rdf:type yago:Event ;
+         rdfs:label "Jumping" .
+
+ex:Distress rdf:type yago:Event ;
+            rdfs:label "Distress" .
+
+ex:Grow_Close rdf:type yago:Event ;
+             rdfs:label "Becoming Close" .
+
+ex:Annoy rdf:type yago:Event ;
+            rdfs:label "Annoyance" .
+
+ex:Give rdf:type yago:Event ;
+         rdfs:label "Giving" .
+
+ex:Criticize rdf:type yago:Event ;
+              rdfs:label "Criticism" .
+
+ex:Consume rdf:type yago:Event ;
+            rdfs:label "Consumption" .
+
+ex:Hallucinate rdf:type yago:Event ;
+               rdfs:label "Hallucination" .
+
+ex:Explain rdf:type yago:Event ;
+            rdfs:label "Explanation" .
+
+ex:Complain rdf:type yago:Event ;
+             rdfs:label "Complaint" .
+
+ex:Grow_Dizzy rdf:type yago:Event ;
+              rdfs:label "Dizziness" .
+
+ex:Pass_Out rdf:type yago:Event ;
+             rdfs:label "Loss of Consciousness" .
+
+ex:Dream rdf:type yago:Event ;
+          rdfs:label "Dreaming" .
+
+ex:Scratch rdf:type yago:Event ;
+             rdfs:label "Scratching" .
+
+ex:Cut_Nails rdf:type yago:Event ;
+              rdfs:label "Nail Cutting" .
+
+ex:Become_Pregnant rdf:type yago:Event ;
+                   rdfs:label "Becoming Pregnant" .
+
+ex:Plan rdf:type yago:Event ;
+          rdfs:label "Planning" .
+
+ex:Bring rdf:type yago:Event ;
+          rdfs:label "Bringing" .
+
+ex:Criticize rdf:type yago:Event ;
+              rdfs:label "Criticism" .
+
+ex:Argue rdf:type yago:Event ;
+           rdfs:label "Argument" .
+
+ex:Stop rdf:type yago:Event ;
+          rdfs:label "Stopping" .
+
+ex:Feel rdf:type yago:Event ;
+          rdfs:label "Feeling" .
+
+ex:Suffer rdf:type yago:Event ;
+            rdfs:label "Suffering" .
+
+ex:Lose rdf:type yago:Event ;
+           rdfs:label "Loss" .
+
+ex:Alarm rdf:type yago:Event ;
+           rdfs:label "Alarming" .
+
+ex:Research rdf:type yago:Event ;
+              rdfs:label "Research" .
+
+ex:Share rdf:type yago:Event ;
+            rdfs:label "Sharing" .
+
+ex:Find rdf:type yago:Event ;
+           rdfs:label "Finding" .
+
+ex:Deduce rdf:type yago:Event ;
+            rdfs:label "Deduction" .
+
+ex:Believe rdf:type yago:Event ;
+            rdfs:label "Belief" .
+
+ex:Suspect rdf:type yago:Event ;
+             rdfs:label "Suspicion" .
+
+ex:Discount rdf:type yago:Event ;
+             rdfs:label "Disregard" .
+
+ex:Throw_Away rdf:type yago:Event ;
+              rdfs:label "Disposal" .
+
+ex:Upset rdf:type yago:Event ;
+            rdfs:label "Upsetting" .
+
+ex:Terrify rdf:type yago:Event ;
+              rdfs:label "Terrifying" .
+
+ex:Help rdf:type yago:Event ;
+         rdfs:label "Assistance" .
+
+ex:Call rdf:type yago:Event ;
+         rdfs:label "Calling" .
+
+ex:Arrive rdf:type yago:Event ;
+           rdfs:label "Arrival" .
+
+ex:Threaten rdf:type yago:Event ;
+               rdfs:label "Threat" .
+
+ex:Send rdf:type yago:Event ;
+         rdfs:label "Sending" .
+
+ex:Lock rdf:type yago:Event ;
+          rdfs:label "Locking" .
+
+ex:Infiltrate rdf:type yago:Event ;
+               rdfs:label "Infiltration" .
+
+ex:Restrain rdf:type yago:Event ;
+              rdfs:label "Restraining" .
+
+ex:Sedate rdf:type yago:Event ;
+           rdfs:label "Sedation" .
+
+ex:Give_Birth rdf:type yago:Event ;
+              rdfs:label "Giving Birth" .
+
+ex:Recover rdf:type yago:Event ;
+             rdfs:label "Recovery" .
+
+ex:Analyze rdf:type yago:Event ;
+             rdfs:label "Analysis" .
+
+ex:Rock rdf:type yago:Event ;
+          rdfs:label "Rocking" .
+
+ex:Guy_Woodhouse ex:give_birth ex:Adrian_Marcato .
+
+ex:Guy_Woodhouse ex:conspire_with ex:Roman_Castevet .
+
+ex:Rosemary_Woodhouse ex:discover ex:All_of_Them_Witches .
+
+ex:Rosemary_Woodhouse ex:become_pregnant ex:Adrian_Marcato .
+
+ex:Rosemary_Woodhouse ex:experience ex:distress .
+
+ex:Rosemary_Woodhouse ex:suspect ex:conspiracy .
+
+ex:Rosemary_Woodhouse ex:investigate ex:conspiracy .
+
+ex:Rosemary_Woodhouse ex:meet ex:Hutch .
+
+ex:Rosemary_Woodhouse ex:seek_help ex:Hutch .
+
+ex:Rosemary_Woodhouse ex:ignore ex:Hutch .
+
+ex:Rosemary_Woodhouse ex:complain ex:Guy_Woodhouse .
+
+ex:Rosemary_Woodhouse ex:experience ex:hallucinations .
+
+ex:Rosemary_Woodhouse ex:pass_out ex:Laundry_Room .
+
+ex:Rosemary_Woodhouse ex:dream ex:Satanic_Rituals .
+
+ex:Rosemary_Woodhouse ex:become_pregnant ex:Guy_Woodhouse .
+
+ex:Rosemary_Woodhouse ex:plan ex:escape .
+
+ex:Rosemary_Woodhouse ex:meet ex:Terry_Gionoffrio .
+
+ex:Rosemary_Woodhouse ex:find ex:Book_about_Witchcraft .
+
+ex:Rosemary_Woodhouse ex:deduce ex:conspiracy .
+
+ex:Rosemary_Woodhouse ex:believe ex:conspiracy .
+
+ex:Rosemary_Woodhouse ex:suspect ex:Dr_Abraham_Sapirstein .
+
+ex:Rosemary_Woodhouse ex:discount ex:conspiracy .
+
+ex:Rosemary_Woodhouse ex:throw_away ex:Chocolate_Mousse .
+
+ex:Rosemary_Woodhouse ex:upset ex:Minnie_Castevet .
+
+ex:Rosemary_Woodhouse ex:terrify ex:Roman_Castevet .
+
+ex:Rosemary_Woodhouse ex:help ex:Hutch .
+
+ex:Rosemary_Woodhouse ex:call ex:Dr_Hill .
+
+ex:Rosemary_Woodhouse ex:arrive ex:Dr_Hill .
+
+ex:Rosemary_Woodhouse ex:threaten ex:Dr_Hill .
+
+ex:Rosemary_Woodhouse ex:send ex:tannis_root .
+
+ex:Rosemary_Woodhouse ex:send ex:dead_rat .
+
+ex:Rosemary_Woodhouse ex:lock ex:apartment .
+
+ex:Rosemary_Woodhouse ex:infiltrate ex:apartment .
+
+ex:Rosemary_Woodhouse ex:restrain ex:Dr_Sapirstein .
+
+ex:Rosemary_Woodhouse ex:sedate ex:Dr_Sapirstein .
+
+ex:Rosemary_Woodhouse ex:give_birth ex:Adrian_Marcato .
+
+ex:Rosemary_Woodhouse ex:recover ex:Guy_Woodhouse .
+
+ex:Rosemary_Woodhouse ex:analyze ex:Baby .
+
+ex:Rosemary_Woodhouse ex:rock ex:Baby .
+
+ex:Guy_Woodhouse ex:discover ex:All_of_Them_Witches .
+
+ex:Guy_Woodhouse ex:conspire_with ex:Roman_Castevet .
+
+ex:Guy_Woodhouse ex:ignore ex:Rosemary_Woodhouse .
+
+ex:Guy_Woodhouse ex:help ex:Minnie_Castevet .
+
+ex:Guy_Woodhouse ex:sedate ex:Rosemary_Woodhouse .
+
+ex:Guy_Woodhouse ex:give_birth ex:Adrian_Marcato .
+
+ex:Guy_Woodhouse ex:recover ex:Rosemary_Woodhouse .
+
+ex:Guy_Woodhouse ex:analyze ex:Baby .
+
+ex:Guy_Woodhouse ex:rock ex:Baby .
+
+ex:Roman_Castevet ex:conspire_with ex:Guy_Woodhouse .
+
+ex:Roman_Castevet ex:help ex:Minnie_Castevet .
+
+ex:Roman_Castevet ex:ignore ex:Rosemary_Woodhouse .
+
+ex:Roman_Castevet ex:sedate ex:Rosemary_Woodhouse .
+
+ex:Roman_Castevet ex:give_birth ex:Adrian_Marcato .
+
+ex:Roman_Castevet ex:recover ex:Rosemary_Woodhouse .
+
+ex:Roman_Castevet ex:analyze ex:Baby .
+
+ex:Roman_Castevet ex:rock ex:Baby .
+
+ex:Minnie_Castevet ex:help ex:Roman_Castevet .
+
+ex:Minnie_Castevet ex:ignore ex:Rosemary_Woodhouse .
+
+ex:Minnie_Castevet ex:sedate ex:Rosemary_Woodhouse .
+
+ex:Minnie_Castevet ex:give_birth ex:Adrian_Marcato .
+
+ex:Minnie_Castevet ex:recover ex:Rosemary_Woodhouse .
+
+ex:Minnie_Castevet ex:analyze ex:Baby .
+
+ex:Minnie_Castevet ex:rock ex:Baby .
+
+ex:Hutch ex:meet ex:Rosemary_Woodhouse .
+
+ex:Hutch ex:help ex:Rosemary_Woodhouse .
+
+ex:Hutch ex:ignore ex:Rosemary_Woodhouse .
+
+ex:Hutch ex:complain ex:Rosemary_Woodhouse .
+
+ex:Hutch ex:investigate ex:conspiracy .
+
+ex:Hutch ex:call ex:Dr_Hill .
+
+ex:Hutch ex:arrive ex:Dr_Hill .
+
+ex:Hutch ex:threaten ex:Dr_Hill .
+
+ex:Terry_Gionoffrio ex:meet ex:Rosemary_Woodhouse .
+
+ex:Terry_Gionoffrio ex:help ex:Rosemary_Woodhouse .
+
+ex:Terry_Gionoffrio ex:ignore ex:Rosemary_Woodhouse .
+
+ex:Terry_Gionoffrio ex:complain ex:Rosemary_Woodhouse .
+
+ex:Terry_Gionoffrio ex:investigate ex:conspiracy .
+
+ex:Dr_Abraham_Sapirstein ex:suspect ex:Rosemary_Woodhouse .
+
+ex:Dr_Abraham_Sapirstein ex:discount ex:conspiracy .
+
+ex:Dr_Abraham_Sapirstein ex:restrain ex:Rosemary_Woodhouse .
+
+ex:Dr_Abraham_Sapirstein ex:sedate ex:Rosemary_Woodhouse .
+
+ex:Dr_Hill ex:call ex:Rosemary_Woodhouse .
+
+ex:Dr_Hill ex:arrive ex:Rosemary_Woodhouse .
+
+ex:Dr_Hill ex:threaten ex:Rosemary_Woodhouse .
+
+ex:Baby ex:be_born_to ex:Guy_Woodhouse .
+
+ex:Baby ex:be_born_to ex:Rosemary_Woodhouse .
+
+ex:Baby ex:be_rocked_by ex:Guy_Woodhouse .
+
+ex:Baby ex:be_rocked_by ex:Rosemary_Woodhouse .
+
+ex:Baby ex:be_analyzed_by ex:Guy_Woodhouse .
+
+ex:Baby ex:be_analyzed_by ex:Rosemary_Woodhouse .
+
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: move into apartment building, meet young woman, death of Terry, grow close to neighbors, want to have a baby, consume chocolate mousse, have a hallucination, become pregnant, suffer abdominal pains, receive book on witchcraft, suspect sinister intentions, seek help from Dr. Hill, restrained by coven members, give birth, discover hidden door, confront coven members, rock the cradle
+
+Genres: psychological horror, supernatural thriller

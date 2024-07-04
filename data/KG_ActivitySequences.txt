@@ -1,0 +1,317 @@
+action thriller, QuietLife, Hopeful, Desire, Aggression, Injured, Deception, Determination, Vengeance, Justice, Guilt, Fear, Protective, Betrayal, Frustration, Concern, Dangerous, Fearful, Captured, Mysterious, Defiant, Threatening, Cunning, Triumphant, Vengeful, Inspired, GratitudeActions/Events continues, encounters, hasEmotion, VigilanteJustice, Criminals, returnsRacketeeringMoneyTo, blackmailedBy, beatsWith, after, worksAt, GunmanRobbery, robs, HardwareStore, travelsTo, helpsIdentify, formerColleagueOf, worksFor, DefenseIntelligenceAgency, posesAs, visits, hasEmotion, flashesPictureOf, offersAsWarning, walksAway, failsToAbduct, skipsMeetingWith, kills, guards, surprises, with, destroys, OilTankers, abducts, forcesToMeet, tracksDown, helpsTakeDown, takenIntoCustody, when, leavesNote, withMessage, threatens, formerSpetsnazOperative, RussianSecretPoliceAgent, belongsTo, guardedBy, tricksInto, electrocutingHimself, finds, inspires, postsOnlineAdsAs, thanks, describes
+
+---stopword---
+
+Action thriller, Rage, Grief, Anger, Respect, Concern, Intrigue Events: Recovery, Violent Rampage, Saving, Returning Home, Visitation, Declining, Retaliation, Survival, Acceptance, Meeting, Assassination, Escape, Double Crossing, Fight, Explanation, Arranging Safe Passage, Contract Opening, Attack, Visit, Warning, Confrontation, Mercy, Seeking Help, Treatment, Provision, Pursuit, Killing, Meeting, Explanation, Excommunication Activation, Departure, Contract Dissemination, Running.
+
+---stopword---
+
+Action revenge, grieves, arranged, accosts, failToIntimidate, intimidates, breakInto, kills, steals, recognizes, refuses, beats, berates, fallsInLoveWith, gaveTaskTo, succeededInTask, recovers, includes, attemptsToMakeAmends, kills, putsBountyOn, enlistsToKill, lodgesAt, warns, infiltrates, confronts, isAttackedBy, forcedToRetreatTo, sneaksInto, sees, fires, wakesUp, subdues, reveals, discloses, hires, secures, escapes, kills, destroys, arrivesTo, assaults, isHitBy, captured, tells, isDead, gaveHopeTo, gaveChanceTo, griefFor, intervenesToSave, threatens, assaults, encourages, witnesses, duplicityRevealedBy, isTortured, isKilled, taunts, hasPerkinsExecuted, informs, isPreparingToLeave, racesTo, fights, mortallyWounds, watchesOn, tells, breaksInto, treats, adopts, scheduledToBeEuthanized.
+
+---stopword---
+
+Spy thriller, grieving, coping, intimidate, fail, assault, kill, steal, recognizing, refuse, inform, beats, berates, fear, recover, refuse, kill, put bounty, lodge, warn, infiltrate, confront, retreat, rest, sneak, subdue, reveal, escape, destroy, assess, assault, threaten, intervene, encourage, witness, torture, taunt, execute, inform, race, fight, wound, resign, watch, break, treat, adopt, walk, unsure, approach, ready. Events: finishing mission, sent to Prague, stop rogue agent, steal NOC list, mission fails, list stolen, team killed, escape, return to safe house, realize meaning of Job 314, meet Max, warn about fake NOC list, escape raid, obtain real NOC list, recruit Luther Stickell and Franz Krieger, infiltrate CIA headquarters, steal authentic list, escape to London, arrest of Hunt's mother and uncle, contact Kittridge, trace the call, Phelps resurfaces, exchange with Max, reveal Phelps as mole, confrontation with Phelps, helicopter chase, explosion, Kittridge takes Max into custody, recover the NOC list, reinstated in IMF, unsure about returning, approached for a new mission.
+
+---stopword---
+
+action, superhero, robs, betraying, killing, reveals, escapes, ally, eliminate, supports, retire, pursue, interrupts, offers, kill, concealed, fleeing, find, returns, apprehend, accept, threatens, attacks, continues, reveals, targets, throws, rescues, struggles, understand, relish, claims, lure, deduced, reveals, separates, kills, severely burned, escapes, extracts, burns, deduces, expose, blow up, evacuate, struggles, meets, persuading, defers, killing, grips, reveals, rigged to explode, refuse to kill, subdues, refuses to kill, arrest, incorruptible, corrupts, takes hostage, blames, falls to death, takes blame, persuades, conceals, burns, mourns, launch manhunt, fear, grief, intimidation, assault, loss, hatred, revenge, captivity, danger, warning, subduing, taunting, hope, sacrifice, panic, disbelief, struggle, guilt, negligence, death, destruction, trust, concealment, mourning.
+
+---stopword---
+
+Action thriller, Wounded, Relieved, Satisfied, Threatened, Determined, Reflective, Curious, Surprised, Anxious, Awe, Joy, Satisfaction, Surprise, FearEvents: Sneaks out, Visits, Accompanies, Goes to, Encounters, Works for, Shoots, Kidnaps, Is former Lieutenant Colonel, Is protector of, Visits in prison, Orders, Retrieves, Is former operator, Is recruited by, Saves, Kills, Takes to, Initiates lockdown, Intentionally fails to transfer, Reveals, Kills teammates, Tries to kill, Arranges for, Refuses to leave behind, Fights off, Is retired squad-mate, Calls, Fights, Shoots, Asks for help, Forces to team up, Draws attention away, Is shot by, Is wounded, Instructs, Runs to, Is shot in neck by, Resembles, Encounters, Jumps into, Practices, Watches.
+
+---stopword---
+
+Action thriller, performs, target, carriedOutBy, leadsBy, delivers, deliversTo, causesBy, consistsOf, shoots, destroys, raisesAlarmBy, cutsLightsBy, announcesBy, ambushedBy, subdueBy, separatesBy, finds, murders, revealedToBe, partsWaysWith, meetsUpWith, attacks, incapacitates, regroupsWith, head, fightsWith, free, confrontsWith, kill, taunts, revealsBy, kills, attempts, outOfAmmunitionBy, allowsToLeave, handsOver, tellsToContact, asksToComeHome, refuses, asserts, smiles,Courage, Determination, Guilt, Reluctance, Concern, Illness, Aggression, Destruction, Fear, Desperation, Protectiveness, SeriousInjury, Grief, Loss, Death, Surprise, Conflict, FamilyBond, Cruelty, Betrayal
+
+---stopword---
+
+Action spy, death, MI6 debriefing, dispatched to recover The List, escape, search in an apartment, encounter, meeting, tailing, entering a shop, meeting, finding out, plan, meeting, threatening, arriving, finding, burning, arriving, killing, debriefing, presenting evidence, assassination attempt, killing, returning, conversation.shot, killed, ambushed, suspicious, passionate, betrayed, threatened, avenged, manipulated
+
+---stopword---
+
+Crime thriller, ArmoredTruckRobbery, ThreeDeaths, joins, hasManager, nicknames, takenHostageBy, isQuestionedBy, suspects, isSuperiorOf, receives, isWaylaidIn, isWorkingWith, monitors, racesTo, isShot, isLeftForDead, isSergeantOf, resultsIn, servedUnder, helps, arranges, sees, resultsIn, isHostageTo, isFoundIn, tells, experiences, passes, hasRockyStartWith, hasNickname, compliesWith, disposeOf, isQuestioned, bringsSuspicionsAbout, LeaveHillAlone, receives, receives, investigates, becomesSuspiciousOf, continuesToInvestigate, isTakenHostageBy, convinces, compliesWith, disposeOf, isQuestioned, receives, receives, isWaylaidIn, continuesToInvestigate, resultsIn, resultsIn, isDoneBy, tells, isDrivenAway, experiences, resultsIn, resultsIn, resultsIn, resultsIn, isHostageTo, resultsIn, resultsIn, isFoundIn, resultsIn, resultsIn, isShotBy, isFoundIn, resultsIn, resultsIn, experiences, resultsIn, isDoneBy, tells, isDrivenAway.Fear, Panic
+
+---stopword---
+
+Action fantasy, Ambushed, Killed, ThroatSlit, Regeneration, Ruse, Shared, AlertedTo, Brings, Meets, Captured, AccusedOf, Lost, Drowning, Betrayal, Shot, Explains, Reveals, Experiences, Finds, Astonished, Explains, Reveals, Effect, GreaterEffect, Explains, Reveals, Research, Rescues, MotiveFor, Films, Sends, Survives, Healing, WorksAs, Centuries, In, IsMotiveFor, Shows, IsRegenerativeHealing, IsFirstComradeOf, IsCaptured, IsAccusedOf, IsLost, IsDrowning, IsShared, IsAlertedTo, IsAstonished, IsRegenerationStatus, HasRegenerationStatus, HasEmotion,Depressed, Drunken
+
+---stopword---
+
+action, thriller, attempt, fly_to, break_into, find, chase, flee, get_struck_and_killed_by, turn_to, inform, engage_in_gunfight_with, high-speed_chase_with, take, improvise_detoxification, tell, pose_as, enter, pretense_of_renegotiating_police_protection_rate, identify, trick, say, erupt_into, result_in_deaths_of, search, rescue, died_of_overdose, torture, force_to_confess, quickly_sold_on_black_market, identify_buyer_as, leave_to_die_from, confront, shoot, wound, coerce, disclose, knock_out, infiltrate, force_to_purchase, be_caught, eliminate, learn, order_to_kill, break_loose, kill, hold, attempt_to_negotiate, rescue, surprise, take_to, visit
+
+---stopword---
+
+Secret agent, action, thrillersacrifices himself, saves, returns to, drops out of, calls, steals, arranges release, subdues, explains, interrogates, explodes, poses as, befriends, endures tests, refuses test, learns of, travels to, triggers, locates, pilots, secures replacement, masquerades as, is discovered by, activates failsafe, kills, impales, shares encounter, offers new home, prepares to take on.
+
+---stopword---
+
+Action, Thriller, Rescue, tend to, find, investigate, take, start using, contact, issue alerts, capture, assign, try evading, pursue, escape, drive, reach, inquire, learn, register, die, ambush, get the upper hand, be interrogated, throw himself, find wanted posters, help, evade, spend the night, obsess over, anticipate, plant, remain unconvinced, threaten, report, assassinate, take refuge, track, send, be mortally wounded, reveal, send away, contact, agree to meet, abandon, place, break in, hold at gunpoint, reveal association, press to remember, recall, infiltrate, manage to get close, unable to find the nerve, flee, be shot, announce, warn not to follow, descend on, fight way through, encounter, kill, shut down, report, decommission, discuss, find, reunite
+
+---stopword---
+
+Action, MaxDurocher, worksIn, wantsToStart, hasFare, hasBusinessCard, hasNextFare, agreesToDrive, waitsAt, revealsIdentity, forces, hides, continuesDriving, arrivesAt, hasVictim, makesKillAt, isSecondTarget, orders, drivesTo, reveals, pleadsWith, let, compromises, answersCorrectly, visits, sees, hasPurpose, liesTo, about, leaves, steals, hurls, onto, destroys, with, orders, meets, reobtain, posesAs, acquires, identifies, as, thinks, basedOn, enters, leaves, protects, kills, bodyguardsOf, rescues, smuggles, fatallyShoots, confronts, tradesInsultsWith, deliberatelyCrashes, escapes, triesToArrest, afterSeeing, leavesLaptopOpen, hasFinalTarget, overpowers, rushesTo, steals, calls, toWarn, revealsDetailsAbout, urging, hasGun, from, corners, wounds, escapesWith, onFoot, pursues, onto, engagesIn, with, getOffAt, continuesRiding, Person, City, GovernmentAgency, Lawyer, PoliceInformant, Hitman, FBI_Agent, DeceasedPerson.
+
+---stopword---
+
+Action, Thriller, Crime, Drama., unintentionallyWinsFixedFight, angers, kills, becomes, isKidnappedBy, isSentTo, arrivesFrom, asks, isAmbushedBy, isTakenTo, demands, refusesToGive, isEscapedWithBy, fightsThrough, meetsWith, hasLearnedThat, isInvolvedIn, wasBlackOpsHitmanFor, quit, exposed, isLiving, atonesFor, isUsedBy, setsUp, accepts, unlocks, fightsThrough, rescues, meetsWith, isAssaultedBy, retrieves, arrangesMeetingWith, refusesToSurrender, suggests, shoots, finishesOff, gives, isReturnedTo, isThreatenedBy, hides, makesPlansToLeave, headsTo, asks, responds
+
+---stopword---
+
+Action, Thriller, proposesTo, acceptsProposal, landsOn, attacks, attemptsToFind, isKilledBy, trainsIn, frequents, quizzes, securesInvitationToMeet, preparesToTakeVengeanceOn, kills, isDraggedOutBy, undergoesDebriefing, isOfferedChanceToJoin, trains, intercepts, eliminates, vanishesInto, seesNewsReportsAbout, identifiesPerpetratorAs, isSentInto, isIdentified, isKilledBy, attemptsInterceptOf, pursues, retrieves, uncovers, isWorkingFor, isCapturedBy, isUsedAsHostage, killsHerself, givesChanceToKill, escapes, chasesAfter, diverts, throws, sendsToRescue, recoversFrom, isPresentIn, smiles., infiltrates, locates, frees, deduces, intendsToMake, shields, watches, blames.
+
+---stopword---
+
+Action, Thriller, residesIn, follows, isHiredToTransport, changesDeal, hasCallsign, strictlyFollows, hoists, refusesToDrive, affectsGetaway, kills, pushedOutOfCar, offersMoreMoney, escapes, isFoiledBy, questions, fledScene, wasGetawayDriver, lackingProof, isHiredToDeliver, loadsIntoTrunk, changesTire, noticesMovingPackage, violatesRule, givesDrink, discoversWoman, isTiedUp, isGagged, attemptsToEscape, recaptures, returnsToTrunk, spotsPolicemen, deliversPackage, agreesToAnotherJob, stopsToBuyDrinks, hiddenBombExplodes, seeksVengeance, returnsToVilla, killsHenchmen, woundsHenchmen, stealsCar, findsPackageBoundAndGagged, bringsWomanBack, visitsSurvivingMan, determinesAttacker, killsMan, asksAboutCar, supportsAlibi, introducesHerselfAsCook, introducesHerselfAsGirlfriend, leavesWithNoConcreteEvidence, firesMissiles, firesAutomaticWeapons, escapesThrough, escapesTo, isQuestionedAt, accessesComputer, findsInformation, isPresumedDeadBy, wantsToRebuild, tellsInformation, goesToOffice, revealsInformation, isHumanTrafficker, trapsChinese, contains, isFamilyOf, loadsOntoTrucks, isSpotted, forcesWayThrough, stealsCar, makesChase, breaksDown, commandeersAirplane, followsHighway, parachutesOnto, managesToKill, isCrushedBy, isAmbushedBy, marchedTo, reluctantlyShoots, arrives, rescues, congratulates.
+
+---stopword---
+
+Action, Thriller, runs, hasFriend, livesIn, isKidnappedBy, isGoGoDancer, isOpiumAddict, steals, hides, pawns, safelyKeeps, attractsAttentionOf, tasks, locates, tortures, forces, kidnaps, hasSoftSpotFor, delivers, arrested, escapesFrom, isExchangedFor, tracks, asks, isShot, recovers, asksForGun, finds, kills, saves, buys, asksForHug, breaksDownInTears,performsEmergencySurgery, frees, killsOff, demandsToKnow, commitsSuicide, emerges, allowsToRideTogether, sleeps, buysBackpack, buysSchoolSupplies, tells, goes, embraces
+
+---stopword---
+
+Action, Thriller, assassination, sniper shot, fleeing, retirement, charity work, assault, investigation, kidnapping, deal, confrontation, escape, reunion, building wells, killing, searching, revealing, chasing, killing friends, trading, exposing, making a deal, battling, helping escape, shooting, goring
+
+---stopword---
+
+Action, Thriller, retrieve-9-year-old-daughter, help-Sam-Rubinstein, pick-up-Amy, beat-men, vandalized-courtyard, paint-mural, investigate-murder-suicide, accosted-and-killed, attacked-by-assassin, confront-York, kill-entire-team, help-Brian-escape, break-into-apartment, capture-Miles, search-town-in-gale-force-winds, shoot-at-car-trunk, kill-team-members, reunite-Sam-with-long-lost-sister, finish-painting-mural, look-out-towards-calm-sea
+
+---stopword---
+
+Comedy, isFriendsWith, fallsInLoveWith, meets, leaves Briefcase, returns Briefcase, isCapturing, isWifeOf, runsThrough Jetway, fallsOutOf Jetway, isFiredFrom Job, isDogGroomer, learns isFired, follow, flees Apartment, ransack Apartment, hasParakeet, hasDecapitatedParakeet, suggests GoToAspen, opposes GoToAspen, agrees GoToAspen, leaves NextDay, catch up to, posesAs Hitchhiker, picksUp Hitchhiker, secretly follows, pranks, kills, wait to intercept, takesWrongTurn, drivesThrough, gives up on the journey, persuades, trades Van for minibike, arrivesIn Aspen, finds, confessesLoveTo, rejects, isFriendOf, isMastermindOf, arrivesWith, isHostage, isShotBy, playsDead, returnsFire, isRescuedBy, isArrested, isReunitedWith, declinesChance, tells, playsTagWith Emotions: Love, Surprise, Fear, Anger, Sadness, Frustration, Relief, Disappointment
+
+---stopword---
+
+Comedy, LivingWithParents, Marriage, BecomingStepBrothers, ViolentBrawl, GroundedWithNoTV, JobUltimatum, RidiculedByDerek, PunchesDerek, AffairWithAlice, BondingOverSharedInterests, JobInterviews, PoorPerformance, BulliedBySchoolChildren, HouseSalePlan, SignedUpForTherapy, AttractionToTherapist, PitchVideoPresentation, StrainedMarriage, DivorceAnnouncement, LivingIndependently, GettingAJob, CatalinaWineMixer, PerformanceToSaveParty, FiredFromJob, BeingThemselvesAgain, AmendsWithDerek, EndingRelationWithAlice, Reconciliation, RevengeOnSchoolChildren,Laughter, Silliness, Camaraderie, Conflict, Redemption,Anger, Disgust, Ridicule, Bonding, Surprise, Disappointment, Love/Attraction, Guilt, Determination, Reconciliation, Joy/Happiness, Satisfaction.
+
+---stopword---
+
+Comedy, LivingWithParents, Marriage, BecomingNewsAnchorman, ThrowParty, UnsuccessfulPickup, HiringCorningstone, SeductionAttempts, ProfessionalTour, SexualRelationship, OnAirAnnouncement, DisputeWithMotorcyclist, DogPuntedOffBridge, LateToWork, CorningstoneFillsIn, CoupleBreaksUp, CorningstonePromoted, FierceRivalry, BuyingNewSuits, LostInShadyPart, ConfrontationWithMantooth, MeleeBattle, PoliceSirens, DisgustedByCoAnchor, ArgumentWithCorningstone, TextChangeInTeleprompter, InappropriateBroadcast, AngryMob, FiredFromJob, ApologyAttempt, UnemploymentAndAntagonization, Depression, BuyNewSuits, RecruitmentAndRehiring, SabotageAttempt, RescueAttempt, NewsTeamRescue, InterventionByBaxter, Reconciliation, FutureCareers, ClosingLine.Confidence, Arrogance, Competition, Humor, Romance,Confidence, Arrogance, Competition, Jealousy, Humiliation, Love, Ambition, Betrayal, Humor, Frustration, Surprise, Regret, Determination, Excitement, Reconciliation.
+
+---stopword---
+
+Comedy., GraduatesFromMarquetteUniversity, GivesAnExecutiveJob, PlansToMarry, DiesFromHeartAttack, RenegesOnLoanPromise, ProposesDealWithTheBank, SetsOutOnCrossCountrySalesTrip, NoticesKissing, RevealedAsConArtists, InheritsControllingInterest, SeeksQuickSaleTo, AlienatesPotentialBuyers, TensionBetween, FistfightBetween, PersuadesSurlyWaitress, UsesSkillAtReadingPeople, MakeAmends, SabotagesCompanyComputers, DecidesToSellCallahanAuto, PoseAsFlightAttendants, MeetWith, ForcesHisWayIntoBoardRoom, QuotesAdvertisingSlogan, SignsPurchaseOrder, ShowsPoliceRecords, Arrested, InvitesToDinner, GivesSpeechAtThePlant, ContinuesHisWork, StartsRelationshipWith, SailsOnLake, SaysGoodbyeTo, WindPicksUpImmediately, SailsToShoreToMeet.Humor, Friendship, Determination, Insecurity, Love,Humor, Determination, Insecurity, Grief, Frustration, Camaraderie, Guilt, Regret, Confidence, Love, Disappointment, Relief, Joy, Sadness, Redemption.
+
+---stopword---
+
+Comedy, Events: goesFrom, isVisitedBy, isInRelationshipWith, demandToKnow, isMotherOf, isArrestedBy, isReleasedBy, volunteersFor, confesses, drugs, believesDrugToBe, knocksOut, orders, returnTigerTo, pushes, deliversTo, seeSecurityCameraFootage, finds, usesKnowledgeOf, wins, isAccusedBy, isBossOf, threatensToKill, searchesFor, findsAmountOf, makesArrangementsToMeet, receivesCallFrom, realizesLocationOf, finds, isOn, isBurned, isDazed, isAttendedBy, breaksUpWith, hasDigitalCamera, agreesTo, agreesToDelete,Excitement, Anticipation, Happiness, Confusion, Guilt, Regret, Fear, Anger, Protectiveness, Relief, Curiosity, Frustration, Surprise, Triumph, Hope, Concern, Epiphany, Disorientation, Joy, Amusement
+
+---stopword---
+
+Comedy,  SharesApartment, CasualSexualRelationship, AttendsEngagementParty, MeetsBridesmaids, VisitsBridalShop, StrickenWithFoodPoisoning, Vomiting, Diarrhea, SuffersHallucination, ParanoidBreakdown, ApprehendedByAirMarshal, MakesEmergencyLanding, Apologizes, GrowsCloserTo, ReceivesGift, Panics, GetsFired, KickedOut, TravelsTo, AttendsBridalShower, ThrowsTantrum, DestroysDecor, RuinsEvent, ReturnsHome, GetsInvolvedInCarAccident, ReceivesRide, LeavesCar, BecomesReclusive, Visits, ResumesBaking, GetsCarFixed, MakesAmends, SearchesForLillian, FindsLillian, Reconciles, BecomesFriends, ReconcilesWithNathan, KissesNathan, RidesWithNathan, EncouragesAnnie, AdmonishesAnnie, FleesFromAccident, BegsForHelp, ArrivesToGiveRide, DemandToBeLetOut, LeavesAnnie, VisitsAnnie, OpensNewBakery, FixesTaillights, PerformsOralSex, WalksHome, Motivates, PicksUp, Arranges,  CussingOut, Loneliness, TakeControl, Sadness, Reconciliation, Jealousy, Ignore, BeggingForHelp, Surprise, Disgust
+
+---stopword---
+
+Comedy,  Pairing, Inviting, Promising, Buying, Running into, Offering, Obtaining, Revealing, Knocking out, Arriving, Hitting, Escaping, Arguing, Dancing, Staining, Making sing, Confronting, Brawling, Calling the police, Being hit, Driving, Pinning the blame, Arresting, Escaping with, Revealing, Impressing, Going upstairs, Attempting to kiss, Passing out, Interrupting, Shooting, Pretending to arrest, Bonding, Destroying, Revealing housing forms, Learning, Apologizing, Pairing off, Buying concealer, Leaving, Running into.,Anger, Amusement, Excitement, Attraction, Rejection, Confusion, Respect, Impression, Drunkness, Protectiveness, Embarrassment, Regret, Relief, Fatigue, Pain, Guilt, Apology, Forgiveness, Gratitude, Disgust, Disappointment, Remorse.
+
+---stopword---
+
+Comedy, Romance, Coming-of-ages, hasEncounter, breaksUpWith, movesInto, watches, participatesIn, throwsParty, getsDrunk, streaks, sees, informs, proposes, recountsIncident, brings, hooksUpWith, dies, asksForDivorce, plotsRevenge, revokesCharter, sabotages, notAcceptedInto, discovers, defeats, cheats, catchesFire, summons, confronts, hasTapeEvidence, obtains, fired, reinstated, movesInto, visits, dumps, reconcilesWith, withdrawsFrom, takesOverRole, hasAccident, strikes, dies, meetsEmotionsRelief, Shock, Disgust, Awkwardness, Embarrassment, Strain, Authority, Despair, Loyalty, Betrayal, Determination, Humiliation, Accomplishment, HeartAttack, Divorce, Vengeance, Deception, Injustice, Duty, Regret, Hope, Guilt, Recklessness, Fear, Attraction, Death
+
+---stopword---
+
+Comedy, Action ,Crime ,Friendship, Excitement, Disappointment, Curiosity, Surprise, Anger, Sneakiness, Conflict, Tension, Reconciliation, Resolve, Danger, Fear, Relief, Triumph, Romance, SatisfactionActions: DuoFriendship, Arrest, Release, Scheme, ContainmentAssignment, CaptainDickson assigns, IdentityChange, Molly providesLeadOn, HFSConsumption, DrugEffects, SchmidtPopularity, JenkoPopularity, Party, Fight, PhoneHack, PhoneConversation, SchoolExpulsion, DealSecurity, PromPreparation, SupplierIdentity, DEAAgents, GunfireExchange, MrWalters escapeWith, SchmidtSaving, Arrest, Kiss, Reinstatement
+
+---stopword---
+
+Comedy, Drama, Thriller ConfusedEmotion, ConcernedEmotion, BetrayedEmotion, DisturbedEmotion, JealousEmotion, AngryEmotion, ManipulatedEmotion, FearfulEmotion, VengefulEmotion, NeutralEmotion, SuspiciousEmotion, ExcitedEmotion, HappyEmotion, DestroyedEmotion, isMarriedTo, hasChild, isFriendWith, isExSpouseOf, isDating, isInvitedToParty, showsRoomTo, seesFireworks, seesBreakerBox, managesNoiseFor, agreesToCallTeddy, convincesToCallPolice, isIdentifiedBy, isBetrayedBy, leadsHazingOf, isAffectedByHazing, dumpsGarbageOn, goesTo, commitsFirstStrike, manipulates, leadsTeddyToCatch, fightsWith, injures, commitsSecondStrike, enlistsHelpOf, isSleepingWith, isHiredBy, records, threatensRetaliationTo, revealsHiringTo, pranks, receivesCounterfeitLetter, preparesForParty, publicizes, realizesSneakyPlan, stopsParty, jumpsFromBalcony, sneaksInto, shootsFireworkAt, convinces, reunitesWith, takesBlame, fleesWith.
+
+---stopword---
+
+Comedy,Sports comedy film, encounter, pitCrewWork, seatAssignment, meeting, flash, pitCrewWork, meeting, flash, bestFriend, addition, reunion, moveIn, reform, job, delivery, decline, leave, reunion, moveIn, reform, job, delivery, decline, leave, help, regainConfidence, trouble, return, cougarPainting, race, collision, disqualificationExit, offer, moveBackIn, startOver, choose, leaveFamily, congratulations, declaration.
+
+---stopword---
+
+Comedy ,absurdist humor, deadpan comedy, and coming-of-age comedy, givesSpeechBefore, presents, asks, becomesFriendsWith, accepts, lets, runsFor, discovers, gives, performs, receives, becomes, leavesOn, reunitesWith, returnsFrom, reconcilesWith, getsMarriedTo, ridesOn, isWith, isRebuffed, abandons.
+
+---stopword---
+
+Comedy, destroys, leads, pursues, checks, incarcerates, carriesOut, involvesCharacter, attends, takesPlaceAt, involvesCharacter, hasAffairWith, seduces, isBequeathedTo, worksAt, arrestedBy, suspends, exploits, contains, shoots, initiates, stops, leaves, falls, succeeds, takesEffect, celebrates, encounters, triesTo, maintains, fictionalizes, writesNovel, incorporates, diesOf, causesDeathOf, isChildOf
+
+---stopword---
+
+Comedy, loses, performs, creates, follows, promotes, consistsOf, knownAs, changesNameTo, hadHit, transitionTo, hasPreviousDrummer, diesIn, plays, shows, hasVolumeKnobs, goesUpTo, releasedBy, isTitled, hasCoverArt, refusedBy, refuseToSell, manages, joins, influences, release, consultsWith, thinks, suggests, isStagedBy, orders, isOrderedBy, hasIncorrectDimensions, sketches, blames, continuesTour, rescheduledInto, isMarginalizedBy, isUpsetBy, quits, finds, improvises, poorlyReceivedBy, considers, performs, welcomes, delights, angers, isReinstalledAs, performs, loses, explodesOnStage
+
+---stopword---
+
+Comedy, workplace comedies, diesOf, breaksUpWith, cheatsOn, dates, requiredToWear, hassles, disregards, steals, violates, removes, providesInsightsTo, opposesPromotionOf, isFired, expectedToBeTerminated, wasLaidOff, isMistreated, confiscates, relocatesDesk, decidesToTakeRevenge, installs, destroys, hearsRumorsAbout, sleepsWith, givesFingerTo, discoversBugInCode, acceptsResponsibilityFor, writes, slipsUnder, learnsAbout, startsNewJob, apologizesTo, reconcilesWith, drivesTo, expectsToBeArrested, burnsDown, enjoys, finds, goesOnVacationIn.
+
+---stopword---
+
+Comedy, satirical comedy, isIn, isOustedBy, areKilledBy, isRejectedBy, isChargedBy, hires, starsIn, isConditionedToAttemptAssassination, isPlayedAt, feelsResponsibleFor, wrote, ignores, calls, tells, meets, goesTo, hasConcerns, partakesIn, LowPoint, RisingStar, TragicLoss, Rejection, TaskAssigned, Brainwashing, Guilt, CriticalWriting, Disregard, InformationSharing, Suspicion, Meeting, DarkSecret, HistoricalEvent, FatalOutcome, Escape, SafeHaven, Intoxication, SexualEngagement, Infiltration, Control, Disruption, Interruption, Guilt, AssassinationAttempt, UltimatePower, Pride, Legacy, EarlyTalent, Philanthropy
+
+---stopword---
+
+Comedy, parody comedy, Abandons_Taxi, Buys_Ticket, Takes_Controls, Bolsters_Confidence, Breaks_Down, Breaks_Off_Relationship, Discovers_Food_Poisoning, Gives_Orders, Embrace, Kiss, Inflate, Takes_Off, In-flight Meal Served, Fall Ill, Contact Chicago Control Tower, Activate Autopilot, Land the Plane Safely, Weather Worsens, Landing Gear Shears Off, Minor Injuries
+
+---stopword---
+
+Comedy, physical comedy, wit, and offbeat charm, gives, returnHome, learns, runsInto, tumblesDown, sees, meetsWith, tells, works, performs, getsCuriousAbout, edits, getsIdeaTo, raises, getsAngry, throws, smashes, gives, returns, reveals, quits, apologizesTo, accepts, isReinvigorated, promotes, setsUp, receives, jumps, lands, hasOut-of-bodyExperience, wakes, getsUp, sparsWith, isSeenBowingDown
+
+---stopword---
+
+Comedy, Superhero, Rescue, Rampage, Humiliation, Bank Robbery, Coco Bongo Performance, Confrontation, Arrest, Consultation, Meeting, Interruption, Betrayal, Transformation, Forces, Arrival, Murder, Escape, Help, Battle, Flushing, Implication, Exoneration, Kiss, Retrieval, Swim.
+
+---stopword---
+
+Comedy, isPreparingToTravelTo, doesn'tAllow, initiallyNotAllow, hostsBachelorPartyAt, intentionallyNotInviting, asking, allowsToGo, areJoinedBy, revealsDisapprovalOf, hesitantlyJoins, toastTo, awakenIn, meet, followedTo, discover, cannotFind, seeminglyDies, disposesOf, goTo, pickUp, refusesToReveal, travelTo, learn, startedFight, escalatedInto, returns, encouragesToMeditate, recall, engagedIn, exiting, attackedBy, take, treat, confesses, hadDrugged, fear, accidentallyMixedUp, blame, ruinLife, attack, breakItUp, haveToStickTogether, notice, meet, demand, steal, complete, appear, arrest, turnOutToBe, cannotFind, callOff, liveIn, say, realize, rushBackTo, arrivesAsAboutToCancel, makeSpeech, rejectBeing, insist, giveBlessing, presentWithGift, lookAt, delete.,Preparation, Disapproval, Hesitation, Happiness, Surprise, Panic, Relief, Encouragement, Shock, Anger, Fury, Blame, Curiosity, Desperation, Realization, Relief, Despair, Defiance, Excitement, Curiosity.
+
+---stopword---
+
+Horror, Supernatural, Mystery, Thriller, Drama, Suspense, Sophia rents an isolated house, Sophia convinces Joseph to lead her in a grueling ritual, Sophia complies with painful exercises, Sophia and Joseph have a ritualistic sexual activity, Sophia seeks revenge by an unconventional act, Sophia and Joseph get to know each other over time, Sophia admits her true intention, Re-birthing ritual is performed on Sophia, Joseph accidentally injures himself, Sophia experiences supernatural phenomena in the house, Joseph dies due to infection, Sophia encounters various supernatural entities and faces torment, Sophia encounters a massive angel and seeks the power to forgive, Sophia performs a water burial, Sophia drives away from the mansion, Sophia realizes she has returned to the mansion, A brilliant white light fills the house, Sophia asks the angel for the power to forgive, Sophia performs a water burial
+
+---stopword---
+
+Horror, Supernatural, Mystery, Thriller, Drama, Suspense, Home invasion and murder, Paranormal activities, Birth of a child, Discovery of the doll and paranormal events, Investigation into the cult and demonic summoning, Encounter with the demon and revelation of its true nature, Possession of the doll by the demon, Abduction of a child and final confrontation, Sacrifice to save and defeat the demon, Safe placement of the doll
+
+---stopword---
+
+Horror, Supernatural Horror, Psychological Thriller, Seeking help for possessed child, Unseen force drags child to Hell, Preparing a séance to fight a demon, Competition for promotion at work, Denying request for mortgage extension, Violent attack and curse by elderly woman, Haunted by dark spirit and violent attacks, Seeking forgiveness from deceased woman, Discovering the curse and its consequences, Sacrificing pet kitten to appease the demon, Grotesque hallucinations and torment, Séance to trap and kill the demonic entity, Possession and vomiting of cat's corpse, Banishing the demon and the medium's death, Attempts to remove curse by giving the cursed object, Digging up grave and placing envelope inside, Realizing the curse was never lifted, Dragged to Hell at train station, Failed attempt to rescue from Hell
+
+---stopword---
+
+Horror, Psychological Horror, Supernatural Thriller, Move In, Attend Funeral, Join Support Group, Desecrate Grave, Go to Party, Experience Anaphylactic Shock, Conduct Séance, Experience Supernatural Activity, Discover Occult Information, Attempt Exorcism, Uncover Coven Secrets, Expel Spirit, Commit Suicide, Reanimation, Bow to Idol, Proclaim Succession
+
+---stopword---
+
+Horror, Psychological Horror, Supernatural Thriller, Family moves into a new home, Encounter with a mysterious entity, Coma of one of the children, Frightening paranormal events in the house, Supernatural activity continues in the new home, Investigation by psychic and paranormal investigators, Revelation about astral projection ability, Rescue mission into a purgatory dimension, Dangerous encounters with ghosts, Confrontation with a possessed individual
+
+---stopword---
+
+Horror, Haunted house, Paranormal, Horror, Thriller, Mystery, Haunted house occurrence, Paranormal activity recording, Visiting a psychic, Demonic manifestation, Ouija board encounter, Investigation of paranormal occurrences, Possession by evil entity, Escalation of paranormal activity, Violent incident, Demonic transformation, Police investigation of paranormal case, Capture of possessed individual, Death event, Capture event
+
+---stopword---
+
+Horror, psychological horror, supernatural thriller, move into apartment building, meet young woman, death of Terry, grow close to neighbors, want to have a baby, consume chocolate mousse, have a hallucination, become pregnant, suffer abdominal pains, receive book on witchcraft, suspect sinister intentions, seek help from Dr. Hill, restrained by coven members, give birth, discover hidden door, confront coven members, rock the cradle
+
+---stopword---
+
+Horror, Thriller, Mystery, Family murder, Investigation of the attic, Consultation with Professor Jonas, Discovery of ghost-like kids, Destruction of camera, projector, and films, Receipt of historical images, Learning about the pattern of killings, Binding and gagging of Ellison and his family, Family killings with an axe, Appearance of Bughuul and abduction of Ashley into the movie
+
+---stopword---
+
+Horror, Supernatural, Mystery, Thriller, Drama, Suspense, Family murder, Moving into a new house, Blessing the home, Unexplained incidents and disturbances, Attempts to intervene by the priest, Psychic experiences and business troubles, Discovery of the hidden room, Researching the property's history, Paranormal events culminate, Abandoning the haunted house
+
+---stopword---
+
+Horror, Supernatural, Mystery, Thriller, The corpse of an unidentified young woman is found, Inexplicable multiple homicide, Autopsy performed on the mysterious body, Mysterious occurrences in the morgue, Examination of the corpse's markings and symbols, Attempted escape from the morgue, Sacrifice to end the curse, Police arrival at the crime scene, Transporting the corpse to the university, Radio playing Open Up Your Heart (And Let the Sunshine In) during the ambulance ride
+
+---stopword---
+
+Horror, Psychological horror, Supernatural thriller, Loss of a loved one in a car accident, Display of erratic behavior, Obsession with an imaginary monster, Encounter with a disturbing book, Manifestation of strange events, Destruction of the book, Act of aggression towards a cousin, Confession of dislike towards a family member, Sleepless nights due to fear, Reappearance of the book, Burning of the book, Terrifying encounter with the Babadook, Manifestation of violent behavior, Disturbing hallucinations, Possession by the Babadook, Attempted harm towards a loved one, Purging of the Babadook's influence, Confrontation with the Babadook, Confinement of the Babadook, Recovery and healing, Nurturing and support, Gathering of worms, Calming the Babadook, Celebration of a birthday
+
+---stopword---
+
+Horror, Psychological horror, Supernatural thriller, Move into farmhouse, Experience paranormal events, Conduct initial investigation, Experience possession, Discover secret passage, Experience attack, Perform exorcism, Escape from possession, Condemn spirit to Hell, Add haunted artifact
+
+---stopword---
+
+Horror, Supernatural, Fantasy, Thriller, Mystery, Unexplained occurrences at the cabin, Discovery of the supernatural artifact, Cheryl's possession and attack, Shelly's transformation and demise, Scott's demise and warning, Linda's possession, burial, and final attack, Ash's encounter with possessed individuals, Burning of the supernatural artifact and decomposition of the entities, Final attack on Ash by an unseen entity
+
+---stopword---
+
+Horror, Drama, Thriller, Lawyer takes a case of a priest charged with negligent homicide following an attempted exorcism, Priest pleads not guilty to the charges, Trial takes place with witnesses testifying through flashbacks, Prosecutor interrogates doctors to establish a medical cause for the victim's death, Victim experiences delusions and muscle spasms, drops out of college, and receives medical treatment, Priest determines victim is possessed by a demon and performs an exorcism, Exorcism fails due to the victim's medications, Lawyer experiences supernatural phenomena at home, Anthropologist testifies about beliefs surrounding spiritual possession, Testimony recording of the exorcism is presented as evidence, Medical witness is killed, preventing his testimony, Lawyer is threatened with termination for supporting the priest, Lawyer visits the priest in jail and agrees to let him tell the rest of the victim's story, Priest reads a letter written by the victim, Victim is visited by the Virgin Mary and chooses to endure suffering, Jury reaches a guilty verdict but requests a lenient sentence, Judge accepts the jury's request and sentences the priest to time served, Lawyer declines a partnership offer, Priest and lawyer visit the victim's grave, Epilogue reveals that the priest never appealed his conviction
+
+---stopword---
+
+Horror, Supernatural, Mystery, Drama, Thriller, Suspense, Adhan is heard in northern Iraq, Archaeological dig unearths artifacts, Statue of Mary found desecrated, Chris hosts a party, Bed shakes violently, Regan becomes violent, Burke Dennings is found dead, Exorcism is performed, Demon curses the priests, Karras beats the possessed Regan, Karras gets possessed by the demon, Karras dies, The MacNeils leave
+
+---stopword---
+
+Horror, Supernatural, Mystery, Thriller, Film, Documentary, Delegitimization, Fake Exorcism, Possession, Mental State, Physical Condition, Psychiatric Testing, Incest, Death, Painting, Flame, Crucifix, Sex Act, Disturbed, Shame, Anguish, Virginity Loss, Homosexuality, Conversation, Lying, Occult Symbol, Cult, Fire, Altar, Demonic Child, Evil, Faith Restoration, Axe, Iris Death, Daniel Death
+
+---stopword---
+
+Horror, Psychological Horror, Supernatural Thriller, Move In, Adopt Child, Experience Mysterious Events, Receive Warning, Investigate Birth, Discover Truth, Escape Cemetery, Arrange Call, Kill Spouse, Meet Expert, Search For Birthmark, Attack by Baylock, Kill Baylock, Attempt to Kill Damien, Funeral of Kathy, Funeral of Robert
+
+---stopword---
+
+Horror, Supernatural Horror, Psychological Thriller, Encountering a haunted wooden box with ominous inscription, Experiencing an unexplained attack and being knocked down, Reuniting with family after a possession and exorcism, Discovering the history and purpose of a mysterious box, Undergoing disturbing behavioral changes and possessiveness, Violently attacking a classmate and causing harm, Witnessing a murder by an invisible force, Experiencing possession by a malevolent entity, Seeking help from a university professor and a rabbi, Conducting an exorcism to remove the possession, Having a seizure and undergoing medical procedures, Being involved in a car accident resulting in death, Hearing ominous whispers from a haunted box
+
+---stopword---
+
+Horror, Psychological thriller, Supernatural, Discussing an urban legend, Confessing to watching a cursed videotape, Being killed by an unseen force, Asking for an investigation into a death, Discovering bizarre accidents, Being institutionalized after witnessing a death, Going to a mountain retreat, Renting a room and watching a strange tape, Receiving a mysterious phone call, Recruiting help from a video analyst, Making a copy of the tape, Seeing images from the tape appear in the real world, Discovering hidden imagery, Finding a missing video, Being struck and electrocuted, Entering a barn and finding an image, Finding a well beneath the floorboards, Being pushed into the well, Experiencing a vision, Rescuing someone from a well, Arranging a proper burial, Realizing the time limit has passed, Warning someone about the consequences, Materializing on a television screen, Killing someone, Returning home to destroy the tape, Making a copy of a copy, Saving someone from the vengeful ghost.
+
+---stopword---
+
+Horror, Psychological Horror, Supernatural Horror, Period Drama, Settling in a new location, Mysterious disappearance of an infant, Devastation and grief, Supernatural occurrences and crop blight, Trade of prized possession, Accusations and tensions within the family, Encounter with a witch, Disturbing encounter in the woods, Illness and strange behavior of family members, Accusations of witchcraft, Tragic death of a family member, Conflicts and suspicions escalate, William's desperate actions, Nightmarish visions and hallucinations, Destruction and chaos at the farm, Violent confrontation and killings, Thomasin's encounter with Black Phillip, Joining a coven at the Witches' Sabbath
+
+---stopword---
+
+Romance, Performance of a play, Spying, Argument, Accidental breaking, Climbing into fountain, Misinterpretation, Note drafting, Note reading, Description sharing, Introduction, Library encounter, Misinterpretation of rape, Rape incident, Arrest, Release from prison, Journey, Joining the army, Nursing unit joining, Regret and realization, Apology, Revelation, Interview, Imagined reunion, Drama, Romance, War
+
+---stopword---
+
+Romance, Travel to Australia, Murder of Lady Sarah's Husband, Attempted Control of Faraway Downs, Negotiation of Beef Prices, Lady Sarah Fires Fletcher, Nullah's Mother Drowns, Cattle Drive to Darwin, Lady Sarah and Drover Fall in Love, Cattle Drive Through Never Never Desert, Arrival at Darwin and Cattle Loading, Return to Faraway Downs, Nullah's Abduction to Mission Island, Rescue of Nullah and Other Children, Japanese Attack on Mission Island and Darwin, Reunion of Lady Sarah, Drover, and Nullah, Death of Fletcher, Return of Nullah with 'King George', Drama, Romance, War
+
+---stopword---
+
+Romance, Birth, Portrait Commission, Inheritance, Coming-out Arrangements, Travel to London, Acceptance into Law Pupillage, Legal Case Hearing, Correspondence Assistance, Engagement, Harassment, Revelation and Offer, Confrontation, Breakup, Portrait Unveiling, Court Ruling, Pupillage Resumption, Marriage, Credits Scene, Biographical Drama, Historical Drama, Legal Drama, Romantic Drama, Drama
+
+---stopword---
+
+Romance, Introduction to a poet, Pursuing a romantic interest, Opening up emotionally, Giving poetry lessons, Mutual attraction, Misunderstandings and accusations, Resuming the relationship, Heartbreak and separation, Secret engagement, Illness and recovery, Planning for the future, Tearful goodbyes, Death of the poet, Mourning the loss, Drama, Romance, Biographical
+
+---stopword---
+
+Romance, Living in a small town, Seeking employment, Moving to a new city, Experiencing seasickness, Adjusting to a new life, Meeting someone, Building a relationship, Returning home, Taking up a job, Experiencing loss, Receiving a marriage proposal, Making a decision, Defending oneself, Returning to the original place, Reunion, Drama, Romance, Historical Fiction
+
+---stopword---
+
+Romance, Join family for dinner, Betrayed by Junior, Taken by Confederate Home Guard, Killed by Union cavalry, Nursed back to health, Meeting with grieving widow, Attack by Union soldiers, Defending against soldiers, Surviving on kindness of neighbors, Requesting help, Rebuilding the farm, Encounters with Captain, Murder and torture, Rescue mission, Celebrating Christmas, Cornered by the Guard, Revealing desertion, Shot by the Guard, Escaping capture, Taking shelter in the camp, Reunion at the camp, Heading home, Surrounded by men, Gunfight, Chasing Lieutenant, Fast draw, Killed in gunfight, Comforting in death, Years later, Birth of a daughter, Marriage of Ruby, Celebrate Easter, Drama, Romance, War
+
+---stopword---
+
+Romance, Search for a lost family member, Relocation to a new city, Reunion with a childhood friend, Unexpected romantic involvement, Involvement in a violent incident, Concealment of a weapon, Suicide attempt, Treatment of a wounded person, Shooting incident, Involvement in a war as a medical professional, Enlistment as a nurse during a war, Forbidden love affair, Loss of property and forced relocation, Providing false documents for escape, Capture and interrogation, Reunion in a new location, Abduction and forced service, Desertion and return to a familiar place, Rekindling of a past romance, Planned arrest and escape, Tragic demise, Funeral ceremony, Search for a lost child, Drama, Romance, War
+
+---stopword---
+
+Romance, Set in 1870 in Britain, Meeting a neighboring farmer, Proposal rejection, Sheep flock chased off a cliff, Debts settled and search for work, Inheriting a farm and taking charge, Seeking employment at a fair, Farm buildings saved from fire, Introduction to the new farm owner, Hiring as a shepherd, Wrong church visit on the wedding day, Marriage proposal from a neighbor, Admonishment for toying with affections, Firing and subsequent persuasion to return, Meeting and flirting with someone, Secret meeting and swordplay demonstration, Elopement with someone, Revelation of someone's bad behavior, Attempt to protect property from a storm, Assistance in challenging weather, Realization of being fooled by flattery, Encounter with someone begging, Refusal to provide money and annoyance at gambling, Tragic death in childbirth, Discovery of a tragic death, Kissing someone and protest, Someone's faked death and demands for money, Someone killed by another person, Announcement of security and departure, Plea and acceptance of a proposal, Passionate kiss and reconciliation, Romantic Drama
+
+---stopword---
+
+Romance, American Civil War, Attraction, Marriage, Disruption, Enlistment, Survival, Desire, Chasing Away, Reconstructionist Taxes, Pillage, Night Raid, Proposal, Rumors, Kiss, Arguing, Apology, Falling, Recovery, Death, Departure, Pleading, Vowing, Romance, Historical Drama
+
+---stopword---
+
+Romance, Recalls Life, Moves to Africa, Asks to Marry, Establishes Dairy Ranch, Marries, Learns about Changed Plan, Falls in Love, Looks After People, Establishes School, Helps with Medical Needs, Arbitrates Disputes, Forms Militia, Leads Expedition, Returns Safely, Makes Up Stories, Discovers Syphilis, Returns for Treatment, Resumes Safari Work, Divorces, Confronts, Drives Apart, Yields Harvest, Fire Destroys Farm, Sells Out, Prepares for Departure, Visits Empty House, Learns about Crash, Recites Poem, Invited to Men-Only Salon, Says Goodbye, Writes Letter, Biography Genre, Drama Genre, Romance Genre
+
+---stopword---
+
+Romance, Play, World War II, Battle of Britain, Romance, Attack, Rescue mission, State declaration, Air raid, Pearl Harbor attack, Speech, Promotion, Mission, Romance, Drama, War film, Romance film
+
+---stopword---
+
+Romance, Shootout, Warning, Fall in love, Party, Drug use, Conflict, Proposal, Marriage, Assault, Wounding, Banishment, Hiding, Threat, Running away, Plot, Death, Funeral, Arrival, Drama, Romance film
+
+---stopword---
+
+Romance, Return to New York, Acceptance by high society, Social comeback, Flirtation and scandal, Disillusionment with society, Support for freedom, Conflicted feelings, Return and rushed engagement, Confession of love, Accelerated wedding, Marriage and settlement, Rekindled friendship and love, Planned departure to Europe, Revelation of pregnancy, Manipulation to separate, Passage of time and devotion, Tragic death, Journey to Paris, Revelation about May's confession, Contemplation and departure, Romantic Drama
+
+---stopword---
+
+Romance, British biplane shot down by German gunners, Rescue of the burned pilot by a group of Bedouin, Hana learns about her boyfriend's death, Hana cares for a dying patient in Italy during WWII, Hana settles in a bombed-out monastery with her patient, Lt. Kip and David Caravaggio join Hana and the patient in the monastery, Patient reveals his past through flashbacks, Hana and Kip start a love affair, Exploration of the Sahara and the discovery of the Cave of Swimmers, Almásy and Katharine fall in love, Almásy and Katharine begin an affair in Cairo, End of Almásy and Katharine's affair, Caravaggio seeks revenge for his injuries, Almásy's encounter with Geoffrey and Katharine's injuries, Almásy carries Katharine to the Cave of Swimmers, Almásy's journey to seek help and his escape, Caravaggio gives up his quest for revenge, Reunion agreement between Kip and Hana, Almásy's request for euthanasia and Hana's fulfillment, Reading of Katharine's final letter, Caravaggio's return with a friend and departure to Florence, Drama, Romance, War
+
+---stopword---
+
+Romance, nursing_home, reading_story, summer_romance, luncheon, restoring_house, wedding_preparations, solo_trip, rekindling_relationship, heated_argument, confession, dancing, heart_attack, treatment, sleeping, romance_genre
+
+---stopword---
+
+Romance, Meeting in London, Getting married, Having a honeymoon, Moving to Shanghai, Engaging in an extramarital affair, Facing the threat of divorce, Embarking on a journey to a remote area, Living in challenging conditions, Working in an orphanage, Rediscovering love and compassion, Dealing with a cholera epidemic, Experiencing personal loss, Returning to London, Encountering a former lover, Rejecting a former lover's advances, Rebuilding a new life, Drama, Romance, Historical Fiction
+
+---stopword---
+
+Romance, Discovery of an abandoned infant, Communication through sign language, Working at a government laboratory, Living a routine life in an apartment, Forming friendships with neighbors and co-workers, Capture of a mysterious creature, Discovering the nature of the creature, Developing a close bond with the creature, Exploitation of the creature for strategic advantage, Plea to save the creature from vivisection, Overhearing plans and seeking help for liberation, Planning and executing the creature's escape, Keeping the creature in a bathtub, Interrogation and failed attempts to gather information, Discovery of the creature attacking a pet, Healing effects of the creature, Development of a romantic relationship, Imminent threat and time pressure to recover the creature, Deterioration of the creature's health, Meeting with handlers and revelation of identities, Threats, revelations, and pursuit, Final confrontation, Healing and transformation, Embrace and kiss, Drama, Fantasy, Romance, Thriller, Sci-Fi
+
+---stopword---
+
+Romance, Circus encounter, Separation, Career in circus, Circus disaster, Final exam, Car accident, Foreclosure, Jumping on a train, Obtaining a job, Animal care, Euthanizing, Saving, Cleaning wounds, Training, Dinner invitation, Observing possessive treatment, Dancing, Training attempt, Beating, Escape, Hiding, Chemistry observation, Abuse, Ambush, Attack, Rescue, Animal release, Chaos, Strangling, Killing, Circus shutdown, Job application, Job request, Explanation, Job offer, Job acceptance, Degree completion, Veterinary work, Performing, Farm purchase, Marriage, Having children, Animal keeping, Death, Return to job, Ticket taking, Nursing home avoidance, Drama, Romance, Thriller
+
+---stopword---
+
+Romance, War, Drama, Romantic film, Ownership of a nightclub and gambling den, Encounter between two former lovers, Arrest of a criminal, Revelation of love confession, Suspicion regarding valuable documents, Support for resistance movement, Defiant performance at a cafe, Confrontation over important letters, Escape with assistance, Betrayal to secure release, Shootout resulting in a death, Formation of a friendship
+
+---stopword---
+
+Romance, Drama, Historical, Tragedy, Search for the Heart of the Ocean, Encounter with a centenarian, Recounting experiences as a Titanic passenger, Boarding the Titanic, Developing a friendship, Falling in love, Nude sketch with a valuable necklace, Witnessing the ship's collision with an iceberg, Framing for theft, Escape and return, Ship sinking and survival, Rescue by another ship, Discovery of a valuable item, Abandoning the search, Dropping the valuable item into the sea, Life depicted in photos, Reunion at the Titanic's Grand Staircase.

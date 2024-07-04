@@ -1,0 +1,76 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+In the early morning hours on November 13, 1974, Ronald DeFeo Jr. murders his entire family with a rifle at their home of 112 Ocean Avenue in Amityville, New York.
+
+1 year later, middle-class newlyweds George and Kathy Lutz move into the house with Kathy's 3 children from a prior marriage: Greg, Matt, and Amy. Despite George's irreligiosity, Kathy, a nominal Roman Catholic, requests Jesuit priest Father Delaney to bless the home. Delaney arrives while the family is out boating on the Long Island Sound. Upon entering the house, Delaney is swarmed by flies upstairs and hears a hostile voice ordering him to leave, causing him to flee. The next day, Kathy's aunt Helena, a nun, visits the house but becomes violently ill and leaves abruptly, confounding Kathy.
+
+The Lutzes' domestic life begins a sharp decline over the ensuing weeks: George becomes uncharacteristically volatile and abusive, and obsesses over keeping the home warm with firewood, despite Kathy's insistence that it is not cold. George recurrently awakens at 3:15 a.m.—the same time the DeFeos were murdered—while Kathy suffers disturbing nightmares. Before Kathy's brother's engagement party one night, $1,500 cash to be paid to the caterer inexplicably goes missing in the house. Meanwhile, the babysitter watching Amy for the evening is locked inside a bedroom closet by an unseen force. Further unexplained incidents occur when one of the two boys suffers a crushed hand when a sash window falls on it, and Amy has an imaginary friend, Jody, who seems to be of a malevolent nature. One night, Kathy glimpses two red, swine-like eyes outside Amy's second-story bedroom window.
+
+Delaney makes several attempts to intervene that seem to be thwarted by unusual accidents and occurrences: His phone calls to the home are frequently experienced by Kathy as static noise, and on one occasion his car malfunctions en-route to the house, nearly causing a fatal crash. Convinced there are demonic forces at work, Delaney grows frustrated by the lack of support from his superiors in the diocese. Meanwhile, George's land surveying business begins to suffer due to his lack of attendance, concerning his business partner, Jeff. Jeff's wife, Carolyn, who has psychic proclivities, is both repulsed and intrigued by the things she feels when at the house.
+
+In the home's basement, Carolyn is drawn to a brick wall that the family dog, Harry, has repeatedly scratched at, and she begins dismantling it with a hammer. Discovering the damage, George takes down the rest of the wall, uncovering a small room with red walls. Carolyn, in terror, shrieks that they have found "the passage... to Hell!", her voice resembling that of Father Delaney. Later that night, Delaney prays passionately at his pulpit for God to save the family, before he inexplicably loses his sight and falls catatonic.
+
+Kathy visits the library to research the property's history, where she finds county records suggesting that the house is built atop a Shinnecock burial ground and that a known Satanic worshipper named John Ketchum had once lived on the land. She also discovers news clippings about the DeFeo murders and notices Ronald DeFeo's striking resemblance to George.
+
+The paranormal events culminate that night during a rainstorm: Blood oozes from the walls and down the staircase; Jody, appearing as a large, red-eyed pig, is seen through a window; and a seemingly possessed George attempts to kill the children with an axe, but regains his wits after Kathy intervenes. After falling through the basement stairs into a pit of black sludge while rescuing Harry, George and the rest of the family drive away, abandoning their home and belongings. A closing intertitle reads: "George and Kathleen Lutz and their family never reclaimed their house or their personal belongings. Today they live in another state." 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.com/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Event1 rdf:type yago:Event ;
+rdfs:label "Family murder" .
+
+ex:Event2 rdf:type yago:Event ;
+rdfs:label "Moving into a new house" .
+
+ex:Event3 rdf:type yago:Event ;
+rdfs:label "Blessing the home" .
+
+ex:Event4 rdf:type yago:Event ;
+rdfs:label "Unexplained incidents and disturbances" .
+
+ex:Event5 rdf:type yago:Event ;
+rdfs:label "Attempts to intervene by the priest" .
+
+ex:Event6 rdf:type yago:Event ;
+rdfs:label "Psychic experiences and business troubles" .
+
+ex:Event7 rdf:type yago:Event ;
+rdfs:label "Discovery of the hidden room" .
+
+ex:Event8 rdf:type yago:Event ;
+rdfs:label "Researching the property's history" .
+
+ex:Event9 rdf:type yago:Event ;
+rdfs:label "Paranormal events culminate" .
+
+ex:Event10 rdf:type yago:Event ;
+rdfs:label "Abandoning the haunted house" .
+
+ex:Genre1 rdf:type yago:Genre ;
+rdfs:label "Horror" .
+
+ex:Genre2 rdf:type yago:Genre ;
+rdfs:label "Supernatural" .
+
+ex:Genre3 rdf:type yago:Genre ;
+rdfs:label "Mystery" .
+
+ex:Genre4 rdf:type yago:Genre ;
+rdfs:label "Thriller" .
+
+ex:Genre5 rdf:type yago:Genre ;
+rdfs:label "Drama" .
+
+ex:Genre6 rdf:type yago:Genre ;
+rdfs:label "Suspense" .
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Family murder, Moving into a new house, Blessing the home, Unexplained incidents and disturbances, Attempts to intervene by the priest, Psychic experiences and business troubles, Discovery of the hidden room, Researching the property's history, Paranormal events culminate, Abandoning the haunted house
+
+Horror, Supernatural, Mystery, Thriller, Drama, Suspense

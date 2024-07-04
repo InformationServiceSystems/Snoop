@@ -1,0 +1,106 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Miniature artist Annie Graham lives with her psychiatrist husband Steve, their 16-year-old son Peter, and their 13-year-old daughter Charlie. The family attends the funeral of Annie's emotionally distant mother, Ellen. Annie is surprised at the number of people in attendance. Annie attends a bereavement support group, revealing she and her mother had a fraught relationship until Charlie was born when Ellen became a significant figure in raising her. Meanwhile, Steve receives a phone call telling him that unknown perpetrators desecrated Ellen's grave, but does not reveal this to Annie.
+
+Peter is invited to a party, and Annie insists that Charlie go with him. On the way to the party, the siblings pass a telephone pole carved with an occult sigil. At the party, Peter leaves Charlie by herself, and Charlie, who has a severe nut allergy, eats chocolate cake that had been cut with a knife that was used to chop walnuts and goes into anaphylactic shock. As Peter drives Charlie to the hospital, she leans out of the window for air; when Peter swerves to avoid a dead deer lying in the road, she is decapitated by the sigil telephone pole. In shock, Peter drives home and leaves Charlie's decapitated body in the back seat of his car, which Annie discovers to her horror the following morning.
+
+Annie befriends support group member Joan. Joan teaches Annie to perform a séance to commune with Charlie. Later that night, Annie convinces her family to attempt the séance. Objects begin to move and smash, and Peter is petrified when Annie speaks in Charlie's voice until Steve throws water on her. As Peter begins to be plagued by supernatural entities, Annie suspects Charlie's spirit has become vengeful and demonic. When she sees images in Charlie's sketchbook threatening Peter, she throws the book into the fireplace. However, her clothing goes up in flames alongside the book and only stops when she pulls it away from the flames.
+
+Annie goes through her mother's old belongings, and finds a photo album that shows Ellen to have been Queen Leigh, the leader of a coven, and Joan one of her followers. Another book describes the demon King Paimon, who wishes to inhabit the body of a male host. The summoner of Paimon will receive wealth and rewards. In the attic, Annie finds Ellen's body and occultist symbols.
+
+While Peter is outside his school, Joan appears and attempts to expel his spirit from his body for the demon king. In class, Peter is taken over by an unseen force and slams his head against his desk. Annie informs Steve of her ties to the book and begs him to burn it, as she cannot bring herself to commit suicide. When he refuses, she flings the book into the fire, only for Steve to burst into flame and die. Annie reacts in horror, but then her expression turns blank as Paimon possesses her.
+
+As naked coven members begin gathering both inside and around the house, Peter wakes after dark and finds his father's burned corpse, then quickly notices one of the coven members in a nearby doorway. A now possessed Annie then chases him through the house. Attempting to hide in the attic, Peter witnesses Annie decapitating herself with a piece of piano wire and jumps from the attic window, presumably to his death. A glowing orb enters and reanimates his body. He follows Annie's floating headless body into Charlie's treehouse, where Joan and other members of the coven, as well as Ellen and Annie's headless bodies, are bowing to an idol made with Charlie's severed head. Joan places a crown on Peter's head. She proclaims that they have replaced Charlie with a correct male host, and the coven hail Peter as King Paimon
+This content may violate our content policy. If you believe this to be in error, please submit your feedback — your input will aid our research in this area.
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.org/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Annie_Graham rdf:type yago:FictionalCharacter .
+ex:Steve_Graham rdf:type yago:FictionalCharacter .
+ex:Peter_Graham rdf:type yago:FictionalCharacter .
+ex:Charlie_Graham rdf:type yago:FictionalCharacter .
+ex:Ellen rdf:type yago:FictionalCharacter .
+ex:Joan rdf:type yago:FictionalCharacter .
+ex:King_Paimon rdf:type yago:FictionalCharacter .
+
+ex:Move_In rdf:type yago:Event .
+ex:Attend_Funeral rdf:type yago:Event .
+ex:Join_Support_Group rdf:type yago:Event .
+ex:Desecrate_Grave rdf:type yago:Event .
+ex:Go_to_Party rdf:type yago:Event .
+ex:Experience_Anaphylactic_Shock rdf:type yago:Event .
+ex:Conduct_Séance rdf:type yago:Event .
+ex:Experience_Supernatural_Activity rdf:type yago:Event .
+ex:Discover_Occult_Information rdf:type yago:Event .
+ex:Attempt_Exorcism rdf:type yago:Event .
+ex:Uncover_Coven_Secrets rdf:type yago:Event .
+ex:Expel_Spirit rdf:type yago:Event .
+ex:Commit_Suicide rdf:type yago:Event .
+ex:Reanimation rdf:type yago:Event .
+ex:Bow_to_Idol rdf:type yago:Event .
+ex:Proclaim_Succession rdf:type yago:Event .
+
+ex:Psychological_Horror rdf:type yago:FilmGenre .
+ex:Supernatural_Thriller rdf:type yago:FilmGenre .
+
+ex:Annie_Graham ex:lives_with ex:Steve_Graham .
+ex:Annie_Graham ex:lives_with ex:Peter_Graham .
+ex:Annie_Graham ex:lives_with ex:Charlie_Graham .
+ex:Annie_Graham ex:lives_with ex:Ellen .
+ex:Annie_Graham ex:lives_with ex:Joan .
+
+ex:Steve_Graham ex:is_married_to ex:Annie_Graham .
+
+ex:Peter_Graham ex:is_son_of ex:Annie_Graham .
+ex:Peter_Graham ex:is_son_of ex:Steve_Graham .
+
+ex:Charlie_Graham ex:is_daughter_of ex:Annie_Graham .
+ex:Charlie_Graham ex:is_daughter_of ex:Steve_Graham .
+
+ex:Attend_Funeral ex:happens_to ex:Annie_Graham .
+ex:Attend_Funeral ex:happens_to ex:Ellen .
+
+ex:Join_Support_Group ex:happens_to ex:Annie_Graham .
+
+ex:Desecrate_Grave ex:happens_to ex:Ellen .
+
+ex:Go_to_Party ex:happens_to ex:Peter_Graham .
+
+ex:Experience_Anaphylactic_Shock ex:happens_to ex:Charlie_Graham .
+
+ex:Conduct_Séance ex:happens_to ex:Annie_Graham .
+
+ex:Experience_Supernatural_Activity ex:happens_to ex:Peter_Graham .
+
+ex:Discover_Occult_Information ex:happens_to ex:Annie_Graham .
+
+ex:Attempt_Exorcism ex:happens_to ex:Peter_Graham .
+
+ex:Uncover_Coven_Secrets ex:happens_to ex:Annie_Graham .
+
+ex:Expel_Spirit ex:happens_to ex:Peter_Graham .
+
+ex:Commit_Suicide ex:happens_to ex:Annie_Graham .
+
+ex:Reanimation ex:happens_to ex:Peter_Graham .
+
+ex:Bow_to_Idol ex:happens_to ex:Peter_Graham .
+
+ex:Proclaim_Succession ex:happens_to ex:Peter_Graham .
+
+ex:Hereditary rdf:type yago:Film .
+
+ex:Hereditary rdf:type ex:Psychological_Horror .
+
+ex:Hereditary rdf:type ex:Supernatural_Thriller .
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: Move In, Attend Funeral, Join Support Group, Desecrate Grave, Go to Party, Experience Anaphylactic Shock, Conduct Séance, Experience Supernatural Activity, Discover Occult Information, Attempt Exorcism, Uncover Coven Secrets, Expel Spirit, Commit Suicide, Reanimation, Bow to Idol, Proclaim Succession
+
+Genres: Psychological Horror, Supernatural Thriller

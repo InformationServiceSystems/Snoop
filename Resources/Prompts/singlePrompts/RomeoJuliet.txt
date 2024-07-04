@@ -1,0 +1,69 @@
+give the plot in rdf format and annotate with YAGO:
+
+In Verona Beach, the Capulets and Montagues are two rival business empires. The animosity of the older generation—Fulgencio and Gloria Capulet and Ted and Caroline Montague—is felt by their younger relatives. A shootout between Montagues led by Benvolio, Romeo's cousin, and Capulets led by Tybalt, Juliet's cousin, creates chaos in the city. Being the third civil brawl, the Chief of Police, Captain Prince, reprimands the families, warning them that if such an event occurs again, their lives "shall pay the forfeit of the peace".
+
+Benvolio and Romeo learn of a Capulet party that evening, which they decide to gate-crash. Romeo agrees on hearing that Rosaline, with whom he is madly in love, is attending. They meet their friend, Mercutio, who has tickets to the party, and Romeo takes ecstasy as they proceed to the Capulet mansion. The effects of the drug and the party overwhelm Romeo, who goes to the restroom. There he sees and meets Juliet, and the two instantly fall in love, both unaware of who the other is. Tybalt spots Romeo and vows to kill him for invading his family's home.
+
+After Romeo leaves the party, he and Juliet each learn that they belong to feuding families, but Romeo returns to see her. He proposes. Juliet tells him that if he sends word by the following day, they will be betrothed. The next day, Romeo asks Father Laurence to marry them, and he agrees. Romeo passes the word on via Juliet's nurse, and they soon get married.
+
+Tybalt encounters Mercutio and Romeo at the beach. Romeo attempts to make peace, but Tybalt assaults him. Mercutio intervenes and batters Tybalt, and is about to kill him when Romeo stops him. Tybalt takes the opportunity to fatally wound Mercutio, who curses both houses before dying. Enraged, Romeo chases after the fleeing Tybalt and shoots him dead, avenging the death of Mercutio.
+
+Captain Prince banishes Romeo from the city, and he goes into hiding with Father Laurence. The nurse arrives and tells him that Juliet is waiting for him. Romeo climbs Juliet's balcony and they consummate their marriage, with Romeo departing the next morning. Meanwhile, Fulgencio decides Juliet will marry Dave Paris, the governor's son.
+
+The next morning, Gloria informs Juliet that she is to marry Paris, and when Juliet refuses, Fulgencio physically assaults her and threatens to disown her. Juliet runs away and seeks out Father Laurence, imploring him to help her, while threatening to commit suicide. Father Laurence gives her a potion that will let her fake her own death, after which she will be placed within the Capulet vault to awaken 24 hours later. Father Laurence vows to inform Romeo of the plot via overnight letter, whereupon the latter will sneak into the vault and, once reunited with Juliet, the two will escape to Mantua, a remote trailer park in the desert where Romeo has been hiding out. Romeo does not see the delivered letter, however, and, believing Juliet to be dead, buys a vial of poison from an apothecary.
+
+Romeo enters the church where Juliet lies and consumes the poison just as Juliet wakes up. Distraught over Romeo’s death, Juliet picks up his gun and shoots herself in the head, dying instantly beside his lifeless body. Romeo's body is being taken inside an ambulance with a crowd of spectators and reporters observing the incident from behind the police line, when the parents of both Romeo and Juliet arrive in the scene. Captain Prince approaches their fathers, and berates them both for the deaths of his kinsmen that their foolish brawl has caused. 
+ChatGPT
+
+Here is the plot you provided in RDF format, annotated with YAGO:
+
+bash
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+# Events
+rdf:type yago:Play, yago:Shootout, yago:Warning, yago:Fall_in_love, yago:Party, yago:Drug_use,
+          yago:Conflict, yago:Proposal, yago:Marriage, yago:Assault, yago:Wounding, yago:Banishment,
+          yago:Hiding, yago:Threat, yago:Running_away, yago:Plot, yago:Death, yago:Funeral, yago:Arrival .
+
+# Characters
+rdf:type yago:Character ;
+        yago:hasName "Fulgencio Capulet", "Gloria Capulet", "Ted Montague", "Caroline Montague",
+                     "Benvolio", "Romeo", "Tybalt", "Juliet", "Captain Prince", "Mercutio", "Father Laurence",
+                     "Dave Paris" .
+
+# Locations
+rdf:type yago:Location ;
+        yago:hasName "Verona Beach", "Capulet mansion", "beach", "church", "Capulet vault", "Mantua",
+                     "desert", "police line" .
+
+# Relationships
+rdf:type yago:Rivalry ;
+        yago:involves "Capulets", "Montagues" .
+yago:isRelativeOf "Benvolio", "Romeo", "Tybalt", "Juliet" ;
+                 yago:relationType yago:Cousin .
+yago:isParentOf "Fulgencio Capulet", "Gloria Capulet", "Ted Montague", "Caroline Montague" ;
+               yago:relationType yago:Parent .
+yago:isFriendOf "Mercutio" ;
+                yago:relationType yago:Friend .
+
+# Actions
+rdf:type yago:Gate_crashing, yago:Overwhelm, yago:Meeting, yago:Fall_in_love, yago:Spotting,
+          yago:Vow, yago:Proposal, yago:Learning, yago:Marriage_proposal, yago:Reconciliation,
+          yago:Assault, yago:Interception, yago:Chase, yago:Wounding, yago:Avenging, yago:Banishment,
+          yago:Hiding, yago:Consumption, yago:Awakening, yago:Faking, yago:Threatening, yago:Suicide,
+          yago:Informing, yago:Sneaking, yago:Escape, yago:Buying, yago:Death, yago:Observation,
+          yago:Arrival .
+
+# Annotations
+rdf:type yago:Drama, yago:Romance_film .
+
+Please note that this RDF representation is a simplified version for the purpose of annotation and does not cover all possible details.
+User
+Extract events and genres and format in textual, comma-separated lists
+ChatGPT
+
+Events: Shootout, Warning, Fall in love, Party, Drug use, Conflict, Proposal, Marriage, Assault, Wounding, Banishment, Hiding, Threat, Running away, Plot, Death, Funeral, Arrival
+
+Genres: Drama, Romance film

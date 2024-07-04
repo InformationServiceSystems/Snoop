@@ -1,0 +1,67 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+The corpse of an unidentified young woman is found at the scene of an inexplicable multiple homicide. Sheriff Sheldon Burke finds no signs of forced entry, and Lieutenant Wade suggests that the victims were trying to escape.
+
+Emma Roberts visits her boyfriend, Austin Tilden, and his father, Tommy, a small town coroner. Tommy explains that coroners in the past used to tie bells to bodies to ensure they were dead, not comatose. Sheriff Burke arrives with the mysterious body of Jane Doe, and tells Tommy that he needs the cause of death by morning. Austin postpones his date with Emma to help his father, promising to meet her later that evening.
+
+Tommy and Austin perform the autopsy and quickly become confused. There are no external visible signs of trauma, but her wrist and ankle bones had been shattered. Her tongue has been crudely cut out, one of her molars is missing, her lungs are blackened as though she had suffered third degree burns, and her internal organs reveal numerous cuts and scarring. Jimsonweed, a paralyzing agent not native to the area, is found in her stomach. The condition of much of the body suggests that death had just occurred, while cloudiness of the corpse's eyes suggests she has been dead for several days.
+
+Other mysterious events occur. The radio spontaneously changes stations, frequently settling on the song "Open Up Your Heart (And Let the Sunshine In)", and Austin believes he sees people standing in the morgue's hallway. Investigating, he finds their cat, Stanley, mortally wounded. Tommy quickly snaps Stanley’s neck to put him out of his misery before reluctantly incinerating the corpse.
+
+Continuing the autopsy, Tommy finds the woman's missing tooth wrapped in a piece of cloth in her stomach. The cloth has Roman numerals, letters, and an odd diagram. Similar symbols are found on the inside of her skin. All the lights in the room suddenly explode. During the confusion, they realize other corpses in the morgue have gone missing. They decide to leave, but the elevator does not work and a fallen tree is blocking the exit door. An unseen figure leaves bruises on Tommy when he goes to the bathroom.
+
+They return to the autopsy room and again examine the corpse. When the door locks itself, Austin hacks it with an emergency axe. Through an opening, they see one of the missing corpses. Unable to get to the cremation furnace, they set the corpse ablaze in the exam room. The fire spreads rapidly; Tommy puts it out with an extinguisher but is disturbed to find the body has not burned. When the elevator turns back on, Tommy and Austin try to escape, but the doors will not close. Panicked, Tommy uses an axe against what he believes to be one of the animated corpses. When he and Austin exit the elevator, they discover he has killed Emma, who had returned to meet Austin.
+
+Certain that Jane Doe's corpse has been preventing them from finding out the truth about her death, they return to the examination room. Tests determine that Jane Doe's brain tissue cells remain active, proving that she is somehow still alive. Further examination of the cloth determines that the markings refer to Leviticus 20:27, which condemns witches, and the year 1693, the date of the Salem witch trials. Tommy and Austin reason that in their attempt to punish a witch, the Salem authorities instead transformed an innocent woman into a witch, rendering her immortal and allowing her to feel all of the pain her body endures even though she appears dead. Tommy offers himself to the corpse as a sacrifice, hoping she will spare Austin. Tommy's ankles and wrists shatter, mimicking the corpse's wounds. As the wounds occur to Tommy, the corpse's own wounds begin to heal – seemingly ending her curse. Tommy reaches for a knife to cut out his own tongue and complete the ritual. However, Austin reluctantly stabs his father in the chest to end his misery. Believing he hears the sheriff outside, Austin tries to flee but realizes the voice is another hallucination. Startled by a vision of Tommy's corpse, Austin trips over the railing and falls to his death.
+
+The police arrive the next morning and are confused by another inexplicable crime scene. The corpse, showing no signs of trauma, is taken to Virginia Commonwealth University. During the ambulance ride, the radio plays "Open Up Your Heart (And Let the Sunshine In)", and the corpse's big toe twitches. 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.org/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Film rdf:type yago:Film108353400 .
+ex:Documentary rdf:type yago:Film108353400 .
+ex:Delegitimization rdf:type yago:Delegitimization100542755 .
+ex:Exorcism rdf:type yago:Exorcism100542878 .
+ex:Possession rdf:type yago:Possession100542684 .
+ex:MentalState rdf:type yago:MentalState105809305 .
+ex:PhysicalCondition rdf:type yago:PhysicalCondition114034177 .
+ex:PsychiatricTesting rdf:type yago:PsychiatricTesting105809294 .
+ex:Incest rdf:type yago:Incest100542867 .
+ex:Death rdf:type yago:Death107422838 .
+ex:Painting rdf:type yago:Painting103876519 .
+ex:Flame rdf:type yago:Flame104423540 .
+ex:Crucifix rdf:type yago:Crucifix100476320 .
+ex:SexAct rdf:type yago:SexAct107473579 .
+ex:Disturbed rdf:type yago:Disturbance105876077 .
+ex:Shame rdf:type yago:Shame107456666 .
+ex:Anguish rdf:type yago:Anguish100539980 .
+ex:VirginityLoss rdf:type yago:VirginityLoss100539932 .
+ex:Homosexuality rdf:type yago:Homosexuality100543593 .
+ex:Conversation rdf:type yago:Conversation100552778 .
+ex:Lying rdf:type yago:Lie107413617 .
+ex:OccultSymbol rdf:type yago:OccultSymbol103878788 .
+ex:Cult rdf:type yago:Cult100951565 .
+ex:Fire rdf:type yago:Fire104609897 .
+ex:Altar rdf:type yago:Altar104592682 .
+ex:DemonicChild rdf:type yago:Demon109919890 .
+ex:Evil rdf:type yago:Evil105972549 .
+ex:FaithRestoration rdf:type yago:FaithRestoration .
+ex:Axe rdf:type yago:Axe105768661 .
+ex:IrisDeath rdf:type yago:Death107422838 .
+ex:DanielDeath rdf:type yago:Death107422838 .
+
+ex:HorrorFilm rdf:type yago:HorrorFilm106444374 .
+ex:SupernaturalFilm rdf:type yago:SupernaturalFilm106463236 .
+ex:MysteryFilm rdf:type yago:MysteryFilm106466095 .
+ex:ThrillerFilm rdf:type yago:ThrillerFilm106460239 .
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: The corpse of an unidentified young woman is found, Inexplicable multiple homicide, Autopsy performed on the mysterious body, Mysterious occurrences in the morgue, Examination of the corpse's markings and symbols, Attempted escape from the morgue, Sacrifice to end the curse, Police arrival at the crime scene, Transporting the corpse to the university, Radio playing "Open Up Your Heart (And Let the Sunshine In)" during the ambulance ride.
+
+Genres: Horror, Supernatural, Mystery, Thriller

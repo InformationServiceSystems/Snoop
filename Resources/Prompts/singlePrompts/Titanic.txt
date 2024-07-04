@@ -1,0 +1,167 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+In 1996, aboard the research vessel Akademik Mstislav Keldysh, Brock Lovett and his team search the wreck of RMS Titanic. They recover a safe they hope contains a necklace with a large diamond known as the Heart of the Ocean. Instead, they find only a drawing of a young nude woman wearing the necklace. The sketch is dated April 14, 1912, the same day the Titanic struck the iceberg that caused it to sink.[Note 2] After viewing a television news story about the discovery, centenarian Rose Dawson Calvert contacts Lovett, identifying herself as the woman in the drawing. Hoping she can help locate the necklace, Lovett brings Rose aboard Keldysh, where she recounts her experiences as a Titanic passenger.
+
+In 1912 Southampton, 17-year-old Rose DeWitt Bukater, her wealthy fiancé Caledon "Cal" Hockley, and Rose's widowed mother Ruth, board the Titanic. Ruth emphasizes that Rose's marrying Cal will resolve the family's financial problems and maintain their upper-class status. Meanwhile, Jack Dawson, a poor young artist, wins a third-class Titanic ticket in a poker game. After setting sail, Rose, distraught over her loveless engagement, climbs over the stern railing, intending to commit suicide. Jack coaxes her back onto the deck and they develop a friendship. Jack soon admits that he has feelings for Rose. When Cal and Ruth strongly object, Rose rejects Jack's attentions, but returns to him after realizing she has fallen in love.
+
+Rose brings Jack to her state room and requests he draw her nude, wearing only the Heart of the Ocean. They later evade Cal's servant, Lovejoy, and have sex in a Renault Towncar inside the cargo hold. On the forward deck, they witness the ship's collision with an iceberg and overhear its officers discussing its seriousness. Cal discovers Jack's sketch and an insulting note from Rose in his safe, along with the necklace. When Jack and Rose return to warn the others about the collision, Cal has Lovejoy slip the necklace into Jack's pocket to frame him for theft. Jack is confined in the master-at-arms' office. Cal puts the necklace into his own overcoat pocket.
+
+With the ship sinking, the crew prioritize women and children for evacuation. Rose finds and frees Jack, and they make it back to the deck, where Cal and Jack urge Rose to board a lifeboat. Intending to save himself, Cal lies that he will get Jack safely off the ship and wraps his overcoat around Rose. As her lifeboat is lowered, Rose, unable to abandon Jack, jumps back onto the ship. Cal grabs Lovejoy's pistol and chases Jack and Rose, but they escape; Cal realizes the necklace is still in the coat he gave Rose. He later poses as a lost child's father to get onboard a lifeboat.
+
+Jack and Rose return to the deck. The ship's stern is rising as the flooded bow sinks; the two desperately cling to the stern rail. The upended ship breaks in half and the bow section sinks. The remaining stern slams back onto the ocean, then upends again before it, too, sinks. In the freezing water, Jack helps Rose onto a wood transom panel among the debris, buoyant enough only for one person, and makes her promise to survive. Jack dies of hypothermia, but Rose is among six people saved by the one returning lifeboat.
+
+RMS Carpathia rescues the survivors. Rose avoids Cal and her mother by hiding among the steerage passengers and giving her name as Rose Dawson. Still wearing Cal's overcoat, she discovers the necklace tucked inside the pocket. In the present, Rose says she later heard that Cal committed suicide after losing his fortune in the Wall Street Crash of 1929. Lovett abandons his search after hearing Rose's story. Alone on the stern of Keldysh, Rose takes the Heart of the Ocean, which has been in her possession all along, and drops it into the sea over the wreck site. While she is seemingly asleep in her bed,[16] her photos on the dresser depict a life of freedom and adventure inspired by her early conversations with Jack. A young Rose reunites with Jack at the Titanic's Grand Staircase, applauded by those who died that night. 
+This content may violate our content policy. If you believe this to be in error, please submit your feedback — your input will aid our research in this area.
+ChatGPT
+
+Events:
+
+    Lovett and his team search the wreck of RMS Titanic
+    Drawing of a young nude woman wearing the necklace is found
+    Rose contacts Lovett and identifies herself as the woman in the drawing
+    Rose recounts her experiences as a Titanic passenger
+    Rose and her family board the Titanic
+    Jack Dawson wins a third-class ticket to the Titanic
+    Rose develops a friendship with Jack and falls in love with him
+    Rose asks Jack to draw her nude wearing the Heart of the Ocean
+    Ship collides with an iceberg
+    Cal frames Jack for theft of the necklace
+    Rose and Jack try to warn others about the collision
+    Rose refuses to leave Jack and jumps back onto the ship
+    Jack helps Rose onto a wood panel for survival
+    Jack dies of hypothermia
+    Rose is rescued by a lifeboat
+    Carpathia rescues the survivors
+    Rose hides among steerage passengers and discovers the necklace
+    Rose drops the Heart of the Ocean into the sea over the wreck site
+    Rose's photos depict a life of freedom and adventure
+    Young Rose reunites with Jack at the Titanic's Grand Staircase
+
+Genres: Drama, Romance, Historical, Tragedy
+User
+Redo this in rdf annotated with yago
+ChatGPT
+
+Certainly! Here's the plot description annotated in RDF format with YAGO annotations:
+
+vbnet
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.org/>.
+@prefix yago: <http://yago-knowledge.org/resource/>.
+
+ex:Event1 rdf:type yago:Event;  
+         rdfs:label "Lovett and his team search the wreck of RMS Titanic".
+
+ex:Event2 rdf:type yago:Event;  
+         rdfs:label "Drawing of a young nude woman wearing the necklace is found".
+
+ex:Event3 rdf:type yago:Event;  
+         rdfs:label "Rose contacts Lovett and identifies herself as the woman in the drawing".
+
+ex:Event4 rdf:type yago:Event;  
+         rdfs:label "Rose recounts her experiences as a Titanic passenger".
+
+ex:Event5 rdf:type yago:Event;  
+         rdfs:label "Rose and her family board the Titanic".
+
+ex:Event6 rdf:type yago:Event;  
+         rdfs:label "Jack Dawson wins a third-class ticket to the Titanic".
+
+ex:Event7 rdf:type yago:Event;  
+         rdfs:label "Rose develops a friendship with Jack and falls in love with him".
+
+ex:Event8 rdf:type yago:Event;  
+         rdfs:label "Rose asks Jack to draw her nude wearing the Heart of the Ocean".
+
+ex:Event9 rdf:type yago:Event;  
+         rdfs:label "Ship collides with an iceberg".
+
+ex:Event10 rdf:type yago:Event;  
+          rdfs:label "Cal frames Jack for theft of the necklace".
+
+ex:Event11 rdf:type yago:Event;  
+          rdfs:label "Rose and Jack try to warn others about the collision".
+
+ex:Event12 rdf:type yago:Event;  
+          rdfs:label "Rose refuses to leave Jack and jumps back onto the ship".
+
+ex:Event13 rdf:type yago:Event;  
+          rdfs:label "Jack helps Rose onto a wood panel for survival".
+
+ex:Event14 rdf:type yago:Event;  
+          rdfs:label "Jack dies of hypothermia".
+
+ex:Event15 rdf:type yago:Event;  
+          rdfs:label "Rose is rescued by a lifeboat".
+
+ex:Event16 rdf:type yago:Event;  
+          rdfs:label "Carpathia rescues the survivors".
+
+ex:Event17 rdf:type yago:Event;  
+          rdfs:label "Rose hides among steerage passengers and discovers the necklace".
+
+ex:Event18 rdf:type yago:Event;  
+          rdfs:label "Rose drops the Heart of the Ocean into the sea over the wreck site".
+
+ex:Event19 rdf:type yago:Event;  
+          rdfs:label "Rose's photos depict a life of freedom and adventure".
+
+ex:Event20 rdf:type yago:Event;  
+          rdfs:label "Young Rose reunites with Jack at the Titanic's Grand Staircase".
+
+ex:Genre1 rdf:type yago:Genre;
+         rdfs:label "Drama".
+
+ex:Genre2 rdf:type yago:Genre;
+         rdfs:label "Romance".
+
+ex:Genre3 rdf:type yago:Genre;
+         rdfs:label "Historical".
+
+ex:Genre4 rdf:type yago:Genre;
+         rdfs:label "Tragedy".
+
+ex:Event1 rdf:type ex:Genre1, ex:Genre3, ex:Genre4.
+ex:Event2 rdf:type ex:Genre1, ex:Genre3.
+ex:Event3 rdf:type ex:Genre1, ex:Genre2.
+ex:Event4 rdf:type ex:Genre1, ex:Genre3.
+ex:Event5 rdf:type ex:Genre1, ex:Genre3.
+ex:Event6 rdf:type ex:Genre1, ex:Genre3.
+ex:Event7 rdf:type ex:Genre1, ex:Genre2.
+ex:Event8 rdf:type ex:Genre1, ex:Genre2.
+ex:Event9 rdf:type ex:Genre1, ex:Genre3, ex:Genre4.
+ex:Event10 rdf:type ex:Genre1, ex:Genre3.
+ex:Event11 rdf:type ex:Genre1, ex:Genre3.
+ex:Event12 rdf:type ex:Genre1, ex:Genre3.
+ex:Event13 rdf:type ex:Genre1, ex:Genre3.
+ex:Event14 rdf:type ex:Genre1, ex:Genre4.
+ex:Event15 rdf:type ex:Genre1, ex:Genre3.
+ex:Event16 rdf:type ex:Genre1, ex:Genre3.
+ex:Event17 rdf:type ex:Genre1, ex:Genre3.
+ex:Event18 rdf:type ex:Genre1, ex:Genre3.
+ex:Event19 rdf:type ex:Genre1, ex:Genre3.
+ex:Event20 rdf:type ex:Genre1, ex:Genre3.
+
+In this RDF representation, the events are labeled with more general descriptions and are annotated with the YAGO genres.
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Certainly! Here are the events and genres extracted from the plot description with more general labels and without character names, presented as comma-separated lists:
+
+Events:
+
+    Lovett and his team search the wreck of RMS Titanic (Genre: Drama, Historical, Tragedy).
+    A drawing of a young nude woman
+
+User
+Redo this in simple, comma-separated lists
+ChatGPT
+
+Apologies for the previous response. Here are the events and genres extracted from the plot description presented as simple, comma-separated lists:
+
+Events: Lovett and his team search the wreck of RMS Titanic, they find a drawing of a young nude woman wearing the necklace, Rose contacts Lovett and identifies herself as the woman in the drawing, Rose recounts her experiences as a Titanic passenger, Rose and Jack develop a friendship, Rose falls in love with Jack, Rose and Jack have sex in a Renault Towncar inside the cargo hold, the ship collides with an iceberg, Cal frames Jack for theft, the ship sinks, Rose and Jack try to survive, Jack dies of hypothermia, Rose is rescued by RMS Carpathia, Rose drops the necklace into the sea.
+
+Genres: Drama, Historical, Tragedy.

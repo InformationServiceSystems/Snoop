@@ -1,0 +1,108 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago:
+
+In 1935 England, 13-year-old Briony Tallis, the youngest daughter of the wealthy Tallis family, is set to perform a play she wrote for an upcoming family gathering. She spies on her older sister, Cecilia and the housekeeper's son, Robbie Turner (with whom Briony is infatuated), from her bedroom window. During their (Cecilia's and Robbie's) argument near the fountain, Robbie accidentally breaks a vase and yells at Cecilia to stay where she is – so as to avoid cutting her feet on the broken pieces on the ground. Still angered, Cecilia then strips off her outer clothing, stares at him and climbs into the fountain to retrieve one of the pieces. Briony observes all this from the window, and misinterprets the relationship between Cecilia and Robbie.
+
+Robbie drafts a note to Cecilia to apologise for the incident. In one draft of the note, he pens his true, unfiltered feelings of attraction for Cecilia in very explicit language. Although he never intends for Cecilia (or anyone else) to see this version of the note, he mistakenly places it (instead of the second more formal note he drafts) in an envelope which he asks Briony to deliver to Cecilia. Only after Briony departs does he realise the wrong version of the note is in the envelope destined for Cecilia's hands. Making matters worse, Briony reads the letter before giving it to Cecilia. Later, she describes the note to her 15-year-old visiting cousin, Lola, who calls Robbie a "sex maniac". Paul Marshall, a visiting friend of Briony's older brother, introduces himself to the visiting cousins and appears to be attracted to Lola. Before dinner, Robbie and Cecilia are alone in the library, at which time he apologises to Cecilia for the obscene letter but, to his surprise, she confesses her secret love for him. They proceed to make passionate love against the wall in the library as Briony walks in unseen and sees them together; Briony mistakenly thinks her sister is being raped.
+
+During dinner, Lola's twin brothers go missing and the household organises into search parties. While participating in the search, Briony comes across Lola being raped by a man who flees upon being discovered. The two girls talk and Briony becomes convinced that it was Robbie; a confused Lola does not dissent, and the two return home. Later, Robbie — who finds the twins unharmed — returns to the house to see everyone waiting for him suspiciously. He ushers the twins inside and is promptly arrested despite Cecilia's pleas of his innocence. Lola and Briony's testimony, along with her turning over the explicit letter, convinces everyone but Cecilia of his guilt.
+
+Four years later, during the Second World War, Robbie is released from prison on the condition that he joins the army and fights in the Battle of France. Separated from his unit, he makes his way on foot to Dunkirk. He thinks back to six months earlier when he met Cecilia, now a nurse. Briony, now 18, joined Cecilia's old nursing unit at St Thomas' Hospital in London rather than go to the University of Cambridge. She writes to her sister, but Cecilia cannot forgive her for her part in Robbie's arrest and conviction years earlier. Robbie, who is gravely ill from an infected wound and hallucinating, finally arrives at the beaches of Dunkirk, where he awaits evacuation.
+
+Later, Briony, who regrets implicating Robbie, learns from a newsreel that Paul Marshall, who now owns a factory supplying rations to the British army, is about to marry Lola. As Briony attends the wedding, it finally sinks in that it was Paul who assaulted Lola during the search for the twins years ago. Briony visits Cecilia to apologise directly, and suggests correcting her testimony to which Cecilia says she would be an "unreliable witness". Briony is surprised to find Robbie there living with her sister, while in London on leave. Briony apologises for her deceit, but Robbie is enraged that she has still not accepted responsibility for her actions. Cecilia calms him down and then Robbie instructs Briony how to set the record straight and get Robbie's conviction overturned. Briony agrees. Cecilia adds that Briony include what she remembers of Danny Hardman, but Briony points out that Paul Marshall was the rapist and Cecilia adds he has just married Lola and now Lola will not be able to testify against her husband.
+
+Decades later, when Briony is an elderly and successful novelist, she gives an interview about her latest and last book, an autobiographical novel titled Atonement, and explains she is dying from vascular dementia. During the interview, the audience learns that the portion of the book where Robbie and Cecilia are living together and she (Briony) attempts to apologize to them is completely fictitious. The reality is that she could never atone for her mistake, and Cecilia and Robbie were never reunited; Robbie died of septicaemia from his infected wound on the morning of the evacuation at Dunkirk, and Cecilia died months later after drowning during an underground flood due to the Balham tube station bombing during the Blitz. Briony admits that she wrote her novel with its fictitious ending to give the two, in fiction and in death, the happiness they never had because she was responsible for mistakenly identifying Robbie as Lola's rapist. The last scene shows an imagined and happily reunited Cecilia and Robbie staying in the house by the sea which they had intended to visit once they were reunited. 
+This content may violate our content policy. If you believe this to be in error, please submit your feedback — your input will aid our research in this area.
+ChatGPT
+
+Here is the plot description in RDF format with YAGO annotations:
+
+turtle
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.com/> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:Event1 rdf:type yago:Event ;
+          rdfs:label "Performance of a play" .
+
+ex:Event2 rdf:type yago:Event ;
+          rdfs:label "Spying on Cecilia and Robbie" .
+
+ex:Event3 rdf:type yago:Event ;
+          rdfs:label "Argument near the fountain" .
+
+ex:Event4 rdf:type yago:Event ;
+          rdfs:label "Accidental breaking of a vase" .
+
+ex:Event5 rdf:type yago:Event ;
+          rdfs:label "Cecilia climbs into the fountain" .
+
+ex:Event6 rdf:type yago:Event ;
+          rdfs:label "Misinterpretation of the relationship between Cecilia and Robbie" .
+
+ex:Event7 rdf:type yago:Event ;
+          rdfs:label "Robbie drafts a note to Cecilia" .
+
+ex:Event8 rdf:type yago:Event ;
+          rdfs:label "Reading of the explicit note by Briony" .
+
+ex:Event9 rdf:type yago:Event ;
+          rdfs:label "Description of the note to Lola" .
+
+ex:Event10 rdf:type yago:Event ;
+           rdfs:label "Introduction of Paul Marshall to Lola" .
+
+ex:Event11 rdf:type yago:Event ;
+           rdfs:label "Robbie and Cecilia alone in the library" .
+
+ex:Event12 rdf:type yago:Event ;
+           rdfs:label "Briony mistakenly thinks her sister is being raped" .
+
+ex:Event13 rdf:type yago:Event ;
+           rdfs:label "Lola being raped and Briony's conviction of Robbie's guilt" .
+
+ex:Event14 rdf:type yago:Event ;
+           rdfs:label "Robbie's arrest despite Cecilia's pleas" .
+
+ex:Event15 rdf:type yago:Event ;
+           rdfs:label "Robbie's release from prison and joining the army" .
+
+ex:Event16 rdf:type yago:Event ;
+           rdfs:label "Robbie's journey to Dunkirk" .
+
+ex:Event17 rdf:type yago:Event ;
+           rdfs:label "Briony joining Cecilia's nursing unit" .
+
+ex:Event18 rdf:type yago:Event ;
+           rdfs:label "Briony's regret and realization about Paul Marshall" .
+
+ex:Event19 rdf:type yago:Event ;
+           rdfs:label "Briony's apology to Cecilia and Robbie" .
+
+ex:Event20 rdf:type yago:Event ;
+           rdfs:label "Revelation about Robbie and Cecilia's fate" .
+
+ex:Event21 rdf:type yago:Event ;
+           rdfs:label "Briony's interview about her novel" .
+
+ex:Event22 rdf:type yago:Event ;
+           rdfs:label "Imagined reunion of Cecilia and Robbie" .
+
+ex:Genre1 rdf:type yago:Genre ;
+          rdfs:label "Drama" .
+
+ex:Genre2 rdf:type yago:Genre ;
+          rdfs:label "Romance" .
+
+ex:Genre3 rdf:type yago:Genre ;
+          rdfs:label "War" .
+
+Note: The above RDF representation includes events and genres from the plot description, annotated with YAGO labels.
+User
+Extract events and genres in form of comma-separated lists, but make sure the events do not contain any character names but have more general labels
+ChatGPT
+
+Events: Performance of a play, Spying, Argument, Accidental breaking, Climbing into fountain, Misinterpretation, Note drafting, Note reading, Description sharing, Introduction, Library encounter, Misinterpretation of rape, Rape incident, Arrest, Release from prison, Journey, Joining the army, Nursing unit joining, Regret and realization, Apology, Revelation, Interview, Imagined reunion
+
+Genres: Drama, Romance, War

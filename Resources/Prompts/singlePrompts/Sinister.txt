@@ -1,0 +1,108 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+True crime writer Ellison Oswalt moves into a home in the fictional town of Chatford, Pennsylvania with his wife Tracy, their 12-year-old boy, Trevor, and their 7-year-old girl, Ashley. Unbeknownst to his wife and children, Ellison has moved them into the home where the Stevenson family were murdered by hanging. He intends to write a biography about the case, to regain the fame he lost after his bestselling book Kentucky Blood was followed by two less successful novels. He hopes to learn the fate of 10-year-old Stephanie Stevenson, who disappeared following the killings.
+
+Ellison finds a box in the attic that contains a scorpion, as well as a projector and reels of Super 8 film, each labeled as home movies. The films are footage of different families being killed in various ways, each with a related but innocuous title, such as a mass drowning marked as "Pool Party '66." Each killing is performed by the unseen camera operator. Ellison notes the appearance of a mysterious rune and a strange, eerie figure in the films. Ellison matches footage of a throat-slitting killer to news reports from St. Louis, Missouri in 1998. Three members of the Miller family were killed, while 13-year-old Christopher Miller vanished. One night, Ellison investigates noises in the attic. Inside the film reels' canister lid, he finds a king snake and childlike drawings depicting the killings, with an eerie figure called "Mr. Boogie" also present. At one point, Ellison encounters a Rottweiler in the back garden.
+
+Ellison consults a local deputy and discovers that the filmed murders took place at different times and in different cities across the country dating back to 1966. A child from each family disappeared following every murder. And before the Stevensons moved to Chatford, they lived in the Millers' former house. The deputy refers Ellison to occult specialist Professor Jonas, to decipher the rune in the films. Jonas relates the symbol to the ancient and obscure Babylonian god Bughuul, who would murder entire families and take one of their kids to consume their soul slowly. Jonas suspects the killings are part of a cult initiation rite, rather than the work of a single murderer. As Ellison investigates footsteps and noises throughout the home one night, it is revealed that ghost-like kids invisible to Ellison are the cause, with one of them appearing in Ashley's bedroom. Ashley later paints this girl, who she identifies as Stephanie Stevenson, on the wall. Another night, Ellison hears the film projector running and finds the missing kids seated in the attic watching one of the films. Bughuul appears on camera before physically appearing before Ellison. Ellison takes the camera, projector, and films outside and destroys them. He tells Tracy that they are moving back to their old home.
+
+Jonas sends Ellison, now back at his old house, historical images associated with Bughuul, including the mysterious rune and three symbolic creatures that Ellison encountered at the Stevenson house: a scorpion, a snake, and a dog. Early Christians believed that images of Bughuul served as a gateway for the monster to come from the spiritual realm to the mortal world, and Bughuul can possess kids who come into contact with these images. Ellison discovers the unharmed projector and films in his attic, along with a new film labeled "Extended Cut Endings". The deputy calls Ellison and informs him that every deceased family had once lived in the house where the previous killing took place. He also learns from Professor Jonas the pattern: each new killing occurred shortly after the family moved from the crime scene into a new home, traced back to the killing of the Martinez family by arson in 1979 after they moved to Sacramento, California, from the Portland, Oregon, site of the 1966 drownings. By moving away from the Stevenson house, Ellison has marked himself and his family as the next victims. The new footage depicts the missing kids coming onscreen following each killing, revealing themselves to be the murderers under Bughuul's influence.
+
+Ellison becomes lightheaded and notices a green liquid at the bottom of his coffee mug, along with a note from Ashley that says, "Good night, Daddy," before losing consciousness. He awakes to find himself, Tracy, and Trevor bound and gagged on the floor. Ashley, having been influenced by the spirit of Stephanie Stevenson to fall under Bughuul's control, approaches them while filming with the 8 mm camera. She tells her father that she will make him "famous again", and proceeds to kill her family with an axe. She then uses their blood to paint pictures on the walls of the hallway, along with Bughuul's rune on a door. Ashley views the film of her killings while drawing the killing in the lid of the home movies box. The missing kids stare at her through the movie but flee when Bughuul appears. He lifts Ashley into his arms and teleports into the movie. The box of films sits in the Oswalt family's attic, now accompanied by Ashley's reel titled House Painting '12. Bughuul then jumpscares the audience.
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.org/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Event1 rdf:type yago:Event ;
+rdfs:label "Family murder in Chatford" .
+
+ex:Event2 rdf:type yago:Event ;
+rdfs:label "Ellison investigates the attic" .
+
+ex:Event3 rdf:type yago:Event ;
+rdfs:label "Ellison consults Professor Jonas" .
+
+ex:Event4 rdf:type yago:Event ;
+rdfs:label "Ellison discovers ghost-like kids in the house" .
+
+ex:Event5 rdf:type yago:Event ;
+rdfs:label "Ellison destroys the camera, projector, and films" .
+
+ex:Event6 rdf:type yago:Event ;
+rdfs:label "Ellison receives historical images from Jonas" .
+
+ex:Event7 rdf:type yago:Event ;
+rdfs:label "Ellison learns about the pattern of killings" .
+
+ex:Event8 rdf:type yago:Event ;
+rdfs:label "Ellison and his family are bound and gagged" .
+
+ex:Event9 rdf:type yago:Event ;
+rdfs:label "Ashley kills her family with an axe" .
+
+ex:Event10 rdf:type yago:Event ;
+rdfs:label "Bughuul appears and takes Ashley into the movie" .
+
+ex:Genre1 rdf:type yago:Genre ;
+rdfs:label "Horror" .
+
+ex:Genre2 rdf:type yago:Genre ;
+rdfs:label "Thriller" .
+
+ex:Genre3 rdf:type yago:Genre ;
+rdfs:label "Mystery" .
+
+ex:Event1, ex:Event2, ex:Event3, ex:Event4, ex:Event5, ex:Event6, ex:Event7, ex:Event8, ex:Event9, ex:Event10 rdf:type ex:FilmEvent .
+
+ex:FilmEvent rdf:type rdfs:Class ;
+rdfs:subClassOf yago:Event .
+
+ex:Genre1, ex:Genre2, ex:Genre3 rdf:type ex:FilmGenre .
+
+ex:FilmGenre rdf:type rdfs:Class ;
+rdfs:subClassOf yago:Genre .
+
+ex:Event1 ex:hasGenre ex:Genre1 ;
+ex:hasGenre ex:Genre2 .
+
+ex:Event2 ex:hasGenre ex:Genre2 ;
+ex:hasGenre ex:Genre3 .
+
+ex:Event3 ex:hasGenre ex:Genre3 .
+
+ex:Event4 ex:hasGenre ex:Genre1 ;
+ex:hasGenre ex:Genre2 ;
+ex:hasGenre ex:Genre3 .
+
+ex:Event5 ex:hasGenre ex:Genre3 .
+
+ex:Event6 ex:hasGenre ex:Genre2 ;
+ex:hasGenre ex:Genre3 .
+
+ex:Event7 ex:hasGenre ex:Genre3 .
+
+ex:Event8 ex:hasGenre ex:Genre1 ;
+ex:hasGenre ex:Genre2 ;
+ex:hasGenre ex:Genre3 .
+
+ex:Event9 ex:hasGenre ex:Genre1 ;
+ex:hasGenre ex:Genre2 ;
+ex:hasGenre ex:Genre3 .
+
+ex:Event10 ex:hasGenre ex:Genre1 ;
+ex:hasGenre ex:Genre2 .
+
+ex:Genre1 ex:isSubGenreOf ex:Genre2 ;
+ex:isSubGenreOf ex:Genre3 .
+
+ex:Genre2 ex:isSubGenreOf ex:Genre3 .
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: Family murder, Investigation of the attic, Consultation with Professor Jonas, Discovery of ghost-like kids, Destruction of camera, projector, and films, Receipt of historical images, Learning about the pattern of killings, Binding and gagging of Ellison and his family, Family killings with an axe, Appearance of Bughuul and abduction of Ashley into the movie.
+
+Genres: Horror, Thriller, Mystery

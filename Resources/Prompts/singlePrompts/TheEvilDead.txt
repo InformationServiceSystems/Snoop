@@ -1,0 +1,109 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Five Michigan State University students – Ash Williams, his girlfriend Linda, his sister Cheryl, their friend Scott, and Scott's girlfriend Shelly – vacation at an isolated cabin in rural Tennessee. Approaching the cabin, the group notices the porch swing move on its own but suddenly stop as Scott grabs the doorknob. While Cheryl draws a picture of a clock, the clock stops, and she hears a faint, demonic voice tell her to "join us". Her hand becomes possessed, turns pale and draws a picture of a book with a demonic face on its cover. Although shaken, she does not mention the incident.
+
+When the cellar trapdoor flies open during dinner, Shelly, Linda, and Cheryl remain upstairs as Ash and Scott investigate the cellar. They find the Naturom Demonto, a Sumerian version of the Egyptian Book of the Dead, along with archaeologist Raymond Knowby's tape recorder, and they take the items upstairs. Scott plays a tape of incantations that resurrect a demonic entity. Cheryl yells for Scott to turn off the tape recorder, and a tree branch breaks one of the cabin's windows. Later that evening, an agitated Cheryl goes into the woods to investigate strange noises, where she is attacked and raped by demonically possessed trees. When she escapes and returns to the cabin bruised and anguished, Ash agrees to take her back into town, only to discover that the bridge to the cabin has been destroyed. Cheryl panics as she realizes that they are now trapped and the demonic entity will not let them leave. Back at the cabin, Ash listens to more of the tape, learning that the only way to kill the entity is to dismember a possessed host. As Linda and Shelly play spades, Cheryl correctly calls out the cards without looking at them, succumbs to the entity, and levitates. In a raspy, demonic voice, she demands to know why they disturbed her sleep and threatens to kill everyone. She stabs Linda in the ankle with a pencil and throws Ash into a shelf. Scott knocks Cheryl into the cellar and locks her inside.
+
+Everyone fights about what to do. Having become paranoid upon seeing Cheryl's demonic transformation, Shelly lies down in her room but is drawn to look out of her window, where a demon crashes through and attacks her, turning her into a Deadite. She attacks Scott before he throws her into the fireplace, slashes her wrist and then stabs her in the back with a Sumerian dagger, apparently killing her. When she reanimates, Scott dismembers her with an axe. Ash and Scott then bury her remains. Shaken by the experience, Scott decides to leave in order to find a way back to town. He returns shortly after, mortally wounded from the possessed trees, and dies while warning Ash that the trees will not let them escape alive. When Ash checks on Linda, he is horrified to find that she has become possessed. She attacks him, but he stabs her with the Sumerian dagger. Unwilling to dismember her, he buries her instead. She revives and attacks him, forcing him to decapitate her with a shovel. Her headless body bleeds on his face as it tries to rape him. He manages to escape as Linda dies, and then retreats back to the cabin.
+
+Back inside, Ash discovers that Cheryl has escaped the cellar. Cheryl eludes Ash, and attempts to choke him. Ash escapes her grasp, then shoots Cheryl in the jaw. As Ash is barricading the door, Scott reanimates into a Deadite. Scott attacks Ash, and inadvertently knocks the Naturom Demonto close to the fireplace. Ash gouges Scott's eyes out and pulls a tree branch from Scott's stomach, causing him to bleed out and fall to the ground. Cheryl breaks through the trapdoor and knocks Ash to the floor. As Scott and Cheryl continue to attack Ash on the ground, Ash grabs the Naturom Demonto and throws it into the fireplace. While the book burns, the Deadites freeze in place, then begin to rapidly decompose. Large appendages burst from both corpses, covering Ash in blood. The bodies of Scott and Cheryl then completely decompose. Dawn breaks, and Ash stumbles outside.
+
+As Ash walks away from the cabin, an unseen demon moves rapidly through the forest, rushes through the cabin, and attacks him as he screams in terror. 
+This content may violate our content policy. If you believe this to be in error, please submit your feedback — your input will aid our research in this area.
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.org/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:Event1 rdf:type yago:Event ;
+rdfs:label "Unexplained occurrences at the cabin" .
+
+ex:Event2 rdf:type yago:Event ;
+rdfs:label "Discovery of the Naturom Demonto and tape recorder" .
+
+ex:Event3 rdf:type yago:Event ;
+rdfs:label "Cheryl's possession and attack" .
+
+ex:Event4 rdf:type yago:Event ;
+rdfs:label "Shelly's transformation into a Deadite and her demise" .
+
+ex:Event5 rdf:type yago:Event ;
+rdfs:label "Scott's demise and warning" .
+
+ex:Event6 rdf:type yago:Event ;
+rdfs:label "Linda's possession, burial, and final attack" .
+
+ex:Event7 rdf:type yago:Event ;
+rdfs:label "Ash's encounter with Cheryl and Scott as Deadites" .
+
+ex:Event8 rdf:type yago:Event ;
+rdfs:label "Burning of the Naturom Demonto and the decomposition of the Deadites" .
+
+ex:Event9 rdf:type yago:Event ;
+rdfs:label "Final attack on Ash by an unseen demon" .
+
+ex:Genre1 rdf:type yago:Genre ;
+rdfs:label "Horror" .
+
+ex:Genre2 rdf:type yago:Genre ;
+rdfs:label "Supernatural" .
+
+ex:Genre3 rdf:type yago:Genre ;
+rdfs:label "Fantasy" .
+
+ex:Genre4 rdf:type yago:Genre ;
+rdfs:label "Thriller" .
+
+ex:Genre5 rdf:type yago:Genre ;
+rdfs:label "Mystery" .
+
+ex:Event1 rdf:type rdf:Property ;
+rdfs:domain ex:Genre2 .
+
+ex:Event2 rdf:type rdf:Property ;
+rdfs:domain ex:Genre2 .
+
+ex:Event3 rdf:type rdf:Property ;
+rdfs:domain ex:Genre1 .
+
+ex:Event4 rdf:type rdf:Property ;
+rdfs:domain ex:Genre1 .
+
+ex:Event5 rdf:type rdf:Property ;
+rdfs:domain ex:Genre1 .
+
+ex:Event6 rdf:type rdf:Property ;
+rdfs:domain ex:Genre1 .
+
+ex:Event7 rdf:type rdf:Property ;
+rdfs:domain ex:Genre1 .
+
+ex:Event8 rdf:type rdf:Property ;
+rdfs:domain ex:Genre1 .
+
+ex:Event9 rdf:type rdf:Property ;
+rdfs:domain ex:Genre1 .
+
+ex:Genre1 rdf:type rdf:Class ;
+rdfs:subClassOf yago:Genre .
+
+ex:Genre2 rdf:type rdf:Class ;
+rdfs:subClassOf yago:Genre .
+
+ex:Genre3 rdf:type rdf:Class ;
+rdfs:subClassOf yago:Genre .
+
+ex:Genre4 rdf:type rdf:Class ;
+rdfs:subClassOf yago:Genre .
+
+ex:Genre5 rdf:type rdf:Class ;
+rdfs:subClassOf yago:Genre .
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: Unexplained occurrences at the cabin, Discovery of the supernatural artifact, Cheryl's possession and attack, Shelly's transformation and demise, Scott's demise and warning, Linda's possession, burial, and final attack, Ash's encounter with possessed individuals, Burning of the supernatural artifact and decomposition of the entities, Final attack on Ash by an unseen entity
+
+Genres: Horror, Supernatural, Fantasy, Thriller, Mystery

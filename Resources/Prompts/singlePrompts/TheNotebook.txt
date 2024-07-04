@@ -1,0 +1,322 @@
+Give events and genre in the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago :
+
+At a modern-day nursing home, an elderly man named Duke reads a romantic story from his notebook to a female patient, which tells the following:
+
+In 1940, at a carnival in Seabrook Island, South Carolina, poor lumber mill worker Noah Calhoun sees 17-year-old heiress Allison "Allie" Hamilton, who is spending the summer in town with her parents. He pursues her and they begin a summer romance. One night, Allie goes to Noah's house and meets his father, Frank Calhoun, who immediately likes her. A few days later, Noah is invited to a luncheon at Allie's house by her parents, John and Anne Hamilton, but they are unimpressed with Noah because he doesn't fit in with the other wealthy attendees. The same night, Noah takes Allie to an abandoned house called The Windsor Plantation. He tells her he intends to buy and restore the house for themselves. As the sun sets, they share a romantic moment and they start to make love for the first time. They are interrupted by Noah's friend Fin, who informs them that Allie's parents have the police out looking for her. When Allie and Noah return to her parents' mansion, Allie's mother Anne makes it clear that they do not approve of the relationship and forbid her from seeing him. Noah leaves and Allie goes after him. An argument ensues and Allie impulsively breaks up with Noah in a fit of frustration, but immediately regrets it. The next morning, Anne announces that the Hamilton family will be returning home to Charleston effective immediately. Allie tries to find Noah at the lumber mill to apologize but cannot find him, and instead asks Fin to tell Noah that she loves him. Noah rushes to Allie's house after Fin gives him the message but finds the gates locked.
+
+Noah writes a letter to Allie every day for a year, but Allie's mother intercepts and hides them. When all of Noah's 365 letters go unanswered, Noah stops writing and decides to move on. He enlists with Fin to fight in World War II, Battle of the Bulge where Fin loses his life in battle. Allie volunteers as a nurse in a hospital for wounded soldiers where she meets Captain Lon Hammond Jr., a young lawyer who comes from old Southern money. After a few years, the two become engaged, much to the delight of Allie's parents.
+
+Noah returns from the war to find that his father had sold their home so Noah could afford to buy The Windsor Plantation. He convinces himself that if he restores the house, Allie will find her way back to him. Despite completing the house, Noah restrains from selling it to any buyers. While Allie tries on her wedding dress, she sees a photo of Noah in a newspaper where he stands smiling in front of the renovated house.
+
+Allie is overwhelmed with the memories of summer romance and unresolved feelings for Noah and seeks permission from Lon to take a solo trip before the wedding. She returns to Seabrook to find Noah living in their dream house. The two rekindle and consummate their relationship. Allie learns about the letters Noah had written to her and she realizes she never got them. Several days later, Allie's mother appears on Noah's doorstep to warn Allie that Lon has followed her to Seabrook. She also reveals that like her daughter, she once loved a lower-class young man in Seabrook and still thinks about him and how their lives might have been different had she chosen better. She hands over Noah's letters to Allie and tells her she hopes Allie makes the right choice. Noah and Allie get into a heated argument where the former forces the latter to think about what she wants and to stick by it no matter how hard it is. Allie makes the difficult choice to drive back to her hotel and confess her infidelity to Lon. Lon says he still loves her and wants her back for himself but even though she knows she shouldn't leave Lon, she decides to follow her heart and returns to Noah.
+
+In the present, the elderly woman listening to the story is revealed to be Allie, now suffering from dementia. It is revealed that Duke is Noah, who goes by a pseudonym so as not to startle her in her disoriented state. During the early stages of her illness, Allie had written a journal detailing their romance and life together so he could read it to her to help her come back to him. Noah has kept the promise by reading to her almost every day. One day, when he is almost at the end of the story, reading from the notebook, she briefly recognizes him. She asks how long they have before she forgets again and Duke tells her they have no more than five minutes. They dance to their song, "I'll Be Seeing You", and she asks him about their kids. But Allie's dementia quickly relapses and she panics to see a stranger touching her. The medical personnel sedate her to control her hysterical reaction. Duke has a heart attack and is treated in the nursing home while Allie is taken to rest in the dementia ward. Upon recovering and despite not being allowed in, Duke goes to Allie's room in the night and watches her sleep. She instantly recognizes him again. They kiss, hold hands and fall asleep. In the morning, the nurse discovers both of them having died peacefully in their sleep, still holding hands. 
+ChatGPT
+
+Here's the plot description annotated with RDF format and YAGO annotations:
+
+turtle
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+# Events
+
+ex:nursing_home rdf:type ex:Event ;
+    rdfs:label "Nursing Home" .
+
+ex:reading_story rdf:type ex:Event ;
+    rdfs:label "Reading a Story" .
+
+ex:summer_romance rdf:type ex:Event ;
+    rdfs:label "Summer Romance" .
+
+ex:luncheon rdf:type ex:Event ;
+    rdfs:label "Luncheon" .
+
+ex:restoring_house rdf:type ex:Event ;
+    rdfs:label "Restoring House" .
+
+ex:wedding_preparations rdf:type ex:Event ;
+    rdfs:label "Wedding Preparations" .
+
+ex:solo_trip rdf:type ex:Event ;
+    rdfs:label "Solo Trip" .
+
+ex:rekindling_relationship rdf:type ex:Event ;
+    rdfs:label "Rekindling Relationship" .
+
+ex:heated_argument rdf:type ex:Event ;
+    rdfs:label "Heated Argument" .
+
+ex:confession rdf:type ex:Event ;
+    rdfs:label "Confession" .
+
+ex:dancing rdf:type ex:Event ;
+    rdfs:label "Dancing" .
+
+ex:heart_attack rdf:type ex:Event ;
+    rdfs:label "Heart Attack" .
+
+ex:treatment rdf:type ex:Event ;
+    rdfs:label "Treatment" .
+
+ex:sleeping rdf:type ex:Event ;
+    rdfs:label "Sleeping" .
+
+# Genres
+
+ex:romance_genre rdf:type ex:Genre ;
+    rdfs:label "Romance" .
+
+# Characters
+
+ex:Duke rdf:type ex:Character ;
+    rdfs:label "Duke" .
+
+ex:Noah_Calhoun rdf:type ex:Character ;
+    rdfs:label "Noah Calhoun" .
+
+ex:Allie_Hamilton rdf:type ex:Character ;
+    rdfs:label "Allie Hamilton" .
+
+ex:Frank_Calhoun rdf:type ex:Character ;
+    rdfs:label "Frank Calhoun" .
+
+ex:John_Hamilton rdf:type ex:Character ;
+    rdfs:label "John Hamilton" .
+
+ex:Anne_Hamilton rdf:type ex:Character ;
+    rdfs:label "Anne Hamilton" .
+
+ex:Fin rdf:type ex:Character ;
+    rdfs:label "Fin" .
+
+ex:Captain_Lon_Hammond_Jr rdf:type ex:Character ;
+    rdfs:label "Captain Lon Hammond Jr." .
+
+# Relationships
+
+ex:pursues ex:Noah_Calhoun, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Pursues" .
+
+ex:likes ex:Frank_Calhoun, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Likes" .
+
+ex:parents ex:Allie_Hamilton, ex:John_Hamilton, ex:Anne_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Parents" .
+
+ex:invited_to ex:Noah_Calhoun, ex:luncheon ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Invited To" .
+
+ex:unimpressed ex:John_Hamilton, ex:Anne_Hamilton, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Unimpressed" .
+
+ex:interrupts ex:Fin, ex:Noah_Calhoun, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Interrupts" .
+
+ex:disapproves ex:Anne_Hamilton, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Disapproves" .
+
+ex:forbids ex:Anne_Hamilton, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Forbids" .
+
+ex:breaks_up ex:Allie_Hamilton, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Breaks Up" .
+
+ex:regrets ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Regrets" .
+
+ex:returns_home ex:Hamilton_family, ex:Charleston ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Returns Home" .
+
+ex:apologizes ex:Allie_Hamilton, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Apologizes" .
+
+ex:rushes_to ex:Noah_Calhoun, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Rushes To" .
+
+ex:locks_gates ex:Allie_Hamilton, ex:Hamilton_family ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Locks Gates" .
+
+ex:writes_letter ex:Noah_Calhoun, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Writes Letter" .
+
+ex:intercepts ex:Allie's_mother, ex:Noah_Calhoun, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Intercepts" .
+
+ex:hides ex:Allie's_mother, ex:letters ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Hides" .
+
+ex:stops_writing ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Stops Writing" .
+
+ex:moves_on ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Moves On" .
+
+ex:enlists ex:Noah_Calhoun, ex:Fin, ex:World_War_II, ex:Battle_of_the_Bulge ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Enlists" .
+
+ex:loses_life ex:Fin ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Loses Life" .
+
+ex:volunteers ex:Allie_Hamilton, ex:nurse, ex:hospital, ex:wounded_soldiers ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Volunteers" .
+
+ex:meets ex:Allie_Hamilton, ex:Captain_Lon_Hammond_Jr ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Meets" .
+
+ex:engaged ex:Allie_Hamilton, ex:Captain_Lon_Hammond_Jr ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Engaged" .
+
+ex:sells ex:Noah's_father, ex:home, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Sells" .
+
+ex:convinces ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Convinces" .
+
+ex:completes ex:Noah_Calhoun, ex:house ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Completes" .
+
+ex:restrains ex:Noah_Calhoun, ex:selling ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Restrains" .
+
+ex:overwhelmed ex:Allie_Hamilton, ex:memories, ex:romance, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Overwhelmed" .
+
+ex:sees ex:Allie_Hamilton, ex:photo, ex:Noah_Calhoun, ex:newspaper ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Sees" .
+
+ex:learns ex:Allie_Hamilton, ex:letters, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Learns" .
+
+ex:appears ex:Allie's_mother, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Appears" .
+
+ex:warns ex:Allie's_mother, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Warns" .
+
+ex:confesses ex:Allie_Hamilton, ex:infidelity, ex:Captain_Lon_Hammond_Jr ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Confesses" .
+
+ex:follows ex:Captain_Lon_Hammond_Jr, ex:Seabrook ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Follows" .
+
+ex:forces ex:Noah_Calhoun, ex:think_about, ex:choices, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Forces" .
+
+ex:makes_choice ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Makes Choice" .
+
+ex:drives_back ex:Allie_Hamilton, ex:hotel ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Drives Back" .
+
+ex:dies ex:Duke, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Dies" .
+
+ex:touching ex:stranger, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Touching" .
+
+ex:sedates ex:medical_personnel, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Sedates" .
+
+ex:treated ex:medical_personnel, ex:heart_attack ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Treated" .
+
+ex:rests ex:Allie_Hamilton, ex:dementia_ward ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Rests" .
+
+ex:watches ex:Duke, ex:Allie_Hamilton, ex:sleep ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Watches" .
+
+ex:recognizes ex:Allie_Hamilton, ex:Duke ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Recognizes" .
+
+ex:kisses ex:Duke, ex:Allie_Hamilton ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Kisses" .
+
+ex:ends ex:summer_romance ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Ends" .
+
+ex:remembers ex:Allie_Hamilton, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Remembers" .
+
+ex:rekindles ex:Allie_Hamilton, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Rekindles" .
+
+ex:marries ex:Allie_Hamilton, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Marries" .
+
+ex:happily_ever_after ex:Allie_Hamilton, ex:Noah_Calhoun ;
+    rdf:type ex:Relationship ;
+    rdfs:label "Happily Ever After" .
+
+# Storyline
+
+ex:The_Notebook rdf:type ex:Storyline ;
+    rdfs:label "The Notebook" ;
+    ex:hasEvent ex:nursing_home, ex:reading_story, ex:summer_romance, ex:luncheon, ex:restoring_house, ex:wedding_preparations, ex:solo_trip, ex:rekindling_relationship, ex:heated_argument, ex:confession, ex:dancing, ex:heart_attack, ex:treatment, ex:sleeping ;
+    ex:hasGenre ex:romance_genre ;
+    ex:hasCharacter ex:Duke, ex:Noah_Calhoun, ex:Allie_Hamilton, ex:Frank_Calhoun, ex:John_Hamilton, ex:Anne_Hamilton, ex:Fin, ex:Captain_Lon_Hammond_Jr ;
+    ex:hasRelationship ex:pursues, ex:likes, ex:parents, ex:invited_to, ex:unimpressed, ex:interrupts, ex:disapproves, ex:forbids, ex:breaks_up, ex:regrets, ex:returns_home, ex:apologizes, ex:rushes_to, ex:locks_gates, ex:writes_letter, ex:intercepts, ex:hides, ex:stops_writing, ex:moves_on, ex:enlists, ex:loses_life, ex:volunteers, ex:meets, ex:engaged, ex:sells, ex:convinces, ex:completes, ex:restrains, ex:overwhelmed, ex:sees, ex:learns, ex:appears, ex:warns, ex:confesses, ex:follows, ex:forces, ex:makes_choice, ex:drives_back, ex:dies, ex:touching, ex:sedates, ex:treated, ex:rests, ex:watches, ex:recognizes, ex:kisses, ex:ends, ex:remembers, ex:rekindles, ex:marries, ex:happily_ever_after .
+
+This RDF representation captures the events, genres, characters, and relationships in the plot of the movie "The Notebook." Each entity and relationship is labeled with an appropriate name and type using RDF and RDFS vocabulary.
+User
+Extract events and genres in form of comma-separated lists
+ChatGPT
+
+Events: nursing_home, reading_story, summer_romance, luncheon, restoring_house, wedding_preparations, solo_trip, rekindling_relationship, heated_argument, confession, dancing, heart_attack, treatment, sleeping
+
+Genres: romance_genre

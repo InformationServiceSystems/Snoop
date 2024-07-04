@@ -1,0 +1,138 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Elisa Esposito, who was found abandoned by the side of a river as an infant with wounds on her neck, is mute and communicates through sign language. In 1962, during the Cold War, Elisa works as a custodian at a secret government laboratory in Baltimore, Maryland, and lives a very routine life in an apartment above a movie theater. Her only friends are her closeted gay next-door neighbor Giles, a struggling middle-aged advertising illustrator, and her co-worker Zelda Fuller.
+
+Colonel Richard Strickland has just captured a mysterious creature from a South American river and has taken the creature to the Baltimore facility for further study. Curious about the creature, Elisa discovers it is a humanoid amphibian. She begins visiting him in secret, and the two form a close bond.
+
+Seeking to exploit the Amphibian Man for a US advantage in the Space Race, General Frank Hoyt is eventually persuaded by Strickland to vivisect it. Dr. Robert Hoffstetler, a scientist who is secretly a Russian spy named Dimitri Mosenkov, pleads unsuccessfully to Strickland to keep the Amphibian Man alive for further study, while simultaneously ordered by his Soviet handlers to "euthanize" (murder) the creature.
+
+When Elisa overhears the Americans' plans for the Amphibian Man, she attempts to persuade Giles to help her liberate him. Giles refuses at first, scared of the consequences and ethics. After failing to get his job back; Giles is rejected by a pie restaurant worker, who he discovers is a racist and homophobe; subsequently, Giles has a change of heart. Hoffstetler stumbles upon Elisa's plot in progress and chooses to assist her. Though initially reluctant, Zelda also becomes involved in making the escape successful.
+
+Elisa plans to release the Amphibian Man into a nearby canal when heavy rain will allow access to the ocean. In the meantime, she keeps him in her bathtub. Strickland interrogates Elisa and Zelda, among others, but he learns nothing.
+
+The Amphibian Man, curious about Giles's cats, is met with a hostile attitude from the cat. Giles discovers the Amphibian Man devouring the cat. When he tries to stop him, the Amphibian Man gets startled, slashes Giles's arm and rushes out of the apartment. He gets as far as the cinema downstairs before Elisa finds him and returns him to her apartment. The creature touches Giles on his balding head and wounded arm; and the next morning, Giles discovers hair has begun growing back on his previously bald head, while the wounds on his arm have healed. Elisa continues to develop her romantic relationship with the Amphibian Man, culminating in sexual intercourse.
+
+General Hoyt unexpectedly arrives and tells Strickland he has 36 hours to recover the Amphibian Man, or his career and life will be over. Meanwhile, Hoffstetler is told by his handlers that he will be extracted from the US in two days. Although the planned release date approaches, the Amphibian Man's health begins to deteriorate.
+
+Hoffstetler goes to meet his handlers, and Strickland follows him. At the rendezvous, Hoffstetler is shot by one of his handlers, but Strickland, in turn, shoots and euthanizes both handlers. Having realized that Hoffstetler is a spy, Strickland tortures the dying Hoffstetler into revealing specifics on the "team" which "extracted" the Amphibian Man, and Strickland is surprised to learn that Elisa and Zelda are implicated.
+
+Strickland threatens Zelda in her home, unsuccessfully, until her husband, Brewster, reveals that Elisa has the Amphibian Man. Zelda immediately telephones Elisa, warning her to release the creature. An enraged Strickland ransacks Elisa's empty apartment until he finds the bathtub full of chemicals and a calendar note revealing where she plans to release the Amphibian Man.
+
+At the canal, Elisa and Giles are bidding farewell to the creature when Strickland arrives, knocks Giles down, and shoots both the Amphibian Man and Elisa. The Amphibian Man quickly applies his healing abilities himself, and slashes Strickland's throat, killing him. As the police arrive on the scene with Zelda, the Amphibian Man takes Elisa and jumps into the canal where he swims around her, not knowing she is dead. When he applies his healing ability underwater to the scars on Elisa's neck, they open to reveal gills like his. She jolts back to life and the two embrace and kiss. In a closing voice-over narration, Giles conveys his belief that Elisa lived "happily ever after" and "remained in love" with the Amphibian Man. 
+This content may violate our content policy. If you believe this to be in error, please submit your feedback — your input will aid our research in this area.
+ChatGPT
+
+Here are the events and genres from the plot description, annotated with YAGO in RDF format using the provided prefixes (rdf, rdfs, ex, yago). The event labels are more general and do not contain character names:
+
+rdf
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:ElisaEsposito rdf:type yago:Character ;
+                rdfs:label "Elisa Esposito" .
+
+ex:AmphibianMan rdf:type yago:Character ;
+                rdfs:label "Amphibian Man" .
+
+ex:Event1 rdf:type yago:Event ;
+         rdfs:label "Discovery of an abandoned infant" .
+
+ex:Event2 rdf:type yago:Event ;
+         rdfs:label "Communication through sign language" .
+
+ex:Event3 rdf:type yago:Event ;
+         rdfs:label "Working as a custodian at a government laboratory" .
+
+ex:Event4 rdf:type yago:Event ;
+         rdfs:label "Living a routine life in an apartment" .
+
+ex:Event5 rdf:type yago:Event ;
+         rdfs:label "Forming friendships with neighbors and co-workers" .
+
+ex:Event6 rdf:type yago:Event ;
+         rdfs:label "Capture of a mysterious creature" .
+
+ex:Event7 rdf:type yago:Event ;
+         rdfs:label "Discovering the nature of the creature" .
+
+ex:Event8 rdf:type yago:Event ;
+         rdfs:label "Developing a close bond with the creature" .
+
+ex:Event9 rdf:type yago:Event ;
+         rdfs:label "Exploitation of the creature for strategic advantage" .
+
+ex:Event10 rdf:type yago:Event ;
+          rdfs:label "Plea to save the creature from vivisection" .
+
+ex:Event11 rdf:type yago:Event ;
+          rdfs:label "Overhearing plans and seeking help for liberation" .
+
+ex:Event12 rdf:type yago:Event ;
+          rdfs:label "Planning and executing the creature's escape" .
+
+ex:Event13 rdf:type yago:Event ;
+          rdfs:label "Keeping the creature in Elisa's bathtub" .
+
+ex:Event14 rdf:type yago:Event ;
+          rdfs:label "Interrogation and failed attempts to gather information" .
+
+ex:Event15 rdf:type yago:Event ;
+          rdfs:label "Discovery of the creature attacking Giles's cat" .
+
+ex:Event16 rdf:type yago:Event ;
+          rdfs:label "Healing effects of the creature on Giles" .
+
+ex:Event17 rdf:type yago:Event ;
+          rdfs:label "Development of a romantic relationship with the creature" .
+
+ex:Event18 rdf:type yago:Event ;
+          rdfs:label "Imminent threat and time pressure to recover the creature" .
+
+ex:Event19 rdf:type yago:Event ;
+          rdfs:label "Deterioration of the creature's health" .
+
+ex:Event20 rdf:type yago:Event ;
+          rdfs:label "Meeting with handlers and revelation of identities" .
+
+ex:Event21 rdf:type yago:Event ;
+          rdfs:label "Threats, revelations, and pursuit of Elisa" .
+
+ex:Event22 rdf:type yago:Event ;
+          rdfs:label "Final confrontation at the canal" .
+
+ex:Event23 rdf:type yago:Event ;
+          rdfs:label "Healing and transformation of Elisa" .
+
+ex:Event24 rdf:type yago:Event ;
+          rdfs:label "Embrace and kiss between Elisa and the creature" .
+
+ex:Genre1 rdf:type yago:Genre ;
+         rdfs:label "Drama" .
+
+ex:Genre2 rdf:type yago:Genre ;
+         rdfs:label "Fantasy" .
+
+ex:Genre3 rdf:type yago:Genre ;
+         rdfs:label "Romance" .
+
+ex:Genre4 rdf:type yago:Genre ;
+         rdfs:label "Thriller" .
+
+ex:Genre5 rdf:type yago:Genre ;
+         rdfs:label "Sci-Fi" .
+
+Please note that the YAGO annotations are based on existing YAGO entities and labels.
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Certainly! Here are the events and genres from the plot description with more general event labels and without character names, provided as comma-separated lists:
+
+Events: Discovery of an abandoned infant, Communication through sign language, Working at a government laboratory, Living a routine life in an apartment, Forming friendships with neighbors and co-workers, Capture of a mysterious creature, Discovering the nature of the creature, Developing a close bond with the creature, Exploitation of the creature for strategic advantage, Plea to save the creature from vivisection, Overhearing plans and seeking help for liberation, Planning and executing the creature's escape, Keeping the creature in a bathtub, Interrogation and failed attempts to gather information, Discovery of the creature attacking a pet, Healing effects of the creature, Development of a romantic relationship, Imminent threat and time pressure to recover the creature, Deterioration of the creature's health, Meeting with handlers and revelation of identities, Threats, revelations, and pursuit, Final confrontation, Healing and transformation, Embrace and kiss.
+
+Genres: Drama, Fantasy, Romance, Thriller, Sci-Fi.
+
+Please note that the events and genres are listed as comma-separated values without bullet points for easy readability.

@@ -1,0 +1,108 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+In northern Iraq, the adhan, the Islamic call to prayer, is heard. Catholic priest Lankester Merrin participates in an archaeological dig which unearths a medallion of Saint Joseph and an artifact representing Pazuzu, an ancient demon. As Merrin prepares to leave Iraq, he sees a large statue of Pazuzu, and two dogs fighting.
+
+In the Washington, D.C. neighborhood of Georgetown, actress Chris MacNeil works on a film directed by her friend Burke Dennings. A temporary resident, Chris lives in a well-appointed house with servants and her 12-year-old daughter Regan. Georgetown-based priest Damien Karras visits his mother in New York. He confides to a colleague that he feels unfit in his role as counselor to other priests, citing a crisis of faith. Chris hears noises in the attic, and Regan tells her of an imaginary friend named "Captain Howdy". In a local church, a statue of Mary is found desecrated.
+
+Chris hosts a party. Karras' friend Father Dyer explains Karras' role as counselor, mentioning that his mother died recently. Regan appears and urinates on the carpet. After Chris puts Regan to bed, her bed shakes violently. Dyer consoles Karras, and Karras expresses guilt at not having been with his mother when she died. Karras dreams of his mother, a Saint Joseph medallion and—briefly—a demonic face.
+
+Regan becomes violent. She is subjected to several medical tests which fail to find anything physically wrong with her. During a house call, a demon possesses Regan's body; the possessed Regan exhibits abnormal strength. One night, Chris finds the house empty except for a sleeping Regan. Dennings is found dead at the foot of an outdoor staircase beneath Regan's window. Homicide detective William Kinderman questions Karras, confiding that Dennings' body was found with its head turned backwards.
+
+Regan's condition worsens, and her body becomes covered with sores. A doctor mentions exorcism as a remote option, suggesting a possible psychological benefit. Kinderman visits Chris, explaining that the only plausible explanation for Dennings' death is that he was pushed from Regan's window. As Kinderman leaves, the possessed Regan stabs her genitals with a crucifix. To Chris's horror, the possessed Regan turns her head backwards and speaks in Dennings' voice. The possessed Regan is confined to her bedroom.
+
+Chris seeks out Karras, who visits Regan. Over two meetings, the possessed Regan claims to be the Devil himself, projectile vomits into Karras's face, speaks in tongues, and reacts violently when tap water is sprinkled on her, which Karras had claimed was holy water—a point against genuine possession. The demon says it will remain in Regan until she is dead. Desperate, Chris confides that the possessed Regan killed Dennings. At night, Chris's assistant calls Karras to the house. They witness the words "help me" materialize on Regan's skin. Still ambivalent, Karras nevertheless concludes that an exorcism is warranted. His superior grants permission on the condition that an experienced priest lead the ritual while Karras assists. Merrin, having performed an exorcism before, is summoned.
+
+Merrin arrives at the house, warning Karras that the demon uses a psychological attack. As the priests read from the Roman Ritual, the demon curses them. It focuses on Karras, verbally attacking his loss of faith and guilt over the circumstances of his mother's death. The priests rest momentarily and Merrin, shaking, takes nitroglycerin. Karras enters the bedroom where the demon appears as his mother. Showing weakness, Karras exclaims that the demon is not his mother. Merrin excuses Karras and continues the exorcism by himself. Karras assures Chris that Regan will not die and re-enters the room, finding Merrin dead. Enraged, Karras beats the possessed Regan and demands that the demon take him instead. The demon rips a medallion of Saint Joseph from Karras' neck and begins to possess him, freeing Regan. Karras hurls himself out the window, tumbling down the stairs outside. Chris and Kinderman enter the room. Chris embraces the healed Regan, and Kinderman surveys the violence and confusion. Outside, Dyer administers the last rites as Karras dies.
+
+The MacNeils prepare to leave, and Father Dyer says goodbye. Despite having no memory of her ordeal, Regan is moved by the sight of Dyer's clerical collar to kiss him on the cheek. As the MacNeils leave, Chris gives Dyer the medallion found in Regan's room. 
+ChatGPT
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix ex: http://example.com/ .
+@prefix yago: http://yago-knowledge.org/resource/ .
+
+ex:adhan rdf:type yago:Event ;
+rdfs:label "Adhan is heard in northern Iraq" .
+
+ex:archaeologicalDig rdf:type yago:Event ;
+rdfs:label "Archaeological dig unearths artifacts" .
+
+ex:statueFoundDesecrated rdf:type yago:Event ;
+rdfs:label "Statue of Mary found desecrated" .
+
+ex:party rdf:type yago:Event ;
+rdfs:label "Chris hosts a party" .
+
+ex:bedShakes rdf:type yago:Event ;
+rdfs:label "Bed shakes violently" .
+
+ex:possession rdf:type yago:Event ;
+rdfs:label "Regan is possessed by a demon" .
+
+ex:reganViolence rdf:type yago:Event ;
+rdfs:label "Regan becomes violent" .
+
+ex:denningsDeath rdf:type yago:Event ;
+rdfs:label "Burke Dennings is found dead" .
+
+ex:exorcism rdf:type yago:Event ;
+rdfs:label "Exorcism is performed" .
+
+ex:demonCurses rdf:type yago:Event ;
+rdfs:label "Demon curses the priests" .
+
+ex:karrasBeatsRegan rdf:type yago:Event ;
+rdfs:label "Karras beats the possessed Regan" .
+
+ex:karrasPossession rdf:type yago:Event ;
+rdfs:label "Karras gets possessed by the demon" .
+
+ex:karrasDeath rdf:type yago:Event ;
+rdfs:label "Karras dies" .
+
+ex:macneilsLeave rdf:type yago:Event ;
+rdfs:label "The MacNeils leave" .
+
+ex:genres rdf:type rdf:Property ;
+rdfs:label "Genres" .
+
+ex:horror rdf:type yago:Genre ;
+rdfs:label "Horror" .
+
+ex:supernatural rdf:type yago:Genre ;
+rdfs:label "Supernatural" .
+
+ex:mystery rdf:type yago:Genre ;
+rdfs:label "Mystery" .
+
+ex:thriller rdf:type yago:Genre ;
+rdfs:label "Thriller" .
+
+ex:drama rdf:type yago:Genre ;
+rdfs:label "Drama" .
+
+ex:suspense rdf:type yago:Genre ;
+rdfs:label "Suspense" .
+
+ex:adhan ex:genres ex:horror, ex:supernatural .
+ex:archaeologicalDig ex:genres ex:mystery .
+ex:statueFoundDesecrated ex:genres ex:horror, ex:supernatural .
+ex:party ex:genres ex:drama .
+ex:bedShakes ex:genres ex:horror .
+ex:possession ex:genres ex:horror, ex:supernatural .
+ex:reganViolence ex:genres ex:horror .
+ex:denningsDeath ex:genres ex:thriller, ex:mystery .
+ex:exorcism ex:genres ex:horror, ex:supernatural .
+ex:demonCurses ex:genres ex:horror, ex:supernatural .
+ex:karrasBeatsRegan ex:genres ex:horror, ex:suspense .
+ex:karrasPossession ex:genres ex:horror, ex:supernatural .
+ex:karrasDeath ex:genres ex:horror, ex:suspense .
+ex:macneilsLeave ex:genres ex:drama .
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events: Adhan is heard in northern Iraq, Archaeological dig unearths artifacts, Statue of Mary found desecrated, Chris hosts a party, Bed shakes violently, Regan becomes violent, Burke Dennings is found dead, Exorcism is performed, Demon curses the priests, Karras beats the possessed Regan, Karras gets possessed by the demon, Karras dies, The MacNeils leave
+
+Genres: Horror, Supernatural, Mystery, Drama, Thriller, Suspense

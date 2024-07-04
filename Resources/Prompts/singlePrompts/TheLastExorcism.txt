@@ -1,0 +1,159 @@
+Give events and genres from the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago, and make sure the event labels are more general and do not contain character names:
+
+Filmmakers Iris and Daniel document Cotton Marcus, a reverend living in Baton Rouge, Louisiana, who seeks to delegitimize exorcisms. Marcus, who lost his faith after the birth of his disabled son, is accustomed to performing fake exorcisms on individuals who believe they are possessed. He accepts an exorcism request sent by Louis Sweetzer, a farmer who claims his livestock are being slaughtered by his daughter Nell; Louis suspects that Nell is possessed by Satan.
+
+Marcus arrives and claims Nell is possessed by Abalam, a powerful demon who defiles the innocent. Using a variety of sound equipment to conduct the phony exorcism, he convinces Nell and her family that he has driven out the demon and leaves, believing he and his crew have cured her of a mental state that was misdiagnosed as possession. Later that night, Nell inexplicably appears in Marcus' motel room, visibly unwell. Marcus takes Nell to the hospital for tests, which conclude that she is in perfect physical condition. He tries to convince Louis to have Nell undergo psychiatric testing, but he refuses. Marcus goes to see Louis's former pastor, Joseph Manley, who informs him that he has not seen Nell for three years. In the morning, Louis takes Nell home but chains her to the bed after she cuts her brother Caleb's face with a knife.
+
+Marcus frees Nell from her restraints and later finds her trying to drown a doll while seemingly sleepwalking. When the hospital calls back to inform that Nell is pregnant, Iris accuses Louis of incest, which Marcus rejects. That night, Nell steals their camera and goes into her father's barn, where she brutally smashes a cat to death. Iris and Daniel discover her morbid paintings; in addition to the death of the cat, they depict Marcus standing before a large flame with a crucifix, Iris dismembered, and Daniel decapitated. Marcus confronts Louis about Nell's pregnancy; Louis insists that Nell is a virgin and has been impregnated by the demon. Offended at Marcus's insistence that a demon is not involved, Louis demands that the crew leave and alludes to intending to kill Nell. The crew tries to escape with Nell, who attacks Marcus before Louis threatens to shoot her. Marcus offers to attempt a second exorcism to dissuade him as Nell begs Louis to kill her.
+
+During the exorcism, Nell suddenly manifests into "Abalam" and agrees to release Nell only if Marcus can remain silent for ten seconds. Each second, Nell breaks one of her fingers. After three, Marcus yells for Abalam to stop; Abalam asks Marcus if he wants a "blowing job.” Marcus challenges that a demon would know the actual name of the sex act and concludes that Nell is not possessed, but a disturbed and ashamed girl. Nell anguishes over losing her virginity to a boy named Logan, which Louis again rejects. Marcus and the crew meet Logan, who explains that he is gay and the only contact he had with Nell was a brief conversation during a party at Manley's house six months prior; the crew realizes Manley was lying about having not seen Nell. They return to the Sweetzer farmhouse, which they find empty and covered with numerous occult and countercultural symbols on its walls.
+
+The group follows the sound of voices into the woods, where they see a large fire and a congregation of hooded cultists led by Manley. Louis is bound, gagged and blindfolded while hooded figures pray around an altar, atop which Nell is bound. She gives birth to an inhuman child. Manley throws the child into the fire, which causes the fire to grow rapidly as demonic roars emanate. Marcus, his faith restored, grabs his cross and rushes towards the fire to combat the evil. Iris and Daniel flee, and Iris is subdued by members of the congregation and killed with an axe. Daniel continues to run before Caleb decapitates him, and the camera falls. 
+ChatGPT
+
+turtle
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:Film rdf:type yago:Film104814338 .
+ex:Exorcism rdf:type yago:Exorcism106078875 .
+ex:Documentary rdf:type yago:Documentary106077325 .
+ex:Delegitimization rdf:type yago:Delegitimization106041050 .
+ex:FaithLoss rdf:type yago:LossOfFaith106041317 .
+ex:FakeExorcism rdf:type yago:FakeExorcism106042426 .
+ex:Possession rdf:type yago:Possession106054100 .
+ex:Demon rdf:type yago:Demon105090890 .
+ex:SoundEquipment rdf:type yago:SoundEquipment105108661 .
+ex:MentalState rdf:type yago:MentalState105759848 .
+ex:PhysicalCondition rdf:type yago:PhysicalCondition105999149 .
+ex:PsychiatricTesting rdf:type yago:PsychiatricTesting106018916 .
+ex:Incest rdf:type yago:Incest106049119 .
+ex:Death rdf:type yago:Death107088539 .
+ex:Painting rdf:type yago:Painting103876519 .
+ex:Flame rdf:type yago:Flame106185191 .
+ex:Crucifix rdf:type yago:Crucifix102733917 .
+ex:SexAct rdf:type yago:SexAct105283638 .
+ex:Disturbed rdf:type yago:Disturb106081382 .
+ex:Shame rdf:type yago:Shame106081797 .
+ex:Anguish rdf:type yago:Anguish106084399 .
+ex:VirginityLoss rdf:type yago:VirginityLoss106083362 .
+ex:Homosexuality rdf:type yago:Homosexuality106083211 .
+ex:Conversation rdf:type yago:Conversation106103289 .
+ex:Lying rdf:type yago:Lie106113807 .
+ex:OccultSymbol rdf:type yago:OccultSymbol106114050 .
+ex:Cult rdf:type yago:Cult106118588 .
+ex:Fire rdf:type yago:Fire105788718 .
+ex:Altar rdf:type yago:Altar105780801 .
+ex:DemonicChild rdf:type yago:DemonicChild106136218 .
+ex:Evil rdf:type yago:Evil105768480 .
+ex:FaithRestoration rdf:type yago:FaithRestoration106162530 .
+ex:Axe rdf:type yago:Axe105251376 .
+
+ex:Iris rdf:type yago:Character100757106 .
+ex:Daniel rdf:type yago:Character100757106 .
+ex:CottonMarcus rdf:type yago:Character100757106 .
+ex:LouisSweetzer rdf:type yago:Character100757106 .
+ex:Nell rdf:type yago:Character100757106 .
+ex:Logan rdf:type yago:Character100757106 .
+ex:JosephManley rdf:type yago:Character100757106 .
+ex:Caleb rdf:type yago:Character100757106 .
+ex:IrisDeath rdf:type yago:Death107088539 .
+ex:DanielDeath rdf:type yago:Death107088539 .
+
+ex:Film ex:hasCharacter ex:Iris .
+ex:Film ex:hasCharacter ex:Daniel .
+ex:Film ex:hasCharacter ex:CottonMarcus .
+ex:Film ex:hasCharacter ex:LouisSweetzer .
+ex:Film ex:hasCharacter ex:Nell .
+ex:Film ex:hasCharacter ex:Logan .
+ex:Film ex:hasCharacter ex:JosephManley .
+ex:Film ex:hasCharacter ex:Caleb .
+ex:Film ex:hasEvent ex:Documentary .
+ex:Film ex:hasEvent ex:Delegitimization .
+ex:Film ex:hasEvent ex:FakeExorcism .
+ex:Film ex:hasEvent ex:Possession .
+ex:Film ex:hasEvent ex:MentalState .
+ex:Film ex:hasEvent ex:PhysicalCondition .
+ex:Film ex:hasEvent ex:PsychiatricTesting .
+ex:Film ex:hasEvent ex:Incest .
+ex:Film ex:hasEvent ex:Death .
+ex:Film ex:hasEvent ex:Painting .
+ex:Film ex:hasEvent ex:Flame .
+ex:Film ex:hasEvent ex:Crucifix .
+ex:Film ex:hasEvent ex:SexAct .
+ex:Film ex:hasEvent ex:Disturbed .
+ex:Film ex:hasEvent ex:Shame .
+ex:Film ex:hasEvent ex:Anguish .
+ex:Film ex:hasEvent ex:VirginityLoss .
+ex:Film ex:hasEvent ex:Homosexuality .
+ex:Film ex:hasEvent ex:Conversation .
+ex:Film ex:hasEvent ex:Lying .
+ex:Film ex:hasEvent ex:OccultSymbol .
+ex:Film ex:hasEvent ex:Cult .
+ex:Film ex:hasEvent ex:Fire .
+ex:Film ex:hasEvent ex:Altar .
+ex:Film ex:hasEvent ex:DemonicChild .
+ex:Film ex:hasEvent ex:Evil .
+ex:Film ex:hasEvent ex:FaithRestoration .
+ex:Film ex:hasEvent ex:Axe .
+ex:IrisDeath rdf:type yago:Death107088539 .
+ex:DanielDeath rdf:type yago:Death107088539 .
+ex:Film ex:hasEvent ex:IrisDeath .
+ex:Film ex:hasEvent ex:DanielDeath .
+
+Note: I have assumed that "Iris Death" and "Daniel Death" are events in the plot.
+User
+Extract events and genres, and make sure the events' labels are more general and do not contain character names. Output in comma-separated lists (no bullet points)
+ChatGPT
+
+Events:
+
+    Film
+    Documentary
+    Delegitimization
+    Fake Exorcism
+    Possession
+    Mental State
+    Physical Condition
+    Psychiatric Testing
+    Incest
+    Death
+    Painting
+    Flame
+    Crucifix
+    Sex Act
+    Disturbed
+    Shame
+    Anguish
+    Virginity Loss
+    Homosexuality
+    Conversation
+    Lying
+    Occult Symbol
+    Cult
+    Fire
+    Altar
+    Demonic Child
+    Evil
+    Faith Restoration
+    Axe
+    Iris Death
+    Daniel Death
+
+Genres:
+
+    Horror
+    Supernatural
+    Mystery
+    Thriller
+
+User
+Output as comma-separated,  simple lists (no bullet points)
+ChatGPT
+
+Events: Film, Documentary, Delegitimization, Fake Exorcism, Possession, Mental State, Physical Condition, Psychiatric Testing, Incest, Death, Painting, Flame, Crucifix, Sex Act, Disturbed, Shame, Anguish, Virginity Loss, Homosexuality, Conversation, Lying, Occult Symbol, Cult, Fire, Altar, Demonic Child, Evil, Faith Restoration, Axe, Iris Death, Daniel Death
+
+Genres: Horror, Supernatural, Mystery, Thriller

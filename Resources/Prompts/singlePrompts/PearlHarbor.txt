@@ -1,0 +1,192 @@
+give the plot in rdf format and annotate with YAGO:
+
+In 1923 Tennessee, two best friends, Rafe McCawley and Danny Walker, play together in the back of an old biplane, pretending to be fighting airmen.
+
+In January 1941, with World War II raging, Danny and Rafe are both first lieutenants under the command of Major Jimmy Doolittle. Doolittle informs Rafe that he has been accepted into the Eagle Squadron (an RAF outfit for American pilots during the Battle of Britain). A nurse named Evelyn Johnson passes Rafe's medical exam despite his dyslexia, and the two strike up a relationship. Four weeks later, Rafe and Evelyn, now deeply in love, enjoy an evening of dancing at a nightclub and later a jaunt in the New York harbor in a borrowed police boat. Rafe shocks Evelyn by saying that he has joined the Eagle Squadron and is leaving the next day. During a mission to intercept a Luftwaffe bombing raid, Rafe is shot down over the English Channel and is presumed killed in action. Danny and Evelyn mourn Rafe's death together, which spurs a romance between the two.
+
+Meanwhile, Japan prepares to attack the US Pacific Fleet, deciding the best way to do so would be a decisive strike on the Pearl Harbor naval base.
+
+On the night of December 6, Evelyn is shocked to discover Rafe standing outside her door, having survived his drowning and the ensuing months trapped in Nazi-occupied France. Rafe, in turn, discovers Danny's romance with Evelyn and leaves for the Hula bar, where he is welcomed back by his overjoyed fellow pilots. Danny finds a drunken Rafe in the bar with the intention of reconciling, but the two get into a fight. They drive away, avoiding being put in the brig when the military police arrive at the bar. The two fall asleep in Danny's car.
+
+Next morning, on December 7, the Imperial Japanese Navy begins its attack on Pearl Harbor. The US Pacific Fleet is severely damaged in the surprise attack, and most of the defending airfields are obliterated before they are able to launch fighters to defend the harbor. Rafe and Danny take off in P-40 fighter planes, and they shoot down several of the attacking planes. They later assist in the rescue of the crew of the capsized USS Oklahoma, but are too late to save the crew of the obliterated USS Arizona.
+
+The next day, President Franklin D. Roosevelt delivers his Day of Infamy speech to the nation and requests that the US Congress declare a state of war with the Empire of Japan. The survivors attend a memorial service to honor the numerous dead. Danny and Rafe are both assigned to travel stateside under Doolittle, though they are not told why. Before they leave, Evelyn reveals to Rafe that she is pregnant with Danny's child. She intends to stay with and devote herself to Danny for their child’s sake, but she vows that it is Rafe who she will always truly love.
+
+Danny and Rafe are both promoted to captain and awarded the Silver Star for their actions at Pearl Harbor, and Doolittle asks them to volunteer for a secret mission. During the next three months, Rafe, Danny and other pilots train for ultra-short takeoffs with specially modified B-25 Mitchell bombers. In April, the raiders are sent toward Japan on board USS Hornet. Their mission is to bomb Tokyo, after which they will land in China. The mission is successful, but Rafe's and Danny's planes run out of fuel and crash in Japanese-occupied territory in China. A gunfight ensues between the raiders and Japanese ground troops, and Danny is mortally wounded shielding Rafe before the group are rescued by Chinese soldiers. Rafe tearfully reveals to Danny that Evelyn is pregnant with Danny's child; with his dying breaths, Danny tells Rafe that it is his child now.
+
+After the war, Rafe and Evelyn, now married, visit Danny's grave with Evelyn's son, named Danny after his biological father. Rafe then asks his stepson if he would like to go flying, and they fly off into the sunset in the old biplane that Rafe's father once owned. 
+ChatGPT
+
+Certainly! Here's the plot description in RDF format annotated with YAGO:
+
+rdf
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+<plot_description> rdf:type yago:Plot ;
+  yago:describes <movie> ;
+  yago:hasEvent yago:Play, yago:World_War_II, yago:Battle_of_Britain, yago:Romance, yago:Attack, yago:Rescue_mission, yago:State_declaration, yago:Air_raid, yago:Pearl_Harbor_attack, yago:Speech, yago:Promotion, yago:Mission ;
+  yago:hasGenre yago:Drama, yago:War_film, yago:Romance_film .
+
+<1923> rdf:type yago:Year ;
+  rdfs:label "1923" .
+
+<Tennessee> rdf:type yago:Location ;
+  rdfs:label "Tennessee" .
+
+<Rafe_McCawley> rdf:type yago:Character ;
+  yago:hasRoleIn <movie> .
+
+<Danny_Walker> rdf:type yago:Character ;
+  yago:hasRoleIn <movie> .
+
+<old_biplane> rdf:type yago:Vehicle ;
+  rdfs:label "old biplane" .
+
+<January_1941> rdf:type yago:Date ;
+  rdfs:label "January 1941" .
+
+<World_War_II> rdf:type yago:Event ;
+  rdfs:label "World War II" .
+
+<Major_Jimmy_Doolittle> rdf:type yago:Character ;
+  yago:hasRoleIn <movie> .
+
+<Eagle_Squadron> rdf:type yago:Organization ;
+  rdfs:label "Eagle Squadron" .
+
+<Battle_of_Britain> rdf:type yago:Event ;
+  rdfs:label "Battle of Britain" .
+
+<Evelyn_Johnson> rdf:type yago:Character ;
+  yago:hasRoleIn <movie> .
+
+<Rafe's_medical_exam> rdf:type yago:Event ;
+  rdfs:label "Rafe's medical exam" .
+
+<dyslexia> rdf:type yago:Disability ;
+  rdfs:label "dyslexia" .
+
+<dancing> rdf:type yago:Event ;
+  rdfs:label "dancing" .
+
+<nightclub> rdf:type yago:Building ;
+  rdfs:label "nightclub" .
+
+<New_York_harbor> rdf:type yago:Location ;
+  rdfs:label "New York harbor" .
+
+<police_boat> rdf:type yago:Vehicle ;
+  rdfs:label "police boat" .
+
+<Evelyn's_pregnancy> rdf:type yago:Event ;
+  rdfs:label "Evelyn's pregnancy" .
+
+<Luftwaffe_bombing_raid> rdf:type yago:Event ;
+  rdfs:label "Luftwaffe bombing raid" .
+
+<English_Channel> rdf:type yago:Location ;
+  rdfs:label "English Channel" .
+
+<Danny_and_Evelyn's_romance> rdf:type yago:Romance ;
+  rdfs:label "Danny and Evelyn's romance" .
+
+<Evelyn's_shock> rdf:type yago:Event ;
+  rdfs:label "Evelyn's shock" .
+
+<Nazi-occupied_France> rdf:type yago:Location ;
+  rdfs:label "Nazi-occupied France" .
+
+<Hula_bar> rdf:type yago:Building ;
+  rdfs:label "Hula bar" .
+
+<December_6> rdf:type yago:Date ;
+  rdfs:label "December 6" .
+
+<Drunken_Rafe> rdf:type yago:Character ;
+  rdfs:label "Drunken Rafe" .
+
+<brig> rdf:type yago:Building ;
+  rdfs:label "brig" .
+
+<military_police> rdf:type yago:Organization ;
+  rdfs:label "military police" .
+
+<Danny's_car> rdf:type yago:Vehicle ;
+  rdfs:label "Danny's car" .
+
+<December_7> rdf:type yago:Date ;
+  rdfs:label "December 7" .
+
+<Imperial_Japanese_Navy> rdf:type yago:Organization ;
+  rdfs:label "Imperial Japanese Navy" .
+
+<Pacific_Fleet> rdf:type yago:Organization ;
+  rdfs:label "Pacific Fleet" .
+
+<P-40_fighter_planes> rdf:type yago:Vehicle ;
+  rdfs:label "P-40 fighter planes" .
+
+<USS_Oklahoma> rdf:type yago:Vehicle ;
+  rdfs:label "USS Oklahoma" .
+
+<USS_Arizona> rdf:type yago:Vehicle ;
+  rdfs:label "USS Arizona" .
+
+<December_8> rdf:type yago:Date ;
+  rdfs:label "December 8" .
+
+<Franklin_D._Roosevelt> rdf:type yago:Character ;
+  yago:hasRoleIn <movie> .
+
+<Day_of_Infamy_speech> rdf:type yago:Speech ;
+  rdfs:label "Day of Infamy speech" .
+
+<US_Congress> rdf:type yago:Organization ;
+  rdfs:label "US Congress" .
+
+<memorial_service> rdf:type yago:Event ;
+  rdfs:label "memorial service" .
+
+<Danny's_grave> rdf:type yago:Location ;
+  rdfs:label "Danny's grave" .
+
+<Evelyn's_son> rdf:type yago:Person ;
+  rdfs:label "Evelyn's son" .
+
+<B-25_Mitchell_bombers> rdf:type yago:Vehicle ;
+  rdfs:label "B-25 Mitchell bombers" .
+
+<USS_Hornet> rdf:type yago:Vehicle ;
+  rdfs:label "USS Hornet" .
+
+<China> rdf:type yago:Location ;
+  rdfs:label "China" .
+
+<gunfight> rdf:type yago:Event ;
+  rdfs:label "gunfight" .
+
+<Japanese_ground_troops> rdf:type yago:Organization ;
+  rdfs:label "Japanese ground troops" .
+
+<Rafe's_revelation> rdf:type yago:Event ;
+  rdfs:label "Rafe's revelation" .
+
+<aftermath_of_war> rdf:type yago:Event ;
+  rdfs:label "aftermath of war" .
+
+<movie> rdf:type yago:Film .
+
+This version includes the plot description in RDF format with YAGO annotations for various events, characters, locations, and organizations mentioned in the plot.
+User
+Extract events and genres and format in textual, comma-separated lists
+ChatGPT
+
+Certainly! Here are the events and genres extracted from the plot description formatted as comma-separated lists:
+
+Events: Play, World War II, Battle of Britain, Romance, Attack, Rescue mission, State declaration, Air raid, Pearl Harbor attack, Speech, Promotion, Mission, Romance
+
+Genres: Drama, War film, Romance film
+
+Please note that these lists are based on the events and genres mentioned in the provided plot description.

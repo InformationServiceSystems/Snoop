@@ -1,0 +1,206 @@
+Give events and genre in the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago :
+
+Karen Blixen recalls her life in Africa, where she moved in 1913 as an unmarried, wealthy Dane. After having been spurned by her Swedish nobleman lover, she asks his brother whom she is good friends with, Baron Bror Blixen, to marry out of mutual convenience, and they move to the vicinity of Nairobi, British East Africa. Using her funds, he is to set up a dairy ranch, with her joining him a few months later, at which time they will marry. En route to Nairobi, her train is hailed by a big-game hunter named Denys Finch Hatton, who knows her fiancé and entrusts his haul of ivory to her.
+
+She is greeted at the railway station by Farah, the Somali headman hired by Bror, who is nowhere to be found. She is taken to the recently founded Muthaiga Club. She enters the men-only salon to ask for her husband and, because of her gender, is asked to leave. Karen and Bror marry before the day is out, and she becomes Baroness Blixen.
+
+She then learns that Bror has changed their agreed-upon plan and has spent her money to establish a coffee farm. She quickly learns that the farm is at too high an elevation to offer much of a chance of success. She needs Bror's help in building and managing this farm, but his interest is more in guiding game hunting safaris than in farming.
+
+Karen comes to love Africa and the African people, and is taken in by the breathtaking view of the nearby Ngong Hills and the Great Rift Valley beyond. She looks after the Kikuyu people who are squatting on her land, establishes a school for them, helps with their medical needs, and arbitrates their disputes. Meanwhile, she also attempts to establish a formal European homelife on par with the other upper class colonists in the area. She becomes friends with a young woman, Felicity (whose character is based on a young Beryl Markham). Eventually, Karen and Bror's feelings for one another deepen and they consummate their marriage. However, despite his genuine feelings for Karen, Bror continues to pursue other sexual relationships.
+
+As the First World War reaches East Africa, the colonists form a militia led by the colonial patriarch Lord Delamere, which includes Denys and Bror among their number. A military expedition sets out in search of the forces from the neighboring German colony of German East Africa. Responding to the militia's need for supplies, Karen leads a difficult expedition to find them and returns safely. Shortly after the end of the war, in the evenings, Karen makes up exotic and imaginative stories to entertain her visitors.
+
+Karen discovers that Bror has given her syphilis. As she is unable to receive proper treatment in Nairobi, she returns to Denmark for treatment and recuperation. Bror agrees to manage the farm while she is away. When she returns, now unable to bear children, Bror resumes his safari work, and they begin to live separately.
+
+The relationship between Karen and Denys develops, and he comes to live with her. Denys acquires a Gipsy Moth biplane and often takes Karen flying. Karen and Bror divorce when Bror finds another woman he wants to marry. This causes Karen to confront Denys regarding the status of their relationship which she would like to solidify, whereas he would rather maintain his autonomy. When Karen learns that Denys plans to take one of their female acquaintances, Felicity, on a private safari, she confronts Denys for not sharing her desire for a monogamous, domestic relationship. He assures her he wants to be with only her and states that a marriage is immaterial to how he feels about her. Eventually, this drives them apart and, refusing to meet Karen's ultimatum not to take Felicity flying, he moves out.
+
+The farm eventually yields a good harvest, but a fire destroys much of the farm and factory, forcing her to sell out. She prepares for her departure from Kenya to Denmark by appealing to the incoming governor to provide land for her Kikuyu workers to allow them to stay together, and by selling most of her remaining possessions at a rummage sale. Denys visits the now-empty house and Karen comments that the house should have been (empty) all-along and, as with her other efforts, the returning of things to their natural state is as it should be. Denys says that he was just getting used to her things and that he no longer feels comfortable alone now that he has realized his feelings for her have changed him. He asks to join her on her journey back to Mombasa.
+
+As he is about to depart for a safari scouting trip in his airplane, they agree that the following Friday he will return and fly her to Mombasa; with Karen then continuing on to Denmark. Friday comes and Denys does not appear. Bror then arrives to tell her that Denys' biplane has crashed and burned in Tsavo. During Denys' funeral, Karen recites an excerpt of a poem by A. E. Housman about a lauded athlete dying young who, as with Denys, is not fated to decline into old age. Later, as she is about to depart for good, she goes to the Muthaiga Club to complete arrangements for forwarding any mail. The members, having come to admire her, invite her into the men-only salon for a toast. At the railway station, she gives Farah the compass that Denys had given to her and says goodbye to Farah, then turns back to ask him to say her name, so she can hear his voice one last time. Later, Farah writes to Karen in Denmark, telling her that a pair of lions often visit Denys' grave.
+
+As the movie ends, the on-screen narrative notes that Karen later became a published author under the pen name Isak Dinesen. Among her work is the memoir about her experiences in Africa, Out of Africa, the first line from which is used to introduce this film. She never returned to Africa. 
+ChatGPT
+
+turtle
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+# Events
+ex:recalls_life rdf:type ex:Event ;
+    rdfs:label "Recalls Life" .
+
+ex:moves_to_africa rdf:type ex:Event ;
+    rdfs:label "Moves to Africa" .
+
+ex:asks_to_marry rdf:type ex:Event ;
+    rdfs:label "Asks to Marry" .
+
+ex:establishes_dairy_ranch rdf:type ex:Event ;
+    rdfs:label "Establishes Dairy Ranch" .
+
+ex:marries rdf:type ex:Event ;
+    rdfs:label "Marries" .
+
+ex:learns_about_changed_plan rdf:type ex:Event ;
+    rdfs:label "Learns about Changed Plan" .
+
+ex:falls_in_love rdf:type ex:Event ;
+    rdfs:label "Falls in Love" .
+
+ex:looks_after_people rdf:type ex:Event ;
+    rdfs:label "Looks After People" .
+
+ex:establishes_school rdf:type ex:Event ;
+    rdfs:label "Establishes School" .
+
+ex:helps_with_medical_needs rdf:type ex:Event ;
+    rdfs:label "Helps with Medical Needs" .
+
+ex:arbitrates_disputes rdf:type ex:Event ;
+    rdfs:label "Arbitrates Disputes" .
+
+ex:forms_militia rdf:type ex:Event ;
+    rdfs:label "Forms Militia" .
+
+ex:leads_expedition rdf:type ex:Event ;
+    rdfs:label "Leads Expedition" .
+
+ex:returns_safely rdf:type ex:Event ;
+    rdfs:label "Returns Safely" .
+
+ex:makes_up_stories rdf:type ex:Event ;
+    rdfs:label "Makes Up Stories" .
+
+ex:discovers_syphilis rdf:type ex:Event ;
+    rdfs:label "Discovers Syphilis" .
+
+ex:returns_for_treatment rdf:type ex:Event ;
+    rdfs:label "Returns for Treatment" .
+
+ex:resumes_safari_work rdf:type ex:Event ;
+    rdfs:label "Resumes Safari Work" .
+
+ex:divorces rdf:type ex:Event ;
+    rdfs:label "Divorces" .
+
+ex:confronts rdf:type ex:Event ;
+    rdfs:label "Confronts" .
+
+ex:drives_apart rdf:type ex:Event ;
+    rdfs:label "Drives Apart" .
+
+ex:yields_harvest rdf:type ex:Event ;
+    rdfs:label "Yields Harvest" .
+
+ex:fire_destroys_farm rdf:type ex:Event ;
+    rdfs:label "Fire Destroys Farm" .
+
+ex:sells_out rdf:type ex:Event ;
+    rdfs:label "Sells Out" .
+
+ex:prepares_for_departure rdf:type ex:Event ;
+    rdfs:label "Prepares for Departure" .
+
+ex:visits_empty_house rdf:type ex:Event ;
+    rdfs:label "Visits Empty House" .
+
+ex:learns_about_crash rdf:type ex:Event ;
+    rdfs:label "Learns about Crash" .
+
+ex:recites_poem rdf:type ex:Event ;
+    rdfs:label "Recites Poem" .
+
+ex:invited_to_men_only_salon rdf:type ex:Event ;
+    rdfs:label "Invited to Men-Only Salon" .
+
+ex:says_goodbye rdf:type ex:Event ;
+    rdfs:label "Says Goodbye" .
+
+ex:writes_letter rdf:type ex:Event ;
+    rdfs:label "Writes Letter" .
+
+
+# Genres
+ex:romance_genre rdf:type ex:Genre ;
+    rdfs:label "Romance Genre" .
+
+ex:drama_genre rdf:type ex:Genre ;
+    rdfs:label "Drama Genre" .
+
+ex:biography_genre rdf:type ex:Genre ;
+    rdfs:label "Biography Genre" .
+
+
+# YAGO Annotations
+ex:recalls_life yago:hasGenre ex:biography_genre .
+
+ex:moves_to_africa yago:hasGenre ex:drama_genre .
+
+ex:asks_to_marry yago:hasGenre ex:romance_genre .
+
+ex:establishes_dairy_ranch yago:hasGenre ex:drama_genre .
+
+ex:marries yago:hasGenre ex:romance_genre .
+
+ex:learns_about_changed_plan yago:hasGenre ex:drama_genre .
+
+ex:falls_in_love yago:hasGenre ex:romance_genre .
+
+ex:looks_after_people yago:hasGenre ex:drama_genre .
+
+ex:establishes_school yago:hasGenre ex:drama_genre .
+
+ex:helps_with_medical_needs yago:hasGenre ex:drama_genre .
+
+ex:arbitrates_disputes yago:hasGenre ex:drama_genre .
+
+ex:forms_militia yago:hasGenre ex:drama_genre .
+
+ex:leads_expedition yago:hasGenre ex:drama_genre .
+
+ex:returns_safely yago:hasGenre ex:drama_genre .
+
+ex:makes_up_stories yago:hasGenre ex:drama_genre .
+
+ex:discovers_syphilis yago:hasGenre ex:drama_genre .
+
+ex:returns_for_treatment yago:hasGenre ex:drama_genre .
+
+ex:resumes_safari_work yago:hasGenre ex:drama_genre .
+
+ex:divorces yago:hasGenre ex:drama_genre .
+
+ex:confronts yago:hasGenre ex:drama_genre .
+
+ex:drives_apart yago:hasGenre ex:drama_genre .
+
+ex:yields_harvest yago:hasGenre ex:drama_genre .
+
+ex:fire_destroys_farm yago:hasGenre ex:drama_genre .
+
+ex:sells_out yago:hasGenre ex:drama_genre .
+
+ex:prepares_for_departure yago:hasGenre ex:drama_genre .
+
+ex:visits_empty_house yago:hasGenre ex:drama_genre .
+
+ex:learns_about_crash yago:hasGenre ex:drama_genre .
+
+ex:recites_poem yago:hasGenre ex:drama_genre .
+
+ex:invited_to_men_only_salon yago:hasGenre ex:drama_genre .
+
+ex:says_goodbye yago:hasGenre ex:drama_genre .
+
+ex:writes_letter yago:hasGenre ex:drama_genre .
+
+User
+Extract events and genres in form of comma-separated lists
+ChatGPT
+
+Events: Recalls Life, Moves to Africa, Asks to Marry, Establishes Dairy Ranch, Marries, Learns about Changed Plan, Falls in Love, Looks After People, Establishes School, Helps with Medical Needs, Arbitrates Disputes, Forms Militia, Leads Expedition, Returns Safely, Makes Up Stories, Discovers Syphilis, Returns for Treatment, Resumes Safari Work, Divorces, Confronts, Drives Apart, Yields Harvest, Fire Destroys Farm, Sells Out, Prepares for Departure, Visits Empty House, Learns about Crash, Recites Poem, Invited to Men-Only Salon, Says Goodbye, Writes Letter.
+
+Genres: Biography Genre, Drama Genre, Romance Genre.

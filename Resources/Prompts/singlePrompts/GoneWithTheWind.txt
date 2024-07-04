@@ -1,0 +1,244 @@
+give events and genre in the following plot description in rdf format and annotate with YAGO with prefixes rdf, rdfs, ex, yago :
+
+In 1861, on the eve of the American Civil War, Scarlett O'Hara lives at Tara, her family's cotton plantation in Georgia, with her parents, two sisters, and their many black slaves. Scarlett is deeply attracted to Ashley Wilkes and learns he is to be married to his cousin, Melanie Hamilton. At an engagement party the next day at Ashley's home, Twelve Oaks, a nearby plantation, Scarlett makes an advance on Ashley but is rebuffed; however, she catches the attention of another guest, Rhett Butler. The party is disrupted by news of President Lincoln's call for volunteers to fight the South, and the Southern men rush to enlist. Scarlett marries Melanie's younger brother Charles to arouse jealousy in Ashley before he leaves to fight. Following Charles's death while serving in the Confederate States Army, Scarlett's mother sends her to the Hamilton home in Atlanta. She creates a scene by attending a charity bazaar in mourning attire and waltzing with Rhett, now a blockade runner for the Confederacy.
+
+The tide of war turns against the Confederacy after the Battle of Gettysburg. Many of the men of Scarlett's town are killed. Eight months later, as the Union Army besieges the city in the Atlanta campaign, Melanie gives birth with Scarlett's aid, and Rhett helps them flee the city. Rhett chooses to go off to fight, leaving Scarlett to make her own way back to Tara. She finds Tara deserted, except for her father, sisters, and former slaves, Mammy and Pork. Scarlett learns that her mother has just died of typhoid fever, and her father has lost his mind. With Tara pillaged by Union troops and the fields untended, Scarlett vows to ensure her and her family's survival.
+
+With the defeat of the Confederacy, the O'Haras toil in the cotton fields. Ashley returns but finds he is of little help to Tara. When Scarlett begs him to run away with her, he confesses his desire for her and kisses her passionately but says he cannot leave Melanie. Scarlett's father attempts to chase away a carpetbagger from his land but is thrown from his horse and killed. Unable to pay the Reconstructionist taxes imposed on Tara, Scarlett dupes her younger sister Suellen's fiancé, the middle-aged and wealthy general store owner Frank Kennedy, into marrying her by saying Suellen got tired of waiting and married another suitor. Frank, Ashley, Rhett, and several other accomplices make a night raid on a shanty town after Scarlett is attacked while driving through it alone, resulting in Frank's death. Shortly after Frank's funeral, Rhett proposes to Scarlett, and she accepts.
+
+Rhett and Scarlett have a daughter whom Rhett names Bonnie Blue, but Scarlett still pines for Ashley and, chagrined at the perceived ruin of her figure, refuses to have any more children or share a bed with Rhett. One day at Frank's mill, Ashley's sister, India, sees Scarlett and Ashley embracing. Harboring an intense dislike of Scarlett, India eagerly spreads rumors. Later that evening, Rhett, having heard the rumors, forces Scarlett to attend a birthday party for Ashley. Melanie, however, stands by Scarlett. After returning home, Scarlett finds Rhett downstairs drunk, and they argue about Ashley. Rhett kisses Scarlett against her will, stating his intent to have sex with her that night, and carries the struggling Scarlett to the bedroom.
+
+The next day, Rhett apologizes for his behavior and offers Scarlett a divorce, which she rejects, saying it would be a disgrace. When Rhett returns from an extended trip to London, England, Scarlett informs him that she is pregnant, but an argument ensues, resulting in her falling down a flight of stairs and suffering a miscarriage. While recovering, tragedy strikes again when Bonnie dies while attempting to jump a fence with her pony. Scarlett and Rhett visit Melanie, who has suffered complications from a new pregnancy, on her deathbed. As Scarlett consoles Ashley, Rhett prepares to leave Atlanta. Having realized that it was him, and not Ashley, she truly loved all along, Scarlett pleads with Rhett to stay, but he rebuffs her and walks away into the morning fog. A distraught Scarlett resolves to return home to Tara, vowing to one day win Rhett back. 
+ChatGPT
+
+Here's the plot description in RDF format annotated with YAGO:
+
+turtle
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.com/> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:ScarlettO_Hara rdf:type yago:Character ;
+    rdfs:label "Scarlett O'Hara" .
+
+ex:AshleyWilkes rdf:type yago:Character ;
+    rdfs:label "Ashley Wilkes" .
+
+ex:MelanieHamilton rdf:type yago:Character ;
+    rdfs:label "Melanie Hamilton" .
+
+ex:RhettButler rdf:type yago:Character ;
+    rdfs:label "Rhett Butler" .
+
+ex:PresidentLincoln rdf:type yago:Person ;
+    rdfs:label "President Lincoln" .
+
+ex:CharlesHamilton rdf:type yago:Character ;
+    rdfs:label "Charles Hamilton" .
+
+ex:Mammy rdf:type yago:Character ;
+    rdfs:label "Mammy" .
+
+ex:Pork rdf:type yago:Character ;
+    rdfs:label "Pork" .
+
+ex:FrankKennedy rdf:type yago:Character ;
+    rdfs:label "Frank Kennedy" .
+
+ex:IndiaWilkes rdf:type yago:Character ;
+    rdfs:label "India Wilkes" .
+
+ex:BonnieBlue rdf:type yago:Character ;
+    rdfs:label "Bonnie Blue" .
+
+ex:Tara rdf:type yago:Place ;
+    rdfs:label "Tara" .
+
+ex:TwelveOaks rdf:type yago:Place ;
+    rdfs:label "Twelve Oaks" .
+
+ex:Atlanta rdf:type yago:Place ;
+    rdfs:label "Atlanta" .
+
+ex:GettysburgBattle rdf:type yago:Event ;
+    rdfs:label "Battle of Gettysburg" .
+
+ex:AtlantaCampaign rdf:type yago:Event ;
+    rdfs:label "Atlanta campaign" .
+
+ex:CharityBazaar rdf:type yago:Event ;
+    rdfs:label "charity bazaar" .
+
+ex:EngagementParty rdf:type yago:Event ;
+    rdfs:label "engagement party" .
+
+ex:Birth rdf:type yago:Event ;
+    rdfs:label "birth" .
+
+ex:FleeingCity rdf:type yago:Event ;
+    rdfs:label "fleeing the city" .
+
+ex:Siege rdf:type yago:Event ;
+    rdfs:label "siege" .
+
+ex:ToilingInFields rdf:type yago:Event ;
+    rdfs:label "toiling in the fields" .
+
+ex:NightRaid rdf:type yago:Event ;
+    rdfs:label "night raid" .
+
+ex:Funeral rdf:type yago:Event ;
+    rdfs:label "funeral" .
+
+ex:BirthdayParty rdf:type yago:Event ;
+    rdfs:label "birthday party" .
+
+ex:Divorce rdf:type yago:Event ;
+    rdfs:label "divorce" .
+
+ex:TripToLondon rdf:type yago:Event ;
+    rdfs:label "trip to London" .
+
+ex:Argument rdf:type yago:Event ;
+    rdfs:label "argument" .
+
+ex:Miscarriage rdf:type yago:Event ;
+    rdfs:label "miscarriage" .
+
+ex:Tragedy rdf:type yago:Event ;
+    rdfs:label "tragedy" .
+
+ex:Consoling rdf:type yago:Event ;
+    rdfs:label "consoling" .
+
+ex:Leaving rdf:type yago:Event ;
+    rdfs:label "leaving" .
+
+ex:ReturningHome rdf:type yago:Event ;
+    rdfs:label "returning home" .
+
+ex:WinningBack rdf:type yago:Event ;
+    rdfs:label "winning back" .
+
+ex:AmericanCivilWar rdf:type yago:Event ;
+    rdfs:label "American Civil War" .
+
+ex:Attraction rdf:type yago:Event ;
+    rdfs:label "attraction" .
+
+ex:Marriage rdf:type yago:Event ;
+    rdfs:label "marriage" .
+
+ex:Disruption rdf:type yago:Event ;
+    rdfs:label "disruption" .
+
+ex:Enlistment rdf:type yago:Event ;
+    rdfs:label "enlistment" .
+
+ex:Pillage rdf:type yago:Event ;
+    rdfs:label "pillage" .
+
+ex:Survival rdf:type yago:Event ;
+    rdfs:label "survival" .
+
+ex:Desire rdf:type yago:Event ;
+    rdfs:label "desire" .
+
+ex:ChasingAway rdf:type yago:Event ;
+    rdfs:label "chasing away" .
+
+ex:ReconstructionistTaxes rdf:type yago:Event ;
+    rdfs:label "Reconstructionist taxes" .
+
+ex:NightRaid rdf:type yago:Event ;
+    rdfs:label "night raid" .
+
+ex:Proposal rdf:type yago:Event ;
+    rdfs:label "proposal" .
+
+ex:Rumors rdf:type yago:Event ;
+    rdfs:label "rumors" .
+
+ex:Kiss rdf:type yago:Event ;
+    rdfs:label "kiss" .
+
+ex:Arguing rdf:type yago:Event ;
+    rdfs:label "arguing" .
+
+ex:Apology rdf:type yago:Event ;
+    rdfs:label "apology" .
+
+ex:Falling rdf:type yago:Event ;
+    rdfs:label "falling" .
+
+ex:Recovery rdf:type yago:Event ;
+    rdfs:label "recovery" .
+
+ex:Death rdf:type yago:Event ;
+    rdfs:label "death" .
+
+ex:Departure rdf:type yago:Event ;
+    rdfs:label "departure" .
+
+ex:Pleading rdf:type yago:Event ;
+    rdfs:label "pleading" .
+
+ex:Vowing rdf:type yago:Event ;
+    rdfs:label "vowing" .
+
+ex:Romance rdf:type yago:Genre ;
+    rdfs:label "Romance" .
+
+ex:HistoricalDrama rdf:type yago:Genre ;
+    rdfs:label "Historical Drama" .
+
+ex:ScarlettO_Hara ex:livesAt ex:Tara ;
+    ex:hasFamily ex:O_HaraFamily ;
+    ex:isAttractedTo ex:AshleyWilkes ;
+    ex:makesAdvanceOn ex:AshleyWilkes ;
+    ex:catchesAttentionOf ex:RhettButler ;
+    ex:marries ex:CharlesHamilton ;
+    ex:sendsTo ex:HamiltonHome ;
+    ex:createsSceneAt ex:CharityBazaar ;
+    ex:waltzesWith ex:RhettButler ;
+    ex:vowsToEnsureSurvival ;
+    ex:toilsIn ex:CottonFields ;
+    ex:returnsTo ex:Tara ;
+    ex:dupes ex:FrankKennedy ;
+    ex:makesNightRaid ;
+    ex:isAttacked ;
+    ex:proposesTo ex:ScarlettO_Hara ;
+    ex:hasDaughter ex:BonnieBlue ;
+    ex:names ex:BonnieBlue ;
+    ex:refusesToShareBedWith ex:RhettButler ;
+    ex:seesScarlettAndAshleyEmbracing ;
+    ex:spreadsRumors ;
+    ex:forcesToAttend ex:BirthdayParty ;
+    ex:kissesAgainstWill ;
+    ex:offersDivorce ;
+    ex:informsAboutPregnancy ;
+    ex:arguesWith ex:RhettButler ;
+    ex:fallsDownStairs ;
+    ex:suffersMiscarriage ;
+    ex:visits ex:MelanieHamilton ;
+    ex:preparesToLeave ex:Atlanta ;
+    ex:pleadsToStay ;
+    ex:returnsHome ;
+    ex:vowsToWinBack ex:RhettButler .
+
+ex:AmericanCivilWar rdf:type yago:Event ;
+    rdfs:label "American Civil War" .
+
+ex:Romance rdf:type yago:Genre ;
+    rdfs:label "Romance" .
+
+Note: The above RDF representation is just an example and may not capture all the nuances of the plot description. It's a simplified representation for demonstration purposes.
+User
+Extract events and genres in form of comma-separated lists
+ChatGPT
+
+Events: American Civil War, Attraction, Marriage, Disruption, Enlistment, Survival, Desire, Chasing Away, Reconstructionist Taxes, Pillage, Night Raid, Proposal, Rumors, Kiss, Arguing, Apology, Falling, Recovery, Death, Departure, Pleading, Vowing
+
+Genres: Romance, Historical Drama

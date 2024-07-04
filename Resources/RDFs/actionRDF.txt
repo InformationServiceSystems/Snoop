@@ -1,0 +1,2966 @@
+
+1. Atomic Blonde
+
+@prefix ex: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:JamesGascoigne rdf:type ex:MI6Agent ;
+                  ex:shotBy ex:YuriBakhtin ;
+                  ex:hasMicrofilm ex:TheList ;
+                  ex:hasRelationship ex:LorraineBroughton .
+
+ex:YuriBakhtin rdf:type ex:KGBAgent ;
+               ex:steals ex:TheList .
+
+ex:TheList rdf:type ex:MicrofilmDocument .
+
+ex:LorraineBroughton rdf:type ex:MI6Spy ;
+                     ex:hasMission ex:MissionToBerlin .
+
+ex:EricGray rdf:type ex:MI6Executive .
+
+ex:EmmettKurzfeld rdf:type ex:CIAAgent .
+
+ex:Berlin rdf:type ex:Location .
+
+ex:Satchel rdf:type ex:DoubleAgent ;
+           ex:isProblemFor ex:MI6 ;
+           ex:hasRelationship ex:LorraineBroughton .
+
+ex:DavidPercival rdf:type ex:MI6StationHead ;
+                 ex:addictedTo ex:BohemianLifestyle ;
+                 ex:hasRelationship ex:LorraineBroughton .
+
+ex:GascoigneApartment rdf:type ex:Apartment ;
+                      ex:belongsTo ex:JamesGascoigne .
+
+ex:MI6Team rdf:type ex:Team ;
+           ex:posesAs ex:LorraineBroughton .
+
+ex:AleksanderBremovych rdf:type ex:KGBBoss ;
+                      ex:sendsMessageTo ex:LorraineBroughton .
+
+ex:DelphineLasalle rdf:type ex:FrenchAgent ;
+                   ex:knows ex:LorraineBroughton .
+
+ex:Nightclub rdf:type ex:Location .
+
+ex:Watchmaker rdf:type ex:Person ;
+              ex:visitedBy ex:LorraineBroughton .
+
+ex:BakhtinShop rdf:type ex:Shop ;
+               ex:visitedBy ex:Bakhtin .
+
+ex:KurzfeldMeeting rdf:type ex:Meeting ;
+                   ex:takesPlaceIn ex:Berlin .
+
+ex:Newspaper rdf:type ex:Document ;
+             ex:containsNumber ex:SatchelCompromisedNumber .
+
+ex:Spyglass rdf:type ex:StasiOfficer ;
+            ex:gave ex:TheList ;
+            ex:memorized ex:TheList .
+
+ex:Extraction rdf:type ex:Operation ;
+             ex:involves ex:Spyglass ;
+             ex:takesPlaceIn ex:EastBerlin ;
+             ex:organizedBy ex:LorraineBroughton ;
+             ex:assistedBy ex:DavidPercival .
+
+ex:LasalleApartment rdf:type ex:Apartment ;
+                   ex:belongsTo ex:DelphineLasalle .
+
+ex:BremovychMeeting rdf:type ex:Meeting ;
+                    ex:takesPlaceIn ex:Berlin .
+
+ex:LorraineCoat rdf:type ex:Clothing ;
+                ex:ownedBy ex:LorraineBroughton ;
+                ex:hasBug ex:Bug .
+
+ex:Photographs rdf:type ex:Document ;
+               ex:takenBy ex:DelphineLasalle .
+
+ex:PercivalSafehouse rdf:type ex:Safehouse ;
+                    ex:ownedBy ex:DavidPercival .
+
+ex:LorraineArrival rdf:type ex:Event ;
+                  ex:takesPlaceIn ex:Berlin .
+
+ex:LorraineKillsGascoigne rdf:type ex:Event ;
+                          ex:takesPlaceIn ex:Berlin ;
+                          ex:performedBy ex:LorraineBroughton ;
+                          ex:victim ex:JamesGascoigne .
+
+ex:LorraineEscapes rdf:type ex:Event ;
+                   ex:takesPlaceIn ex:Berlin ;
+                   ex:performedBy ex:LorraineBroughton .
+
+ex:PercivalAmbushesLorraine rdf:type ex:Event ;
+                            ex:takesPlaceIn ex:Berlin ;
+                            ex:performedBy ex:DavidPercival ;
+                            ex:target ex:LorraineBroughton .
+
+ex:LorraineSearchesApartment rdf:type ex:Event ;
+                             ex:takesPlaceIn ex:GascoigneApartment ;
+                             ex:performedBy ex:LorraineBroughton .
+
+ex:LorraineMeetsBremovych rdf:type ex:Event ;
+                         ex:takesPlaceIn ex:Restaurant ;
+                         ex:performedBy ex:LorraineBroughton ;
+                         ex:encountered ex:AleksanderBremovych .
+
+ex:LorraineAndLasalleRelationship rdf:type ex:Relationship ;
+                                  ex:involves ex:LorraineBroughton ;
+                                  ex:involves ex:DelphineLasalle .
+
+ex:LorraineImpersonatesSatchel rdf:type ex:Event ;
+                               ex:takesPlaceIn ex:Paris ;
+                               ex:performedBy ex:LorraineBroughton ;
+                               ex:target ex:AleksanderBremovych .
+
+ex:PercivalTailsLorraine rdf:type ex:Event ;
+                         ex:takesPlaceIn ex:Berlin ;
+                         ex:performedBy ex:DavidPercival ;
+                         ex:target ex:LorraineBroughton .
+
+ex:BakhtinShopMeeting rdf:type ex:Meeting ;
+                       ex:takesPlaceIn ex:BakhtinShop ;
+                       ex:involves ex:Bakhtin ;
+                       ex:involves ex:Watchmaker .
+
+ex:LorraineFindsOutSpyglassKnowledge rdf:type ex:Event ;
+                                      ex:takesPlaceIn ex:Berlin ;
+                                      ex:performedBy ex:LorraineBroughton ;
+                                      ex:target ex:Spyglass .
+
+ex:LorraineAndPercivalPlan rdf:type ex:Event ;
+                            ex:takesPlaceIn ex:Berlin ;
+                            ex:involves ex:LorraineBroughton ;
+                            ex:involves ex:DavidPercival ;
+                            ex:involves ex:Spyglass .
+
+ex:PercivalMeetsBremovych rdf:type ex:Event ;
+                         ex:takesPlaceIn ex:Berlin ;
+                         ex:performedBy ex:DavidPercival ;
+                         ex:encountered ex:AleksanderBremovych .
+
+ex:LasalleThreatensPercival rdf:type ex:Event ;
+                            ex:takesPlaceIn ex:LasalleApartment ;
+                            ex:performedBy ex:DelphineLasalle ;
+                            ex:target ex:DavidPercival .
+
+ex:LorraineArrivesAtLasalleApartment rdf:type ex:Event ;
+                                     ex:takesPlaceIn ex:LasalleApartment ;
+                                     ex:performedBy ex:LorraineBroughton .
+
+ex:LorraineFindsPhotographs rdf:type ex:Event ;
+                            ex:takesPlaceIn ex:LasalleApartment ;
+                            ex:performedBy ex:LorraineBroughton ;
+                            ex:target ex:Photographs .
+
+ex:PercivalBurnsSafehouse rdf:type ex:Event ;
+                          ex:takesPlaceIn ex:PercivalSafehouse ;
+                          ex:performedBy ex:DavidPercival .
+
+ex:LorraineArrivesAtSafehouse rdf:type ex:Event ;
+                               ex:takesPlaceIn ex:PercivalSafehouse ;
+                               ex:performedBy ex:LorraineBroughton .
+
+ex:LorraineKillsPercival rdf:type ex:Event ;
+                         ex:takesPlaceIn ex:PercivalSafehouse ;
+                         ex:performedBy ex:LorraineBroughton ;
+                         ex:victim ex:DavidPercival .
+
+ex:MI6Debriefing rdf:type ex:Meeting ;
+                 ex:takesPlaceIn ex:MI6Headquarters ;
+                 ex:attendedBy ex:LorraineBroughton ;
+                 ex:attendedBy ex:EricGray ;
+                 ex:attendedBy ex:EmmettKurzfeld .
+
+ex:LorrainePresentsEvidence rdf:type ex:Event ;
+                            ex:takesPlaceIn ex:MI6Debriefing ;
+                            ex:performedBy ex:LorraineBroughton ;
+                            ex:evidence ex:Photographs ;
+                            ex:evidence ex:AudioRecordings .
+
+ex:AssassinationAttempt rdf:type ex:Event ;
+                       ex:takesPlaceIn ex:Paris ;
+                       ex:performedBy ex:AleksanderBremovych ;
+                       ex:target ex:LorraineBroughton .
+
+ex:LorraineKillsAssailants rdf:type ex:Event ;
+                           ex:takesPlaceIn ex:Paris ;
+                           ex:performedBy ex:LorraineBroughton .
+
+ex:LorraineAndKurzfeldReturn rdf:type ex:Event ;
+                             ex:takesPlaceIn ex:UnitedStates ;
+                             ex:performedBy ex:LorraineBroughton ;
+                             ex:performedBy ex:EmmettKurzfeld ;
+                             ex:carries ex:TheList .
+
+ex:ConversationBetweenLorraineAndKurzfeld rdf:type ex:Event ;
+                                          ex:takesPlaceIn ex:UnitedStates ;
+                                          ex:involved ex:LorraineBroughton ;
+                                          ex:involved ex:EmmettKurzfeld ;
+                                          ex:topic ex:LorraineTripleAgentStatus .
+
+2. The raid
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:RookieBrimob rdf:type ex:PoliceOfficer .
+ex:RookieBrimob ex:trainsBeforeJoining ex:Squad .
+
+ex:Squad rdf:type ex:PoliceSquad .
+ex:Squad ex:ledBy ex:SergeantJaka .
+ex:Squad ex:ledBy ex:LieutenantWahyu .
+
+ex:SergeantJaka rdf:type ex:PoliceOfficer .
+ex:LieutenantWahyu rdf:type ex:PoliceOfficer .
+
+ex:Raid rdf:type ex:PoliceOperation .
+ex:Raid ex:target ex:TamaRiyadi .
+ex:Raid ex:carriedOutBy ex:Squad .
+
+ex:TamaRiyadi rdf:type ex:CrimeLord .
+
+ex:ApartmentBlock rdf:type ex:Building .
+
+ex:Tenant rdf:type ex:Person .
+ex:Tenant ex:name "Gofar" .
+
+ex:Delivery rdf:type ex:Task .
+ex:Delivery ex:performedBy ex:Gofar .
+ex:Delivery ex:delivers ex:Medicine .
+ex:Delivery ex:deliversTo ex:SickWife .
+
+ex:Medicine rdf:type ex:Product .
+
+ex:SickWife rdf:type ex:Person .
+
+ex:Sniper rdf:type ex:Person .
+ex:Gunman rdf:type ex:Person .
+
+ex:ExteriorGuard rdf:type ex:PoliceOfficer .
+
+ex:Chaos rdf:type ex:Event .
+ex:Chaos ex:causedBy ex:Sniper .
+ex:Chaos ex:causedBy ex:Gunman .
+
+ex:Light rdf:type ex:Utility .
+
+ex:PASystem rdf:type ex:CommunicationSystem .
+
+ex:CorruptOfficial rdf:type ex:PoliceOfficer .
+
+ex:RemainingOfficers rdf:type ex:PoliceSquad .
+ex:RemainingOfficers ex:consistsOf ex:Rama .
+ex:RemainingOfficers ex:consistsOf ex:Bowo .
+ex:RemainingOfficers ex:consistsOf ex:Jaka .
+ex:RemainingOfficers ex:consistsOf ex:Wahyu .
+ex:RemainingOfficers ex:consistsOf ex:Dagu .
+ex:RemainingOfficers ex:consistsOf ex:Alee .
+ex:RemainingOfficers ex:consistsOf ex:Hanggi .
+ex:RemainingOfficers ex:consistsOf ex:OtherOfficer .
+
+ex:Apartment rdf:type ex:Room .
+
+ex:Henchmen rdf:type ex:Person .
+
+ex:ExplosiveDevice rdf:type ex:Tool .
+
+ex:Reinforcements rdf:type ex:Group .
+
+ex:Assassin rdf:type ex:Person .
+
+ex:EstrangedBrother rdf:type ex:Person .
+
+ex:CriminalLife rdf:type ex:Career .
+
+ex:Torture rdf:type ex:Action .
+
+ex:Corruption rdf:type ex:Crime .
+
+ex:BlackmailRecordings rdf:type ex:Recordings .
+
+ex:PoliceOfficer rdf:type rdfs:Class .
+ex:PoliceSquad rdf:type rdfs:Class .
+ex:CrimeLord rdf:type rdfs:Class .
+ex:Building rdf:type rdfs:Class .
+ex:Person rdf:type rdfs:Class .
+ex:Task rdf:type rdfs:Class .
+ex:Product rdf:type rdfs:Class .
+ex:Event rdf:type rdfs:Class .
+ex:Utility rdf:type rdfs:Class .
+ex:CommunicationSystem rdf:type rdfs:Class .
+ex:CorruptOfficial rdf:type rdfs:Class .
+ex:Room rdf:type rdfs:Class .
+ex:Tool rdf:type rdfs:Class .
+ex:Group rdf:type rdfs:Class .
+ex:Career rdf:type rdfs:Class .
+ex:Action rdf:type rdfs:Class .
+ex:Crime rdf:type rdfs:Class .
+ex:Recordings rdf:type rdfs:Class .
+
+3. Extraction
+
+@prefix ex: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:OviMahajan ex:isSonOf ex:OviMahajanSr .
+ex:OviMahajanSr ex:sneaksOut ex:club .
+ex:OviMahajanSr ex:visits ex:club .
+ex:OviMahajanSr ex:hasFriend ex:friend .
+ex:friend ex:accompanies ex:OviMahajanSr .
+ex:OviMahajanSr ex:goesTo ex:garage .
+ex:OviMahajanSr ex:encounters ex:policeOfficers .
+ex:policeOfficers ex:workFor ex:drugLord .
+ex:policeOfficers ex:workFor ex:AmirAsif .
+ex:policeOfficers ex:shoots ex:friend .
+ex:policeOfficers ex:kidnaps ex:OviMahajan .
+ex:SajuRav ex:isFormerLieutenantColonel ex:IndianArmyParaSpecialForces .
+ex:SajuRav ex:isProtectorOf ex:OviMahajan .
+ex:SajuRav ex:visits ex:OviMahajanSrInPrison .
+ex:OviMahajanSr ex:orders ex:SajuRav .
+ex:SajuRav ex:retrieves ex:OviMahajan .
+ex:OviMahajanSr ex:threatensToKill ex:SajuRavSon .
+ex:TylerRake ex:isFormerOperator ex:AustralianArmySpecialAirServiceRegiment .
+ex:TylerRake ex:isRecruitedBy ex:NikKhan .
+ex:TylerRake ex:saves ex:OviMahajan .
+ex:TylerRake ex:kills ex:captors .
+ex:TylerRake ex:takesTo ex:extractionPoint .
+ex:Asif ex:orders ex:ColonelRashid .
+ex:ColonelRashid ex:initiatesLockdown ex:Dhaka .
+ex:OviMahajanSr ex:intentionallyFailsToTransfer ex:funds .
+ex:OviMahajanSr ex:reveals ex:bankAccountFrozen .
+ex:SajuRav ex:kills ex:TylerTeammates .
+ex:SajuRav ex:triesToKill ex:Tyler .
+ex:NikKhan ex:arrangesFor ex:helicopter .
+ex:TylerRake ex:refusesToLeaveBehind ex:OviMahajan .
+ex:TylerRake ex:fightsOff ex:gangOfBoys .
+ex:Gaspar ex:isRetiredSquadMate ex:TylerRake .
+ex:TylerRake ex:calls ex:Gaspar .
+ex:TylerRake ex:fights ex:Gaspar .
+ex:OviMahajan ex:shoots ex:Gaspar .
+ex:TylerRake ex:calls ex:SajuRav .
+ex:TylerRake ex:asksForHelp ex:SajuRav .
+ex:TylerRake ex:forcesToTeamUp ex:SajuRav .
+ex:TylerRake ex:drawsAttentionAway ex:SajuOvi .
+ex:SajuRav ex:isShotBy ex:Rashid .
+ex:Rashid ex:isShotBy ex:Khan .
+ex:TylerRake ex:isWounded ex:emotions/TylerRake/Wounded .
+ex:TylerRake ex:hasEmotion ex:emotions/TylerRake/Wounded .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Relieved .
+ex:TylerRake ex:instructs ex:OviMahajan .
+ex:OviMahajan ex:runsTo ex:KhanHelicopter .
+ex:TylerRake ex:isShotInNeckBy ex:Farhad .
+ex:OviMahajan ex:sees ex:blurredVision .
+ex:OviMahajan ex:resembles ex:Tyler .
+ex:Khan ex:encounters ex:Asif .
+ex:Khan ex:hasEmotion ex:emotions/Khan/Satisfied .
+ex:Asif ex:hasEmotion ex:emotions/Asif/Threatened .
+ex:Khan ex:shoots ex:Asif .
+ex:OviMahajan ex:jumpsInto ex:swimmingPool .
+ex:OviMahajan ex:practices ex:holdingBreath .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Determined .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Reflective .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Curious .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Relieved .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Surprised .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Anxious .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Awe .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Joy .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Satisfaction .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Surprise .
+ex:OviMahajan ex:hasEmotion ex:emotions/OviMahajan/Fear .
+ex:man ex:watches ex:OviMahajan .
+
+4. John wick 2
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Characters
+ex:JohnWick rdf:type ex:Character ;
+    ex:hasName "John Wick" .
+
+ex:AbramTarasov rdf:type ex:Character ;
+    ex:hasName "Abram Tarasov" ;
+    ex:isBrotherOf ex:ViggoTarasov .
+
+ex:SantinoDAntonio rdf:type ex:Character ;
+    ex:hasName "Santino D'Antonio" .
+
+ex:GiannaDantonio rdf:type ex:Character ;
+    ex:hasName "Gianna D'Antonio" ;
+    ex:isSisterOf ex:SantinoDAntonio .
+
+ex:Cassian rdf:type ex:Character ;
+    ex:hasName "Cassian" .
+
+ex:Winston rdf:type ex:Character ;
+    ex:hasName "Winston" .
+
+ex:BoweryKing rdf:type ex:Character ;
+    ex:hasName "Bowery King" .
+
+# Emotions
+ex:JohnWick rdf:type ex:EmotionalEntity ;
+    ex:experiences ex:Rage ;
+    ex:experiences ex:Grief .
+
+ex:SantinoDAntonio rdf:type ex:EmotionalEntity ;
+    ex:experiences ex:Anger .
+
+ex:Cassian rdf:type ex:EmotionalEntity ;
+    ex:experiences ex:Respect .
+
+ex:Winston rdf:type ex:EmotionalEntity ;
+    ex:experiences ex:Concern .
+
+ex:BoweryKing rdf:type ex:EmotionalEntity ;
+    ex:experiences ex:Intrigue .
+
+# Vehicles
+ex:StolenMustang rdf:type ex:Vehicle ;
+    ex:isStolenBy ex:AbramTarasov .
+
+# Actions
+ex:JohnWickRecovers ex:StolenMustang ;
+    rdf:type ex:Action .
+
+ex:ViolentRampage rdf:type ex:Action ;
+    ex:damages ex:StolenMustang .
+
+ex:TarasovMen rdf:type ex:GroupOfIndividuals ;
+    ex:belongsTo ex:AbramTarasov .
+
+ex:JohnWickSaves ex:AbramTarasov ;
+    rdf:type ex:Action .
+
+ex:JohnWickReturnsHome ex:JohnWickHome ;
+    rdf:type ex:Action .
+
+ex:JohnWickVisitedBy ex:SantinoDAntonio ;
+    rdf:type ex:Action .
+
+ex:JohnWickDeclines ex:SantinoDAntonio ;
+    rdf:type ex:Action .
+
+ex:SantinoRetaliates ;
+    rdf:type ex:Action ;
+    ex:damages ex:JohnWickHome .
+
+ex:JohnWickSurvives ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:ContinentalHotelNYC .
+
+ex:JohnWickAcceptsCommitment ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:ContinentalHotelNYC .
+
+ex:JohnWickMeets ex:SantinoDAntonio ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:ContinentalHotelNYC .
+
+ex:JohnWickAssassinates ex:GiannaDantonio ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:RomeItaly .
+
+ex:JohnWickEscapes ex:Cassian ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:RomeItaly .
+
+ex:JohnWickDoubleCrossed ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:RomeItaly .
+
+ex:JohnWickFights ex:Cassian ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:RomeItaly .
+
+ex:JohnWickExplainsReason ex:Cassian ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:RomeItaly .
+
+ex:JuliusArrangesSafePassageFor ex:JohnWick ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:RomanContinental .
+
+ex:SantinoOpensContractToKill ex:JohnWick ;
+    rdf:type ex:Action .
+
+ex:AssassinsAttack ex:JohnWick ;
+    rdf:type ex:Action .
+
+ex:WinstonVisits ex:SantinoDAntonio ;
+    rdf:type ex:Action .
+
+ex:WinstonWarnsSantino ;
+    rdf:type ex:Action .
+
+ex:JohnWickConfronts ex:Cassian ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:Subway .
+
+ex:JohnWickSpares ex:Cassian ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:Subway .
+
+ex:JohnWickSeeksHelpFrom ex:BoweryKing ;
+    rdf:type ex:Action .
+
+ex:BoweryKingTreatsInjuriesOf ex:JohnWick ;
+    rdf:type ex:Action .
+
+ex:BoweryKingProvides ex:JohnWick ;
+    rdf:type ex:Action ;
+    ex:hasWeapon ex:KimberM1911Pistol .
+
+ex:JohnWickPursues ex:SantinoDAntonio ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:ArtMuseum .
+
+ex:JohnWickKills ex:SantinoDAntonio ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:ArtMuseum .
+
+ex:JohnWickKills ex:Ares ;
+    rdf:type ex:Action ;
+    ex:takesPlaceAt ex:ArtMuseum .
+
+ex:WinstonMeetsWith ex:JohnWick ;
+    rdf:type ex:Action .
+
+ex:WinstonExplains ex:JohnWick ;
+    rdf:type ex:Action .
+
+ex:WinstonActivatesExcommunicationOf ex:JohnWick ;
+    rdf:type ex:Action .
+
+ex:JohnWickDeparts ;
+    rdf:type ex:Action ;
+    ex:hasPet ex:Dog .
+
+ex:NewsOfContractDisseminates ;
+    rdf:type ex:Action ;
+    ex:isHeardOn ex:CellularPhones .
+
+ex:JohnWickBeginsToRun ;
+    rdf:type ex:Action .
+
+# Relationships
+ex:AbramTarasov ex:hasRelationshipWith ex:ViggoTarasov ;
+    rdf:type ex:Relationship .
+
+ex:SantinoDAntonio ex:hasRelationshipWith ex:JohnWick ;
+    rdf:type ex:Relationship .
+
+ex:SantinoDAntonio ex:hasRelationshipWith ex:GiannaDantonio ;
+    rdf:type ex:Relationship .
+
+ex:GiannaDantonio ex:hasRelationshipWith ex:SantinoDAntonio ;
+    rdf:type ex:Relationship .
+
+ex:Cassian ex:hasRelationshipWith ex:GiannaDantonio ;
+    rdf:type ex:Relationship .
+
+ex:Winston ex:hasRelationshipWith ex:JohnWick ;
+    rdf:type ex:Relationship .
+
+ex:BoweryKing ex:hasRelationshipWith ex:JohnWick ;
+    rdf:type ex:Relationship .
+
+# Locations
+ex:JohnWickHome rdf:type ex:Location ;
+    ex:hasName "John's Home" .
+
+ex:ContinentalHotelNYC rdf:type ex:Location ;
+    ex:hasName "Continental Hotel, New York City" .
+
+ex:RomeItaly rdf:type ex:Location ;
+    ex:hasName "Rome, Italy" .
+
+ex:Subway rdf:type ex:Location ;
+    ex:hasName "Subway" .
+
+ex:RomanContinental rdf:type ex:Location ;
+    ex:hasName "Roman Continental" .
+
+ex:ArtMuseum rdf:type ex:Location ;
+    ex:hasName "Art Museum" .
+
+# Classes
+ex:Character rdf:type rdfs:Class .
+ex:EmotionalEntity rdf:type rdfs:Class .
+ex:Vehicle rdf:type rdfs:Class .
+ex:Action rdf:type rdfs:Class .
+ex:GroupOfIndividuals rdf:type rdfs:Class .
+ex:Individual rdf:type rdfs:Class .
+ex:Location rdf:type rdfs:Class .
+ex:Relationship rdf:type rdfs:Class .
+ex:Emotion rdf:type rdfs:Class .
+
+# Emotion classes
+ex:Emotion rdf:type rdfs:Class .
+
+ex:Rage rdf:type ex:Emotion ;
+    rdfs:subClassOf ex:Emotion .
+
+ex:Grief rdf:type ex:Emotion ;
+    rdfs:subClassOf ex:Emotion .
+
+ex:Anger rdf:type ex:Emotion ;
+    rdfs:subClassOf ex:Emotion .
+
+ex:Respect rdf:type ex:Emotion ;
+    rdfs:subClassOf ex:Emotion .
+
+ex:Concern rdf:type ex:Emotion ;
+    rdfs:subClassOf ex:Emotion .
+
+ex:Intrigue rdf:type ex:Emotion ;
+    rdfs:subClassOf ex:Emotion .
+
+5. KingsMan
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:Lee_Unwin a yago:SecretAgent ;
+    yago:sacrificesHimselfIn ex:Middle_East ;
+    yago:diesIn 1997 .
+
+ex:Harry_Hart a yago:Superior ;
+    yago:saves ex:Lee_Unwin ;
+    yago:returnsTo ex:London .
+
+ex:Eggsy a yago:RebelliousChav ;
+    yago:dropsOutOf ex:Royal_Marines ;
+    yago:calls ex:emergency_number ;
+    yago:steals ex:car .
+
+ex:emergency_number a yago:EmergencyAssistanceNumber .
+
+ex:Harry_Hart a yago:MemberOf ;
+    yago:memberOf ex:Kingsman .
+
+ex:Kingsman a yago:PrivateIntelligenceService ;
+    yago:foundedBy ex:British_elite ;
+    yago:protects ex:world ;
+    yago:namedAfter ex:Savile_Row .
+
+ex:British_elite a yago:Group ;
+    yago:loses ex:heirs ;
+    yago:putsToward ex:protecting_the_world .
+
+ex:Galahad a yago:Codename .
+
+ex:Eggsy a yago:Replacement ;
+    yago:replaces ex:Lancelot .
+
+ex:Lancelot a yago:Agent ;
+    yago:isKilledBy ex:Gazelle .
+
+ex:Gazelle a yago:Assassin ;
+    yago:kills ex:Lancelot ;
+    yago:isEmployedBy ex:Richmond_Valentine .
+
+ex:Professor_James_Arnold a yago:ClimateChangeScientist ;
+    yago:isRescuedBy ex:Lancelot .
+
+ex:Merlin a yago:TechnicalSupportOperative ;
+    yago:discovers ex:Professor_James_Arnold .
+
+ex:Arnold a yago:Scientist ;
+    yago:worksAs ex:nothing_has_happened .
+
+ex:Professor_James_Arnold a yago:Scientist ;
+    yago:isInterrogatedBy ex:Harry_Hart ;
+    yago:isKilledBy ex:microchip .
+
+ex:Harry_Hart a yago:Coma ;
+    yago:recoversFrom ex:coma .
+
+ex:Richmond_Valentine a yago:BillionairePhilanthropist ;
+    yago:offers ex:SIM_cards ;
+    yago:isTracedTo ex:detonation_signal .
+
+ex:SIM_cards a yago:CellularTechnology ;
+    yago:provides ex:free_access ;
+    yago:isOfferedTo ex:everyone_in_the_world .
+
+ex:Merlin a yago:Operative ;
+    yago:fliesTo ex:bunker .
+
+ex:Chester_King a yago:Leader ;
+    yago:hasImplantationScar ex:Professor_Arnold ;
+    yago:poisons ex:Eggsy ;
+    yago:isCodenamed ex:Arthur .
+
+ex:Professor_Arnold a yago:ClimateChangeScientist ;
+    yago:hasImplantationScar ex:Chester_King .
+
+ex:Valentine a yago:Connection ;
+    yago:hasTo ex:religious_hate_group ;
+    yago:travelsTo ex:church_in_Kentucky .
+
+ex:Eggsy a yago:Friend ;
+    yago:becomesFriendWith ex:Roxy .
+
+ex:Harry_Hart a yago:FightingAbilities .
+
+ex:Valentine a yago:Connection ;
+    yago:isConnectedTo ex:religious_hate_group .
+
+ex:Eggsy a yago:Kills ;
+    yago:kills ex:Gazelle ;
+    yago:impales ex:Valentine .
+
+ex:Princess_Tilde a yago:CrownPrincess ;
+    yago:offers ex:sexual_encounter .
+
+ex:mid_credits_scene a yago:Scene .
+
+ex:Eggsy a yago:Galahad ;
+    yago:offers ex:home ;
+    yago:preparesToTakeOn ex:stepfather_and_gang .
+
+ex:Harry_Hart a yago:didOnce ;
+    yago:didOnce ex:stepfather_and_gang .
+
+6. Taken
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:GreenBeret_CIAOfficer ex:hasEvent [
+    rdf:type yago:Ex-Green_Beret_and_ex-CIA_officer;
+    yago:performsAction ex:build_relationship_with;
+    yago:hasParticipant ex:daughter_Kim;
+    yago:hasParticipant ex:Bryan_Mills;
+    yago:hasParticipant ex:Lenore;
+    yago:hasParticipant ex:Stuart;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:build_relationship_with;
+    yago:hasParticipant ex:daughter_Kim;
+] .
+
+ex:daughter_Kim ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:build_relationship_with;
+    yago:hasParticipant ex:Bryan_Mills;
+] .
+
+ex:daughter_Kim ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:live_with;
+    yago:hasParticipant ex:mother_Lenore;
+] .
+
+ex:daughter_Kim ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:live_with;
+    yago:hasParticipant ex:stepfather_Stuart;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:oversee_security_at;
+    yago:hasParticipant ex:concert;
+    yago:hasParticipant ex:pop_star_Sheerah;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:save;
+    yago:hasParticipant ex:pop_star_Sheerah;
+    yago:hasParticipant ex:knife-wielding_attacker;
+] .
+
+ex:pop_star_Sheerah ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:offer;
+    yago:hasParticipant ex:vocal_coach;
+    yago:hasParticipant ex:daughter_Kim;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:tell;
+    yago:hasParticipant ex:pop_star_Sheerah;
+    yago:hasParticipant ex:daughter_Kim;
+] .
+
+ex:daughter_Kim ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:ask_permission_to_travel_to;
+    yago:hasParticipant ex:Paris;
+    yago:hasParticipant ex:best_friend_Amanda;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:refuse;
+    yago:hasParticipant ex:daughter_Kim;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:give_in_to;
+    yago:hasParticipant ex:daughter_Kim;
+] .
+
+ex:airport ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:learn;
+    yago:hasParticipant ex:Bryan_Mills;
+    yago:hasParticipant ex:daughter_Kim;
+] .
+
+ex:daughter_Kim ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:lie;
+    yago:hasParticipant ex:girls;
+    yago:hasParticipant ex:plan_to_follow;
+    yago:hasParticipant ex:U2;
+    yago:hasParticipant ex:European_tour;
+] .
+
+ex:Charles_de_Gaulle_Airport ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:arrive_at;
+    yago:hasParticipant ex:daughter_Kim;
+    yago:hasParticipant ex:Amanda;
+] .
+
+ex:daughter_Kim ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:meet;
+    yago:hasParticipant ex:Peter;
+    yago:hasParticipant ex:handsome_young_stranger;
+] .
+
+ex:Amanda ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:meet;
+    yago:hasParticipant ex:Peter;
+    yago:hasParticipant ex:handsome_young_stranger;
+] .
+
+ex:Amanda ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:go_to;
+    yago:hasParticipant ex:cousins'_apartment;
+] .
+
+ex:cousins'_apartment ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:be_in;
+    yago:hasParticipant ex:Spain;
+] .
+
+ex:daughter_Kim ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:learn;
+    yago:hasParticipant ex:cousins;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:call;
+    yago:hasParticipant ex:daughter_Kim;
+] .
+
+ex:daughter_Kim ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:see;
+    yago:hasParticipant ex:men;
+    yago:hasParticipant ex:apartment;
+    yago:performsAction ex:abduct;
+    yago:hasParticipant ex:Amanda;
+] .
+
+ex:daughter_Kim ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:drag_out;
+    yago:hasParticipant ex:hiding;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:yell_description_of;
+    yago:hasParticipant ex:abductor;
+    yago:hasParticipant ex:daughter_Kim;
+    yago:performsAction ex:follow_instructions;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:hear;
+    yago:hasParticipant ex:someone_breathing;
+    yago:performsAction ex:tell;
+    yago:hasParticipant ex:listener;
+    yago:performsAction ex:not_pursue_kidnappers;
+    yago:hasParticipant ex:daughter_Kim;
+    yago:performsAction ex:warn;
+    yago:hasParticipant ex:refusing_to_accept_offer;
+    yago:performsAction ex:result_in_deaths;
+] .
+
+ex:listener ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:reply;
+    yago:hasParticipant "good_luck";
+    yago:performsAction ex:terminate_call;
+] .
+
+ex:Sam ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:deduce;
+    yago:hasParticipant ex:kidnappers;
+    yago:hasParticipant ex:Albanian_sex_trafficking_ring;
+    yago:performsAction ex:identify;
+    yago:hasParticipant ex:listener;
+    yago:performsAction ex:identify_as_mob_boss;
+    yago:hasParticipant ex:Marko_Hoxha;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:fly_to;
+    yago:hasParticipant ex:Paris;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:break_into;
+    yago:hasParticipant ex:apartment;
+    yago:performsAction ex:find;
+    yago:hasParticipant ex:Peter's_reflection;
+    yago:hasParticipant ex:Kim's_phone;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:find;
+    yago:hasParticipant ex:Peter;
+    yago:hasParticipant ex:airport;
+    yago:performsAction ex:chase;
+    yago:hasParticipant ex:stolen_taxi;
+] .
+
+ex:Peter ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:flee;
+    yago:hasParticipant ex:stolen_taxi;
+    yago:performsAction ex:get_struck_and_killed_by;
+    yago:hasParticipant ex:oncoming_truck;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:turn_to;
+    yago:hasParticipant ex:old_contact;
+    yago:performsAction ex:inform;
+    yago:hasParticipant ex:local_red-light_district;
+    yago:hasParticipant ex:Albanian_pimp;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:search;
+    yago:hasParticipant ex:makeshift_brothel;
+    yago:hasParticipant ex:construction_yard;
+    yago:performsAction ex:rescue;
+    yago:hasParticipant ex:drugged_young_woman;
+    yago:hasParticipant ex:Kim's_denim_jacket;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:engage_in_gunfight_with;
+    yago:hasParticipant ex:brothel's_operators;
+    yago:performsAction ex:high-speed_chase_with;
+    yago:hasParticipant ex:brothel's_operators;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:take;
+    yago:hasParticipant ex:drugged_young_woman;
+    yago:hasParticipant ex:hotel;
+    yago:performsAction ex:improvise_detoxification;
+] .
+
+ex:drugged_young_woman ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:tell;
+    yago:hasParticipant ex:Bryan_Mills;
+    yago:hasParticipant ex:house_where_she_and_Kim_were_kept;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:pose_as;
+    yago:hasParticipant ex:Jean-Claude;
+    yago:performsAction ex:enter;
+    yago:hasParticipant ex:house;
+    yago:hasParticipant ex:pretense_of_renegotiating_police_protection_rate;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:identify;
+    yago:hasParticipant ex:Marko;
+    yago:performsAction ex:trick;
+    yago:hasParticipant ex:Marko;
+    yago:performsAction ex:say;
+    yago:hasParticipant "good_luck";
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:erupt_into;
+    yago:hasParticipant ex:fight;
+    yago:performsAction ex:result_in_deaths_of;
+    yago:hasParticipant ex:several_gangsters;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:search;
+    yago:hasParticipant ex:house;
+    yago:performsAction ex:find;
+    yago:hasParticipant ex:several_heavily_drugged_girls;
+    yago:hasParticipant ex:Amanda;
+    yago:performsAction ex:died_of_overdose;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:torture;
+    yago:hasParticipant ex:Marko;
+    yago:performsAction ex:force_to_confess;
+    yago:hasParticipant ex:virgins_like_Kim;
+    yago:performsAction ex:quickly_sold_on_black_market;
+    yago:hasParticipant ex:Marko;
+    yago:performsAction ex:identify_buyer_as;
+    yago:hasParticipant ex:crime_syndicate_leader_Patrice_Saint-Clair;
+    yago:performsAction ex:leave_to_die_from;
+    yago:hasParticipant ex:continuous_electrocution;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:confront;
+    yago:hasParticipant ex:police_officer_Jean-Claude;
+    yago:performsAction ex:shoot;
+    yago:hasParticipant ex:police_officer_Jean-Claude's_wife;
+    yago:hasParticipant ex:wound;
+    yago:performsAction ex:coerce;
+    yago:hasParticipant ex:police_officer_Jean-Claude;
+    yago:performsAction ex:disclose;
+    yago:hasParticipant ex:Saint-Clair's_location;
+    yago:performsAction ex:knock_out;
+    yago:hasParticipant ex:police_officer_Jean-Claude;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:infiltrate;
+    yago:hasParticipant ex:secret_sex_slave_auction;
+    yago:hasParticipant ex:Saint-Clair's_mansion;
+    yago:performsAction ex:force_to_purchase;
+    yago:hasParticipant ex:Ali;
+    yago:performsAction ex:be_caught;
+    yago:hasParticipant ex:Bryan_Mills;
+    yago:performsAction ex:knock_out;
+    yago:hasParticipant ex:Bryan_Mills;
+] .
+
+ex:Ali ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:kill;
+    yago:hasParticipant ex:Bryan_Mills;
+    yago:performsAction ex:eliminate;
+    yago:hasParticipant ex:bodyguards;
+] .
+
+ex:Saint-Clair ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:learn;
+    yago:hasParticipant ex:who_Bryan_is;
+    yago:performsAction ex:order_to_kill;
+    yago:hasParticipant ex:Bryan_Mills;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:break_loose;
+    yago:hasParticipant ex:Bryan_Mills;
+    yago:performsAction ex:kill;
+    yago:hasParticipant ex:all;
+] .
+
+ex:Raman ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:hold;
+    yago:hasParticipant ex:Kim;
+    yago:performsAction ex:attempt_to_negotiate;
+    yago:hasParticipant ex:Raman;
+    yago:performsAction ex:kill;
+    yago:hasParticipant ex:Raman;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:rescue;
+    yago:hasParticipant ex:Kim;
+] .
+
+ex:Bryan_Mills ex:hasEvent [
+    rdf:type yago:Attempt;
+    yago:performsAction ex:surprise;
+    yago:hasParticipant ex:Kim;
+    yago:performsAction ex:take_to;
+    yago:hasParticipant ex:visit;
+    yago:hasParticipant ex:Sheerah;
+] .
+
+6. Bourna Idendity
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:JasonBourne rdf:type yago:FictionalCharacter ;
+    yago:hasName "Jason Bourne" .
+
+ex:ItalianFishermen rdf:type yago:Group100031264 ;
+    rdfs:label "Italian fishermen" .
+
+ex:MediterraneanSea rdf:type yago:BodyOfWater109225146 ;
+    rdfs:label "Mediterranean Sea" .
+
+ex:AmericanMan rdf:type yago:Person100007846 ;
+    rdfs:label "American man" .
+
+ex:IdentityLoss rdf:type yago:PsychologicalFeature100023100 ;
+    rdfs:label "identity loss" .
+
+ex:CombatSkills rdf:type yago:Skill100433241 ;
+    rdfs:label "combat skills" .
+
+ex:LanguageFluency rdf:type yago:Skill100433241 ;
+    rdfs:label "language fluency" .
+
+ex:LaserProjector rdf:type yago:Object100002684 ;
+    rdfs:label "laser projector" .
+
+ex:SafeDepositBox rdf:type yago:Object100002684 ;
+    rdfs:label "safe deposit box" .
+
+ex:Zurich rdf:type yago:City108524735 ;
+    rdfs:label "Zürich" .
+
+ex:Bank rdf:type yago:Organization108008335 ;
+    rdfs:label "bank" .
+
+ex:Currency rdf:type yago:Object100002684 ;
+    rdfs:label "currency" .
+
+ex:Passport rdf:type yago:Document104048607 ;
+    rdfs:label "passport" .
+
+ex:ID rdf:type yago:Document104048607 ;
+    rdfs:label "ID" .
+
+ex:Handgun rdf:type yago:Weapon104048580 ;
+    rdfs:label "handgun" .
+
+ex:CIA rdf:type yago:Organization108008335 ;
+    rdfs:label "CIA" .
+
+ex:OperationTreadstone rdf:type yago:Organization108008335 ;
+    rdfs:label "Operation Treadstone" .
+
+ex:Conklin rdf:type yago:Person100007846 ;
+    rdfs:label "Conklin" .
+
+ex:Police rdf:type yago:Organization108008335 ;
+    rdfs:label "police" .
+
+ex:Capture rdf:type yago:Action100037396 ;
+    rdfs:label "capture" .
+
+ex:AssassinationAttempt rdf:type yago:Event100029378 ;
+    rdfs:label "assassination attempt" .
+
+ex:AfricanDictator rdf:type yago:Person100007846 ;
+    rdfs:label "African dictator" .
+
+ex:Wombosi rdf:type yago:Person100007846 ;
+    rdfs:label "Wombosi" .
+
+ex:MarineGuards rdf:type yago:Organization108008335 ;
+    rdfs:label "Marine guards" .
+
+ex:GermanWoman rdf:type yago:Person100007846 ;
+    rdfs:label "German woman" .
+
+ex:Paris rdf:type yago:City108524735 ;
+    rdfs:label "Paris" .
+
+ex:AmericanConsulate rdf:type yago:Organization108008335 ;
+    rdfs:label "American consulate" .
+
+ex:Evasion rdf:type yago:Action100037396 ;
+    rdfs:label "evasion" .
+
+ex:Payment rdf:type yago:Action100037396 ;
+    rdfs:label "payment" .
+
+ex:Drive rdf:type yago:Action100037396 ;
+    rdfs:label "drive" .
+
+ex:Address rdf:type yago:Object100002684 ;
+    rdfs:label "address" .
+
+ex:WantedPosters rdf:type yago:Document104048607 ;
+    rdfs:label "wanted posters" .
+
+ex:ParisHotel rdf:type yago:Building102913152 ;
+    rdfs:label "Paris hotel" .
+
+ex:Obsession rdf:type yago:PsychologicalFeature100023100 ;
+    rdfs:label "obsession" .
+
+ex:Body rdf:type yago:Object100002684 ;
+    rdfs:label "body" .
+
+ex:Morgue rdf:type yago:Building102913152 ;
+    rdfs:label "morgue" .
+
+ex:Assailant rdf:type yago:Person100007846 ;
+    rdfs:label "assailant" .
+
+ex:Threat rdf:type yago:Event100029378 ;
+    rdfs:label "threat" .
+
+ex:Media rdf:type yago:Organization108008335 ;
+    rdfs:label "media" .
+
+ex:Assassination rdf:type yago:Event100029378 ;
+    rdfs:label "assassination" .
+
+ex:Refuge rdf:type yago:Object100002684 ;
+    rdfs:label "refuge" .
+
+ex:FrenchCountryside rdf:type yago:Region109240524 ;
+    rdfs:label "French countryside" .
+
+ex:Friend rdf:type yago:Person100007846 ;
+    rdfs:label "friend" .
+
+ex:Eamon rdf:type yago:Person100007846 ;
+    rdfs:label "Eamon" .
+
+ex:Children rdf:type yago:Group100031264 ;
+    rdfs:label "children" .
+
+ex:Pressure rdf:type yago:PsychologicalFeature100023100 ;
+    rdfs:label "pressure" .
+
+ex:Abbott rdf:type yago:Person100007846 ;
+    rdfs:label "Abbott" .
+
+ex:Location rdf:type yago:Object100002684 ;
+    rdfs:label "location" .
+
+ex:Professor rdf:type yago:Person100007846 ;
+    rdfs:label "Professor" .
+
+ex:Gunpoint rdf:type yago:Action100037396 ;
+    rdfs:label "gunpoint" .
+
+ex:Phone rdf:type yago:Device104073007 ;
+    rdfs:label "phone" .
+
+ex:Interrogation rdf:type yago:Action100037396 ;
+    rdfs:label "interrogation" .
+
+ex:Recollection rdf:type yago:PsychologicalFeature100023100 ;
+    rdfs:label "recollection" .
+
+ex:Attempt rdf:type yago:Event100029378 ;
+    rdfs:label "attempt" .
+
+ex:Flashback rdf:type yago:PsychologicalFeature100023100 ;
+    rdfs:label "flashback" .
+
+ex:AssassinationMission rdf:type yago:Event100029378 ;
+    rdfs:label "assassination mission" .
+
+ex:Yacht rdf:type yago:Vehicle104524313 ;
+    rdfs:label "yacht" .
+
+ex:Escape rdf:type yago:Action100037396 ;
+    rdfs:label "escape" .
+
+ex:Resignation rdf:type yago:Event100029378 ;
+    rdfs:label "resignation" .
+
+ex:SafeHouse rdf:type yago:Building102913152 ;
+    rdfs:label "safe house" .
+
+ex:Fight rdf:type yago:Action100037396 ;
+    rdfs:label "fight" .
+
+ex:ShutDown rdf:type yago:Action100037396 ;
+    rdfs:label "shut down" .
+
+ex:OversightCommittee rdf:type yago:Organization108008335 ;
+    rdfs:label "oversight committee" .
+
+ex:Decommission rdf:type yago:Action100037396 ;
+    rdfs:label "decommission" .
+
+ex:NewProject rdf:type yago:Event100029378 ;
+    rdfs:label "new project" .
+
+ex:Blackbriar rdf:type yago:Event100029378 ;
+    rdfs:label "Blackbriar" .
+
+ex:Reunion rdf:type yago:Event100029378 ;
+    rdfs:label "reunion" .
+
+ex:Tourists rdf:type yago:Group100031264 ;
+    rdfs:label "tourists" .
+
+ex:Mykonos rdf:type yago:City108524735 ;
+    rdfs:label "Mykonos" .
+
+ex:Marie rdf:type yago:Person100007846 ;
+    rdfs:label "Marie Kreutz" .
+
+ex:PlotDescription rdf:type yago:Text104408827 ;
+    rdfs:label "plot description" ;
+    rdf:value """In the Mediterranean Sea, Italian fishermen rescue an American man adrift with two gunshot wounds in his back. They tend to his wounds and find he has no memory of his identity, but demonstrates advanced combat skills and fluency in several languages. They find a tiny laser projector under his skin in his hip that gives the number of a safe deposit box in Zürich, and the man decides to go investigate. He goes to the bank to investigate the deposit box where he finds various currencies, passports and IDs with different names, and a handgun. The man takes everything but the gun, and starts using the name on the American passport, Jason Bourne. After Bourne's departure, a bank employee contacts Operation Treadstone, a CIA black ops program. Treadstone's head, Conklin, issues alerts to police to capture Bourne and assigns three agents to kill him: Castel, Manheim, and the Professor.
+
+CIA Deputy Director Abbott contacts Conklin about a failed assassination attempt against exiled African dictator Wombosi, and Conklin promises that he will deal with the agent who failed. Bourne tries evading the Swiss police by using his U.S. passport to enter the American consulate, but is pursued by Marine guards. He escapes before offering $20,000 to Marie Kreutz, a 26-year-old German woman whom he saw at the consulate, to drive him to an address in Paris. Upon reaching the address, they enter an apartment where Bourne contacts a hotel through the phone. He inquires about the names on his passports there, learning that a "John Michael Kane" was registered but died two weeks before in a car crash. Castel ambushes Bourne and Marie in the apartment, but Bourne gets the upper hand. Instead of allowing himself to be interrogated, Castel throws himself from a window to his death.
+
+While searching through Castel's belongings, Marie finds wanted posters of Bourne and herself, and agrees to help him. After the two evade police in Marie's car, they spend the night in a Paris hotel. Meanwhile, Wombosi obsesses over the attempt on his life. Conklin, having anticipated this, planted a body to pose as John Michael Kane in a morgue to appear as the assailant, but Wombosi remains unconvinced and threatens to report the CIA’s assassination attempts to the media. Conklin tracks their position to the Paris hotel and issues orders to kill both of them.
+
+Bourne and Marie escape to the French countryside, where they hide in a farmhouse. During the night, Bourne wakes up from a nightmare of a failed assassination mission. He tells Marie about his fragmented recollections, and they resolve to solve the mystery of his identity together. Bourne recalls his knowledge of the CIA and mentions the name "Wombosi" to Marie, who recognizes it as the African dictator. They deduce that Bourne was sent to assassinate Wombosi but failed, leading to his current predicament.
+
+Bourne contacts Conklin via phone, arranging a meeting at the American embassy. Conklin informs Abbott of the situation and prepares an assassination team. At the embassy, Bourne evades the team and confronts Conklin, who admits that Bourne is a malfunctioning asset scheduled for decommissioning. Conklin reveals that Bourne volunteered for Treadstone to escape prison and that he had been posing as an assassin. Bourne disarms Conklin and holds him at gunpoint, demanding to know about his past. Conklin confesses that Treadstone's oversight committee authorized the assassination of Wombosi, but Bourne failed. Marie confronts Conklin and shoots him dead.
+
+Bourne and Marie flee the embassy and go to a safe house. Bourne retrieves money, passports, and other supplies from the safe house, as well as the address of Treadstone's Paris office. As they prepare to leave, Bourne spots a surveillance team approaching and realizes their location has been compromised. He decides to abandon Marie for her safety and leaves her on a ferry, promising to meet her at a specific location in Mykonos.
+
+Bourne travels to Paris, where he locates Treadstone's office. He breaks in and discovers classified files that detail his own recruitment into the program. The files reveal his real name, David Webb, and a photograph of him with his father. As Bourne leaves the office, he is pursued by another Treadstone operative, Manheim. They engage in a fight, and Bourne incapacitates Manheim by shooting him. Bourne returns to the safe house and contacts Abbott, demanding answers about his past. Abbott reveals that Webb volunteered for Treadstone due to his exceptional skills and his father's connections to the agency.
+
+Bourne meets with Abbott in a park, where Abbott offers him a new project as an assassin. Bourne refuses and threatens to expose Treadstone to the media. Abbott warns him that he will always be pursued and that the CIA will bring him back into the fold eventually. Bourne walks away, and Abbott resigns himself to the fact that Bourne will be an ongoing threat to the agency.
+
+In the final scene, Bourne arrives on Mykonos and reunites with Marie, watching a group of children playing on the beach. They embrace, and Bourne discards his gun into the sea, symbolizing his desire to leave his past life behind and start anew with Marie.""" .
+
+ex:PlotDescription yago:describes ex:JasonBourne .
+
+ex:PlotDescription yago:describes ex:ItalianFishermen .
+
+ex:PlotDescription yago:describes ex:MediterraneanSea .
+
+ex:PlotDescription yago:describes ex:AmericanMan .
+
+ex:PlotDescription yago:describes ex:IdentityLoss .
+
+ex:PlotDescription yago:describes ex:CombatSkills .
+
+ex:PlotDescription yago:describes ex:LanguageFluency .
+
+ex:PlotDescription yago:describes ex:LaserProjector .
+
+ex:PlotDescription yago:describes ex:SafeDepositBox .
+
+ex:PlotDescription yago:describes ex:Zurich .
+
+ex:PlotDescription yago:describes ex:Bank .
+
+ex:PlotDescription yago:describes ex:BankEmployee .
+
+ex:PlotDescription yago:describes ex:OperationTreadstone .
+
+ex:PlotDescription yago:describes ex:CIA .
+
+ex:PlotDescription yago:describes ex:CIAAgent .
+
+ex:PlotDescription yago:describes ex:DeputyDirectorAbbott .
+
+ex:PlotDescription yago:describes ex:CIAProgram .
+
+ex:PlotDescription yago:describes ex:CIAHead .
+
+ex:PlotDescription yago:describes ex:Conklin .
+
+ex:PlotDescription yago:describes ex:Police .
+
+ex:PlotDescription yago:describes ex:ExiledDictator .
+
+ex:PlotDescription yago:describes ex:AssassinationAttempt .
+
+ex:PlotDescription yago:describes ex:GermanWoman .
+
+ex:PlotDescription yago:describes ex:AmericanConsulate .
+
+ex:PlotDescription yago:describes ex:MarineGuards .
+
+ex:PlotDescription yago:describes ex:Paris .
+
+ex:PlotDescription yago:describes ex:Apartment .
+
+ex:PlotDescription yago:describes ex:Hotel .
+
+ex:PlotDescription yago:describes ex:ParisPolice .
+
+ex:PlotDescription yago:describes ex:FrenchCountryside .
+
+ex:PlotDescription yago:describes ex:Farmhouse .
+
+ex:PlotDescription yago:describes ex:Nightmare .
+
+ex:PlotDescription yago:describes ex:Recollections .
+
+ex:PlotDescription yago:describes ex:Mystery .
+
+ex:PlotDescription yago:describes ex:Identity .
+
+ex:PlotDescription yago:describes ex:Knowledge .
+
+ex:PlotDescription yago:describes ex:Wombosi .
+
+ex:PlotDescription yago:describes ex:AfricanDictator .
+
+ex:PlotDescription yago:describes ex:PhoneCall .
+
+ex:PlotDescription yago:describes ex:AmericanEmbassy .
+
+ex:PlotDescription yago:describes ex:AssassinationTeam .
+
+ex:PlotDescription yago:describes ex:Confrontation .
+
+ex:PlotDescription yago:describes ex:Confession .
+
+ex:PlotDescription yago:describes ex:SafeHouse .
+
+ex:PlotDescription yago:describes ex:Money .
+
+ex:PlotDescription yago:describes ex:Supplies .
+
+ex:PlotDescription yago:describes ex:TreadstoneOffice .
+
+ex:PlotDescription yago:describes ex:Files .
+
+ex:PlotDescription yago:describes ex:Webb .
+
+ex:PlotDescription yago:describes ex:Photograph .
+
+ex:PlotDescription yago:describes ex:Manheim .
+
+ex:PlotDescription yago:describes ex:Pursuit .
+
+ex:PlotDescription yago:describes ex:Abbott .
+
+ex:PlotDescription yago:describes ex:Park .
+
+ex:PlotDescription yago:describes ex:NewProject .
+
+ex:PlotDescription yago:describes ex:Threat .
+
+ex:PlotDescription yago:describes ex:Media .
+
+ex:PlotDescription yago:describes ex:Expose .
+
+ex:PlotDescription yago:describes ex:Beach .
+
+ex:PlotDescription yago:describes ex:Gun .
+
+ex:PlotDescription yago:describes ex:Desire .
+
+ex:PlotDescription yago:describes ex:MarieKreutz .
+
+ex:JasonBourne rdf:type yago:Person100007846 ;
+    rdfs:label "Jason Bourne" .
+
+ex:ItalianFishermen rdf:type yago:Group100031264 ;
+    rdfs:label "Italian fishermen" .
+
+ex:MediterraneanSea rdf:type yago:BodyOfWater109225146 ;
+    rdfs:label "Mediterranean Sea" .
+
+ex:AmericanMan rdf:type yago:Person100007846 ;
+    rdfs:label "American man" .
+
+ex:IdentityLoss rdf:type yago:Event100029378 ;
+    rdfs:label "identity loss" .
+
+ex:CombatSkills rdf:type yago:Skill100641051 ;
+    rdfs:label "combat skills" .
+
+ex:LanguageFluency rdf:type yago:Skill100641051 ;
+    rdfs:label "language fluency" .
+
+ex:LaserProjector rdf:type yago:Device103183080 ;
+    rdfs:label "laser projector" .
+
+ex:SafeDepositBox rdf:type yago:Object100002684 ;
+    rdfs:label "safe deposit box" .
+
+ex:Zurich rdf:type yago:City108524735 ;
+    rdfs:label "Zürich" .
+
+ex:Bank rdf:type yago:Building102913152 ;
+    rdfs:label "bank" .
+
+ex:BankEmployee rdf:type yago:Person100007846 ;
+    rdfs:label "bank employee" .
+
+ex:OperationTreadstone rdf:type yago:Organization108008335 ;
+    rdfs:label "Operation Treadstone" .
+
+ex:CIA rdf:type yago:Organization108008335 ;
+    rdfs:label "CIA" .
+
+ex:CIAAgent rdf:type yago:Person100007846 ;
+    rdfs:label "CIA agent" .
+
+ex:DeputyDirectorAbbott rdf:type yago:Person100007846 ;
+    rdfs:label "Deputy Director Abbott" .
+
+ex:CIAProgram rdf:type yago:Program106748466 ;
+    rdfs:label "CIA program" .
+
+ex:CIAHead rdf:type yago:Person100007846 ;
+    rdfs:label "CIA head" .
+
+ex:Conklin rdf:type yago:Person100007846 ;
+    rdfs:label "Conklin" .
+
+ex:Police rdf:type yago:Group100031264 ;
+    rdfs:label "police" .
+
+ex:ExiledDictator rdf:type yago:Person100007846 ;
+    rdfs:label "exiled dictator" .
+
+ex:AssassinationAttempt rdf:type yago:Event100029378 ;
+    rdfs:label "assassination attempt" .
+
+ex:GermanWoman rdf:type yago:Person100007846 ;
+    rdfs:label "German woman" .
+
+ex:AmericanConsulate rdf:type yago:Building102913152 ;
+    rdfs:label "American consulate" .
+
+ex:MarineGuards rdf:type yago:Group100031264 ;
+    rdfs:label "marine guards" .
+
+ex:Paris rdf:type yago:City108524735 ;
+    rdfs:label "Paris" .
+
+ex:Apartment rdf:type yago:Building102913152 ;
+    rdfs:label "apartment" .
+
+ex:Hotel rdf:type yago:Building102913152 ;
+    rdfs:label "hotel" .
+
+ex:ParisPolice rdf:type yago:Group100031264 ;
+    rdfs:label "Paris police" .
+
+ex:FrenchCountryside rdf:type yago:Region109206985 ;
+    rdfs:label "French countryside" .
+
+ex:Farmhouse rdf:type yago:Building102913152 ;
+    rdfs:label "farmhouse" .
+
+ex:Nightmare rdf:type yago:PsychologicalFeature100023100 ;
+    rdfs:label "nightmare" .
+
+ex:Recollections rdf:type yago:Cognition100023271 ;
+    rdfs:label "recollections" .
+
+ex:Mystery rdf:type yago:Attribute100024264 ;
+    rdfs:label "mystery" .
+
+ex:Identity rdf:type yago:Attribute100024264 ;
+    rdfs:label "identity" .
+
+ex:Knowledge rdf:type yago:Cognition100023271 ;
+    rdfs:label "knowledge" .
+
+ex:Wombosi rdf:type yago:Person100007846 ;
+    rdfs:label "Wombosi" .
+
+ex:AfricanDictator rdf:type yago:Person100007846 ;
+    rdfs:label "African dictator" .
+
+ex:PhoneCall rdf:type yago:Event100029378 ;
+    rdfs:label "phone call" .
+
+ex:AmericanEmbassy rdf:type yago:Building102913152 ;
+    rdfs:label "American embassy" .
+
+ex:AssassinationTeam rdf:type yago:Group100031264 ;
+    rdfs:label "assassination team" .
+
+ex:Confrontation rdf:type yago:Event100029378 ;
+    rdfs:label "confrontation" .
+
+ex:Confession rdf:type yago:Event100029378 ;
+    rdfs:label "confession" .
+
+ex:SafeHouse rdf:type yago:Building102913152 ;
+    rdfs:label "safe house" .
+
+ex:Money rdf:type yago:Object100002684 ;
+    rdfs:label "money" .
+
+ex:Supplies rdf:type yago:Object100002684 ;
+    rdfs:label "supplies" .
+
+ex:TreadstoneOffice rdf:type yago:Building102913152 ;
+    rdfs:label "Treadstone office" .
+
+ex:Files rdf:type yago:Object100002684 ;
+    rdfs:label "files" .
+
+ex:Webb rdf:type yago:Person100007846 ;
+    rdfs:label "Webb" .
+
+ex:Photograph rdf:type yago:Object100002684 ;
+    rdfs:label "photograph" .
+
+ex:Manheim rdf:type yago:Person100007846 ;
+    rdfs:label "Manheim" .
+
+ex:Pursuit rdf:type yago:Event100029378 ;
+    rdfs:label "pursuit" .
+
+ex:Abbott rdf:type yago:Person100007846 ;
+    rdfs:label "Abbott" .
+
+ex:Park rdf:type yago:Park108615149 ;
+    rdfs:label "park" .
+
+ex:NewProject rdf:type yago:Project106747682 ;
+    rdfs:label "new project" .
+
+ex:Threat rdf:type yago:Event100029378 ;
+    rdfs:label "threat" .
+
+ex:Media rdf:type yago:Organization108008335 ;
+    rdfs:label "media" .
+
+ex:Expose rdf:type yago:Event100029378 ;
+    rdfs:label "expose" .
+
+ex:Beach rdf:type yago:Land109334396 ;
+    rdfs:label "beach" .
+
+ex:Gun rdf:type yago:Weapon104833824 ;
+    rdfs:label "gun" .
+
+ex:Desire rdf:type yago:Attribute100024264 ;
+    rdfs:label "desire" .
+
+ex:MarieKreutz rdf:type yago:Person100007846 ;
+    rdfs:label "Marie Kreutz" .
+
+7. The Mask
+
+PREFIX ex: http://example.org/
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema#
+PREFIX yago: http://yago-knowledge.org/resource/
+
+ex:EdgeCity rdf:type yago:City;
+rdfs:label "Edge City".
+
+ex:StanleyIpkiss rdf:type ex:BankClerk;
+rdfs:label "Stanley Ipkiss";
+ex:hasFriend ex:CharlieSchumaker;
+ex:hasEmotion ex:Insecurity.
+
+ex:BankClerk rdf:type yago:Occupation;
+rdfs:label "Bank Clerk".
+
+ex:CharlieSchumaker rdf:type ex:Coworker;
+rdfs:label "Charlie Schumaker".
+
+ex:DorianTyrell rdf:type ex:Gangster;
+rdfs:label "Dorian Tyrell";
+ex:runs ex:CocoBongo;
+ex:plots ex:Overthrow.
+
+ex:CocoBongo rdf:type ex:Nightclub;
+rdfs:label "Coco Bongo".
+
+ex:Niko rdf:type ex:Superior;
+rdfs:label "Niko".
+
+ex:TinaCarlyle rdf:type ex:Singer;
+rdfs:label "Tina Carlyle";
+ex:isInRelationshipWith ex:StanleyIpkiss.
+
+ex:Layout rdf:type ex:Record;
+rdfs:label "Layout".
+
+ex:Robbery rdf:type ex:Crime;
+rdfs:label "Robbery".
+
+ex:Attraction rdf:type ex:Emotion;
+rdfs:label "Attraction".
+
+ex:Car rdf:type ex:Vehicle;
+rdfs:label "Car".
+
+ex:Bridge rdf:type ex:Structure;
+rdfs:label "Bridge".
+
+ex:Rescue rdf:type ex:Action;
+rdfs:label "Rescue".
+
+ex:Garbage rdf:type ex:Material;
+rdfs:label "Garbage".
+
+ex:Mask rdf:type ex:Object;
+rdfs:label "Mask";
+ex:hasPower ex:Transformation.
+
+ex:Trickster rdf:type ex:Personality;
+rdfs:label "Trickster".
+
+ex:Rampage rdf:type ex:Action;
+rdfs:label "Rampage".
+
+ex:Humiliation rdf:type ex:Action;
+rdfs:label "Humiliation".
+
+ex:Mechanic rdf:type ex:Person;
+rdfs:label "Mechanic".
+
+ex:TemperamentalLandlady rdf:type ex:Person;
+rdfs:label "Temperamental Landlady".
+
+ex:DetectiveLieutenant rdf:type ex:Detective;
+rdfs:label "Detective Lieutenant".
+
+ex:MitchKellaway rdf:type ex:Person;
+rdfs:label "Mitch Kellaway".
+
+ex:NewspaperReporter rdf:type ex:Person;
+rdfs:label "Newspaper Reporter".
+
+ex:PeggyBrandt rdf:type ex:Person;
+rdfs:label "Peggy Brandt".
+
+ex:Funds rdf:type ex:Money;
+rdfs:label "Funds".
+
+ex:BankRobbery rdf:type ex:Action;
+rdfs:label "Bank Robbery".
+
+ex:CocoBongoPerformance rdf:type ex:Performance;
+rdfs:label "Coco Bongo Performance".
+
+ex:Confrontation rdf:type ex:Action;
+rdfs:label "Confrontation".
+
+ex:Suit rdf:type ex:Clothing;
+rdfs:label "Suit".
+
+ex:Pajamas rdf:type ex:Clothing;
+rdfs:label "Pajamas".
+
+ex:Arrest rdf:type ex:Action;
+rdfs:label "Arrest".
+
+ex:Psychiatrist rdf:type ex:Person;
+rdfs:label "Psychiatrist".
+
+ex:Loki rdf:type ex:MythologicalFigure;
+rdfs:label "Loki".
+
+ex:Desires rdf:type ex:Emotion;
+rdfs:label "Desires".
+
+ex:Consultation rdf:type ex:Action;
+rdfs:label "Consultation".
+
+ex:MetaphoricalBook rdf:type ex:Book;
+rdfs:label "Metaphorical Book".
+
+ex:Meeting rdf:type ex:Action;
+rdfs:label "Meeting".
+
+ex:Park rdf:type ex:Location;
+rdfs:label "Park".
+
+ex:Interruption rdf:type ex:Action;
+rdfs:label "Interruption".
+
+ex:Betrayal rdf:type ex:Action;
+rdfs:label "Betrayal".
+
+ex:Bounty rdf:type ex:Money;
+rdfs:label "Bounty".
+
+ex:Transformation rdf:type ex:Action;
+rdfs:label "Transformation".
+
+ex:Demon rdf:type ex:Creature;
+rdfs:label "Demon".
+
+ex:Forces rdf:type ex:Action;
+rdfs:label "Forces".
+
+ex:Location rdf:type ex:Place;
+rdfs:label "Location".
+
+ex:Money rdf:type ex:Currency;
+rdfs:label "Money".
+
+ex:Kindness rdf:type ex:Emotion;
+rdfs:label "Kindness".
+
+ex:Kidnapping rdf:type ex:Crime;
+rdfs:label "Kidnapping".
+
+ex:Ball rdf:type ex:Event;
+rdfs:label "Ball".
+
+ex:Mayor rdf:type ex:Person;
+rdfs:label "Mayor".
+
+ex:Arrival rdf:type ex:Action;
+rdfs:label "Arrival".
+
+ex:Murder rdf:type ex:Crime;
+rdfs:label "Murder".
+
+ex:TimeBomb rdf:type ex:Explosive;
+rdfs:label "Time Bomb".
+
+ex:Escape rdf:type ex:Action;
+rdfs:label "Escape".
+
+ex:Keys rdf:type ex:Object;
+rdfs:label "Keys".
+
+ex:Hostage rdf:type ex:Person;
+rdfs:label "Hostage".
+
+ex:Help rdf:type ex:Action;
+rdfs:label "Help".
+
+ex:Battle rdf:type ex:Action;
+rdfs:label "Battle".
+
+ex:Flushing rdf:type ex:Action;
+rdfs:label "Flushing".
+
+ex:Fountain rdf:type ex:Object;
+rdfs:label "Fountain".
+
+ex:Police rdf:type ex:Organization;
+rdfs:label "Police".
+
+ex:Implication rdf:type ex:Action;
+rdfs:label "Implication".
+
+ex:Exoneration rdf:type ex:Action;
+rdfs:label "Exoneration".
+
+ex:HarborBridge rdf:type ex:Bridge;
+rdfs:label "Harbor Bridge".
+
+ex:Kiss rdf:type ex:Action;
+rdfs:label "Kiss".
+
+ex:Retrieval rdf:type ex:Action;
+rdfs:label "Retrieval".
+
+ex:Swim rdf:type ex:Action;
+rdfs:label "Swim".
+
+8. Mission Impossible
+
+@prefix ex: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:SyndicateRemnantsReorganizeAsApostles rdf:type ex:Event .
+ex:ApostlesAdoptTerrorForHirePolicy rdf:type ex:Event .
+ex:ApostlesHiredByJohnLark rdf:type ex:Event .
+ex:AttemptToAcquireStolenPlutoniumCores rdf:type ex:Event .
+ex:EthanHuntAssignedToRecoverPlutonium rdf:type ex:Event .
+ex:LutherStickellTakenHostage rdf:type ex:Event .
+ex:EthanChoosesToSaveStickell rdf:type ex:Event .
+ex:ApostlesStealPlutoniumCores rdf:type ex:Event .
+ex:CaptureOfNilsDelbruuk rdf:type ex:Event .
+ex:FakeBroadcastPosingAsCNNsWolfBlitzer rdf:type ex:Event .
+ex:TrickDelbruukToUnlockCommunicationPhone rdf:type ex:Event .
+ex:CIAInstructsAugustWalkerToAccompanyEthan rdf:type ex:Event .
+ex:InfiltrationOfParisNightclub rdf:type ex:Event .
+ex:FightInMensRestroom rdf:type ex:Event .
+ex:MI6AgentIlsaFaustKillsSuspectedLark rdf:type ex:Event .
+ex:EthanAssumesIdentityOfLark rdf:type ex:Event .
+ex:AttackDuringMeetingWithMitsopolis rdf:type ex:Event .
+ex:ExtractionOfLaneFromArmoredConvoy rdf:type ex:Event .
+ex:DeliveryOfLaneToLondon rdf:type ex:Event .
+ex:HunleyOrdersEthanToStopMission rdf:type
+
+9. The dark knight
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:DistrictAttorneyDeath rdf:type ex:Event ;
+    ex:hasDescription "Death of District Attorney Harvey Dent" .
+
+ex:BaneLeadsAttack rdf:type ex:Event ;
+    ex:hasDescription "Bane leads an attack on a CIA plane over Uzbekistan" .
+
+ex:AbductsScientist rdf:type ex:Event ;
+    ex:hasDescription "Abducts nuclear physicist Dr. Leonid Pavel" .
+
+ex:FakeDeath rdf:type ex:Event ;
+    ex:hasDescription "Fakes Dr. Pavel's death in the plane crash" .
+
+ex:OrganizedCrimeEradicated rdf:type ex:Event ;
+    ex:hasDescription "Organized crime eradicated in Gotham City" .
+
+ex:DentActIntroduced rdf:type ex:Event ;
+    ex:hasDescription "Introduction of the Dent Act legislation" .
+
+ex:ExpandedPowersGiven rdf:type ex:Event ;
+    ex:hasDescription "Expanded powers given to the police" .
+
+ex:KeptSecret rdf:type ex:Event ;
+    ex:hasDescription "James Gordon keeps Dent's killing spree as 'Two-Face' a secret" .
+
+ex:BlameOnBatman rdf:type ex:Event ;
+    ex:hasDescription "Blames Batman for Dent's crimes" .
+
+ex:BruceBecomesRecluse rdf:type ex:Event ;
+    ex:hasDescription "Bruce Wayne becomes a recluse" .
+
+ex:StagnationOfWayneEnterprises rdf:type ex:Event ;
+    ex:hasDescription "Stagnation of Wayne Enterprises" .
+
+ex:EnlistsBusinessman rdf:type ex:Event ;
+    ex:hasDescription "Bane enlists businessman John Daggett" .
+
+ex:StealsPrints rdf:type ex:Event ;
+    ex:hasDescription "Selina Kyle steals Bruce's fingerprints" .
+
+ex:DoubleCross rdf:type ex:Event ;
+    ex:hasDescription "John Daggett double-crosses Selina Kyle" .
+
+ex:PolicePursueHenchmen rdf:type ex:Event ;
+    ex:hasDescription "Police pursue Bane and Daggett's henchmen" .
+
+ex:CaptureGordon rdf:type ex:Event ;
+    ex:hasDescription "Henchmen capture James Gordon" .
+
+ex:EscapeOfGordon rdf:type ex:Event ;
+    ex:hasDescription "James Gordon escapes" .
+
+ex:FoundByJohnBlake rdf:type ex:Event ;
+    ex:hasDescription "James Gordon is found by officer John Blake" .
+
+ex:DeduceSecretIdentity rdf:type ex:Event ;
+    ex:hasDescription "John Blake deduces Bruce's secret identity" .
+
+ex:ResumeVigilantism rdf:type ex:Event ;
+    ex:hasDescription "Bruce Wayne resumes his vigilantism" .
+
+ex:GothamStockExchangeAttack rdf:type ex:Event ;
+    ex:hasDescription "Bane attacks the Gotham Stock Exchange" .
+
+ex:SuccessfulResurfacing rdf:type ex:Event ;
+    ex:hasDescription "Batman resurfaces during the attack" .
+
+ex:FraudulentTransactions rdf:type ex:Event ;
+    ex:hasDescription "Bane uses Bruce's fingerprints for fraudulent transactions" .
+
+ex:Bankruptcy rdf:type ex:Event ;
+    ex:hasDescription "Bruce Wayne becomes bankrupt" .
+
+ex:AlfredResigns rdf:type ex:Event ;
+    ex:hasDescription "Alfred Pennyworth resigns" .
+
+ex:LoveAffair
+
+
+10. The equilizer 2
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:RobertMcCall rdf:type yago:Character ;
+    rdf:type ex:Person ;
+    rdf:type ex:Driver ;
+    rdfs:label "Robert McCall" .
+
+ex:Boston rdf:type yago:City ;
+    rdfs:label "Boston" .
+
+ex:Lyft rdf:type yago:Company ;
+    rdfs:label "Lyft" .
+
+ex:assists rdf:type rdf:Property ;
+    rdfs:label "assists" ;
+    rdfs:domain ex:RobertMcCall ;
+    rdfs:range ex:Person .
+
+ex:SusanPlummer rdf:type yago:Character ;
+    rdf:type ex:Person ;
+    rdfs:label "Susan Plummer" .
+
+ex:DIA rdf:type yago:Organization ;
+    rdfs:label "Defense Intelligence Agency" .
+
+ex:closeFriend rdf:type rdf:Property ;
+    rdfs:label "closeFriend" ;
+    rdfs:domain ex:RobertMcCall ;
+    rdfs:range ex:Person .
+
+ex:Istanbul rdf:type yago:City ;
+    rdfs:label "Istanbul" .
+
+ex:GraceBraelick rdf:type yago:Character ;
+    rdf:type ex:Person ;
+    rdfs:label "Grace Braelick" .
+
+ex:kidnappedBy rdf:type rdf:Property ;
+    rdfs:label "kidnappedBy" ;
+    rdfs:domain ex:GraceBraelick ;
+    rdfs:range ex:Person .
+
+ex:TurkishFather rdf:type rdf:Property ;
+    rdfs:label "TurkishFather" ;
+    rdfs:domain ex:GraceBraelick ;
+    rdfs:range ex:Person .
+
+ex:SamRubinstein rdf:type yago:Character ;
+    rdf:type ex:Person ;
+    rdfs:label "Sam Rubinstein" .
+
+ex:HolocaustSurvivor rdf:type rdf:Property ;
+    rdfs:label "HolocaustSurvivor" ;
+    rdfs:domain ex:SamRubinstein ;
+    rdfs:range ex:Person .
+
+ex:painting rdf:type rdf:Property ;
+    rdfs:label "painting" ;
+    rdfs:domain ex:SamRubinstein ;
+    rdfs:range ex:Person .
+
+ex:Robert rdf:type rdf:Property ;
+    rdfs:label "Robert" ;
+    rdfs:domain ex:RobertMcCall ;
+    rdfs:range ex:Person .
+
+ex:menAssaulted rdf:type rdf:Property ;
+    rdfs:label "menAssaulted" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Person .
+
+ex:apartmentCourtyard rdf:type rdf:Property ;
+    rdfs:label "apartmentCourtyard" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Location .
+
+ex:MilesWhittaker rdf:type yago:Character ;
+    rdf:type ex:Person ;
+    rdfs:label "Miles Whittaker" .
+
+ex:teenResident rdf:type rdf:Property ;
+    rdfs:label "teenResident" ;
+    rdfs:domain ex:MilesWhittaker ;
+    rdfs:range ex:Person .
+
+ex:artisticTalent rdf:type rdf:Property ;
+    rdfs:label "artisticTalent" ;
+    rdfs:domain ex:MilesWhittaker ;
+    rdfs:range ex:Person .
+
+ex:DaveYork rdf:type yago:Character ;
+    rdf:type ex:Person ;
+    rdfs:label "Dave York" .
+
+ex:formerPartner rdf:type rdf:Property ;
+    rdfs:label "formerPartner" ;
+    rdfs:domain ex:DaveYork ;
+    rdfs:range ex:Person .
+
+ex:investigate rdf:type rdf:Property ;
+    rdfs:label "investigate" ;
+    rdfs:domain ex:DaveYork ;
+    rdfs:range ex:Person .
+
+ex:murder-suicide rdf:type rdf:Property ;
+    rdfs:label "murder-suicide" ;
+    rdfs:domain ex:DaveYork ;
+    rdfs:range ex:Person .
+
+ex:agencyAffiliate rdf:type rdf:Property ;
+    rdfs:label "agencyAffiliate" ;
+    rdfs:domain ex:DaveYork ;
+    rdfs:range ex:Person .
+
+ex:Brussels rdf:type yago:City ;
+    rdfs:label "Brussels" .
+
+ex:YorkHouse rdf:type rdf:Property ;
+    rdfs:label "YorkHouse" ;
+    rdfs:domain ex:DaveYork ;
+    rdfs:range ex:Location .
+
+ex:attacked rdf:type rdf:Property ;
+    rdfs:label "attacked" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Person .
+
+ex:mobilePhone rdf:type rdf:Property ;
+    rdfs:label "mobilePhone" ;
+    rdfs:domain ex:attacked ;
+    rdfs:range ex:Device .
+
+ex:confronts rdf:type rdf:Property ;
+    rdfs:label "confronts" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Person .
+
+ex:formerSquad rdf:type rdf:Property ;
+    rdfs:label "formerSquad" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Person .
+
+ex:teammates rdf:type rdf:Property ;
+    rdfs:label "teammates" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Person .
+
+ex:promises rdf:type rdf:Property ;
+    rdfs:label "promises" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Person .
+
+ex:escapes rdf:type rdf:Property ;
+    rdfs:label "escapes" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Person .
+
+ex:captured rdf:type rdf:Property ;
+    rdfs:label "captured" ;
+    rdfs:domain ex:MilesWhittaker ;
+    rdfs:range ex:Person .
+
+ex:emerges rdf:type rdf:Property ;
+    rdfs:label "emerges" ;
+    rdfs:domain ex:MilesWhittaker ;
+    rdfs:range ex:Person .
+
+ex:searching rdf:type rdf:Property ;
+    rdfs:label "searching" ;
+    rdfs:domain ex:teammates ;
+    rdfs:range ex:Person .
+
+ex:gale-forceWinds rdf:type rdf:Property ;
+    rdfs:label "gale-forceWinds" ;
+    rdfs:domain ex:searching ;
+    rdfs:range ex:Phenomenon .
+
+ex:situated rdf:type rdf:Property ;
+    rdfs:label "situated" ;
+    rdfs:domain ex:York ;
+    rdfs:range ex:Person .
+
+ex:seasideHometown rdf:type rdf:Property ;
+    rdfs:label "seasideHometown" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Location .
+
+ex:hurricane rdf:type rdf:Property ;
+    rdfs:label "hurricane" ;
+    rdfs:domain ex:seasideHometown ;
+    rdfs:range ex:Phenomenon .
+
+ex:stormWinds rdf:type rdf:Property ;
+    rdfs:label "stormWinds" ;
+    rdfs:domain ex:hurricane ;
+    rdfs:range ex:Phenomenon .
+
+ex:secretPassage rdf:type rdf:Property ;
+    rdfs:label "secretPassage" ;
+    rdfs:domain ex:MilesWhittaker ;
+    rdfs:range ex:Location .
+
+ex:webcams rdf:type rdf:Property ;
+    rdfs:label "webcams" ;
+    rdfs:domain ex:apartment ;
+    rdfs:range ex:Device .
+
+ex:carTires rdf:type rdf:Property ;
+    rdfs:label "carTires" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Device .
+
+ex:trunk rdf:type rdf:Property ;
+    rdfs:label "trunk" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Location .
+
+ex:foils rdf:type rdf:Property ;
+    rdfs:label "foils" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Person .
+
+ex:Boston rdf:type yago:City ;
+    rdfs:label "Boston" .
+
+ex:SamInformation rdf:type rdf:Property ;
+    rdfs:label "SamInformation" ;
+    rdfs:domain ex:Susan ;
+    rdfs:range ex:Person .
+
+ex:reunite rdf:type rdf:Property ;
+    rdfs:label "reunite" ;
+    rdfs:domain ex:SamInformation ;
+    rdfs:range ex:Person .
+
+ex:MilesFinish rdf:type rdf:Property ;
+    rdfs:label "MilesFinish" ;
+    rdfs:domain ex:MilesWhittaker ;
+    rdfs:range ex:Person .
+
+ex:art rdf:type rdf:Property ;
+    rdfs:label "art" ;
+    rdfs:domain ex:MilesFinish ;
+    rdfs:range ex:Person .
+
+ex:calmSea rdf:type rdf:Property ;
+    rdfs:label "calmSea" ;
+    rdfs:domain ex:Robert ;
+    rdfs:range ex:Location .
+
+
+11. The Gunman
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+ex:JimTerrier a yago:Character ;
+    ex:isPartOf ex:American ;
+    ex:isFormerMemberOf ex:SpecialForces ;
+    ex:isOccupation ex:Mercenary ;
+    ex:hasAssociationWith ex:Annie .
+
+ex:DemocraticRepublicOfCongo a yago:Location ;
+    rdfs:label "Democratic Republic of Congo" .
+
+ex:MiningCompany a yago:Organization ;
+    rdfs:label "mining company" .
+
+ex:MercenaryTeam a yago:Organization ;
+    rdfs:label "mercenary team" .
+
+ex:Assassination a yago:Action ;
+    rdfs:label "assassination" .
+
+ex:SniperShot a yago:Action ;
+    rdfs:label "sniper shot" .
+
+ex:Fleeing a yago:Action ;
+    rdfs:label "fleeing" .
+
+ex:Retirement a yago:Event ;
+    rdfs:label "retirement" .
+
+ex:CharityWork a yago:Action ;
+    rdfs:label "charity work" .
+
+ex:Assault a yago:Action ;
+    rdfs:label "assault" .
+
+ex:Investigation a yago:Event ;
+    rdfs:label "investigation" .
+
+ex:Kidnapping a yago:Action ;
+    rdfs:label "kidnapping" .
+
+ex:Deal a yago:Event ;
+    rdfs:label "deal" .
+
+ex:Confrontation a yago:Action ;
+    rdfs:label "confrontation" .
+
+ex:Escape a yago:Action ;
+    rdfs:label "escape" .
+
+ex:Reunion a yago:Action ;
+    rdfs:label "reunion" .
+
+ex:ActionFilm a yago:FilmGenre ;
+    rdfs:label "action" .
+
+ex:ThrillerFilm a yago:FilmGenre ;
+    rdfs:label "thriller" .
+
+ex:DramaFilm a yago:FilmGenre ;
+    rdfs:label "drama" .
+
+ex:Genre a rdf:Property ;
+    rdfs:label "genre" .
+
+ex:description a rdf:Property ;
+    rdfs:label "description" ;
+    rdfs:range ex:Film .
+
+ex:Film a rdf:Class ;
+    rdfs:label "film" .
+    
+ex:Film1 a ex:Film ;
+ex:genre ex:ActionFilm, ex:ThrillerFilm, ex:DramaFilm .
+
+12. The man from no where
+
+ex:ChaTaeSik rdf:type yago:Person .
+ex:ChaTaeSik ex:runs ex:Pawnshop .
+ex:ChaTaeSik ex:hasFriend ex:SoMi .
+ex:SoMi rdf:type yago:Person .
+ex:SoMi ex:livesIn ex:Neighborhood .
+ex:SoMi ex:isKidnappedBy ex:JongSeok .
+ex:HyoJeong rdf:type yago:Person .
+ex:HyoJeong ex:isGoGoDancer .
+ex:HyoJeong ex:isOpiumAddict .
+ex:HyoJeong ex:steals ex:Opium .
+ex:HyoJeong ex:hides ex:CameraBag .
+ex:HyoJeong ex:pawns ex:CameraBag .
+ex:TaeSik ex:safelyKeeps ex:CameraBag .
+ex:HyoJeong ex:attractsAttentionOf ex:OhMyungGyu .
+ex:OhMyungGyu rdf:type yago:Person .
+ex:OhMyungGyu ex:tasks ex:ManSeok .
+ex:OhMyungGyu ex:tasks ex:JongSeok .
+ex:ManSeok rdf:type yago:Person .
+ex:JongSeok rdf:type yago:Person .
+ex:JongSeok ex:locates ex:HyoJeong .
+ex:JongSeok ex:tortures ex:HyoJeong .
+ex:JongSeok ex:forces ex:HyoJeong .
+ex:JongSeok ex:kidnaps ex:SoMi .
+ex:TaeSik ex:hasSoftSpotFor ex:SoMi .
+ex:JongSeok ex:forces ex:TaeSik .
+ex:TaeSik ex:delivers ex:Opium .
+ex:TaeSik ex:arrested .
+ex:TaeSik ex:escapesFrom ex:PoliceStation .
+ex:SoMi ex:isExchangedFor ex:HyoJeongLover .
+ex:TaeSik ex:tracks ex:DuChi .
+ex:TaeSik ex:asks ex:Ramrowan .
+ex:TaeSik ex:isShot .
+ex:TaeSik ex:recovers .
+ex:TaeSik ex:asksForGun .
+ex:TaeSik ex:finds ex:ChildSlaves .
+ex:TaeSik ex:kills off:JongSeok .
+ex:TaeSik ex:tracks ex:ManSeok .
+ex:TaeSik ex:kills off:ManSeok .
+ex:TaeSik ex:saves ex:SoMi .
+ex:TaeSik ex:arrested .
+ex:TaeSik ex:buys ex:Backpack .
+ex:TaeSik ex:buys ex:SchoolSupplies .
+ex:TaeSik ex:asksForHug .
+ex:TaeSik ex:breaksDownInTears .
+
+13. The transporter
+
+ex:FrankMartin rdf:type yago:Person .
+ex:FrankMartin ex:isFormerSoldier .
+ex:FrankMartin ex:isDriver .
+ex:FrankMartin ex:isMercenary .
+ex:FrankMartin ex:residesIn ex:SouthernFrance .
+ex:TheTransporter rdf:type yago:Character .
+ex:FrankMartin ex:hasCallsign ex:TheTransporter .
+ex:FrankMartin ex:follows ex:Rule1 .
+ex:FrankMartin ex:follows ex:Rule2 .
+ex:FrankMartin ex:follows ex:Rule3 .
+ex:BankRobbers rdf:type yago:Group .
+ex:FrankMartin ex:isHiredToTransport ex:BankRobbers .
+ex:FrankMartin ex:drives ex:BMW735i .
+ex:BankRobbers ex:hoist ex:FourthMan .
+ex:Leader ex:kills ex:Member1 .
+ex:Member1 rdf:type yago:Person .
+ex:Member1 ex:isPushedOutOf ex:Car .
+ex:FrankMartin ex:refusesToDrive .
+ex:BankRobbers ex:offerMoreMoney .
+ex:FrankMartin ex:refusesTheDeal .
+ex:RobbersEscape rdf:type yago:Event .
+ex:RobbersEscape ex:isFoiledBy ex:AmateurDriving .
+ex:FrankMartin ex:isQuestionedBy ex:Tarconi .
+ex:Tarconi rdf:type yago:Person .
+ex:Tarconi ex:leaves .
+ex:FrankMartin ex:isHiredToDeliver ex:Package1 .
+ex:Package1 rdf:type yago:PhysicalEntity .
+ex:Package1 ex:weighs ex:Weight1 .
+ex:Weight1 rdf:type yago:UnitOfWeight .
+ex:FrankMartin ex:notices ex:MovingPackage .
+ex:FrankMartin ex:violates ex:Rule3 .
+ex:Person1 rdf:type yago:Person .
+ex:Person1 ex:isTiedUp .
+ex:Person1 ex:isGagged .
+ex:FrankMartin ex:recaptures ex:Person1 .
+ex:Person1 ex:attemptsToEscape .
+ex:FrankMartin ex:returns ex:Person1To ex:Trunk .
+ex:Policemen rdf:type yago:Group .
+ex:Policemen ex:spot ex:FrankMartin .
+ex:FrankMartin ex:delivers ex:Package1 .
+ex:Package1 ex:isDeliveredTo ex:WallStreet .
+ex:FrankMartin ex:agreesTo ex:Job1 .
+ex:Job1 rdf:type yago:Job .
+ex:FrankMartin ex:stopsToBuy ex:Drinks .
+ex:Drinks rdf:type yago:Beverage .
+ex:FrankMartin ex:buys ex:Drinks .
+ex:Bomb rdf:type yago:Explosive .
+ex:Bomb ex:isHiddenIn ex:Briefcase .
+ex:Briefcase rdf:type yago:PhysicalEntity .
+ex:FrankMartin ex:returnsTo ex:WallStreet'sVilla .
+ex:FrankMartin ex:kills ex:Henchmen .
+ex:FrankMartin ex:wounds ex:Henchmen .
+ex:FrankMartin ex:steals ex:Car1 .
+ex:Car1 rdf:type yago:Automobile .
+ex:FrankMartin ex:brings ex:Person2 .
+ex:Person2 rdf:type yago:Person .
+ex:Person2 ex:isBound .
+ex:Person2 ex:isGagged .
+ex:WallStreet rdf:type yago:Person .
+ex:WallStreet ex:visits ex:Person3 .
+ex:Person3 rdf:type yago:Person .
+ex:Person3 ex:isInHospital .
+ex:WallStreet ex:determines ex:Attacker .
+ex:WallStreet ex:kills ex:Person3 .
+ex:Tarconi ex:arrives .
+ex:FrankMartin ex:claims ex:Car1 .
+ex:Person2 ex:supports ex:Alibi .
+ex:Person2 ex:introducesHerselfAs ex:Cook .
+ex:Person2 ex:introducesHerselfAs ex:Girlfriend .
+ex:Tarconi ex:leaves .
+ex:WallStreet'sHitmen rdf:type yago:Group .
+ex:WallStreet'sHitmen ex:fire ex:Missiles .
+ex:WallStreet'sHitmen ex:fire ex:AutomaticWeapons .
+ex:FrankMartin ex:escapes .
+ex:UnderwaterPassage rdf:type yago:Passage .
+ex:FrankMartin ex:escapesThrough ex:UnderwaterPassage .
+ex:SafeHouse rdf:type yago:Building .
+ex:FrankMartin ex:escapesTo ex:SafeHouse .
+ex:PoliceStation rdf:type yago:Building .
+ex:Person2 ex:isQuestionedAt ex:PoliceStation .
+ex:Person2 ex:accesses ex:Computer1 .
+ex:Computer1 rdf:type yago:Computer .
+ex:Lai rdf:type yago:Person .
+ex:Lai ex:finds ex:Information1 .
+ex:FrankMartin ex:isPresumedDeadBy ex:WallStreet .
+ex:FrankMartin ex:wantsToRebuild ex:Villa .
+ex:Lai ex:tells ex:FrankMartin ex:Information2 .
+ex:WallStreet rdf:type yago:Person .
+ex:WallStreet ex:isHumanTrafficker .
+ex:WallStreet ex:traps ex:Chinese .
+ex:Container1 rdf:type yago:Container .
+ex:Container1 ex:contains ex:People1 .
+ex:People1 rdf:type yago:Group .
+ex:Lai ex:isFamilyOf ex:People1 .
+ex:Lai ex:goesTo ex:WallStreet'sOffice .
+ex:WallStreet ex:reveals ex:Information3 .
+ex:Kwai rdf:type yago:Person .
+ex:Kwai ex:isHumanTrafficker .
+ex:Kwai ex:isPartnerInCrimeWith ex:WallStreet .
+ex:Kwai ex:arrives .
+ex:Henchmen2 rdf:type yago:Group .
+ex:Henchmen2 ex:subdue ex:FrankMartin .
+ex:Tarconi ex:arrives .
+ex:Kwai ex:accuses ex:FrankMartin .
+ex:Tarconi ex:hasFrankArrested .
+ex:Tarconi ex:locksUp ex:FrankMartin .
+ex:Tarconi ex:realizes ex:FrankMartin .
+ex:Tarconi ex:agreesToAid ex:FrankMartin'sEscape .
+ex:Tarconi ex:releases ex:FrankMartin .
+ex:FrankMartin ex:tracks ex:Criminals .
+ex:FrankMartin ex:loadsOnto ex:Trucks .
+ex:FrankMartin ex:isSpotted .
+ex:FrankMartin ex:forcesWayThrough ex:Guards .
+ex:Trucks rdf:type yago:Vehicle .
+ex:FrankMartin ex:steals ex:Car2 .
+ex:Car2 rdf:type yago:Automobile .
+ex:Car2 ex:breaksDown .
+ex:FrankMartin ex:commandeers ex:Airplane .
+ex:Airplane rdf:type yago:Aircraft .
+ex:FrankMartin ex:follows ex:Highway .
+ex:FrankMartin ex:parachutesOnto ex:Truck .
+ex:FrankMartin ex:managesToKill ex:WallStreet .
+ex:WallStreet rdf:type yago:Person .
+ex:WallStreet ex:isCrushedBy ex:Wheels .
+ex:FrankMartin ex:isAmbushedBy ex:Kwai .
+ex:FrankMartin ex:marchedTo ex:CliffEdge .
+ex:Lai rdf:type yago:Person .
+ex:Lai ex:reluctantlyShoots ex:Kwai .
+ex:Tarconi ex:arrives .
+ex:Tarconi ex:rescues ex:People1 .
+ex:Tarconi ex:congratulates ex:FrankMartin .
+
+
+
+
+14. Safe
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix yago: <http://yago-knowledge.org/resource/> .
+
+# Entities
+ex:LukeWright rdf:type yago:Person .
+ex:EmileDocheski rdf:type yago:Person .
+ex:VassilyDocheski rdf:type yago:Person .
+ex:HanJiao rdf:type yago:Person .
+ex:QuanChang rdf:type yago:Person .
+ex:Mei rdf:type yago:Person .
+ex:CaptainWolf rdf:type yago:Person .
+ex:Chemyakin rdf:type yago:Person .
+ex:AlexRosen rdf:type yago:Person .
+ex:DannyTremello rdf:type yago:Person .
+
+# Events/Actions
+ex:LukeWright ex:unintentionallyWinsFixedFight ex:Fight1 .
+ex:Fight1 rdf:type yago:SportsEvent .
+ex:LukeWright ex:angers ex:EmileDocheski .
+ex:EmileDocheski rdf:type yago:Person .
+ex:EmileDocheski ex:isHeadOf ex:RussianMafia .
+ex:RussianMafia rdf:type yago:CrimeOrganization .
+ex:VassilyDocheski ex:kills ex:LukeWright'sWife .
+ex:LukeWright'sWife rdf:type yago:Person .
+ex:LukeWright ex:becomes ex:HomelessTramp .
+ex:HomelessTramp rdf:type yago:Person .
+ex:Mei ex:isKidnappedBy ex:MenWorkingFor ex:HanJiao .
+ex:HanJiao rdf:type yago:Person .
+ex:HanJiao ex:isBossOf ex:Triad .
+ex:Triad rdf:type yago:CrimeOrganization .
+ex:Mei ex:isSentTo ex:NewYorkCity .
+ex:NewYorkCity rdf:type yago:City .
+ex:Mei ex:isInCareOf ex:BrutalGangster ex:QuanChang .
+ex:QuanChang rdf:type yago:Person .
+ex:HanJiao ex:arrivesFrom ex:China .
+ex:HanJiao ex:asks ex:Mei ex:toMemorize ex:Number1 .
+ex:Number1 rdf:type yago:MathematicalConcept .
+ex:Vehicle1 ex:isAmbushedBy ex:RussianMafia .
+ex:RussianMafia rdf:type yago:CrimeOrganization .
+ex:Mei ex:isTakenTo ex:EmileDocheski .
+ex:EmileDocheski ex:demands ex:Number1 .
+ex:Mei ex:refusesToGive ex:Number1 .
+ex:Police1 rdf:type yago:LawEnforcementAgency .
+ex:Police1 ex:isSentBy ex:CaptainWolf .
+ex:CaptainWolf rdf:type yago:Person .
+ex:Mei ex:escapesDuring ex:SubwayStation1 .
+ex:SubwayStation1 rdf:type yago:TransportationFacility .
+ex:LukeWright ex:contemplates ex:suicide .
+ex:Chemyakin ex:isRecognizedBy ex:LukeWright .
+ex:Mei ex:distressed ex:LukeWright .
+ex:LukeWright ex:boards ex:Train1 .
+ex:Chemyakin ex:isKilledBy ex:LukeWright .
+ex:Mei ex:fleesTo ex:NextStop1 .
+ex:Detective1 rdf:type yago:Person .
+ex:Detective2 rdf:type yago:Person .
+ex:Detective1 ex:isCorrupt .
+ex:Detective2 ex:isCorrupt .
+ex:LukeWright ex:arrives .
+ex:Detective1 ex:isIncapacitatedBy ex:LukeWright .
+ex:Mei ex:isConvincedOf ex:LukeWright'sGoodIntentions .
+ex:LukeWright ex:dispatches ex:RussianMafia .
+ex:Mei ex:explains ex:Number1 .
+ex:LukeWright ex:guessesThat ex:Number1 ex:isCodeTo ex:CombinationSafe .
+ex:CombinationSafe rdf:type yago:PhysicalEntity .
+ex:Mei ex:isTrackedDownBy ex:QuanChang .
+ex:Mei ex:isEscapedWithBy ex:QuanChang .
+ex:LukeWright ex:fightsThrough ex:QuanChang'sMen .
+ex:CaptainWolf ex:meetsWith ex:DannyTremello .
+ex:DannyTremello rdf:type yago:Person .
+ex:DannyTremello ex:hasLearnedThat ex:LukeWrightIsInvolved .
+ex:LukeWright ex:isInvolvedIn ex:Crime1 .
+ex:Crime1 rdf:type yago:Crime .
+ex:LukeWright ex:wasBlackOpsHitmanFor ex:Government .
+ex:Government rdf:type yago:Organization .
+ex:LukeWright ex:quit .
+ex:LukeWright ex:exposed ex:Wolf'sDetectiveSquadAs ex:DirtyCops .
+ex:LukeWright ex:isLiving ex:LifeOfExile .
+ex:LukeWright ex:atonesFor ex:ThingsHeDidFor ex:Government .
+ex:Chemyakin'sPhone ex:isUsedBy ex:LukeWright .
+ex:LukeWright ex:setsUp ex:VassilyDocheski .
+ex:VassilyDocheski rdf:type yago:Person .
+ex:EmileDocheski ex:accepts ex:Deal1 .
+ex:Deal1 rdf:type yago:Agreement .
+ex:Deal1 ex:isFor ex:Son'sLife .
+ex:Mei ex:unlocks ex:Safe1 .
+ex:Safe1 rdf:type yago:PhysicalEntity .
+ex:Safe1 ex:isIn ex:Chinatown .
+ex:Chinatown rdf:type yago:City .
+ex:Safe1 ex:contains ex:Money1 .
+ex:Money1 rdf:type yago:FinancialEntity .
+ex:EmileDocheski ex:doesNotKnowContentsOf ex:Safe2 .
+ex:Safe2 rdf:type yago:PhysicalEntity .
+ex:Team1 rdf:type yago:Group .
+ex:LukeWright ex:recruits ex:Team1 .
+ex:Team1 ex:fightsThrough ex:TriadGangsters .
+ex:AlexRosen rdf:type yago:Person .
+ex:AlexRosen ex:isMayor'sAide .
+ex:DannyTremello ex:isBoyfriendOf ex:AlexRosen .
+ex:AlexRosen ex:rescues ex:Mei .
+ex:Safe2 ex:belongsTo ex:DannyTremello .
+ex:DannyTremello ex:containsDataOn ex:CrimeSyndicates .
+ex:CrimeSyndicates rdf:type yago:Organization .
+ex:AlexRosen ex:meetsWith ex:QuanChang .
+ex:QuanChang ex:isKilledBy ex:AlexRosen .
+ex:LukeWright ex:assaults ex:DannyTremello .
+ex:LukeWright ex:retrieves ex:Copy1Of ex:DannyTremello'sDisc .
+ex:Copy1Of ex:isCopyOf ex:DannyTremello'sDisc .
+ex:LukeWright ex:arrangesMeetingWith ex:AlexRosen .
+ex:LukeWright ex:refusesToSurrender ex:Money1 .
+ex:LukeWright ex:suggests ex:SettlingWithFight .
+ex:Mei ex:shoots ex:AlexRosen .
+ex:LukeWright ex:finishesOff ex:AlexRosen .
+ex:LukeWright ex:gives ex:Wolf ex:Money2 .
+ex:Money2 rdf:type yago:FinancialEntity .
+ex:VassilyDocheski ex:isReturnedTo ex:EmileDocheski .
+ex:HanJiao ex:isThreatenedBy ex:LukeWright .
+ex:LukeWright ex:hides ex:CopiesOf ex:DannyTremello'sDisc .
+ex:Copy2Of ex:isCopyOf ex:DannyTremello'sDisc .
+ex:Copy3Of ex:isCopyOf ex:DannyTremello'sDisc .
+ex:LukeWright ex:makesPlansToLeave ex:NewYorkCity .
+ex:LukeWright ex:headsTo ex:Seattle .
+ex:Seattle rdf:type yago:City .
+ex:Mei ex:asks ex:LukeWright ex:ifTheyAreSafe .
+ex:LukeWright ex:responds ex:TakingOneDayAtATime .
+
+15. Old guard
+
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Andromache rdf:type ex:Warrior ;
+    ex:hasName "Andromache of Scythia" ;
+    ex:hasAlias "Andy" ;
+    ex:hasAbility ex:RegenerativeHealing .
+
+ex:Booker rdf:type ex:Warrior ;
+    ex:hasName "Booker" .
+
+ex:Joe rdf:type ex:Warrior ;
+    ex:hasName "Joe" .
+
+ex:Nicky rdf:type ex:Warrior ;
+    ex:hasName "Nicky" .
+
+ex:Andy ex:hasAbility ex:RegenerativeHealing ;
+    ex:hasExperience ex:Centuries .
+
+ex:Andy ex:worksAs ex:Mercenary .
+
+ex:Booker ex:worksAs ex:Mercenary .
+
+ex:Joe ex:worksAs ex:Mercenary .
+
+ex:Nicky ex:worksAs ex:Mercenary .
+
+ex:CIAOperative rdf:type rdfs:Class .
+
+ex:JamesCopley rdf:type ex:CIAOperative .
+
+ex:KidnappedGirls rdf:type rdfs:Class .
+
+ex:SouthSudan rdf:type rdfs:Class .
+
+ex:RescueMission rdf:type rdfs:Class .
+
+ex:CIAOperative ex:rescues ex:KidnappedGirls ;
+    ex:in ex:SouthSudan ;
+    ex:isMotiveFor ex:Ruse .
+
+ex:Ambush rdf:type rdfs:Class .
+
+ex:Killed rdf:type rdfs:Class .
+
+ex:Attackers rdf:type rdfs:Class .
+
+ex:Copley rdf:type ex:CIAOperative ;
+    ex:setUp ex:Andy ;
+    ex:films ex:Regeneration ;
+    ex:shows ex:Ambush ;
+    ex:sends ex:Operatives .
+
+ex:Regeneration rdf:type rdfs:Class .
+
+ex:NileFreeman rdf:type ex:Marine ;
+    ex:hasName "Nile Freeman" ;
+    ex:survives ex:ThroatSlit ;
+    ex:shares ex:Dream ;
+    ex:isImmortal "true" .
+
+ex:Afghanistan rdf:type rdfs:Class .
+
+ex:Marine rdf:type rdfs:Class .
+
+ex:ThroatSlit rdf:type rdfs:Class .
+
+ex:HouseSearch rdf:type rdfs:Class .
+
+ex:Dream rdf:type rdfs:Class .
+
+ex:NewImmortals rdf:type rdfs:Class .
+
+ex:Andy ex:hasShared ex:Dream ;
+    ex:isAlertedTo ex:NileFreeman .
+
+ex:NileFreeman ex:isAlertedTo ex:Andy .
+
+ex:France rdf:type rdfs:Class .
+
+ex:SafeHouse rdf:type rdfs:Class .
+
+ex:StevenMerrick rdf:type ex:PharmaceuticalExecutive .
+
+ex:PharmaceuticalExecutive rdf:type rdfs:Class .
+
+ex:Operatives rdf:type rdfs:Class .
+
+ex:Andy ex:brings ex:NileFreeman ;
+    ex:to ex:SafeHouse ;
+    ex:meets ex:Team .
+
+ex:Team rdf:type rdfs:Class .
+
+ex:Past rdf:type rdfs:Class .
+
+ex:Immortal rdf:type rdfs:Class .
+
+ex:Healing rdf:type rdfs:Class .
+
+ex:Lykon rdf:type ex:Immortal .
+
+ex:FemaleImmortal rdf:type ex:Immortal .
+
+ex:Quynh rdf:type ex:FemaleImmortal ;
+    ex:isFirstComradeOf ex:Andy ;
+    ex:isCaptured "true" ;
+    ex:isAccusedOf "witchcraft" ;
+    ex:isLost "true" ;
+    ex:isDrowning "true" .
+
+ex:IronMaiden rdf:type rdfs:Class .
+
+ex:Ambushed rdf:type rdfs:Class .
+
+ex:MerrickForces rdf:type rdfs:Class .
+
+ex:Captured rdf:type rdfs:Class .
+
+ex:Wounded rdf:type rdfs:Class .
+
+ex:London rdf:type rdfs:Class .
+
+ex:Betrayal rdf:type rdfs:Class .
+
+ex:Shot rdf:type rdfs:Class .
+
+ex:EndOfImmortality rdf:type rdfs:Class .
+
+ex:Locate rdf:type rdfs:Class .
+
+ex:ChangeOfHeart rdf:type rdfs:Class .
+
+ex:Torture rdf:type rdfs:Class .
+
+ex:RescueMission rdf:type rdfs:Class .
+
+ex:Punishment rdf:type rdfs:Class .
+
+ex:Loneliness rdf:type rdfs:Class .
+
+ex:Contact rdf:type rdfs:Class .
+
+ex:Renewal rdf:type rdfs:Class .
+
+ex:Task rdf:type rdfs:Class .
+
+ex:Copley ex:explains ex:Research ;
+    ex:reveals ex:Effect ;
+    ex:hasMission ex:GreaterEffect .
+
+ex:Descendants rdf:type rdfs:Class .
+
+ex:Missions rdf:type rdfs:Class .
+
+ex:Effect rdf:type rdfs:Class .
+
+ex:GreaterEffect rdf:type rdfs:Class .
+
+ex:Secret rdf:type rdfs:Class .
+
+ex:FindingMissions rdf:type rdfs:Class .
+
+ex:Paris rdf:type rdfs:Class .
+
+ex:Depressed rdf:type rdfs:Class .
+
+ex:Drunken rdf:type rdfs:Class .
+
+ex:Quynh rdf:type ex:FemaleImmortal .
+
+ex:Booker ex:finds ex:Quynh ;
+    ex:isAstonished "true" .
+
+16. Wrath of man
+
+@prefix ex: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Act 1: A Dark Spirit
+ex:ArmoredTruckRobbery rdf:type ex:Event .
+ex:ArmoredTruckRobbery ex:location ex:LosAngeles .
+ex:ArmoredTruckRobbery ex:resultsIn ex:ThreeDeaths .
+
+ex:PatrickHill rdf:type ex:Person .
+ex:PatrickHill ex:joins ex:ForticoSecurity .
+ex:PatrickHill ex:hasManager ex:Terry .
+
+ex:Terry rdf:type ex:Person .
+
+ex:Bullet rdf:type ex:Person .
+ex:Bullet ex:nicknames ex:PatrickHill "H" .
+ex:Bullet ex:takenHostageBy ex:Robbers .
+ex:Bullet ex:isQuestionedBy ex:FBIInvestigators .
+
+ex:FBIInvestigators rdf:type ex:Organization .
+ex:FBIInvestigators ex:suspects ex:PatrickHill .
+
+ex:AgentKing rdf:type ex:Person .
+ex:AgentKing ex:isSuperiorOf ex:FBIInvestigators .
+
+ex:Hill rdf:type ex:Person .
+ex:Hill ex:receives ex:Dossier .
+ex:Hill ex:receives ex:AutopsyReport .
+ex:Hill ex:isWaylaidIn ex:Chinatown .
+
+ex:Dossier rdf:type ex:Document .
+ex:AutopsyReport rdf:type ex:Document .
+
+# Act 2: Scorched Earth
+ex:FirstRobbery rdf:type ex:Event .
+ex:FirstRobbery ex:location ex:LosAngeles .
+ex:FirstRobbery ex:resultsIn ex:Dougie'sDeath .
+ex:FirstRobbery ex:resultsIn ex:HillBeingShot .
+
+ex:Son rdf:type ex:Person .
+ex:Dougie rdf:type ex:Son .
+ex:Hill rdf:type ex:Person .
+ex:Hill ex:hasSon ex:Dougie .
+
+ex:Hill rdf:type ex:Person .
+ex:Hill ex:isWorkingWith ex:RobberyCrew .
+
+ex:RobberyCrew rdf:type ex:Organization .
+ex:Hill ex:monitors ex:ArmoredTruckRoute .
+
+ex:Robbers rdf:type ex:Organization .
+ex:Robbers ex:hijack ex:ArmoredTruck .
+ex:Robbers ex:spot ex:Dougie .
+ex:Hill ex:racesTo ex:Son .
+
+ex:Hill rdf:type ex:Person .
+ex:Hill ex:isShot .
+ex:Hill ex:isLeftForDead .
+
+ex:Hospital rdf:type ex:Place .
+
+# Act 3: Bad Animals, Bad
+ex:Veterans rdf:type ex:Organization .
+ex:Carlos rdf:type ex:Person .
+ex:Sam rdf:type ex:Person .
+ex:Brad rdf:type ex:Person .
+ex:Tom rdf:type ex:Person .
+ex:Jan rdf:type ex:Person .
+ex:Jackson rdf:type ex:Person .
+ex:Jackson ex:isSergeantOf ex:Veterans .
+
+ex:Robbery rdf:type ex:Event .
+ex:Robbery ex:resultsIn ex:AFewHundredThousandDollars .
+
+ex:Guard rdf:type ex:Person .
+ex:Guard ex:servedUnder ex:Jackson .
+
+ex:MoreAmbitiousHeist rdf:type ex:Event .
+ex:MoreAmbitiousHeist ex:resultsIn ex:ArmoredTruckHeist .
+
+ex:Hargreaves rdf:type ex:Person .
+ex:Hargreaves ex:helps ex:Veterans .
+ex:Hargreaves ex:arranges ex:ForticoHeist .
+ex:Hargreaves ex:sees ex:Jan'sFace .
+
+ex:ForticoHeist rdf:type ex:Event .
+ex:ForticoHeist ex:resultsIn ex:GuardMurders .
+ex:ForticoHeist ex:resultsIn ex:HargreavesKillsRobbers .
+
+# Act 4: Liver, Lungs, Spleen & Heart
+ex:BlackFridayWeekend rdf:type ex:TimePeriod .
+
+ex:Depot rdf:type ex:Place .
+ex:Depot ex:isHostageTo ex:Robbers .
+
+ex:Alarm rdf:type ex:Event .
+ex:Gunfight rdf:type ex:Event .
+
+ex:Jan rdf:type ex:Person .
+ex:Jan ex:murders ex:Bullet .
+ex:Jan ex:murders ex:Jackson .
+ex:Jan ex:isShotBy ex:Hargreaves .
+
+ex:Money rdf:type ex:PhysicalObject .
+
+ex:Phone rdf:type ex:PhysicalObject .
+ex:Phone ex:isFoundIn ex:MoneyBag .
+
+ex:Abandoning rdf:type ex:Event .
+
+ex:Task rdf:type ex:Event .
+ex:Task ex:isDoneBy ex:Hargreaves .
+
+ex:Hargreaves rdf:type ex:Person .
+ex:Hargreaves ex:tells ex:King ex:TaskIsDone .
+ex:Hargreaves ex:isDrivenAway .
+
+ex:King rdf:type ex:Person .
+
+
+17. 
