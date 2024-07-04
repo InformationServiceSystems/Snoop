@@ -11,7 +11,7 @@ Planning for complex tasks is a key task for knowledge workers that is often tim
 
 # Repository Structure
 
-.
+```
 ├── README.md
 ├── Resources
 │   ├── JupyterNotebooks
@@ -69,7 +69,7 @@ Planning for complex tasks is a key task for knowledge workers that is often tim
 └── tree_structure.txt
 
 12 directories, 108 files
-
+```
 
 
 ## Code
